@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { AppLayout } from '../layouts/app-layout';
 import { cn } from '../lib/utils';
 import './globals.css';
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn('antialiased', geistSans.variable, geistMono.variable)}
       >
-        {children}
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );

@@ -29,18 +29,26 @@ export const Home = () => {
         </p>
       </main>
       <nav className="flex items-baseline justify-end border-b-8 px-12 pt-8">
-        <ul className="flex items-center gap-4 pb-1 text-lg tracking-widest">
-          <li className="after:ml-4 after:content-['—']">
-            <Link href="/formation">formation</Link>
-          </li>
-          <li className="after:ml-4 after:content-['—']">
-            <Link href="/equipes">équipes</Link>
-          </li>
-          <li className="after:ml-4 after:content-['—']">
-            <Link href="/travaux">travaux</Link>
+        <ul className="flex items-center gap-4 text-lg">
+          <li>
+            <Link href="/formation" className="bg-black px-3 py-2 text-white">
+              formation
+            </Link>
           </li>
           <li>
-            <Link href="/contact">contact</Link>
+            <Link href="/equipes" className="bg-black px-3 py-2 text-white">
+              équipes
+            </Link>
+          </li>
+          <li>
+            <Link href="/travaux" className="bg-black px-3 py-2 text-white">
+              travaux
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="bg-black px-3 py-2 text-white">
+              contact
+            </Link>
           </li>
         </ul>
       </nav>

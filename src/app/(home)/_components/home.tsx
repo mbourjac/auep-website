@@ -1,18 +1,12 @@
-import Link from 'next/link';
 import { Footer } from './footer';
+import { Header } from './header';
+import { Nav } from './nav';
 
 export const Home = () => {
   return (
     <div>
       <div className="flex min-h-[calc(100dvh-2rem)] flex-col">
-        <header className="flex max-h-[33vw] max-w-screen justify-center overflow-hidden">
-          <h1 className="mt-[-20%] cursor-default text-[50vw] leading-none font-black">
-            <abbr>auep</abbr>
-            <span className="sr-only">
-              Architecture, Urbanisme et Études Politiques
-            </span>
-          </h1>
-        </header>
+        <Header />
         <main className="flex grow items-center px-12">
           <p className="text-lg font-semibold tracking-wide">
             <strong className="font-black">
@@ -30,30 +24,7 @@ export const Home = () => {
             et Sciences Po Grenoble-UGA.
           </p>
         </main>
-        <nav className="flex items-baseline justify-end border-b-8 px-12 pt-8">
-          <ul className="flex items-center gap-4 text-lg">
-            <li>
-              <Link href="/formation" className="bg-black px-3 py-2 text-white">
-                formation
-              </Link>
-            </li>
-            <li>
-              <Link href="/equipes" className="bg-black px-3 py-2 text-white">
-                équipes
-              </Link>
-            </li>
-            <li>
-              <Link href="/travaux" className="bg-black px-3 py-2 text-white">
-                travaux
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="bg-black px-3 py-2 text-white">
-                contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </div>
       <Footer />
     </div>

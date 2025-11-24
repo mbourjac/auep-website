@@ -1,12 +1,30 @@
+import Link from 'next/link';
+
 export const Header = () => {
   return (
-    <header className="flex max-h-[33vw] max-w-screen justify-center overflow-hidden">
-      <h1 className="mt-[-20%] cursor-default text-[50vw] leading-none font-black">
-        <abbr>auep</abbr>
-        <span className="sr-only">
-          Architecture, Urbanisme et Études Politiques
-        </span>
-      </h1>
+    <header className="sticky top-0 z-10 bg-white px-12 pt-4">
+      <nav className="flex items-center justify-between gap-12 border-b-2">
+        <Link href="/" className="text-4xl font-bold">
+          <abbr>auep</abbr>
+          <span className="sr-only">
+            Architecture, Urbanisme et Études Politiques
+          </span>
+        </Link>
+        <ul className="flex gap-12 py-0.5 text-lg font-semibold">
+          <li>
+            <Link href="/formation">formation</Link>
+          </li>
+          <li>
+            <Link href="/equipes">équipes</Link>
+          </li>
+          <li>
+            <Link href="/travaux">travaux</Link>
+          </li>
+          <li>
+            <Link href="/contact">contact</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

@@ -9,7 +9,7 @@ export const Hero = () => {
         </h1>
       </div>
       <div className="px-12">
-        <p className="border-b-2 py-24 text-xl tracking-wide">
+        <p className="py-24 text-xl tracking-wide">
           <strong className="font-bold">
             Architecture, Urbanisme et Études Politiques
           </strong>{' '}

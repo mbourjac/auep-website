@@ -21,25 +21,42 @@ export const NewsItem = ({
   image,
   description,
 }: NewsItemProps) => {
-  const formatTwoDigits = (number: number) => String(number).padStart(2, '0');
+  const padTwoDigits = (number: number) => String(number).padStart(2, '0');
+
+  const isoDate = `${date.year}-${padTwoDigits(date.month)}-${padTwoDigits(date.day)}`;
+
+  const accessibleDate = new Date(
+    date.year,
+    date.month - 1,
+    date.day
+  ).toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   return (
     <div className="flex gap-16 border-t py-1">
-      <p className="relative top-[0.475rem] min-w-31 [font-family:var(--font-azeret-mono)] text-xl">
-        <span className="text-[3rem] font-bold">
-          {formatTwoDigits(date.day)}
-        </span>
-        <span className="[font-family:var(--default-font-family)] text-[5rem] leading-0">
-          .
-        </span>
-        <span className="text-[2rem] font-bold">
-          {formatTwoDigits(date.month)}
-        </span>
-        <br />
-        <span className="relative -top-[0.85rem] text-[1.2rem] font-light">
-          {date.year}
-        </span>
-      </p>
+      <div className="relative top-[0.475rem] min-w-31 [font-family:var(--font-azeret-mono)] text-xl">
+        <time dateTime={isoDate} className="sr-only">
+          {accessibleDate}
+        </time>
+        <div aria-hidden="true">
+          <span className="text-[3rem] font-bold">
+            {padTwoDigits(date.day)}
+          </span>
+          <span className="[font-family:var(--default-font-family)] text-[5rem] leading-0">
+            .
+          </span>
+          <span className="text-[2rem] font-bold">
+            {padTwoDigits(date.month)}
+          </span>
+          <br />
+          <span className="relative -top-[0.85rem] text-[1.2rem] font-light">
+            {date.year}
+          </span>
+        </div>
+      </div>
       <div className="max-w-[20vw] min-w-[20vw] py-4">
         <p className="line-clamp-1 font-bold">{title}</p>
         {subtitle && <p className="line-clamp-2 italic">{subtitle}</p>}

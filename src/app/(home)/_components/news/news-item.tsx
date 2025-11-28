@@ -24,16 +24,13 @@ export const NewsItem = ({
   const padTwoDigits = (number: number) => String(number).padStart(2, '0');
 
   const isoDate = `${date.year}-${padTwoDigits(date.month)}-${padTwoDigits(date.day)}`;
+  const newsDate = new Date(date.year, date.month - 1, date.day);
 
-  const accessibleDate = new Date(
-    date.year,
-    date.month - 1,
-    date.day
-  ).toLocaleDateString(undefined, {
+  const accessibleDate = new Intl.DateTimeFormat('fr-FR', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  });
+  }).format(newsDate);
 
   return (
     <div className="flex gap-16 border-t py-1">

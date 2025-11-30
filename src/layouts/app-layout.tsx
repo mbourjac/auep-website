@@ -1,24 +1,31 @@
 'use client';
 
-import { ReactNode, useEffect } from 'react';
-import Lenis from 'lenis';
+import { ReactNode, useEffect, useRef } from 'react';
+import ReactLenis, { LenisRef } from 'lenis/react';
+import { frame, cancelFrame } from 'motion';
 
 type AppLayoutProps = {
   children: ReactNode;
 };
 
 export const AppLayout = ({ children }: AppLayoutProps) => {
+  const lenisRef = useRef<LenisRef>(null);
+
   useEffect(() => {
-    const lenis = new Lenis();
+    const update = (data: { timestamp: number }) => {
+      const time = data.timestamp;
+      lenisRef.current?.lenis?.raf(time);
+    };
 
-    function raf(time: number) {
-      lenis.raf(time);
+    frame.update(update, true);
 
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
+    return () => cancelFrame(update);
   }, []);
 
-  return <>{children}</>;
+  return (
+    <>
+      <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
+      {children}
+    </>
+  );
 };

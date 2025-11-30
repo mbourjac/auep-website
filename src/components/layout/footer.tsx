@@ -27,7 +27,7 @@ export const Footer = () => {
     >
       <div
         ref={wrapperRef}
-        className="fixed bottom-0 flex w-full justify-between gap-12 px-12 py-8"
+        className="fixed bottom-0 flex w-full justify-between gap-12 px-6 py-8 xl:px-12"
         style={{ height: wrapperHeight ? `${wrapperHeight}px` : undefined }}
       >
         <div className="flex flex-col justify-between gap-12">

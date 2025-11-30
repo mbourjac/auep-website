@@ -1,15 +1,15 @@
 export const Hero = () => {
   return (
     <>
-      <div className="px-12">
-        <h1 className="mt-[-1.5vw] cursor-default border-b-36 pb-[2vw] text-[8vw] leading-none font-black">
+      <div className="px-6 xl:px-12">
+        <h1 className="mt-[-1.5vw] cursor-default border-b-36 pb-[2vw] text-[7.75vw] leading-none font-black">
           architecture, urbanisme
           <br />
           et études politiques
         </h1>
       </div>
-      <div className="px-12">
-        <p className="py-24 text-xl tracking-wide">
+      <div className="px-6 xl:px-12">
+        <p className="py-24 text-lg tracking-wide">
           <strong className="font-bold">
             Architecture, Urbanisme et Études Politiques
           </strong>{' '}

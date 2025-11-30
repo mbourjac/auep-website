@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-10 bg-white px-12 pt-4">
+    <header className="sticky top-0 z-10 bg-white px-6 pt-4 xl:px-12">
       <div className="flex items-center justify-between gap-12 border-b-2">
         <Link href="/" className="text-4xl font-bold">
           <abbr>auep</abbr>

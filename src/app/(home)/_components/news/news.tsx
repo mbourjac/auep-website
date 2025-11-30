@@ -5,7 +5,7 @@ import { NEWS } from './news.constants';
 
 export const News = () => {
   return (
-    <section className="px-12">
+    <section className="px-6 xl:px-12">
       <div className="flex flex-col gap-4 border-b-2 py-24">
         <p className="text-4xl font-semibold">actualités</p>
         <div>

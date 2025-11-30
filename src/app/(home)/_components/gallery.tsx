@@ -1,4 +1,4 @@
-import { DitherCanvas } from '../../../components/dither-canvas';
+import { DitherCanvas } from '@/components/dither-canvas';
 
 export const Gallery = () => {
   const images = [

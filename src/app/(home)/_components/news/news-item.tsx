@@ -72,11 +72,11 @@ export const NewsItem = ({
               </span>
             </div>
           </div>
-          <div className="max-w-[20vw] min-w-[20vw] py-4">
+          <div className="min-w-[20vw] grow py-4 lg:max-w-[20vw]">
             <p className="line-clamp-1 font-bold">{title}</p>
             {subtitle && <p className="line-clamp-2 italic">{subtitle}</p>}
           </div>
-          <div className="grow py-4">
+          <div className="hidden grow py-4 lg:block">
             <p className="line-clamp-3">{description}</p>
           </div>
           <div className="h-[104px] min-w-[200px]">

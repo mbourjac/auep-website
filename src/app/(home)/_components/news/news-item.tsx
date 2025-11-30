@@ -8,8 +8,8 @@ type NewsItemProps = {
     month: number;
     year: number;
   };
-  title: string;
-  subtitle?: string;
+  title: ReactNode;
+  subtitle?: ReactNode;
   description: ReactNode;
   image?: string;
 };

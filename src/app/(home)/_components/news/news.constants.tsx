@@ -6,23 +6,27 @@ export const NEWS = [
       year: 2025,
     },
     title: 'Conférence MétroFabLab #15',
-    subtitle:
-      'Federico Diodato - A la recherche l’Eutopie. Généalogie de la tradition territorialiste',
+    subtitle: (
+      <>
+        Federico Diodato —&nbsp;A la recherche l’Eutopie. Généalogie de la
+        tradition territorialiste
+      </>
+    ),
     description: (
       <>
         C’est souvent dans les moments de crise que se sèment les graines de la
         renaissance, nous rappelle Patrick Geddes à la fin du 19ème siècle. À
         partir de cette phrase, la présentation propose de retracer la
-        généalogie qui a vu naître la tradition « territorialiste ». Au fil du
-        temps et à travers les continents, cette tradition s’est ramifiée,
-        révélant à la fois ses promesses et ses limites. Elle a néanmoins
-        toujours porté une « Eutopie » - le « bon lieu » fondé sur la
-        coopération entre les êtres vivants et leur milieu de vie - non pas une
-        utopie irréalisable, mais un horizon de pensée ancré dans les
-        spécificités locales. Une démarche qui retrouve aujourd’hui toute son
-        actualité face aux crises multidimensionnelles auxquelles nous sommes
-        confrontés, une graine à partir de laquelle envisager le projet de
-        territoire et repenser son enseignement.
+        généalogie qui a vu naître la tradition «&nbsp;territorialiste&nbsp;».
+        Au fil du temps et à travers les continents, cette tradition s’est
+        ramifiée, révélant à la fois ses promesses et ses limites. Elle a
+        néanmoins toujours porté une «&nbsp;Eutopie&nbsp;» —&nbsp;le «&nbsp;bon
+        lieu&nbsp;» fondé sur la coopération entre les êtres vivants et leur
+        milieu de vie&nbsp;— non pas une utopie irréalisable, mais un horizon de
+        pensée ancré dans les spécificités locales. Une démarche qui retrouve
+        aujourd’hui toute son actualité face aux crises multidimensionnelles
+        auxquelles nous sommes confrontés, une graine à partir de laquelle
+        envisager le projet de territoire et repenser son enseignement.
         <br />
         Federico Diodato est architecte-urbaniste, docteur en architecture,
         maître de conférences à l&apos;ENSA Nancy et enseignant à l’Université
@@ -31,8 +35,8 @@ export const NEWS = [
         l’agence faire, il est membre du Syndicat de l’Architecture (SA), de
         l&apos;Union Internationale des Architectes (UIA) et éditeur de la revue
         scientifique CPCL, éditée par l’Université de Bologne et la TU Delft.
-        Depuis septembre 2024 il co-anime la Chaire Nouvelles ruralités –
-        Architecture et milieux vivants, de l’ENSA Nancy, l’ENSAIA et
+        Depuis septembre 2024 il co-anime la Chaire Nouvelles ruralités
+        —&nbsp;Architecture et milieux vivants, de l’ENSA Nancy, l’ENSAIA et
         AgroParisTech.
       </>
     ),
@@ -45,8 +49,12 @@ export const NEWS = [
       year: 2025,
     },
     title: 'Conférence MétroFabLab #14',
-    subtitle:
-      'Stéphane Ghiotti - Les territoires de l’eau à l’heure des transitions',
+    subtitle: (
+      <>
+        Stéphane Ghiotti —&nbsp;Les territoires de l’eau à l’heure des
+        transitions
+      </>
+    ),
     description: (
       <>
         Cette intervention explore la manière dont les territoires de l’eau se
@@ -58,9 +66,9 @@ export const NEWS = [
         de l’action publique, et la diversité des usages locaux des ressources
         en eau. En mobilisant une approche géographique, la conférence vise à
         alimenter les réflexions sur les modalités d’articulation entre
-        aménagements, « design territorial » et politiques de l’eau dans un
-        contexte de vulnérabilité et d’incertitude croissantes et d’innovations
-        nécessaires.
+        aménagements, «&nbsp;design territorial&nbsp;» et politiques de l’eau
+        dans un contexte de vulnérabilité et d’incertitude croissantes et
+        d’innovations nécessaires.
         <br />
         Stéphane Ghiotti est géographe, Directeur de recherches au CNRS au
         laboratoire Art-Dev UMR 5281 (Montpellier). Ses recherches portent sur
@@ -87,8 +95,12 @@ export const NEWS = [
       year: 2025,
     },
     title: 'Conférence MétroFabLab #13',
-    subtitle:
-      'Axelle Grégoire - Phytographia Sur la fabrique graphique de l’arbre dans le projet urbain',
+    subtitle: (
+      <>
+        Axelle Grégoire —&nbsp;Phytographia Sur la fabrique graphique de l’arbre
+        dans le projet urbain
+      </>
+    ),
     description: (
       <>
         Cette enquête sur la fabrique graphique de l’arbre dans le projet urbain
@@ -97,13 +109,13 @@ export const NEWS = [
         Proposant d’explorer de manière transdisciplinaire la façon dont les
         concepts écologiques peuvent guider le geste de dessin pour ouvrir des
         possibles, l’objectif de cette recherche est de déplacer les savoirs
-        scientifiques ; des marges de la fabrication de l’image au centre de la
-        table à dessin.
+        scientifiques&nbsp;; des marges de la fabrication de l’image au centre
+        de la table à dessin.
         <br />
         Axelle Grégoire est architecte, docteure du Muséum National d’Histoire
         Naturelle en Écologie et conception. Elle enseigne le Design d’espace à
         l’École Supérieure d’Art et Design de TALM-Angers. Elle a publié avec
-        Frédérique Aït-Touati et Alexandra Arènes : Terra Forma, manuel de
+        Frédérique Aït-Touati et Alexandra Arènes&nbsp;: Terra Forma, manuel de
         cartographie potentielle aux Éditions B42 en 2019 (MIT Presses en 2022).
         Elle développe des projets expérimentaux entre Design et Science,
         notamment sur la relation au vivant et la façon dont celui-ci questionne
@@ -123,8 +135,12 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Conférence MétroFabLab #12',
-    subtitle:
-      'Fanny Lopez - Techno-régionalisme : territorialiser le génie électrique',
+    subtitle: (
+      <>
+        Fanny Lopez —&nbsp;Techno-régionalisme&nbsp;: territorialiser le génie
+        électrique
+      </>
+    ),
     description: (
       <>
         Cette conférence propose d’interroger les imaginaires spatiaux du génie
@@ -137,13 +153,13 @@ export const NEWS = [
         <br />
         Fanny Lopez est historienne de l&apos;architecture. Professeure à
         l&apos;École nationale supérieure d&apos;architecture Paris-Malaquais et
-        co-directrice du LIAT, elle a notamment publié : Le rêve d&apos;une
+        co-directrice du LIAT, elle a notamment publié&nbsp;: Le rêve d&apos;une
         déconnexion. De la maison autonome à la cité auto-énergétique (La
         Villette, 2014, trad. MUP, 2021), L&apos;ordre électrique,
         infrastructures énergétiques et territoires (Métis Presses 2019), À bout
-        de flux (Divergences, 2022), Le feu numérique : spatialité et énergie
-        des data centers (Métis Presses). En 2023, elle co-crée le festival La
-        machine dans le jardin à Mellionnec.
+        de flux (Divergences, 2022), Le feu numérique&nbsp;: spatialité et
+        énergie des data centers (Métis Presses). En 2023, elle co-crée le
+        festival La machine dans le jardin à Mellionnec.
       </>
     ),
     image: 'images/news/news-20.png',
@@ -155,8 +171,12 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Conférence MétroFabLab #11',
-    subtitle:
-      'Patrick Henry - Des tracés aux traces Considérer les sols pour un urbanisme à la mesure des territoires',
+    subtitle: (
+      <>
+        Patrick Henry —&nbsp;Des tracés aux traces Considérer les sols pour un
+        urbanisme à la mesure des territoires
+      </>
+    ),
     description: (
       <>
         L’approche par les sols apparaît comme une démarche opératoire et
@@ -201,18 +221,18 @@ export const NEWS = [
       month: 5,
       year: 2025,
     },
-    title: 'Exposition “Héritage(s) Métropolitain(s)”',
+    title: <>Exposition «&nbsp;Héritage(s) Métropolitain(s)&nbsp;»</>,
     description: (
       <>
         Au cœur du nouvel éco-quartier Flaubert, dissimulé dans la végétation du
-        « sourire vert » grenoblois, le bâtiment de l’ancienne Chambre de
-        l’Agriculture de Grenoble s’inscrit le long de l’avenue Marcelin
+        «&nbsp;sourire vert&nbsp;» grenoblois, le bâtiment de l’ancienne Chambre
+        de l’Agriculture de Grenoble s’inscrit le long de l’avenue Marcelin
         Berthelot non loin de l’arrêt de Tram MC2. La Ville de Grenoble
         s’interroge sur le devenir de ce bâtiment de plus 3000m² construit en
         1982 et vide depuis 2018. À travers quatre projets les étudiant.es du
-        master AUEP ont imaginé les futurs possibles du quartier ! Leurs projets
-        ont été exposés dans le cadre de la Biennale des Villes en Transition au
-        Palais des Sports de Grenoble.
+        master AUEP ont imaginé les futurs possibles du quartier&nbsp;! Leurs
+        projets ont été exposés dans le cadre de la Biennale des Villes en
+        Transition au Palais des Sports de Grenoble.
       </>
     ),
     image: 'images/news/news-17.jpg',
@@ -239,8 +259,13 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Séminaire de recherche',
-    subtitle:
-      'Mikaël Dupuy Le Bourdellès - « Revitaliser » le centre des villes moyennes : action publique et (im)mobilités résidentielles',
+    subtitle: (
+      <>
+        Mikaël Dupuy Le Bourdellès —&nbsp;«&nbsp;Revitaliser&nbsp;» le centre
+        des villes moyennes&nbsp;: action publique et (im)mobilités
+        résidentielles
+      </>
+    ),
     description: (
       <>
         Depuis le milieu des années 2010, de nombreuses villes moyennes
@@ -262,25 +287,26 @@ export const NEWS = [
         montrent que les centres anciens constituent des types de territoires au
         peuplement singulier, du fait de la spécialisation du parc résidentiel.
         Ils constituent des quartiers d’accueil pour les personnes en situation
-        de rupture(s) biographique(s) : décohabitation, séparation, veuvage,
-        migration… Parallèlement, en dépit de l’hétérogénéité des villes
-        moyennes et de leurs centres-villes, ils sont aussi des espaces d’une
-        grande mixité socioprofessionnelle. Pourtant, dans leur ensemble, les
-        acteurs publics souhaitent y déployer des politiques au nom de la mixité
-        sociale. L’enquête conduite dans trois terrains (Colmar,
+        de rupture(s) biographique(s)&nbsp;: décohabitation, séparation,
+        veuvage, migration… Parallèlement, en dépit de l’hétérogénéité des
+        villes moyennes et de leurs centres-villes, ils sont aussi des espaces
+        d’une grande mixité socioprofessionnelle. Pourtant, dans leur ensemble,
+        les acteurs publics souhaitent y déployer des politiques au nom de la
+        mixité sociale. L’enquête conduite dans trois terrains (Colmar,
         Romans-sur-Isère et Tulle) montre que cela s’explique par un rapport de
-        cause à effet établi entre le constat d’un déclin du centre-ville —
-        vacance commerciale, dégradation du bâti, etc. — et la représentation
-        d’un peuplement « déséquilibré » du quartier. En addition,
-        l’appropriation de la norme de la mixité sociale et le cadrage des
-        dispositifs nationaux renforcent l’attachement des acteurs locaux à la
-        diversification du peuplement. Afin d’attirer des couples avec enfants
-        de classe moyenne en propriété occupante — identifié comme un levier de
-        revitalisation —, les acteurs publics internalisent un cadrage marchand
-        de l’habitat et élaborent des projets visant à rapprocher les conditions
-        de logement des centres-villes de celles des territoires périurbains.
-        Mais, les volontés de diversification du parc résidentiel des acteurs
-        locaux se heurtent à de fortes contraintes opérationnelles.
+        cause à effet établi entre le constat d’un déclin du centre-ville
+        —&nbsp;vacance commerciale, dégradation du bâti, etc.&nbsp;— et la
+        représentation d’un peuplement «&nbsp;déséquilibré&nbsp;» du quartier.
+        En addition, l’appropriation de la norme de la mixité sociale et le
+        cadrage des dispositifs nationaux renforcent l’attachement des acteurs
+        locaux à la diversification du peuplement. Afin d’attirer des couples
+        avec enfants de classe moyenne en propriété occupante —&nbsp;identifié
+        comme un levier de revitalisation&nbsp;—, les acteurs publics
+        internalisent un cadrage marchand de l’habitat et élaborent des projets
+        visant à rapprocher les conditions de logement des centres-villes de
+        celles des territoires périurbains. Mais, les volontés de
+        diversification du parc résidentiel des acteurs locaux se heurtent à de
+        fortes contraintes opérationnelles.
         <br />
         Mikaël Dupuy Le Bourdellès est docteur en urbanisme et aménagement au
         Lab&apos;URBA, Université Paris-Est.
@@ -294,24 +320,28 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Séminaire de recherche',
-    subtitle:
-      'Hugo Périlleux Sanchez - La théorie de la rente foncière et le marché locatif résidentiel',
+    subtitle: (
+      <>
+        Hugo Périlleux Sanchez —&nbsp;La théorie de la rente foncière et le
+        marché locatif résidentiel
+      </>
+    ),
     description: (
       <>
         Le problème des loyers élevés est le plus souvent analysé par le biais
-        des locataires et les conséquences sur ces derniers : suroccupation des
-        logements, expulsions, impacts sur les budgets des ménages, conséquences
-        sur la santé etc. L’analyse par la théorie de la rente invite à changer
-        de point de vue et étudier non plus uniquement les locataires qui sont
-        contraints de payer ces loyers mais également les propriétaires qui
-        reçoivent cette rente. De plus, la théorie de la rente fournit des
-        éléments de compréhension utiles sur le fonctionnement du marché locatif
-        résidentiel. Je propose de présenter une synthèse de la théorie de la
-        rente foncière et de montrer en quoi elle peut être pertinente pour
-        analyser le marché locatif résidentiel en m’appuyant sur des données de
-        propriété et de loyers portant sur le cas de Bruxelles, ainsi que de
-        résultats issus de la littérature portant entre autre sur la cas
-        français.
+        des locataires et les conséquences sur ces derniers&nbsp;: suroccupation
+        des logements, expulsions, impacts sur les budgets des ménages,
+        conséquences sur la santé etc. L’analyse par la théorie de la rente
+        invite à changer de point de vue et étudier non plus uniquement les
+        locataires qui sont contraints de payer ces loyers mais également les
+        propriétaires qui reçoivent cette rente. De plus, la théorie de la rente
+        fournit des éléments de compréhension utiles sur le fonctionnement du
+        marché locatif résidentiel. Je propose de présenter une synthèse de la
+        théorie de la rente foncière et de montrer en quoi elle peut être
+        pertinente pour analyser le marché locatif résidentiel en m’appuyant sur
+        des données de propriété et de loyers portant sur le cas de Bruxelles,
+        ainsi que de résultats issus de la littérature portant entre autre sur
+        la cas français.
         <br />
         Hugo Périlleux Sanchez est économiste et géographe de formation. Il
         travaille au moyen d’analyse quantitative des larges bases de données.
@@ -330,8 +360,12 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Séminaire de recherche',
-    subtitle:
-      'Maryame Amarouche - Densité, mixité, durabilité. Politiser le contrôle de l’étalement urbain depuis les périphéries métropolitaines',
+    subtitle: (
+      <>
+        Maryame Amarouche —&nbsp;Densité, mixité, durabilité. Politiser le
+        contrôle de l’étalement urbain depuis les périphéries métropolitaines
+      </>
+    ),
     description: (
       <>
         La présentation propose de discuter les injonctions qui s&apos;imposent
@@ -367,20 +401,20 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Conférence MétroFabLab #10',
-    subtitle: 'Michel Favre - Dessine-moi une rivière',
+    subtitle: <>Michel Favre —&nbsp;Dessine-moi une rivière</>,
     description: (
       <>
         S’écoulant à Genève depuis la France voisine, la rivière l’Aire est le
         théâtre d’un vaste projet de restauration pour la libérer de 100 ans de
         canalisation, pollution et dégradations. Le processus de renaturation
         accompagne une profonde réflexion sur le paysage et le rôle de l’Homme
-        dans la Nature. Tourné durant plus de 3 ans, le film « Dessine-moi une
-        rivière » suit les ouvriers dans leurs travaux de restauration de la
-        rivière et des milieux naturels adjacents. Guidé par les dessins de
-        l’architecte Georges Descombes et du groupement Superpositions, le film
-        méandre entre les saisons et les étapes de constructions, au fil d’une
-        douce musique intérieure qui dévoile les enjeux planétaires de ce petit
-        morceau de territoire. Un film fleuve pour une petite rivière.
+        dans la Nature. Tourné durant plus de 3 ans, le film «&nbsp;Dessine-moi
+        une rivière&nbsp;» suit les ouvriers dans leurs travaux de restauration
+        de la rivière et des milieux naturels adjacents. Guidé par les dessins
+        de l’architecte Georges Descombes et du groupement Superpositions, le
+        film méandre entre les saisons et les étapes de constructions, au fil
+        d’une douce musique intérieure qui dévoile les enjeux planétaires de ce
+        petit morceau de territoire. Un film fleuve pour une petite rivière.
         <br />
         Michel Favre est cinéaste et artiste plasticien établi entre Genève et
         São Paulo. Formé à l’Ecole des beaux-arts de Genève, il a réalisé 4
@@ -403,7 +437,9 @@ export const NEWS = [
       year: 2023,
     },
     title: 'Conférence MétroFabLab #9',
-    subtitle: 'Nadia Arab - L’agir métropolitain comme objet de recherche',
+    subtitle: (
+      <>Nadia Arab —&nbsp;L’agir métropolitain comme objet de recherche</>
+    ),
     description: (
       <>
         Au cours de cette conférence, Nadia Arab reviendra sur une recherche
@@ -424,11 +460,11 @@ export const NEWS = [
         la relation entre urbanisme et innovation. Elle poursuit ses travaux sur
         les enjeux et pratiques de transformation des espaces à (ré)urbaniser à
         partir d’une entrée par l’action collective au prisme des conditions de
-        la transition socio-écologique de la ville existante : tels la vacance
-        et le recyclage immobilier ; les déchets urbains et la circularité ; la
-        fabrique de la ville productive et sa place dans la transition
-        écologique ; l’ingénierie publique dans les écosystèmes d’innovation
-        pour la ville durable et inclusive
+        la transition socio-écologique de la ville existante&nbsp;: tels la
+        vacance et le recyclage immobilier&nbsp;; les déchets urbains et la
+        circularité&nbsp;; la fabrique de la ville productive et sa place dans
+        la transition écologique&nbsp;; l’ingénierie publique dans les
+        écosystèmes d’innovation pour la ville durable et inclusive
       </>
     ),
     image: 'images/news/news-11.png',
@@ -440,7 +476,9 @@ export const NEWS = [
       year: 2023,
     },
     title: 'Conférence MétroFabLab #8',
-    subtitle: 'Hélène Noizet - Principes temporels de la morphologie urbaine',
+    subtitle: (
+      <>Hélène Noizet —&nbsp;Principes temporels de la morphologie urbaine</>
+    ),
     description: (
       <>
         De quelle manière le rapport au temps structure la morphologie urbaine ?
@@ -471,7 +509,7 @@ export const NEWS = [
     },
     title: 'Colloque',
     subtitle:
-      '“Devenirs des métiers de la fabrique des territoires habités. Émergences. Trans’formations. Hybridations. Floutages”',
+      'Devenirs des métiers de la fabrique des territoires habités. Émergences. Trans’formations. Hybridations. Floutages',
     description: (
       <>
         Un événement organisé avec l’appui des étudiant.es de Master 2 AUEP,
@@ -487,8 +525,12 @@ export const NEWS = [
       year: 2023,
     },
     title: 'Conférence MétroFabLab #7',
-    subtitle:
-      'Laurent Matthey - La fabrique métropolitaine, entre communication et participation',
+    subtitle: (
+      <>
+        Laurent Matthey —&nbsp;La fabrique métropolitaine, entre communication
+        et participation
+      </>
+    ),
     description: (
       <>
         Des chercheurs se sont intéressés aux imaginaires que l’urbanisme
@@ -527,13 +569,14 @@ export const NEWS = [
         Trois étudiant.es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
         allé.es à Paris pour représenter l’Institut d’urbanisme et de géographie
         alpine face à 9 autres équipes francophones. Cette année la commande
-        avait pour question : « s’il vous plaît le quartier de la gare ? » en
-        référence au chantier de la future gare du grand Paris express de Noisy
-        Champs (à l’est de Paris). L’équipe grenobloise a proposé un projet
-        intitulé « Quartiers vivants quartiers mouvants » autour d’une
-        méthodologie originale s’appuyant sur de l’acupuncture urbaine et une
-        réflexion sur la biodiversité et les îlots de fraîcheur, ce qui leur a
-        permis d’arriver sur la troisième place du podium.
+        avait pour question&nbsp;: «&nbsp;s’il vous plaît le quartier de la gare
+        ?&nbsp;» en référence au chantier de la future gare du grand Paris
+        express de Noisy Champs (à l’est de Paris). L’équipe grenobloise a
+        proposé un projet intitulé «&nbsp;Quartiers vivants quartiers
+        mouvants&nbsp;» autour d’une méthodologie originale s’appuyant sur de
+        l’acupuncture urbaine et une réflexion sur la biodiversité et les îlots
+        de fraîcheur, ce qui leur a permis d’arriver sur la troisième place du
+        podium.
       </>
     ),
     image: 'images/news/news-7.png',
@@ -545,21 +588,25 @@ export const NEWS = [
       year: 2022,
     },
     title: 'Conférence MétroFabLab #6',
-    subtitle:
-      "Pascal Amphoux - Vers un urbanisme de l'incertitude Ou comment dépasser le « projet urbain » ? (2)",
+    subtitle: (
+      <>
+        Pascal Amphoux —&nbsp;Vers un urbanisme de l&apos;incertitude Ou comment
+        dépasser le «&nbsp;projet urbain&nbsp;»&nbsp;?&nbsp;(2)
+      </>
+    ),
     description: (
       <>
         L&apos;histoire récente de l&apos;urbanisme peut être décrite comme une
         séquence de trois périodes dont la superposition est peut-être
         génératrice du climat d&apos;incertitude dans lequel se déploient les
         modes de production de la ville contemporaine. La première est celle de
-        « l&apos;urbanisme programmatique », la seconde est celle d&apos;un «
-        urbanisme de projet », la troisième, encore naissante, pourrait mériter
-        le nom d&apos;« urbanisme de l&apos;incertitude ». Cette troisième
-        période, encore balbutiante, cherche ses marques et ses concepts pour
-        relever les défis de l&apos;anthropocène. Nous en proposerons et
-        discuterons trois : les confins du territoire, le récit du lieu et
-        l&apos;utopie opératoire.
+        «&nbsp;l&apos;urbanisme programmatique&nbsp;», la seconde est celle
+        d&apos;un « urbanisme de projet&nbsp;», la troisième, encore naissante,
+        pourrait mériter le nom d&apos;«&nbsp;urbanisme de
+        l&apos;incertitude&nbsp;». Cette troisième période, encore balbutiante,
+        cherche ses marques et ses concepts pour relever les défis de
+        l&apos;anthropocène. Nous en proposerons et discuterons trois&nbsp;: les
+        confins du territoire, le récit du lieu et l&apos;utopie opératoire.
         <br />
         Architecte et géographe, Pascal Amphoux a enseigné dans diverses écoles
         d&apos;architecture. Chercheur associé au CRESSON, gérant du bureau
@@ -577,24 +624,29 @@ export const NEWS = [
       year: 2022,
     },
     title: 'Conférence MétroFabLab #5',
-    subtitle:
-      'Philippe Panerai - La ville de demain ou comment dépasser le « projet urbain » ?',
+    subtitle: (
+      <>
+        Philippe Panerai —&nbsp;La ville de demain ou comment dépasser le
+        «&nbsp;projet urbain&nbsp;»&nbsp;?
+      </>
+    ),
     description: (
       <>
         La ville d’aujourd’hui n’a plus grand-chose à voir avec celle du siècle
-        passé : urbanisation diffuse, centres commerciaux et grands équipements
-        isolés, lotissements sécurisés… Les territoires sont parfois difficiles
-        à nommer et cette dispersion accentue les fractures sociales. Face à ce
-        constat, les avis divergent : faut-il exclusivement défendre les
-        métropoles au nom d’un ruissellement économique qui profiterait à tous,
-        ou se ranger du côté des territoires berceaux de l’authenticité ? Les
-        propositions de Philippe Panerai plaident pour une complémentarité des
-        centres et des périphéries, pour une diversité des manières d’habiter et
-        de vivre, et propose des pistes pour y parvenir. Il traite des
-        dispositions et des formes de la ville de demain en privilégiant le
-        respect des équilibres environnementaux, car le travail des urbanistes
-        et les décisions qu’il implique ne peuvent plus ignorer aujourd’hui la
-        fragilité de notre monde et l’urgence d’y remédier.
+        passé&nbsp;: urbanisation diffuse, centres commerciaux et grands
+        équipements isolés, lotissements sécurisés… Les territoires sont parfois
+        difficiles à nommer et cette dispersion accentue les fractures sociales.
+        Face à ce constat, les avis divergent&nbsp;: faut-il exclusivement
+        défendre les métropoles au nom d’un ruissellement économique qui
+        profiterait à tous, ou se ranger du côté des territoires berceaux de
+        l’authenticité&nbsp;? Les propositions de Philippe Panerai plaident pour
+        une complémentarité des centres et des périphéries, pour une diversité
+        des manières d’habiter et de vivre, et propose des pistes pour y
+        parvenir. Il traite des dispositions et des formes de la ville de demain
+        en privilégiant le respect des équilibres environnementaux, car le
+        travail des urbanistes et les décisions qu’il implique ne peuvent plus
+        ignorer aujourd’hui la fragilité de notre monde et l’urgence d’y
+        remédier.
         <br />
         Architecte et urbaniste, Philippe Panerai a enseigné dans différentes
         écoles d’architecture. Membre de l’Académie d’architecture, chercheur
@@ -612,24 +664,29 @@ export const NEWS = [
       year: 2022,
     },
     title: 'Conférence MétroFabLab #4',
-    subtitle:
-      'Catherine Maumi - L’actualité du projet métropolitain de Frederick Law Olmsted.',
+    subtitle: (
+      <>
+        Catherine Maumi —&nbsp;L’actualité du projet métropolitain de Frederick
+        Law Olmsted
+      </>
+    ),
     description: (
       <>
         La crise sanitaire nous a récemment rappelé l’importance de l’arbre pour
-        les habitants des villes, non seulement comme « poumon » permettant de
-        dépolluer l’air ou comme « climatiseur » régulant les températures
-        estivales, mais aussi comme pacificateur des esprits éprouvés par le
-        stress de la vie quotidienne. Le paysagiste Frederick Law Olmsted
-        (1822-1903), conscient de ces différents bienfaits procurés par la
-        nature, œuvra à l’invention d’un nouveau projet métropolitain dont
-        l’armature – verte – était constituée de parcs, parkways, park systems,
-        suburbs. Chacun de ces éléments du « système » était conçu de manière à
-        offrir à la population américaine des conditions de vie plus saines et
-        des espaces publics accessibles à tous. A l’heure où les métropoles sont
-        invitées à contribuer à la lutte contre le réchauffement climatique et à
-        proposer des espaces urbains plus apaisés, les propositions d’Olmsted
-        conservent toute leur actualité et pertinence.
+        les habitants des villes, non seulement comme «&nbsp;poumon&nbsp;»
+        permettant de dépolluer l’air ou comme «&nbsp;climatiseur&nbsp;»
+        régulant les températures estivales, mais aussi comme pacificateur des
+        esprits éprouvés par le stress de la vie quotidienne. Le paysagiste
+        Frederick Law Olmsted (1822-1903), conscient de ces différents bienfaits
+        procurés par la nature, œuvra à l’invention d’un nouveau projet
+        métropolitain dont l’armature – verte – était constituée de parcs,
+        parkways, park systems, suburbs. Chacun de ces éléments du
+        «&nbsp;système&nbsp;» était conçu de manière à offrir à la population
+        américaine des conditions de vie plus saines et des espaces publics
+        accessibles à tous. A l’heure où les métropoles sont invitées à
+        contribuer à la lutte contre le réchauffement climatique et à proposer
+        des espaces urbains plus apaisés, les propositions d’Olmsted conservent
+        toute leur actualité et pertinence.
         <br />
         Catherine Maumi est professeur en histoire et cultures architecturales
         de l’architecture à l’Ecole Nationale Supérieure d’Architecture Paris la
@@ -640,8 +697,8 @@ export const NEWS = [
         CASVA, National Gallery of Art, Washington D.C. Elle a notamment publié
         Thomas Jefferson et le projet du Nouveau Monde (2007), Usonia ou le
         mythe de la ville-nature américaine (2008), Frank Lloyd Wright,
-        Broadacre City : la nouvelle frontière (2015) et Frederick Law Olmsted,
-        architecte du paysage (2021).
+        Broadacre City&nbsp;: la nouvelle frontière (2015) et Frederick Law
+        Olmsted, architecte du paysage (2021).
       </>
     ),
     image: 'images/news/news-4.png',
@@ -653,7 +710,9 @@ export const NEWS = [
       year: 2022,
     },
     title: 'Conférence MétroFabLab #3',
-    subtitle: 'André Lortie - De quoi l’urbanisme est-il le projet ?',
+    subtitle: (
+      <>André Lortie —&nbsp;De quoi l’urbanisme est-il le projet&nbsp;?</>
+    ),
     description: (
       <>
         Alors que les questions environnementales s’imposent de manière
@@ -662,14 +721,15 @@ export const NEWS = [
         d’être majoritairement standardisées. Quelles sont ces forces qui
         imposent ces solutions urbaines et architecturales, alors que notre
         intelligence des lieux et des situations sait si bien mettre en évidence
-        ce qui les caractérise et les singularise ? Et si l’urbanisme, comme
-        champ d’action rassemblant un ensemble de dispositifs qui contribue au
-        contrôle de la société industrielle et de l’activité de ses membres,
-        répondait à un projet d’intensification de ses fonctions de production
-        et de consommation, qui le surplomberait et le surdéterminerait ?
-        Quelles pistes esquisser alors pour en (re)prendre le contrôle ? Mieux
-        comprendre la généalogie de l’urbanisme s’avère utile pour en faire une
-        critique et s’interroger sur ce dont il devrait être le projet.
+        ce qui les caractérise et les singularise&nbsp;? Et si l’urbanisme,
+        comme champ d’action rassemblant un ensemble de dispositifs qui
+        contribue au contrôle de la société industrielle et de l’activité de ses
+        membres, répondait à un projet d’intensification de ses fonctions de
+        production et de consommation, qui le surplomberait et le
+        surdéterminerait&nbsp;? Quelles pistes esquisser alors pour en
+        (re)prendre le contrôle&nbsp;? Mieux comprendre la généalogie de
+        l’urbanisme s’avère utile pour en faire une critique et s’interroger sur
+        ce dont il devrait être le projet.
         <br />
         André Lortie est architecte, professeur de théorie et pratique de la
         conception architecturale et urbaine à l’Ecole Nationale Supérieure
@@ -693,8 +753,13 @@ export const NEWS = [
       year: 2021,
     },
     title: 'Conférence MétroFabLab #2',
-    subtitle:
-      'Nicolas Douay - Quelle boussole des fabriques métropolitaines contemporaines ? Une analyse critique et prospective des transitions et transformations territoriales.',
+    subtitle: (
+      <>
+        Nicolas Douay —&nbsp;Quelle boussole des fabriques métropolitaines
+        contemporaines&nbsp;? Une analyse critique et prospective des
+        transitions et transformations territoriales
+      </>
+    ),
     description: (
       <>
         Le contexte de changement rapide, de multiples transitions et de
@@ -720,7 +785,7 @@ export const NEWS = [
         détachement auprès de l’Ambassade de France aux États-Unis comme attaché
         de coopération universitaire pour le Midwest et directeur adjoint de la
         Villa Albertine à Chicago où il a, notamment, la responsabilité du
-        programme City / Cité.
+        programme City&nbsp;/&nbsp;Cité.
       </>
     ),
     image: 'images/news/news-2.png',
@@ -732,16 +797,20 @@ export const NEWS = [
       year: 2021,
     },
     title: 'Conférence MétroFabLab #1',
-    subtitle:
-      'Laurent Devisme - Comment exercer une critique de la fabrique métropolitaine ?',
+    subtitle: (
+      <>
+        Laurent Devisme —&nbsp;Comment exercer une critique de la fabrique
+        métropolitaine&nbsp;?
+      </>
+    ),
     description: (
       <>
         Alors qu’un nouveau partage idéologique semble à l’œuvre, opposant des
         métrophiles à des métrophobes, nous proposons de revenir plutôt aux
-        enjeux d’un urbanisme descriptif : avec quels trucs et ficelles pour
-        observer les transformations urbaines et professionnelles ? Dans quel
-        état d’esprit et pour quels observables ? La critique revient alors à
-        montrer ce qu’un regard hors des bonnes pratiques, attentif à
+        enjeux d’un urbanisme descriptif&nbsp;: avec quels trucs et ficelles
+        pour observer les transformations urbaines et professionnelles ? Dans
+        quel état d’esprit et pour quels observables ? La critique revient alors
+        à montrer ce qu’un regard hors des bonnes pratiques, attentif à
         l’ordinaire des activités comme aux déroutes de projet, permet de
         penser.
         <br />
@@ -751,10 +820,10 @@ export const NEWS = [
         l’épreuve des dynamiques urbaines&quot; (2005), &quot;Nantes petite et
         grande fabrique urbaine&quot; (coll) (2009), &quot;transformations de
         l’action publique métropolitaine&quot; avec Théo FortJacques (2022) et
-        codirigé des dossiers de revue : &quot;L’architecture et l’urbanisme au
-        miroir des formations&quot; (cahier RAMAU 9, 2018),
+        codirigé des dossiers de revue&nbsp;: &quot;L’architecture et
+        l’urbanisme au miroir des formations&quot; (cahier RAMAU 9, 2018),
         &quot;présence-absence des études urbaines en France&quot;
-        (Environnement urbain, 2018), &quot;projets en échec : déroutes et
+        (Environnement urbain, 2018), &quot;projets en échec&nbsp;: déroutes et
         déréalisations&quot; (Cahiers de la recherche architecturale, urbaine et
         paysagère, 2021).
       </>

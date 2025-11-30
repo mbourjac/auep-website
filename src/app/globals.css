@@ -26,6 +26,10 @@ html.lenis body {
 }
 
 @layer base {
+  html {
+    font-family: var(--font-inter);
+  }
+
   abbr:where([title]) {
     -webkit-text-decoration: none;
     text-decoration: none;

@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Azeret_Mono, Geist, Geist_Mono } from 'next/font/google';
-import { AppLayout } from '../layouts/app-layout';
-import { cn } from '../lib/utils';
+import { AppLayout } from '@/layouts/app-layout';
+import { cn } from '@/lib/tailwind';
 import './globals.css';
 
 type RootLayoutProps = Readonly<{

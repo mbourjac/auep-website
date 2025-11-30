@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Plus } from '../../../../components/icons/plus';
+import { PlusIcon } from '../../../../components/icons/plus-icon';
 import { NewsItem } from './news-item';
 import { NEWS } from './news.constants';
 
@@ -16,7 +16,7 @@ export const News = () => {
             <div className="flex w-[200px] justify-center text-4xl font-bold">
               <Link href="/actualites" className="w-16">
                 <span className="sr-only">Voir plus d&apos;actualités</span>
-                <Plus aria-hidden="true" />
+                <PlusIcon aria-hidden="true" />
               </Link>
             </div>
           </div>

@@ -2,8 +2,8 @@
 
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { EmailIcon } from '../../../components/icons/email-icon';
-import { InstagramIcon } from '../../../components/icons/instagram-icon';
+import { EmailIcon } from '../icons/email-icon';
+import { InstagramIcon } from '../icons/instagram-icon';
 
 export const Footer = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);

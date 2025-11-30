@@ -2,6 +2,8 @@
 
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
+import { EmailIcon } from '../../../components/icons/email-icon';
+import { InstagramIcon } from '../../../components/icons/instagram-icon';
 
 export const Footer = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -38,27 +40,23 @@ export const Footer = () => {
           <ul className="flex gap-4">
             <li>
               <a
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block size-10 rounded-full bg-black"
-              ></a>
+                href="mailto:marine.bourgeois@iepg.fr,manola.t@grenoble.archi.fr,ines.ramirez-cobo@univ-grenoble-alpes.fr"
+                className="flex size-10 items-center justify-center rounded-full bg-black text-white"
+              >
+                <span className="sr-only">Email</span>
+                <EmailIcon aria-hidden="true" className="size-6" />
+              </a>
             </li>
             <li>
               <a
-                href="http://"
+                href="https://www.instagram.com/a_u_e_p/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block size-10 rounded-full bg-black"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block size-10 rounded-full bg-black"
-              ></a>
+                className="flex size-10 items-center justify-center rounded-full bg-black text-white"
+              >
+                <span className="sr-only">Instagram</span>
+                <InstagramIcon aria-hidden="true" className="size-6" />
+              </a>
             </li>
           </ul>
           <div className="w-[40vw]">

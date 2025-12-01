@@ -1,5 +1,5 @@
-import { Team } from './_components/team';
+import { People } from './_components/people';
 
-export default function TeamPage() {
-  return <Team />;
+export default function PeoplePage() {
+  return <People />;
 }

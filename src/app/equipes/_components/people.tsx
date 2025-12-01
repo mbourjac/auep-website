@@ -1,4 +1,4 @@
-export const Team = () => {
+export const People = () => {
   return (
     <div className="px-6 xl:px-12">
       <div className="min-h-[calc(100dvh-64px)] border-b-2">

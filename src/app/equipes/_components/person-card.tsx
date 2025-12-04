@@ -5,20 +5,20 @@ type PersonCardProps = Person;
 
 export const PersonCard = ({ firstName, lastName, image }: PersonCardProps) => {
   return (
-    <div className="text-[1.725vw] leading-none font-bold">
+    <div className="relative text-[1.725vw] leading-none font-bold text-white">
       <div>
         <DitherCanvas
           src={`/images/people/${image}`}
-          height={300}
+          height={360}
           fitMode="cover"
           className="w-full"
         />
       </div>
-      <p>
-        <span className="block border-x-4 border-t-4 border-[#0066FF] px-1 py-0.5">
+      <p className="absolute right-0 bottom-0 left-0 bg-[#0066FF]/60">
+        <span className="block border-t-4 border-white px-1 py-0.5">
           {firstName}
         </span>
-        <span className="block border-4 border-[#0066FF] px-1 py-0.5">
+        <span className="block border-t-4 border-white px-1 py-0.5">
           {lastName}
         </span>
       </p>

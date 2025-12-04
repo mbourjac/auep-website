@@ -1,22 +1,17 @@
-import { Person } from './people.types';
-import { PersonCard } from './person-card';
+import { ReactNode } from 'react';
 
 type PeopleSectionProps = {
   heading: string;
-  people: Person[];
+  children: ReactNode;
 };
 
-export const PeopleSection = ({ heading, people }: PeopleSectionProps) => {
+export const PeopleSection = ({ heading, children }: PeopleSectionProps) => {
   return (
     <section className="pt-24">
-      <h2 className="border-b pb-4 text-4xl font-semibold">{heading}</h2>
-      <ul className="grid grid-cols-6 gap-4 pt-6">
-        {people.map((person, index) => (
-          <li key={index}>
-            <PersonCard {...person} />
-          </li>
-        ))}
-      </ul>
+      <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-4xl font-bold">
+        {heading}
+      </h2>
+      {children}
     </section>
   );
 };

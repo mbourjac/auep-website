@@ -1,3 +1,4 @@
+import { PeopleGrid } from './people-grid';
 import { PeopleSection } from './people-section';
 import { ACADEMIC_COORDINATION, TEACHING_STAFF } from './people.constants';
 
@@ -8,11 +9,12 @@ export const People = () => {
         <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[7.5vw] leading-none font-extrabold">
           équipes
         </h1>
-        <PeopleSection
-          heading="coordination pédagogique"
-          people={ACADEMIC_COORDINATION}
-        />
-        <PeopleSection heading="équipe enseignante" people={TEACHING_STAFF} />
+        <PeopleSection heading="coordination pédagogique">
+          <PeopleGrid people={ACADEMIC_COORDINATION} />
+        </PeopleSection>
+        <PeopleSection heading="équipe enseignante">
+          <PeopleGrid people={TEACHING_STAFF} />
+        </PeopleSection>
       </div>
     </div>
   );

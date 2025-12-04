@@ -1,6 +1,10 @@
 import { PeopleGrid } from './people-grid';
 import { PeopleSection } from './people-section';
-import { ACADEMIC_COORDINATION, TEACHING_STAFF } from './people.constants';
+import {
+  ACADEMIC_COORDINATION,
+  FORMER_STAFF,
+  TEACHING_STAFF,
+} from './people.constants';
 
 export const People = () => {
   return (
@@ -14,6 +18,19 @@ export const People = () => {
         </PeopleSection>
         <PeopleSection heading="équipe enseignante">
           <PeopleGrid people={TEACHING_STAFF} />
+        </PeopleSection>
+        <PeopleSection heading="mais aussi">
+          <div className="flex flex-wrap gap-2 border-l-2 p-4">
+            {FORMER_STAFF.map((people, index) => (
+              <div
+                key={index}
+                className="text-[3vw] leading-none font-bold whitespace-nowrap"
+              >
+                {people}
+                {index < FORMER_STAFF.length - 1 ? ', ' : ''}
+              </div>
+            ))}
+          </div>
         </PeopleSection>
       </div>
     </div>

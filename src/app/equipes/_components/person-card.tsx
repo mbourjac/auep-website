@@ -8,7 +8,7 @@ export const PersonCard = ({ firstName, lastName, image }: PersonCardProps) => {
     <div className="relative text-[1.725vw] leading-none font-bold text-white">
       <div>
         <DitherCanvas
-          src={`/images/people/${image}`}
+          src={`/images/people/staff/${image}`}
           height={360}
           fitMode="cover"
           className="w-full"

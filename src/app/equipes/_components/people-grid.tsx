@@ -1,4 +1,4 @@
-import { Person } from './people.types';
+import { Person } from '../people.types';
 import { PersonCard } from './person-card';
 
 type PeopleGridProps = {

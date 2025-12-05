@@ -1,12 +1,12 @@
 import { DitherCanvas } from '../../../components/dither-canvas';
-import { PeopleGrid } from './people-grid';
-import { PeopleSection } from './people-section';
 import {
   ACADEMIC_COORDINATION,
   FORMER_STAFF,
   GRADUATING_CLASSES,
   TEACHING_STAFF,
-} from './people.constants';
+} from '../people.constants';
+import { PeopleGrid } from './people-grid';
+import { PeopleSection } from './people-section';
 
 export const People = () => {
   return (
@@ -26,7 +26,7 @@ export const People = () => {
             {FORMER_STAFF.map((people, index) => (
               <li
                 key={index}
-                className="text-[3vw] leading-none font-bold whitespace-nowrap"
+                className="text-[2.5vw] leading-none font-bold whitespace-nowrap"
               >
                 {people}
                 {index < FORMER_STAFF.length - 1 ? ', ' : ''}

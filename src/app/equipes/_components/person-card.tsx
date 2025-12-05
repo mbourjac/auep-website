@@ -1,5 +1,5 @@
 import { DitherCanvas } from '@/components/dither-canvas';
-import { Person } from './people.types';
+import { Person } from '../people.types';
 
 type PersonCardProps = Person;
 

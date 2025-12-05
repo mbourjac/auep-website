@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { PlusIcon } from '../../../../components/icons/plus-icon';
+import { PlusIcon } from '@/components/icons/plus-icon';
+import { NEWS } from '../../home.constants';
 import { NewsItem } from './news-item';
-import { NEWS } from './news.constants';
 
 export const News = () => {
   return (

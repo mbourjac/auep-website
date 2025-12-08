@@ -423,3 +423,43 @@ export const GRADUATING_CLASSES = [
     ],
   },
 ];
+
+export const GRADUATE_EMPLOYERS = [
+  { name: 'Atelier NOUS', url: 'https://ateliernous.fr/' },
+  {
+    name: 'ANCT - Agence Nationale de la Cohésion des Territoires',
+    url: 'https://anct.gouv.fr/',
+  },
+  { name: 'Collectif Etc', url: 'https://www.collectifetc.com/' },
+  { name: 'Terre de liens', url: 'https://terredeliens.org/' },
+  { name: 'Nova7', url: 'https://www.nova7.fr/' },
+  { name: 'Atopia', url: 'https://atopiaconseil.com/' },
+  { name: 'INterland', url: 'https://www.interland.info/' },
+  { name: 'La Traverse', url: 'https://la-traverse.org/' },
+  {
+    name: "Agence d'urbanisme de la région grenobloise",
+    url: 'https://www.aurg.fr/',
+  },
+  { name: 'Communautés de communes de Belle-île', url: 'https://www.ccbi.fr/' },
+  {
+    name: 'Communauté Urbaine Creusot Montceau',
+    url: 'https://www.creusot-montceau.org/',
+  },
+  {
+    name: 'Syndicat mixte pour l’aménagement et le développement des Combrailles',
+
+    url: 'https://www.combrailles.com/',
+  },
+  {
+    name: "Communauté d'agglomération du Pays voironnais",
+    url: 'https://www.paysvoironnais.com/',
+  },
+  {
+    name: "CAF de l'Isère",
+    url: 'https://www.caf.fr/allocataires/caf-de-l-isere',
+  },
+  {
+    name: 'Université Grenoble Alpes',
+    url: 'https://www.univ-grenoble-alpes.fr/',
+  },
+];

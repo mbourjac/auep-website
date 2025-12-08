@@ -2,6 +2,7 @@ import { DitherCanvas } from '../../../components/dither-canvas';
 import {
   ACADEMIC_COORDINATION,
   FORMER_STAFF,
+  GRADUATE_EMPLOYERS,
   GRADUATING_CLASSES,
   TEACHING_STAFF,
 } from '../people.constants';
@@ -11,7 +12,7 @@ import { PeopleSection } from './people-section';
 export const People = () => {
   return (
     <div className="px-6 xl:px-12">
-      <div className="min-h-[calc(100dvh-64px)] border-b-2 pb-12">
+      <div className="min-h-[calc(100dvh-64px)] border-b-2 pb-32">
         <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[7.5vw] leading-none font-extrabold">
           équipes
         </h1>
@@ -22,11 +23,11 @@ export const People = () => {
           <PeopleGrid people={TEACHING_STAFF} />
         </PeopleSection>
         <PeopleSection heading="mais aussi">
-          <ul className="flex flex-wrap gap-[0.75vw] border-l-2 p-4 pb-0">
+          <ul className="flex flex-wrap gap-[0.75vw] border-l-2 px-4 pt-8">
             {FORMER_STAFF.map((people, index) => (
               <li
                 key={index}
-                className="text-[2.5vw] leading-none font-bold whitespace-nowrap"
+                className="text-[2vw] leading-none font-bold whitespace-nowrap"
               >
                 {people}
                 {index < FORMER_STAFF.length - 1 ? ', ' : ''}
@@ -35,9 +36,9 @@ export const People = () => {
           </ul>
         </PeopleSection>
         <PeopleSection heading="diplômé.es auep">
-          <div className="flex flex-col gap-4 border-l-2 p-4">
+          <div className="flex flex-col gap-4 border-l-2 px-4 pt-8">
             <DitherCanvas
-              src={`/images/people/graduates.png`}
+              src="/images/people/graduates.png"
               height={360}
               fitMode="cover"
               className="w-full"
@@ -63,6 +64,51 @@ export const People = () => {
                   </div>
                 )
               )}
+            </div>
+          </div>
+        </PeopleSection>
+        <PeopleSection heading="que deviennent les diplômé.es auep ?">
+          <div className="flex flex-col gap-12 border-l-2 px-4 pt-8">
+            <div className="flex flex-col gap-4">
+              <p className="text-xl">
+                Ils-elles ont fondé{' '}
+                <a
+                  href="https://otopo.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#0066FF] px-[0.5vw] text-[1.5vw] leading-none font-bold text-white"
+                >
+                  Otopo
+                </a>{' '}
+                — collectif pluridisciplinaire regroupant des architectes,
+                urbanistes et politistes pour repenser la fabrique territoriale.
+              </p>
+              <DitherCanvas
+                src="/images/people/otopo.png"
+                height={360}
+                fitMode="cover"
+                className="w-full"
+              />
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-xl">
+                Ils-elles exercent dans des domaines et des organisations
+                variés, partout en France :
+              </p>
+              <ul className="flex flex-wrap gap-4">
+                {GRADUATE_EMPLOYERS.map(({ name, url }, index) => (
+                  <li key={index}>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#0066FF] px-[0.5vw] text-[1.5vw] leading-none font-bold whitespace-nowrap text-white"
+                    >
+                      {name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </PeopleSection>

@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-primary: oklch(0.5635 0.2408 260.82);
+}
+
 html.lenis,
 html.lenis body {
   height: auto;

@@ -76,7 +76,7 @@ export const People = () => {
                   href="https://otopo.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0066FF] px-[0.5vw] text-[1.5vw] leading-none font-bold text-white"
+                  className="bg-primary px-[0.5vw] text-[1.5vw] leading-none font-bold text-white"
                 >
                   Otopo
                 </a>{' '}
@@ -102,7 +102,7 @@ export const People = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#0066FF] px-[0.5vw] text-[1.5vw] leading-none font-bold whitespace-nowrap text-white"
+                      className="bg-primary px-[0.5vw] text-[1.5vw] leading-none font-bold whitespace-nowrap text-white"
                     >
                       {name}
                     </a>

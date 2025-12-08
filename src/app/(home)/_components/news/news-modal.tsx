@@ -60,9 +60,9 @@ export const NewsModal = ({
         onMouseLeave={() => {
           setIsHovered(false);
         }}
-        className="fixed top-4 left-8 z-50 w-5xl max-w-[min(64rem,calc(100vw-64px))] transform border-4 border-[#0066FF] bg-white"
+        className="border-primary fixed top-4 left-8 z-50 w-5xl max-w-[min(64rem,calc(100vw-64px))] transform border-4 bg-white"
       >
-        <div className="flex justify-between border-b-4 border-[#0066FF]">
+        <div className="border-primary flex justify-between border-b-4">
           <div>
             <time dateTime={isoDate} className="sr-only">
               {accessibleDate}
@@ -89,7 +89,7 @@ export const NewsModal = ({
             </div>
           </div>
           <Dialog.Close asChild>
-            <button className="block cursor-pointer border-l-4 border-[#0066FF]">
+            <button className="border-primary block cursor-pointer border-l-4">
               <span className="sr-only">Fermer la fenêtre</span>
               <XMarkIcon aria-hidden="true" className="size-16" />
             </button>
@@ -115,10 +115,10 @@ export const NewsModal = ({
             )}
           </div>
           <div
-            className="flex flex-col border-l-4 border-[#0066FF]"
+            className="border-primary flex flex-col border-l-4"
             data-lenis-prevent
           >
-            <div className="border-b-4 border-[#0066FF] p-4" ref={titleRef}>
+            <div className="border-primary border-b-4 p-4" ref={titleRef}>
               <Dialog.Title className="font-bold">{title}</Dialog.Title>
               {subtitle && <p className="italic">{subtitle}</p>}
             </div>

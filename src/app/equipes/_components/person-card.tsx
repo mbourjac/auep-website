@@ -14,7 +14,7 @@ export const PersonCard = ({ firstName, lastName, image }: PersonCardProps) => {
           className="w-full"
         />
       </div>
-      <p className="absolute right-0 bottom-0 left-0 bg-[#0066FF]/60">
+      <p className="bg-primary/60 absolute right-0 bottom-0 left-0">
         <span className="block border-t-4 border-white px-1 py-0.5">
           {firstName}
         </span>

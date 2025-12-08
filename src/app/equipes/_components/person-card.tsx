@@ -5,7 +5,7 @@ type PersonCardProps = Person;
 
 export const PersonCard = ({ firstName, lastName, image }: PersonCardProps) => {
   return (
-    <div className="relative text-[1.725vw] leading-none font-bold text-white">
+    <div className="relative text-3xl leading-none font-bold text-white">
       <div>
         <DitherCanvas
           src={`/images/people/staff/${image}`}

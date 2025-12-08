@@ -7,7 +7,7 @@ type PeopleGridProps = {
 
 export const PeopleGrid = ({ people }: PeopleGridProps) => {
   return (
-    <ul className="grid grid-cols-6 gap-4 border-l-2 p-4 pt-6 pb-0">
+    <ul className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4 border-l-2 pt-8 pl-4">
       {people.map((person, index) => (
         <li key={index}>
           <PersonCard {...person} />

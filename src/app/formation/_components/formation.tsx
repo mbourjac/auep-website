@@ -1,3 +1,4 @@
+import { CareerOpportunities } from './career-opportunities';
 import { Objectives } from './objectives';
 import { StudyPlan } from './study-plan';
 
@@ -11,6 +12,7 @@ export const Formation = () => {
         <div className="flex w-full flex-col gap-32">
           <Objectives />
           <StudyPlan />
+          <CareerOpportunities />
         </div>
       </div>
     </div>

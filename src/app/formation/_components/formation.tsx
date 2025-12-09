@@ -1,4 +1,5 @@
 import { Objectives } from './objectives';
+import { StudyPlan } from './study-plan';
 
 export const Formation = () => {
   return (
@@ -9,6 +10,7 @@ export const Formation = () => {
         </h1>
         <div className="flex w-full flex-col gap-32">
           <Objectives />
+          <StudyPlan />
         </div>
       </div>
     </div>

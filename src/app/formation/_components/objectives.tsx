@@ -1,13 +1,26 @@
 'use client';
 
+import { RefObject } from 'react';
 import { DitherCanvas } from '@/components/dither-canvas';
 import { Dot } from '@/components/dot';
 import { FormationSubSection } from './formation-sub-section';
 
-export const Objectives = () => {
+type ObjectivesProps = {
+  objectivesRef: RefObject<HTMLDivElement | null>;
+  principlesRef: RefObject<HTMLDivElement | null>;
+};
+
+export const Objectives = ({
+  objectivesRef,
+  principlesRef,
+}: ObjectivesProps) => {
   return (
     <section className="text-lg">
-      <div>
+      <div
+        ref={objectivesRef}
+        id="objectifs-et-competences"
+        className="scroll-mt-24"
+      >
         <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-4xl font-bold">
           objectifs et compétences
         </h2>
@@ -82,6 +95,8 @@ export const Objectives = () => {
         </div>
       </div>
       <FormationSubSection
+        sectionRef={principlesRef}
+        id="cinq-grands-principes"
         heading="cinq grands principes"
         headingAlignment="right"
         image="/images/formation/formation-2.jpg"

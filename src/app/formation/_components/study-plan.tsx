@@ -1,12 +1,27 @@
 'use client';
 
+import { RefObject } from 'react';
 import { Dot } from '@/components/dot';
 import { FormationSubSection } from './formation-sub-section';
 
-export const StudyPlan = () => {
+type StudyPlanProps = {
+  studyPlanRef: RefObject<HTMLDivElement | null>;
+  bachelorRef: RefObject<HTMLDivElement | null>;
+  masterRef: RefObject<HTMLDivElement | null>;
+  graduationsRef: RefObject<HTMLDivElement | null>;
+  metrofablabRef: RefObject<HTMLDivElement | null>;
+};
+
+export const StudyPlan = ({
+  studyPlanRef,
+  bachelorRef,
+  masterRef,
+  graduationsRef,
+  metrofablabRef,
+}: StudyPlanProps) => {
   return (
     <section className="text-lg">
-      <div>
+      <div ref={studyPlanRef} className="scroll-mt-24">
         <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-4xl font-bold">
           schéma des études
         </h2>
@@ -98,6 +113,8 @@ export const StudyPlan = () => {
         </div>
       </div>
       <FormationSubSection
+        sectionRef={bachelorRef}
+        id="licence-auep"
         heading="licence AUEP"
         headingAlignment="right"
         image="/images/formation/formation-3.jpg"
@@ -151,6 +168,8 @@ export const StudyPlan = () => {
         </div>
       </FormationSubSection>
       <FormationSubSection
+        sectionRef={masterRef}
+        id="master-auep"
         heading="master AUEP"
         headingAlignment="left"
         image="/images/formation/formation-4.jpg"
@@ -228,6 +247,8 @@ export const StudyPlan = () => {
         </div>
       </FormationSubSection>
       <FormationSubSection
+        sectionRef={graduationsRef}
+        id="diplomations"
         heading="diplômations"
         headingAlignment="right"
         image="/images/formation/formation-5.jpg"
@@ -277,6 +298,8 @@ export const StudyPlan = () => {
         </table>
       </FormationSubSection>
       <FormationSubSection
+        sectionRef={metrofablabRef}
+        id="programme-metrofablab"
         heading="le programme MetroFabLab"
         headingAlignment="left"
         image="/images/formation/formation-6.jpg"

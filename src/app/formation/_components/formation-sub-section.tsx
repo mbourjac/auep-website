@@ -3,27 +3,29 @@ import { DitherCanvas } from '@/components/dither-canvas';
 import { cn } from '../../../lib/tailwind';
 
 type FormationSubSectionProps = {
+  sectionRef?: RefObject<HTMLDivElement | null>;
+  id: string;
   heading: string;
   headingAlignment: 'left' | 'right';
   isLast?: boolean;
   image: string;
   children: ReactNode;
-  ref?: RefObject<HTMLDivElement | null>;
 };
 
 export const FormationSubSection = ({
+  sectionRef,
+  id,
   heading,
   headingAlignment,
   isLast,
   image,
   children,
-  ref,
 }: FormationSubSectionProps) => {
   const isRightAlignment = headingAlignment === 'right';
   const isLeftAlignment = headingAlignment === 'left';
 
   return (
-    <div ref={ref}>
+    <div ref={sectionRef} className="scroll-mt-22" id={id}>
       <div className="flex">
         {isRightAlignment && <div className="grow border-b-2 border-l-2"></div>}
         <h3 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold">

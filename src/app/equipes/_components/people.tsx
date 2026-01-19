@@ -1,4 +1,4 @@
-import { DitherCanvas } from '../../../components/dither-canvas';
+import { DitherCanvas } from '@/components/dither-canvas';
 import {
   ACADEMIC_COORDINATION,
   FORMER_STAFF,
@@ -18,10 +18,13 @@ export const People = () => {
         </h1>
         <div className="flex w-full flex-col gap-32">
           <PeopleSection heading="coordination pédagogique">
-            <PeopleGrid people={ACADEMIC_COORDINATION} />
+            <PeopleGrid
+              people={ACADEMIC_COORDINATION}
+              section="Coordination pédagogique"
+            />
           </PeopleSection>
           <PeopleSection heading="équipe enseignante">
-            <PeopleGrid people={TEACHING_STAFF} />
+            <PeopleGrid people={TEACHING_STAFF} section="Équipe enseignante" />
           </PeopleSection>
           <PeopleSection heading="mais aussi">
             <ul className="flex flex-wrap gap-2.5 border-l-2 pt-8 pl-4">

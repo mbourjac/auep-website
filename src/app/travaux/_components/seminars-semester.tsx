@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, RefObject } from 'react';
 import { cn } from '../../../lib/tailwind';
 
 type SeminarsSemesterProps = {
@@ -10,6 +10,7 @@ type SeminarsSemesterProps = {
     mentoring: string[];
     guests: string[];
   }[];
+  sectionRef: RefObject<HTMLDivElement | null>;
 };
 
 export const SeminarsSemester = ({
@@ -17,9 +18,10 @@ export const SeminarsSemester = ({
   title,
   description,
   list,
+  sectionRef,
 }: SeminarsSemesterProps) => {
   return (
-    <div>
+    <div ref={sectionRef} className="scroll-mt-24">
       <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
         <h3 className="text-md font-medium">
           {label} - {title}

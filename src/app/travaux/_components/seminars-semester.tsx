@@ -1,27 +1,20 @@
-import { ReactNode, RefObject } from 'react';
+import { RefObject } from 'react';
 import { cn } from '../../../lib/tailwind';
+import type { SeminarsSemester as SeminarsSemesterType } from '../works.types';
 
-type SeminarsSemesterProps = {
-  label: string;
-  title: string;
-  description: ReactNode | null;
-  list: {
-    year: string;
-    mentoring: string[];
-    guests: string[];
-  }[];
-  sectionRef: RefObject<HTMLDivElement | null>;
+type SeminarsSemesterProps = Omit<SeminarsSemesterType, 'id'> & {
+  semesterRef: RefObject<HTMLDivElement | null>;
 };
 
 export const SeminarsSemester = ({
   label,
   title,
   description,
-  list,
-  sectionRef,
+  seminars,
+  semesterRef,
 }: SeminarsSemesterProps) => {
   return (
-    <div ref={sectionRef} className="scroll-mt-24">
+    <div ref={semesterRef} className="scroll-mt-24">
       <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
         <h3 className="text-md font-medium">
           {label} - {title}
@@ -30,26 +23,24 @@ export const SeminarsSemester = ({
       </div>
       <table className="w-full table-fixed border-t border-t-black/40">
         <colgroup>
-          <col style={{ width: '200px' }} />
-          <col style={{ width: '40%' }} />
-          <col style={{ width: '40%' }} />
-          <col style={{ width: '20%' }} />
+          <col className="w-[140px]" />
+          <col className="w-[50%]" />
+          <col className="w-[50%]" />
         </colgroup>
         <thead>
           <tr className="border-b border-b-black/40">
             <th className="py-1 pr-6 text-left font-normal">Année</th>
             <th className="px-6 py-1 text-left font-normal">Encadrement</th>
             <th className="px-6 py-1 text-left font-normal">Invités</th>
-            <th className="py-1 pl-6 text-left font-normal" />
           </tr>
         </thead>
         <tbody>
-          {list.map((seminar, index) => (
+          {seminars.map((seminar, index) => (
             <tr
               key={index}
               className={cn(
                 'align-top',
-                index !== list.length - 1 && 'border-b border-b-black/40'
+                index !== seminars.length - 1 && 'border-b border-b-black/40'
               )}
             >
               <td className="py-1 pr-6">{seminar.year}</td>
@@ -59,7 +50,6 @@ export const SeminarsSemester = ({
               <td className="truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap">
                 {seminar.guests.join(' - ')}
               </td>
-              <td className="py-1 pl-6" />
             </tr>
           ))}
         </tbody>

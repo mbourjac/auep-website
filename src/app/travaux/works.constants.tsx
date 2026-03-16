@@ -1,10 +1,11 @@
-export const SEMINARS = {
-  semester7: {
+export const SEMINARS_SEMESTERS = [
+  {
+    id: 'semester-7',
     label: 'Semestre 7',
     title: 'Sciences humaines et sociales du et pour le projet',
     description: null,
     pictures: [],
-    list: [
+    seminars: [
       {
         year: '2025-2026',
         mentoring: [
@@ -68,7 +69,8 @@ export const SEMINARS = {
       },
     ],
   },
-  semester8: {
+  {
+    id: 'semester-8',
     label: 'Semestre 8',
     title: 'Les controverses de la ville néolibérale',
     description: (
@@ -87,7 +89,7 @@ export const SEMINARS = {
       </>
     ),
     pictures: [],
-    list: [
+    seminars: [
       {
         year: '2025-2026',
         mentoring: ['Marine Bourgeois', 'Grégory Busquet'],
@@ -120,7 +122,8 @@ export const SEMINARS = {
       },
     ],
   },
-  semester9: {
+  {
+    id: 'semester-9',
     label: 'Semestre 9',
     title: 'Métiers de la production des territoires habités',
     description: (
@@ -136,7 +139,7 @@ export const SEMINARS = {
       </>
     ),
     pictures: [],
-    list: [
+    seminars: [
       {
         year: '2025-2026',
         mentoring: [
@@ -229,7 +232,7 @@ export const SEMINARS = {
       },
     ],
   },
-};
+];
 
 export const DISSERTATIONS = {
   '2024': {

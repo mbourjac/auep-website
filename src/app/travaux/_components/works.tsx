@@ -1,33 +1,35 @@
 'use client';
 
-import { useRef } from 'react';
-import { UseInViewOptions, useInView } from 'motion/react';
+import { createRef, useMemo, useRef } from 'react';
+import { useInView } from 'motion/react';
 import { ElbowArrowIcon } from '../../../components/icons/elbow-arrow-icon';
+import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
+import { SEMINARS_SEMESTERS } from '../works.constants';
 import { Seminars } from './seminars';
 
 export const Works = () => {
-  const seminarsRef = useRef<HTMLDivElement | null>(null);
-  const seminarsSemester7ref = useRef<HTMLDivElement | null>(null);
-  const seminarsSemester8ref = useRef<HTMLDivElement | null>(null);
-  const seminarsSemester9ref = useRef<HTMLDivElement | null>(null);
+  const seminarsSectionRef = useRef<HTMLDivElement | null>(null);
 
-  const inViewOptions: UseInViewOptions = {
-    margin: '-50% 0px -50% 0px',
+  const seminarsSemesterRefs = useMemo(
+    () => SEMINARS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+    []
+  );
+
+  const inViewMargin = '-50% 0px -50% 0px';
+
+  const observerOptions: IntersectionObserverInit = {
+    root: null,
+    rootMargin: inViewMargin,
+    threshold: 0,
   };
 
-  const isObjectivesInView = useInView(seminarsRef, inViewOptions);
-  const isSeminarsSemester7InView = useInView(
-    seminarsSemester7ref,
-    inViewOptions
-  );
-  const isSeminarsSemester8InView = useInView(
-    seminarsSemester8ref,
-    inViewOptions
-  );
-  const isSeminarsSemester9InView = useInView(
-    seminarsSemester9ref,
-    inViewOptions
+  const isSeminarsSectionInView = useInView(seminarsSectionRef, {
+    margin: inViewMargin,
+  });
+  const seminarsSemesterInViewArray = useInViewArray(
+    seminarsSemesterRefs,
+    observerOptions
   );
 
   return (
@@ -45,49 +47,35 @@ export const Works = () => {
             <ul>
               <li>
                 <SectionLink
-                  sectionRef={seminarsRef}
-                  isCurrent={isObjectivesInView}
+                  sectionRef={seminarsSectionRef}
+                  isCurrent={isSeminarsSectionInView}
                 >
                   séminaires
                 </SectionLink>
                 <ul>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
-                    <SectionLink
-                      sectionRef={seminarsSemester7ref}
-                      isCurrent={isSeminarsSemester7InView}
+                  {SEMINARS_SEMESTERS.map((semester, index) => (
+                    <li
+                      key={semester.id}
+                      className="flex items-center gap-1.5 pl-4 text-lg"
                     >
-                      semestre 7
-                    </SectionLink>
-                  </li>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
-                    <SectionLink
-                      sectionRef={seminarsSemester8ref}
-                      isCurrent={isSeminarsSemester8InView}
-                    >
-                      semestre 8
-                    </SectionLink>
-                  </li>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
-                    <SectionLink
-                      sectionRef={seminarsSemester9ref}
-                      isCurrent={isSeminarsSemester9InView}
-                    >
-                      semestre 9
-                    </SectionLink>
-                  </li>
+                      <ElbowArrowIcon />
+                      <SectionLink
+                        sectionRef={seminarsSemesterRefs[index]}
+                        isCurrent={seminarsSemesterInViewArray[index]}
+                      >
+                        {semester.label.toLowerCase()}
+                      </SectionLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
             </ul>
           </nav>
           <div className="flex w-full flex-col gap-32">
             <Seminars
-              seminarsRef={seminarsRef}
-              seminarsSemester7ref={seminarsSemester7ref}
-              seminarsSemester8ref={seminarsSemester8ref}
-              seminarsSemester9ref={seminarsSemester9ref}
+              semesters={SEMINARS_SEMESTERS}
+              sectionRef={seminarsSectionRef}
+              semesterRefs={seminarsSemesterRefs}
             />
           </div>
         </div>

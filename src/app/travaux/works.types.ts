@@ -14,3 +14,16 @@ export type SeminarsSemester = {
   description: ReactNode | null;
   seminars: Seminar[];
 };
+
+export type Dissertation = {
+  student: string;
+  title: ReactNode;
+  description: ReactNode | null;
+  supervisedBy: string;
+};
+
+export type DissertationsYear = {
+  id: string;
+  label: string;
+  dissertations: Dissertation[];
+};

@@ -1,10 +1,11 @@
-export const SEMINARS_SEMESTERS = [
+import { DissertationsYear, SeminarsSemester } from './works.types';
+
+export const SEMINARS_SEMESTERS: SeminarsSemester[] = [
   {
     id: 'semester-7',
     label: 'Semestre 7',
     title: 'Sciences humaines et sociales du et pour le projet',
     description: null,
-    pictures: [],
     seminars: [
       {
         year: '2025-2026',
@@ -88,7 +89,6 @@ export const SEMINARS_SEMESTERS = [
         savoir évaluer le sens des «&nbsp;alternatives&nbsp;» possibles.
       </>
     ),
-    pictures: [],
     seminars: [
       {
         year: '2025-2026',
@@ -138,7 +138,6 @@ export const SEMINARS_SEMESTERS = [
         critique&nbsp;; commencer à construire une projection personnelle.
       </>
     ),
-    pictures: [],
     seminars: [
       {
         year: '2025-2026',
@@ -234,10 +233,11 @@ export const SEMINARS_SEMESTERS = [
   },
 ];
 
-export const DISSERTATIONS = {
-  '2024': {
+export const DISSERTATIONS_YEARS: DissertationsYear[] = [
+  {
+    id: '2024-2025',
     label: '2024-2025',
-    list: [
+    dissertations: [
       {
         student: 'Léa Casado',
         title: (
@@ -468,9 +468,10 @@ export const DISSERTATIONS = {
       },
     ],
   },
-  '2023': {
+  {
+    id: '2023-2024',
     label: '2023-2024',
-    list: [
+    dissertations: [
       {
         student: 'Naïan Baron',
         title: <>Récits d’espace. Étude du caractère spatial du récit de vie</>,
@@ -636,9 +637,10 @@ export const DISSERTATIONS = {
       },
     ],
   },
-  '2022': {
+  {
+    id: '2022-2023',
     label: '2022-2023',
-    list: [
+    dissertations: [
       {
         student: 'Adrien Barbier',
         title: (
@@ -776,9 +778,10 @@ export const DISSERTATIONS = {
       },
     ],
   },
-  '2021': {
+  {
+    id: '2021-2022',
     label: '2021-2022',
-    list: [
+    dissertations: [
       {
         student: 'Matteo Beguiristain',
         title: (
@@ -951,4 +954,4 @@ export const DISSERTATIONS = {
       },
     ],
   },
-};
+];

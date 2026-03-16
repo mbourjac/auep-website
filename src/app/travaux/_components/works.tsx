@@ -5,14 +5,20 @@ import { useInView } from 'motion/react';
 import { ElbowArrowIcon } from '../../../components/icons/elbow-arrow-icon';
 import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
-import { SEMINARS_SEMESTERS } from '../works.constants';
+import { DISSERTATIONS_YEARS, SEMINARS_SEMESTERS } from '../works.constants';
+import { Dissertations } from './dissertations';
 import { Seminars } from './seminars';
 
 export const Works = () => {
   const seminarsSectionRef = useRef<HTMLDivElement | null>(null);
+  const dissertationsSectionRef = useRef<HTMLDivElement | null>(null);
 
   const seminarsSemesterRefs = useMemo(
     () => SEMINARS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+    []
+  );
+  const dissertationsYearRefs = useMemo(
+    () => DISSERTATIONS_YEARS.map(() => createRef<HTMLDivElement | null>()),
     []
   );
 
@@ -27,8 +33,16 @@ export const Works = () => {
   const isSeminarsSectionInView = useInView(seminarsSectionRef, {
     margin: inViewMargin,
   });
+  const isDissertationsSectionInView = useInView(dissertationsSectionRef, {
+    margin: inViewMargin,
+  });
+
   const seminarsSemesterInViewArray = useInViewArray(
     seminarsSemesterRefs,
+    observerOptions
+  );
+  const dissertationsYearInViewArray = useInViewArray(
+    dissertationsYearRefs,
     observerOptions
   );
 
@@ -69,6 +83,30 @@ export const Works = () => {
                   ))}
                 </ul>
               </li>
+              <li>
+                <SectionLink
+                  sectionRef={dissertationsSectionRef}
+                  isCurrent={isDissertationsSectionInView}
+                >
+                  mémoires
+                </SectionLink>
+                <ul>
+                  {DISSERTATIONS_YEARS.map((year, index) => (
+                    <li
+                      key={year.id}
+                      className="flex items-center gap-1.5 pl-4 text-lg"
+                    >
+                      <ElbowArrowIcon />
+                      <SectionLink
+                        sectionRef={dissertationsYearRefs[index]}
+                        isCurrent={dissertationsYearInViewArray[index]}
+                      >
+                        {year.label.toLowerCase()}
+                      </SectionLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
           </nav>
           <div className="flex w-full flex-col gap-32">
@@ -76,6 +114,11 @@ export const Works = () => {
               semesters={SEMINARS_SEMESTERS}
               sectionRef={seminarsSectionRef}
               semesterRefs={seminarsSemesterRefs}
+            />
+            <Dissertations
+              years={DISSERTATIONS_YEARS}
+              sectionRef={dissertationsSectionRef}
+              yearRefs={dissertationsYearRefs}
             />
           </div>
         </div>

@@ -1,17 +1,23 @@
 'use client';
 
 import { createRef, useMemo, useRef } from 'react';
-import { useInView } from 'motion/react';
+import { useInView, UseInViewOptions } from 'motion/react';
 import { ElbowArrowIcon } from '../../../components/icons/elbow-arrow-icon';
 import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
-import { DISSERTATIONS_YEARS, SEMINARS_SEMESTERS } from '../works.constants';
+import {
+  DISSERTATIONS_YEARS,
+  PROJECT_WORKSHOPS_SEMESTERS,
+  SEMINARS_SEMESTERS,
+} from '../works.constants';
 import { Dissertations } from './dissertations';
+import { ProjectWorkshops } from './project-workshops';
 import { Seminars } from './seminars';
 
 export const Works = () => {
   const seminarsSectionRef = useRef<HTMLDivElement | null>(null);
   const dissertationsSectionRef = useRef<HTMLDivElement | null>(null);
+  const projectWorkshopsSectionRef = useRef<HTMLDivElement | null>(null);
 
   const seminarsSemesterRefs = useMemo(
     () => SEMINARS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
@@ -21,29 +27,44 @@ export const Works = () => {
     () => DISSERTATIONS_YEARS.map(() => createRef<HTMLDivElement | null>()),
     []
   );
+  const projectWorkshopsSemesterRefs = useMemo(
+    () =>
+      PROJECT_WORKSHOPS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+    []
+  );
 
   const inViewMargin = '-50% 0px -50% 0px';
 
-  const observerOptions: IntersectionObserverInit = {
+  const inViewOptions: UseInViewOptions = {
+    margin: inViewMargin,
+  };
+  const inViewArrayOptions: IntersectionObserverInit = {
     root: null,
     rootMargin: inViewMargin,
     threshold: 0,
   };
 
-  const isSeminarsSectionInView = useInView(seminarsSectionRef, {
-    margin: inViewMargin,
-  });
-  const isDissertationsSectionInView = useInView(dissertationsSectionRef, {
-    margin: inViewMargin,
-  });
+  const isSeminarsSectionInView = useInView(seminarsSectionRef, inViewOptions);
+  const isDissertationsSectionInView = useInView(
+    dissertationsSectionRef,
+    inViewOptions
+  );
+  const isProjectWorkshopsSectionInView = useInView(
+    projectWorkshopsSectionRef,
+    inViewOptions
+  );
 
   const seminarsSemesterInViewArray = useInViewArray(
     seminarsSemesterRefs,
-    observerOptions
+    inViewArrayOptions
   );
   const dissertationsYearInViewArray = useInViewArray(
     dissertationsYearRefs,
-    observerOptions
+    inViewArrayOptions
+  );
+  const projectWorkshopsSemesterInViewArray = useInViewArray(
+    projectWorkshopsSemesterRefs,
+    inViewArrayOptions
   );
 
   return (
@@ -107,6 +128,30 @@ export const Works = () => {
                   ))}
                 </ul>
               </li>
+              <li>
+                <SectionLink
+                  sectionRef={projectWorkshopsSectionRef}
+                  isCurrent={isProjectWorkshopsSectionInView}
+                >
+                  ateliers de projets
+                </SectionLink>
+                <ul>
+                  {PROJECT_WORKSHOPS_SEMESTERS.map((semester, index) => (
+                    <li
+                      key={semester.id}
+                      className="flex items-center gap-1.5 pl-4 text-lg"
+                    >
+                      <ElbowArrowIcon />
+                      <SectionLink
+                        sectionRef={projectWorkshopsSemesterRefs[index]}
+                        isCurrent={projectWorkshopsSemesterInViewArray[index]}
+                      >
+                        {semester.label.toLowerCase()}
+                      </SectionLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
           </nav>
           <div className="flex w-full flex-col gap-32">
@@ -119,6 +164,11 @@ export const Works = () => {
               years={DISSERTATIONS_YEARS}
               sectionRef={dissertationsSectionRef}
               yearRefs={dissertationsYearRefs}
+            />
+            <ProjectWorkshops
+              semesters={PROJECT_WORKSHOPS_SEMESTERS}
+              sectionRef={projectWorkshopsSectionRef}
+              semesterRefs={projectWorkshopsSemesterRefs}
             />
           </div>
         </div>

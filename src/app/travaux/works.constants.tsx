@@ -1,4 +1,8 @@
-import { DissertationsYear, SeminarsSemester } from './works.types';
+import {
+  DissertationsYear,
+  ProjectWorkshopsSemester,
+  SeminarsSemester,
+} from './works.types';
 
 export const SEMINARS_SEMESTERS: SeminarsSemester[] = [
   {
@@ -951,6 +955,1190 @@ export const DISSERTATIONS_YEARS: DissertationsYear[] = [
           </>
         ),
         supervisedBy: 'Théa Manola et Silvère Tribout',
+      },
+    ],
+  },
+];
+
+export const PROJECT_WORKSHOPS_SEMESTERS: ProjectWorkshopsSemester[] = [
+  {
+    id: 'semester-7',
+    label: 'Semestre 7',
+    title: 'Revitaliser une petite ville en territoire rural',
+    description: (
+      <>
+        L’atelier de projet du premier semestre de master s’intéresse aux
+        territoires ruraux et aux enjeux associés. L’exercice consiste à se
+        saisir de manière critique de problématiques contemporaines (stratégie
+        de revitalisation, développement urbain versus densification, aménités
+        rurales, circuits courts et économie locale, patrimoines et mémoires,
+        qualité des espaces publics, etc.) à partir de situations de projets
+        spécifiques en lien avec les préoccupations politiques locales et
+        nationales, notamment au sujet des transitions énergétiques et
+        écologiques. L’hypothèse de l’enseignement, fondée sur celle du parcours
+        intégré AUEP, est que la mise au travail synchrone, à la fois du projet
+        urbain et des conditions du projet urbain, est l’occasion d’éclairer
+        sous un jour nouveau les manières de penser et d’agir sur notre
+        environnement ordinaire.
+      </>
+    ),
+    areas: [
+      'Clamecy (Nièvre, 2021, 2022)',
+      'Pierrefort (Cantal, 2023/24)',
+      'Le Cheylard (Ardèche, 2024/25)',
+      'Villeneuve-de-Berg (Ardèche, 2025/26)',
+    ],
+    years: [
+      {
+        label: '2024-2025',
+        mentoring: [
+          'Gaëtan Haist',
+          'Théa Manola',
+          'Ivan Mazel (resp.)',
+          'Adrien Mollaret',
+          'Simeon Naydenov',
+          'Inès Ramirez-Cobo',
+          'Nicolas Vernet',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Léa KLEIN', 'Cyrille VANPEENE'],
+            title: 'Localité Accueillante et Apaisée Misant sur ses Aînés',
+            description: null,
+            pictures: [],
+          },
+          {
+            students: ['Marisa MARQUES', 'Mattéo LESEIGNEUR'],
+            title:
+              'Réinvestir l’espace public et intensifier les liens avec l’environnant',
+            description: (
+              <>
+                Le Cheylard, commune rurale de l’Ardèche, fait face à un
+                vieillissement de sa population et à une perte d’attractivité,
+                avec des habitations principalement concentrées en fond de
+                vallée le long des rivières Dorne et Eyrieux, et quelques
+                maisons isolées sur les terrasses agricoles à flanc de montagne.
+                Le centre-bourg, centré autour de la place Saléon-Terras, est
+                bordé d’un front bâti dense qui sépare la ville de ses espaces
+                naturels. Le projet se concentre sur la Basse-Ville et les
+                entrées de la boucle de la Dorne pour recréer du lien avec la
+                rivière, valoriser son cadre naturel tout en respectant ses
+                risques d’inondation, et lutter contre la vacance résidentielle.
+                Deux phases d’action sont prévues&nbsp;: une première pour
+                révéler le potentiel des sites et une seconde, plus ambitieuse,
+                pour transformer durablement le territoire. La requalification
+                des jardins sud-ouest constitue un élément fort du projet. Elle
+                consiste à créer une nouvelle centralité ouverte sur la Dorne,
+                avec un paysage diversifié mêlant zones végétalisées favorisant
+                la biodiversité, clairières orientées vers la rivière pour
+                accueillir de nouveaux usages, et jardins partagés pour
+                compenser le manque d’espaces cultivables en cœur de ville. Deux
+                axes traversants structureront cet ensemble, tandis que des
+                pontons offriront une redécouverte sensible de la rivière. La
+                déconstruction de quatre bâtiments HLM permettra d’alléger le
+                front bâti, de révéler le patrimoine et de libérer l’espace
+                nécessaire à des équipements tels qu’une aire de jeux, un espace
+                d’exposition temporaire et un nouveau parvis pour l’Arche des
+                Métiers. La vacance résidentielle sera mobilisée pour proposer
+                des solutions de relogement et attirer de nouveaux habitants,
+                avec l’intégration de locaux associatifs pour dynamiser le
+                quartier. Le réaménagement du parking Est transformera un espace
+                aujourd’hui technique en lieu plus accueillant. La terrasse
+                haute deviendra un espace piéton planté, propice à la
+                contemplation, tandis que le parking sera rendu perméable et
+                ombragé afin de favoriser la circulation de l’eau et d’améliorer
+                le confort. Une nouvelle passerelle reliera le parking de la
+                Guinguette au centre-bourg, renforçant l’accessibilité de la
+                boucle de la Dorne et améliorant l’usage d’un parking
+                stratégique mais encore sous-exploité. Enfin, la transformation
+                du parking Ouest de l’hôpital s’inscrira dans la continuité des
+                actions menées tout en intégrant les besoins spécifiques du pôle
+                médical. Le parking deviendra perméable et mieux connecté au
+                parcours de la Dorne, et un jardin contemplatif, inspiré des
+                terrasses régionales, sera aménagé pour offrir un espace calme
+                et adapté aux patients et résidents. Ce projet contribue à
+                renforcer les liens entre le centre-bourg, les rives de la Dorne
+                et les espaces naturels environnants, tout en améliorant le
+                cadre de vie des habitants.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Léa CASADO', 'Nathan SALIGNAT'],
+            title:
+              'Territoire technique, révéler le rapport à l’eau pour une nouvelle dynamique locale',
+            description: (
+              <>
+                Le faubourg Chabannes porte les traces de la
+                désindustrialisation progressive du Cheylard. Les vestiges de
+                l’activité industrielle en sont aujourd’hui les derniers
+                témoins, rappelant une époque où l’eau constituait le moteur
+                essentiel du développement local. Aujourd’hui, ce lien à l’eau
+                s’est affaibli, les berges de la rivière sont devenues
+                inaccessibles. Pourtant, l’accès à l’eau demeure un droit
+                fondamental, un facteur de lien social et de bien-être. La
+                stratégie que nous proposons vise à valoriser ces héritages
+                industriels tout en rétablissant une relation forte avec l’eau,
+                grâce à la création d’une promenade aménagée le long des berges.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Fanny DAMOND', 'Anaël PETERS'],
+            title:
+              'Les Terrasses agricoles au cœur du renouvellement de la zone d’activité de La Palisse',
+            description: (
+              <>
+                Face à la déprise agricole et à l’abandon des anciennes
+                terrasses agricoles, ce projet propose de redonner à la zone
+                économique de La Palisse une dynamique durable et résiliente en
+                s’appuyant sur ses ressources existantes. Il vise à répondre à
+                une question centrale&nbsp;: comment diversifier La Palisse tout
+                en intégrant les enjeux écologiques actuels&nbsp;? Pour cela,
+                trois actions majeures sont développées&nbsp;: la transformation
+                d’un bâtiment délaissé en espace multifonctionnel dédié à
+                l’insertion professionnelle et à la valorisation locale&nbsp;;
+                la réhabilitation des terrasses agricoles afin de promouvoir une
+                agriculture durable et pédagogique&nbsp;; et le renforcement de
+                la recyclerie existante, conçue comme un repère identitaire à
+                l’entrée de la ville. Ces pôles sont unifiés par un ensemble de
+                liaisons écologiques et fonctionnelles garantissant la
+                cohérence, l’intégration paysagère et la résilience globale du
+                territoire.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2023-2024',
+        mentoring: [
+          'Giulia Buffoli',
+          'Didier Chesneau',
+          'Simon Godard',
+          'Yvan Okotnikoff (resp.)',
+          'Théa Manola',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Maxime Montaye', 'Camille Pagiras'],
+            title:
+              'L’agriculture comme levier pour retravailler les espaces publics de la commune',
+            description: (
+              <>
+                Pierrefort est une commune rurale du Cantal, département
+                spécialisé dans l’élevage bovin. Il y a donc un enjeu à
+                diversifier les types de culture, pour assurer une sécurité
+                alimentaire dans un avenir incertain. En parallèle, la commune
+                dispose d’une faible ingénierie et de moyens pour investir dans
+                ses espaces publics, alors qu’elle dispose de foncier agricole
+                inexploité. Et si ces terrains communaux pouvaient servir à
+                accompagner le développement du maraîchage sur la commune et le
+                retravail d’espace publics de qualité pour tous&nbsp;? Le projet
+                que nous proposons développe cette stratégie à l’échelle de la
+                commune et à l’échelle de deux échantillons pilotes&nbsp;: un
+                agro-parc et une parcelle communale dédiée au maraîchage.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Anna Boitel', 'Aglaé Thébaud'],
+            title:
+              'Ancrage territorial des rez-de-chaussée vacants à Pierrefort',
+            description: null,
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2022-2023',
+        mentoring: [
+          'Marie-Julie Bernard',
+          'Didier Chesneau',
+          'Théa Manola',
+          'Ivan Mazel',
+          'Yvan Okotnikoff (resp.)',
+          'Philippe Teillet',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Adrien Barbier', 'Clara Errecade', 'Adrien Leclercq'],
+            title:
+              'Parc d’activité paysager Rhodia. Redynamiser Clamecy et son territoire par la revitalisation d’un faubourg',
+            description: null,
+            pictures: [],
+          },
+          {
+            students: ['Edgar Boisset', 'Etienne Masselot', 'Julien Thomas'],
+            title:
+              'Bethléem, un quartier entre ville et campagne. La revitalisation d’un quartier par le recours à la soustraction positive',
+            description: null,
+            pictures: [],
+          },
+          {
+            students: ['Céline Bodin', 'Nouhaila Boukhare'],
+            title:
+              'Projet d’habitat inclusif partagé autogéré à loyer modéré en location pour personnes âgées',
+            description: (
+              <>
+                Notre groupe s’est intéressé aux enjeux du parcours résidentiel
+                et de la vacance à Clamecy. Nous avons plus spécifiquement
+                travaillé sur la trajectoire résidentielle de fin de vie, et la
+                rotation résidentielle engendrée par celle-ci. Notre proposition
+                vise d’une part les personnes âgées, vivant seules ou en couple,
+                dans un logement soit inadapté, dangereux pour elles, ou
+                difficile à entretenir, ou devenu trop grand, ou voulant avoir
+                accès à des espaces intérieurs ou extérieurs plus confortables
+                ou plus grand, cherchant un loyer plus faible ou voulant
+                simplement rompre leur isolement. Nous souhaitons inciter ce
+                public à quitter leur logement actuel pour un logement partagé
+                avec d’autres personnes âgées, adapté aux PMR, avec un espace
+                privé petit et un accès à des espaces communs confortables.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Chloé Graziano', 'Lola Guijarro', 'Alizé Hanson'],
+            title:
+              'Clamecy petite ville de demain. La ville productive créatrice de liens et d’attractivité',
+            description: (
+              <>
+                Ce projet interroge la manière de revitaliser une petite ville
+                en déprise en s’appuyant sur ses ressources locales. L’objectif
+                est de repenser l’activité productive en intégrant agriculture,
+                transformation alimentaire, économie circulaire et valorisation
+                du patrimoine bâti. Le projet soulève la nécessité de
+                reconnecter des friches (anciens abattoirs et parcelles en
+                friches) au tissu urbain et aux paysages. Il pose le
+                questionnement de la coopération intercommunale autour d’un
+                siège commun et d’une maison de l’emploi. Enfin, il interroge
+                comment ancrer le développement économique dans les enjeux
+                sociaux, agricoles et paysagers du territoire.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2021-2022',
+        mentoring: [
+          'Marie-Julie Bernard',
+          'Florian Golay',
+          'Yvan Okotnikoff (resp.)',
+          'Josselin Tallec',
+          'Philippe Teillet',
+          'Silvère Tribout',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Raphaël Boujon', 'Simeon Naydenov', 'Alouna Nicolas'],
+            title: 'Un jardin qui déborde',
+            description: (
+              <>
+                Ce projet questionne comment Clamecy (petite ville de demain)
+                peut utiliser sa singularité paysagère et végétale comme un
+                atout pour son développement urbain. L’idée vise à réenchanter
+                l’imaginaire des Clamecycois pour leur territoire en
+                reconnaissant et en valorisant les ambiances paysagères qui
+                contribuent à l’image unique de la ville. Le projet a un axe
+                principal qui est un festival annuel qui permet, à travers le
+                milieu naturel et les jardins de Clamecy, de travailler sur la
+                perception publique de la ville. La première édition du
+                festival, qui est détaillée dans la maquette, se déroule dans le
+                quartier de Bethléem qui est particulièrement touché par la
+                vacance immobilière et la dégradation urbaine. Le festival
+                commence par une phase de préparation d’un mois ou la
+                &nbsp;résidence d’artiste&nbsp;» pendant lequel des architectes,
+                des scénographes et d’autres artistes se réunissent pour
+                travailler sur des installations artistiques temporaires qui
+                nourriront l’espace du festival.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Juliette Garcia', 'Adrien Cherencq', 'Robinson Rossi'],
+            title:
+              'L’autonomie maraîchère et arboricole du territoire du Haut Nivernais Val d’Yonne',
+            description: (
+              <>
+                Si Clamecy s’inscrit dans un territoire à dominante agricole, ce
+                dernier n’est pas en mesure de nourrir ses habitant-es, car
+                l’essentiel de la production est exporté. Clamecy peut atteindre
+                son autonomie alimentaire en fruits et légumes. Ce projet
+                démontre l’étendue des possibilités pour atteindre cet objectif,
+                ainsi que sa complémentarité avec les enjeux de revitalisation
+                des petits villages. La réalisation de l’autonomie alimentaire
+                peut être initiée par l’EPCI du Haut Nivernais Val d’Yonne,
+                portant une ferme pilote fournissant les cantines scolaires.
+                Cette «&nbsp;Ferme des possibles&nbsp;» serait exemplaire,
+                faisant cohabiter agriculteurs-rices en installation et
+                personnes âgées. Ce projet participe au développement d’une
+                biorégion et appelle au courage de la planification publique.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Matteo Beguiristain',
+              'Guillaume Cachoulet',
+              'Valentine Larue',
+            ],
+            title: 'Intensifier les connexions territoriales ',
+            description: (
+              <>
+                Clamecy, ville où notre projet de premier semestre est situé,
+                est le centre d’un bassin de vie de 40 km de rayon. Dans ce
+                bassin de vie, il y a des problèmes de connexion entre les
+                différents lieux d’intérêt local. Ainsi, comme solution nous
+                avons proposé d’agir à une échelle microlocale. Nous avons
+                identifié un lieu qui faisait interface entre Clamecy et le
+                reste de bassin de vie et qui était symptomatique du problème
+                que nous constatons. Dans ce cas, nous avons choisi de rétablir
+                l’équilibre «&nbsp;piéton - voiture&nbsp;» pour sécuriser et
+                améliorer les trajectoires et faire de ce lieu plus qu’un point
+                de passage.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Nathan Delmas', 'Morchadi Kawtar'],
+            title: null,
+            description: (
+              <>
+                En se basant sur un travail d’analyse sous la thématique des
+                communs d’aujourd’hui et de demain, nous avons défini comme
+                enjeu principal la construction de liens entre la mairie de
+                Clamecy et les instances des villages alentour. Notre stratégie
+                avait pour but de produire des projets qui permettrait le
+                travail en commun, et le profit, de tous les acteurs du
+                territoire. Nous avons choisi de nous baser sur un commun au
+                territoire, qui structure le paysage&nbsp;: la forêt. En effet,
+                celle-ci est une composante importante de la construction de
+                l’identité locale de l’EPCI. Le projet se caractérise par deux
+                actions principales, qui fonctionnent en miroir. La première est
+                un circuit aménagé d’installations légères, comme un petit
+                théâtre, dans des espaces forts en potentiel paysager de la
+                région de Clamecy. Celles-ci permettent la croissance de
+                nouvelles activités économiques et mettent en valeur les
+                qualités visuelles du paysage. La seconde présente un plan de
+                verdissement pour réaménager et créer de nouvelles atmosphères
+                dans les quartiers industriels délaissés dans la ville de
+                Clamecy.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Clair Gauffenic', 'Ana Lucia Caetano'],
+            title: 'Mobilités douces',
+            description: (
+              <>
+                Ce projet porte sur le développement des mobilités actives et
+                partagées (covoiturage, auto-stop, transports en commun et
+                mobilités actives comme le vélo) à Clamecy et dans les villes et
+                villages alentour. Nous avons travaillé sur la linéarité entre
+                Clamecy et Varzy, la deuxième ville du territoire. Notre
+                objectif était de développer des solutions de mobilité qui
+                permettraient aux résidents d’éviter de prendre leur voiture
+                seuls pour leurs activités quotidiennes. Nous visons également à
+                développer le tourisme actif, en utilisant la piste cyclable
+                déjà en place à l’Est de Clamecy. Pour ce faire, ce projet
+                propose de créer de nouvelles pistes cyclables, des espaces de
+                covoiturage et la gratuité des transports en commun certains
+                jours pour les personnes. Ce projet s’inscrivait dans le cadre
+                du regain d’intérêt pour les espaces verts de l’arrière-pays de
+                Clamecy et du développement des mobilités alternatives dans le
+                reste du département de la Nièvre.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Elisa Naudin', 'Patrick Hervé-Yapo', 'Lucie Crespin'],
+            title:
+              'Le patrimoine de logements anciens et le renouvellement par recyclage urbain',
+            description: (
+              <>
+                Ce projet propose un programme de revitalisation de Clamecy,
+                petite ville de la Nièvre. L’objectif était de réhabiliter des
+                logements anciens vacants pour adapter les logements aux besoins
+                d’habitant.es d’aujourd’hui. Les étudiant.es ont travaillé sur
+                l’ancien bâtiment pour adresser plusieurs enjeux&nbsp;:
+                écologiques (limiter l’étalement urbain, privilégier le réemploi
+                des matériaux), sociaux (adapter l’offre de logements aux
+                besoins habitants) et politiques (contribuer à la revitalisation
+                de Clamecy).
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'semester-8',
+    label: 'Semestre 8',
+    title: 'Habiter les campagnes urbaines',
+    description: (
+      <>
+        L’atelier de projet du second semestre porte sur les campagnes urbaines,
+        territoires au caractère rural (place de l’agriculture, prédominance de
+        la maison individuelle…) mais dont le développement urbain est soumis
+        aux dynamiques et influences métropolitaines. L’exercice consiste à se
+        saisir des enjeux contemporains des campagnes urbaines (production de
+        l’habitat, non-artificialisation des sols, aménagement des espaces
+        publics, densification douce…) et à proposer, par le projet, des
+        compositions architecturales et urbaines et des modes de production de
+        l’habitat aptes à répondre aux besoins et aux aspirations des
+        populations présentes et futures. L’approche de l’atelier est que la
+        compréhension des enjeux politiques et écologiques en territoires
+        périurbains permet d’alimenter le renouvellement à la fois des
+        conditions et les partis-pris du projet architectural et urbain
+        (stratégie d’aménagement, production de l’habitat, formes urbaines,
+        mixité fonctionnelle et sociale, etc.).
+      </>
+    ),
+    areas: [
+      'Tignieu-Jameyzieu (Isère, 2022, 2023)',
+      'Romans-sur-Isère et Bourg-de-Péage (Drôme, 2024, 2025)',
+    ],
+    years: [
+      {
+        label: '2024-2025',
+        mentoring: [
+          'Grégory Busquet',
+          'Cécile Léonardi',
+          'Théo Maurette',
+          'Ivan Mazel (resp.)',
+          'Adrien Mollaret',
+          'Damien Vielfaure',
+        ],
+        projectWorkshops: [
+          {
+            students: [
+              'Fanny DAMOND',
+              'Kémarine STROOBANT',
+              'Cyrille VANPEENE',
+            ],
+            title: (
+              <>
+                Réinscrire l’habitat social dans les centralités&nbsp;: quand
+                les typologies contraintes du tissu faubourien deviennent
+                vecteur de projet
+              </>
+            ),
+            description: (
+              <>
+                Ce projet propose la requalification d’un bâtiment ancien situé
+                au cœur du tissu faubourien de Bourg-de-Péage et son inscription
+                dans une stratégie urbaine plus large visant à reconnecter la
+                Place Delay d’Agier à la Place de l’Église. À l’échelle urbaine,
+                l’intervention prolonge le projet de centre-ville en valorisant
+                les mobilités douces, en désimperméabilisant les sols et en
+                requalifiant les espaces publics pour créer de nouveaux lieux de
+                sociabilité. À l’échelle du bâti, l’opération consiste en la
+                reconversion d’un édifice étroit et vacant&nbsp;: conservation
+                du socle, création d’une percée vers la rue Pierre Vernet,
+                surélévation bois et réorganisation des usages. Le
+                rez-de-chaussée accueille un café, des espaces partagés et deux
+                cabinets médicaux, tandis que les étages proposent des logements
+                sociaux traversants et accessibles, articulés autour de
+                coursives et terrasses partagées. L’ensemble vise à redonner vie
+                à un morceau de centre-ville, en rendant ses qualités
+                accessibles à tous et en faisant de l’habitat social un
+                véritable moteur de centralité.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Léa CASADO', 'Marisa MARQUES SANTOS'],
+            title: 'Expérimenter pour répondre aux schémas familiaux nouveaux',
+            description: (
+              <>
+                Dans un contexte où plus de la moitié des couples se séparent,
+                nos façons d’habiter évoluent et de nouveaux besoins
+                apparaissent. Pour les familles modestes, la rupture fragilise
+                souvent l’équilibre et complexifie la proximité avec les
+                enfants. Le sépartement propose une alternative&nbsp;: une
+                séparation douce qui permet aux parents de continuer à cohabiter
+                temporairement pour des raisons affectives, pratiques ou
+                économiques. Conçu comme une architecture de transition, il
+                offre un cadre qui préserve à la fois l’autonomie de chacun et
+                la stabilité des enfants. Plus qu’une solution spatiale, il
+                ouvre la voie à une nouvelle manière d’habiter la séparation,
+                mieux adaptée aux schémas familiaux contemporains, que le
+                logement classique ignore encore.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Jade HUSER', 'Mattéo LESEIGNEUR'],
+            title: 'Faire Lieu, Faire Liens',
+            description: (
+              <>
+                Le projet, situé à Bourg-de-Péage face à Romans-sur-Isère,
+                répond aux enjeux révélés par le diagnostic&nbsp;: isolement du
+                parti du centre-bourg en raison du relief et du front bâti,
+                accessibilité limitée, partage conflictuel des circulations et
+                manque d’aménagements sécurisés, mais aussi valorisation
+                possible grâce à la présence de qualités paysagères, d’une
+                venelle et d’une dent creuse. L’intervention poursuit deux
+                objectifs&nbsp;: d’une part, développer une offre de logements
+                en accompagnant la mutation du site, et d’autre part, élargir le
+                périmètre d’action afin d’améliorer la qualité de vie et de
+                renforcer l’attractivité des berges. Le projet propose ainsi un
+                bâtiment préservant les vues, la réhabilitation de maisons
+                vétustes, la reconstruction d’une dent creuse, la création d’un
+                cœur d’îlot convivial, une voirie désimperméabiliser et apaisée,
+                ainsi qu’un aménagement des berges favorisant la promenade et la
+                convivialité.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Nathan SALIGNAT', 'Charlotte FARYS'],
+            title: null,
+            description: (
+              <>
+                Le projet consiste à requalifier un îlot en entrée de ville à
+                Bourg-de-Péage, aujourd’hui marqué par une forte vacance
+                commerciale et résidentielle, un vieillissement du parc de
+                logements et un manque d’espaces de sociabilité. L’objectif est
+                de reconnecter l’îlot à son contexte urbain en réactivant les
+                rez-de-chaussée, en créant des logements adaptés et en
+                favorisant la mixité intergénérationnelle. Les quatre cellules
+                commerciales de la rue Jean-Jaurès sont réunies pour accueillir
+                un commerce alimentaire combinant boucherie, fromagerie et
+                libre-service, avec une organisation optimisée et des
+                interventions limitées sur les façades. À l’est, l’ancien garage
+                face à l’église est transformé en café de quartier avec deux
+                terrasses et un salon à l’étage, conçu comme un nouveau lieu de
+                sociabilité. En parallèle, cinq logements T4 en colocation
+                intergénérationnelle (personnes âgées et jeunes actifs) sont
+                aménagés dans les étages, traversants ou bi-orientés, avec une
+                grande salle commune ouverte sur un cœur d’îlot végétalisé. Le
+                projet limite les transformations structurelles tout en
+                valorisant les qualités existantes, et propose plusieurs
+                scénarios de portage allant d’un gestionnaire unique (résidence
+                Paul Brunat) à une copropriété favorisant l’entraide et la
+                cohabitation entre générations.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2023-2024',
+        mentoring: [
+          'Margot Bergerand',
+          'Marine Bourgeois',
+          'Cécile Léonardi',
+          'Ivan Mazel (resp.)',
+          'Damien Vielfaure',
+        ],
+        projectWorkshops: [
+          {
+            students: [
+              'Badreddine Hamaich',
+              'Églantine Maucuit',
+              'Maxime Montaye',
+            ],
+            title:
+              'Produire du logement abordable et de qualité dans le centre ancien de Bourg-de-Péage Une stratégie à l’échelle d’un îlot démonstrateur: l’ îlot Mazagran',
+            description: (
+              <>
+                Ce travail est une réflexion sur la production de logement dans
+                un centre ancien dense, avec plusieurs niveaux de dégradation et
+                habité par une population majoritairement locataire et subissant
+                de la précarité économique. À l’échelle d’un îlot démonstrateur,
+                nous avons tenté de répondre aux objectifs suivants&nbsp;:
+                <br />
+                Faire avec le déjà là, tant concernant le bâti existant qu’avec
+                et pour les personnes vivant déjà dans le centre. Plutôt qu’une
+                politique qui viserait à «&nbsp;attirer&nbsp;» un certain type
+                de population, nous voulons améliorer la vie des personnes
+                présentes par choix ou par nécessité.
+                <br />
+                Recréer de la qualité de vie dans les espaces publics&nbsp;: on
+                habite un logement, on habite aussi une ville.
+                <br />
+                Redonner une place aux liens sociaux, tant dans les logements
+                que dans les espaces communs.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Maëlys Christin', 'Claire Kolodziej', 'Aglaé Thébaud'],
+            title:
+              'Revalorisation et réhabilitation du quartier d’habitat social de la Parisière à Bourg-de-Péage',
+            description: (
+              <>
+                Ce projet s’inscrit dans une volonté de repenser le
+                renouvellement des logements sociaux à Bourg-de-Péage. Avec une
+                population précaire et un besoin accru en logements sociaux, la
+                réhabilitation de l’ensemble historique de la Parisière vise à
+                représenter comment la revalorisation de l’existant permet
+                d’améliorer la qualité de l’habitat sur le plan architectural
+                mais aussi social. Un des axes de travail est justement de
+                restructurer les espaces communs extérieurs pour favoriser la
+                création de lien social. Le projet propose donc la
+                requalification et rénovation des logements et du bâti mais
+                aussi la création d’extensions, avec en parallèle l’aménagement
+                d’espaces partagés pour les locataires.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Mathias Dunyach', 'Gasdelton Elisha', 'Anna Boitel'],
+            title:
+              'Revisiter les formes pavillonnaires en diversifiant le type d’habitat. Du pavillon au logement de forme intermédiaire',
+            description: (
+              <>
+                Ce travail s’intéresse à la production de logement dans un
+                espace périurbain en forte croissance démographique. Face à
+                l’attrait pour cette forme d’habitat entre ville et campagne
+                entraînant notamment une forte consommation foncière. Nous avons
+                pensé une alternative au développement pavillonnaire et à la
+                maison individuelle par un projet de densification douce d’un
+                bâtiment vacant sur la commune de Génissieux, permettant
+                d’accueillir des logements sociaux, permettant de diversifier
+                l’offre de logement existante et de faire avec l’existant avec
+                (presque) les mêmes qualité qu’une maison individuelle.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2022-2023',
+        mentoring: [
+          'Margot Bergerand',
+          'Marine Bourgeois',
+          'Laure Brayer',
+          'Adriana Diaconu',
+          'Federica Gatta',
+          'Cécile Léonardi',
+          'Ivan Mazel (resp.)',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Naïan Baron', 'Victoria Excoffon', 'Emma Léger'],
+            title: 'Habiter les lisières',
+            description: (
+              <>
+                Dans les campagnes urbaines, la requalification des lisières
+                est-elle une alternative à l’étalement urbain&nbsp;?
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Adrien Barbier', 'Adrien Leclercq', 'Julien Thomas'],
+            title: 'De la zone d’activité économique au parc d’activité dense',
+            description: null,
+            pictures: [],
+          },
+          {
+            students: ['Céline Bodin', 'Nouhaila Boukhare'],
+            title:
+              'Favoriser le développement de la pratique piétonne et cyclable dans le quotidien de l’agglomération pontoise',
+            description: (
+              <>
+                La première stratégie consiste à rendre l’agglomération
+                praticable en déplacement doux, à l’aide de la création d’un
+                réseau de voirie cyclable et piétonne et d’un réseau de
+                stationnements cyclables. La seconde stratégie consiste à rendre
+                l’agglomération vivable en déplacement doux avec la création
+                d’un réseau de places piétonnes et d’espaces piétons plus vastes
+                pour pouvoir vivre et habiter l’espace public. La troisième
+                stratégie consiste en la densification des services et des
+                usages, autour des dessertes de transports en commun. La
+                quatrième stratégie consiste à valoriser les activités en lien
+                avec les mobilités douces, en particulier le vélo et la marche.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Edgar Boisset', 'Chloé Graziano'],
+            title:
+              'Un agriparc social habité. Densifier pour renouer avec la vocation agricole du territoire',
+            description: (
+              <>
+                Le projet émane de la tension entre préemption croissante de
+                terres agricoles pour la production de logements et diminution
+                du nombre d’agriculteurs. L’arrivée éventuelle du tram-train
+                depuis Lyon risque d’augmenter la population et les prix du
+                foncier dans un territoire aux revenus modestes et dans un
+                contexte de difficultés d’accès à la propriété. Comment penser
+                une offre de logement abordable en renouant avec l’activité
+                agricole du territoire que le pavillonnaire tend à
+                déliter&nbsp;? Le groupe révise donc un projet de la commune de
+                Tignieu sur une zone stratégique mais enclavée. Le nouveau
+                projet d’agriparc propose 100% de logements sociaux et un
+                enchevêtrement entre terres agricoles, commerces locaux et
+                terres habitées, où les agriculteurs pourront notamment être
+                logés.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Clara Errecade', 'Alizé Hanson', 'Etienne Masselot'],
+            title: 'Reconnexion et centralité',
+            description: null,
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2021-2022',
+        mentoring: [
+          'Marine Bourgeois',
+          'Adriana Diaconu',
+          'Federica Gatta',
+          'Florian Golay (resp.)',
+          'Cécile Léonardi',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Clair Gauffenic', 'Valentine Larue', 'Simeon Naydenov'],
+            title:
+              'Réinventer la ruralité dans une réalité territoriale sous influence métropolitaine',
+            description: (
+              <>
+                Le projet travaille sur les franges entre espaces agricoles et
+                espaces urbanisés avec le but de préserver l’identité rurale de
+                Tignieu-Jameyzieu et lutter contre l’artificialisation des sols.
+                Nous avons travaillé un modèle de fermes avec des logements pour
+                les exploitant-es et de l’hébergement pour des woofers. Le
+                projet s’ancre aussi dans un projet alimentaire à l’échelle
+                intercommunale dans la perspective de l’arrivée du tram-train à
+                Tignieu.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Raphaël Boujon', 'Juliette Garcia', 'Alouna Nicolas'],
+            title: (
+              <>
+                Des grandes maisons aux petits logements collectifs&nbsp;:
+                dénsifier la réhabilitation
+              </>
+            ),
+            description: (
+              <>
+                Ce travail est une invitation à densifier et intensifier
+                l’habitat tignoland, dans le respect des bâtiments existants et
+                des personnes qui y vivent. Nous avons commencé par comprendre
+                ce que signifie vivre dans cette commune en étant attentifs à
+                l’organisation spatiale aux personnes qui y habitent, aux formes
+                urbaines et architecturales. Ces questionnements et ces
+                observations se cristallisent dans un premier temps sous la
+                forme d’une charte architecturale et paysagère qui propose une
+                série de préconisations, une sorte de guide. Dans un second
+                temps, nous proposons une mise en application de la charte à
+                travers trois projets&nbsp;: en les réhabilitant, conservant
+                l’existant tout en densifiant les parcelles. Pour finir, ces
+                intentions de projets permettent de construire un cahier des
+                charges pour développer un Appel à Manifestation d’Intérêt (AMI)
+                que la mairie propose sur des terrains dont elle est
+                propriétaire.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Matteo Beguiristain',
+              'Guillaume Cachoulet',
+              'Patrick Yapo',
+            ],
+            title: (
+              <>
+                Un quartier de gare social à Tignieu Jameyzieu&nbsp;: densifier
+                plus pour artificialiser moins
+              </>
+            ),
+            description: (
+              <>
+                Le projet d’OAP des Brosses existe déjà actuellement et le
+                groupe d’étudiants AUEP propose ici une révision de cet OAP pour
+                mieux répondre aux enjeux sociaux et environnementaux. Le projet
+                a pour objectif une densification plus importante afin de
+                diminuer drastiquement l’artificialisation du sol, et
+                d’augmenter le nombre de logements et d’en diminuer le coût. Si
+                l’ancienne OAP proposait une forme de paysage plutôt périurbain,
+                ici le projet tente de mieux se greffer à la connexion du futur
+                train tram qui va transformer ce quartier en quartier de gare,
+                et de proposer une articulation entre mode de vie périurbain et
+                métropolitain. Plus de 70% des logements sont sociaux et
+                permettent ainsi à la commune de Tignieu Jameyzieu d’être
+                éligible à la loi SRU et de rattraper sa carence en logements
+                sociaux.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Ana Lucia Caetano',
+              'Lucie Crespin',
+              'Matteo Beguiristain',
+              'Robinson Rossi',
+            ],
+            title: 'Relier et habiter les creux de la ville pavillonnaire',
+            description: (
+              <>
+                Village de campagne, Tigneux Jameyzieu est devenue ville très
+                pavillonnaire et se voit intégrée dans la métropole Lyonnaise.
+                La commune s’inquiète d’une densification peu qualitative et
+                destructrice des terres agricoles comme des bâtis existants et
+                qui ne fait que prolonger l’état de ville dortoir. En parallèle,
+                la hausse des prix du logement est une menace concrète, alors
+                que la commune est loin d’atteindre le seuil minimal de
+                logements sociaux. Tigneux Jameyzieu a encore le pouvoir
+                d’écrire son avenir. Sur la base de 2 échantillons ensuite
+                convertis en OAP, il est démontré qu’une densification par
+                l’occupation du mitage parcellaire est possible et favorable au
+                développement de logements sociaux et de services. Cette
+                dynamique permet l’émergence d’une ville multipolaire et
+                piétonne.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'semester-9',
+    label: 'Semestre 9',
+    title: 'Héritages et récits métropolitains',
+    description: (
+      <>
+        L’héritage n’est pas une simple transmission passive du passé, mais un
+        matériau vivant, modelé par des fictions et des récits, permettant
+        d’inventer des futurs possibles pour l’architecture et la ville. En
+        partant de cette proposition, faites de votre étude une
+        «&nbsp;expérience urbaine&nbsp;» où la fiction devient également un
+        moyen de comprendre l’expérience vécue des espaces urbains. A travers
+        une fiction basée sur des réflexions et des recherches réelles (qui
+        prennent place dans un travail de terrain in situ, par la rencontre avec
+        des acteurs de la fabrique urbaine et à travers l’analyse de documents
+        d’urbanisme et d’archives), donnez une nouvelle vie aux espaces urbains,
+        en imaginant des futurs possibles ou en ré-interprétant leur passé et
+        proposez votre vision des lieux. Qu’est-ce que nous souhaitons vraiment
+        préserver, qu’est-ce qu’on laisse comme trace&nbsp;?
+      </>
+    ),
+    areas: ['Métropole de Grenoble (Isère, 2022-2025)'],
+    years: [
+      {
+        label: '2024-2025',
+        mentoring: [
+          'Laure Brayer',
+          'Eliott Ducharme',
+          'Laure Favier',
+          'Federica Gatta (resp.)',
+          'Anaïs Vigneron (resp.)',
+        ],
+        projectWorkshops: [
+          {
+            students: [
+              'Maëlys Christin',
+              'Luce Renaud',
+              'Sidonie Rigal',
+              'Aglaé Thébaud',
+            ],
+            title:
+              "La ville à hauteur d’ados. (Re)donner de la place et de l'espace aux adolescent.e.s",
+            description: (
+              <>
+                Suite à une enquête réalisée aux abords des établissements
+                scolaires et lieux fréquentés par les adolescent•es -&nbsp;alors
+                quasiment absent•es des espaces publics&nbsp;- la «&nbsp;Ville à
+                hauteur d’ados&nbsp;» a pour objectif de consacrer des espaces
+                faits pour et par elles et eux en ville. Nos réflexions
+                articulent donc des outils à destination des collectivités et
+                des aménagements dans l’espace public et dans une future Maison
+                des Jeunes et de la Culture au sein du quartier Flaubert à
+                Grenoble. Nous proposons alors un projet manifeste consistant à
+                dépasser la représentation négative de l’adolescent•e et de
+                l’inclure pleinement dans l’évolution des villes et des
+                territoires, par sa présence et sa participation citoyenne.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Anna Boitel',
+              'Badreddine Hamaich',
+              'Adrien Leclercq',
+              'Maxime Montaye',
+            ],
+            title: 'La ville nourricière',
+            description: (
+              <>
+                Ce projet s’inscrit dans les réflexions sur la place de
+                l’agriculture et de l’alimentation dans nos villes. Nous
+                proposons alors un projet-manifeste de ville nourricière à
+                l’échelle du quartier Flaubert à Grenoble et du bâtiment de
+                l’ancienne chambre de l’agriculture que nous transformons en
+                Maison de l’alimentation. Selon nous, la ville nourricière peut
+                comporter des espaces agricoles mais doit avant tout proposer
+                des espaces de débat et d’information sur les questions
+                alimentaires et doit pouvoir rendre concrète l’accessibilité de
+                tous à une alimentation saine, durable et choisie.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Eglantine Maucuit',
+              'Sianna Minasyan',
+              'Claire Kolodziej',
+              'Gasdelton Elisha',
+            ],
+            title: 'La Maison des Jeunes ',
+            description: (
+              <>
+                Il s’agissait de s’intéresser à une population moins représentée
+                dans cette partie de Grenoble mais tout autant présente que les
+                autres&nbsp;: les jeunes au sens d’étudiants. Afin d’activer
+                l’ancienne chambre l’agriculture et d’en faire une charnière
+                pour ouvrir la ZAC Flaubert sur son tissu urbain environnant
+                nous proposions de la transformer en habitat les étages avec
+                différentes cellules de logements, du studio à la colocation
+                KAPS qui permettraient d’accueillir une grande diversité de
+                parcours étudiants et d’utiliser le rez-de-chaussée pour
+                accueillir différents services&nbsp;: du quotidien comme une
+                boulangerie ou spécialisé comme de l’accompagnement dans les
+                démarches administratives.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2023-2024',
+        mentoring: [
+          'Laure Brayer',
+          'Edith Chezel',
+          'Eliott Ducharme',
+          'Laure Favier',
+          'Federica Gatta (resp.)',
+          'Mathias Rollot (resp.)',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Thomas Armanet', 'Adrien Barbier', 'Victoria Excoffon'],
+            title: (
+              <>
+                Le carrefour des frugalités&nbsp;: transformer les ruines de
+                l’Anthropocène
+              </>
+            ),
+            description: (
+              <>
+                En s’inscrivant dans le scénario 1 de l’ADEME (génération
+                frugale), le groupe a proposé une revalorisation du foncier
+                commercial devenu obsolète du fait des changements des modes de
+                consommation. Le centre de tri, pièce urbaine importante du parc
+                de l’Île d’Amour, est devenu une ressourcerie de matériaux
+                (construction etc). Les parcelles naturelles environnantes ont
+                été transformées en agri-parc pour contribuer à l’autonomie
+                alimentaire locale, et répondre ainsi aux enjeux de transition
+                alimentaire.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Nolwenn Biger', 'Etienne Masselot', 'Emmanuelle Pilon'],
+            title: 'Au carrefour des transitions',
+            description: (
+              <>
+                En s’inscrivant dans le scénario 2 de l’ADEME fondé sur les
+                coopérations territoriales, le projet propose trois axes
+                d’intervention pour apporter une amorce de réponse pour faire
+                face à la crise alimentaire à venir. Le premier axe se situe
+                dans l’amélioration des conditions en faveur de la biodiversité
+                et s’appuie sur le renforcement du travail réalisé au sein de
+                l’OAP Paysage «&nbsp;Isère Amont&nbsp;» de la Métropole. Le
+                second axe concerne la définition d’acteurs et de coopérations
+                nécessaires en vue d’un changement de modèle autour de la
+                question alimentaire. Le troisième axe permet enfin de faire
+                projet autour de la transformation architecturale et urbaine de
+                lieux devenus obsolètes au sein du scénario 2 de l’ADEME.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Céline Bodin', 'Edgar Boisset', 'Emma Léger'],
+            title: 'Un refuge en métropole',
+            description: (
+              <>
+                Le Refuge s’est nommé ainsi, car il propose une protection et un
+                isolement par rapport à l’environnement considéré comme hostile
+                par sa communauté&nbsp;: notamment le consumérisme, le
+                technologisme et le capitalisme. Le Refuge se veut sécurisé,
+                autonome, écologiste, durable, résilient et solidaire. Il
+                souhaite pouvoir accueillir tout type d’habitants, dont les plus
+                fragiles. Il se veut porteur d’un mode de vie simple, dans le
+                contact et le respect de la nature, dans le partage et la
+                solidarité, ainsi que dans l’épanouissement de chacun.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Clara Errecade', 'Robinson Rossi'],
+            title:
+              'Escale réparatrice. Récits métropolitains pour l’Anthropocène',
+            description: (
+              <>
+                La neutralité carbone est atteinte en créant de nouvelles
+                coopérations territoriales, orientées vers la relocalisation
+                industrielle et le rétrécissement des bassins de vie et de
+                travail. Les métropoles assument leur responsabilités et
+                n’externalisent plus les nuisances que leurs consommations
+                génèrent. Elles intègrent dans leur périmètre les aires
+                industrielles, et particulièrement de recyclage et le réemploi.
+                <br />
+                L’Île d’Amour est une opportunité pour ces transformations
+                productives&nbsp;: proche de la ville-centre, c’est un ilôt de
+                fraicheur très bien desservi par les transports en commun. Le
+                projet hybride l’aire industrielle avec une offre culturelle et
+                de loisir. C’est un lieu démonstrateur des valeurs et pratiques
+                de l’humanité du XXIe siècle, devenue une société savante,
+                habile et ré-employeuse.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: ['Chloé Graziano', 'Alizé Hanson', 'Kawtar Morchadi'],
+            title:
+              'Un centre agricole pédagogique. Expérimentations, connexions et hybridations',
+            description: (
+              <>
+                Le groupe s’inscrit dans le scénario 2 de l’ADEME fondé sur les
+                coopérations territoriales. Le projet proposé interroge la
+                manière d’investir un lieu patrimonial désaffecté pour le
+                reconvertir en lieu de coopération agricole et pédagogique
+                multiscalaire. Il esquisse un nouveau récit qui met en valeur la
+                plaine et les Boucles de l’Isère. Comment habiter, apprendre et
+                produire à l’heure de l’Anthropocène tout en révélant et en
+                mutualisant les ressources du territoire&nbsp;? Le groupe
+                propose un centre agricole pédagogique fondé sur
+                l’expérimentation et l’hybridation des usages&nbsp;: production
+                agricole, restauration et vente issues des plaines, jardins
+                pédagogiques, espaces d’enseignement.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
+      },
+      {
+        label: '2022-2023',
+        mentoring: [
+          'Federica Gatta (resp.)',
+          'Cécile Léonardi',
+          'Mathias Rollot (resp.)',
+          'Christophe Séraudie',
+        ],
+        projectWorkshops: [
+          {
+            students: ['Mathilde Cazeaux', 'Elisa Naudin', 'Raphaël Boujon'],
+            title: "L'atelier de gare",
+            description: (
+              <>
+                Ce projet présente une proposition d’aménagement pour le
+                quartier de gare de St-Egrève en réponse à l’appel à projet
+                urbain innovant (APUI) rédigé par un autre groupe. Ce dernier
+                mettait notamment l’accent sur le facteur sociabilisant que
+                devait comprendre le projet de quartier séparé entre une zone
+                industrielle et un quartier résidentiel, ainsi que sur sa
+                réponse face au contexte de crise écologique. La proposition du
+                groupe est centrée sur le développement d’une antenne Make ici
+                en venant créer un atelier de bricolage ouvert à la fois à des
+                artisans et des particuliers. Cet atelier est accompagné d’une
+                résidence pour artisans, d’un lieu de consommation (café et
+                espace foodtruck), d’un potager pédagogique, d’une antenne
+                métrovélo, ainsi que d’un vaste espace public planté.
+              </>
+            ),
+            pictures: [],
+          },
+          {
+            students: [
+              'Max Chapuis',
+              'Guillaume Cachoulet',
+              'Simeon Naydenov',
+              'Alouna Nicolas',
+            ],
+            title:
+              'Brancher Moirans, une vision pour la gare de Moirans dans le cadre du projet de RER métropolitain de Grenoble',
+            description: (
+              <>
+                C’est une proposition de transformation spatiale du quartier de
+                la gare de Moirans, avec l’implication des acteur.ices divers et
+                l’activation progressive de son parvis à travers la mise en
+                place d’interventions légères. Le site de projet composé de
+                trois pôles s’inscrit donc dans un contexte territorial en deux
+                temps, en deux phases, la gare est à cheval entre deux mondes
+                qui ne se côtoient pas, la zone s’allume la journée, et l’on
+                retourne dormir dans les pavillons le soir. Entre les deux, les
+                usagers ne font que passer, même ceux qui voudraient s’y arrêter
+                ne peuvent pas, les lycéens parlent d’une «&nbsp;table&nbsp;» à
+                quelques mètres derrière le gymnase pour évoquer un lieu où
+                s’asseoir, la distance se transforme en temps&nbsp;: 10 minutes,
+                c’est trop loin. Finalement, cette zone artisanale et
+                pavillonnaire est figée dans le temps. Nous partons de
+                l’hypothèse que le RER métropolitain, lui, va venir intensifier
+                ces usages en étirant et en accélérant le temps. La grille
+                horaire du lieu n’est plus réduite à l’ouverture des bureaux et
+                des usines le matin, au temps de pause du midi et au 17h de fin
+                de journée qui s’étend jusqu’à la fermeture de l’Intermarché. Le
+                RER vient rajouter des horaires au milieu de tout ça, qui
+                brouillent les pistes de l’équilibre tranquille et si habituel,
+                presque banal de la zone. Ces nouveaux horaires vont de pair
+                avec de nouvelles fréquentations, des gens, des usagers-ères,
+                des voyageur-ses qui vont et qui viennent et qui potentiellement
+                s’arrêtent. Travailler sur la temporalité de ces lieux apparaît
+                alors être une piste intéressante puisque changer les horaires
+                des lieux du site serait aussi changer les habitudes, pour
+                décloisonner cette répartition d’âge, de genre et de pratiques.
+              </>
+            ),
+            pictures: [],
+          },
+        ],
       },
     ],
   },

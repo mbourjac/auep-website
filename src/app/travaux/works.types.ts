@@ -27,3 +27,25 @@ export type DissertationsYear = {
   label: string;
   dissertations: Dissertation[];
 };
+
+export type ProjectWorkshop = {
+  students: string[];
+  title: ReactNode | null;
+  description: ReactNode | null;
+  pictures: string[];
+};
+
+export type ProjectWorkshopsYear = {
+  label: string;
+  mentoring: string[];
+  projectWorkshops: ProjectWorkshop[];
+};
+
+export type ProjectWorkshopsSemester = {
+  id: string;
+  label: string;
+  title: string;
+  description: ReactNode | null;
+  areas: string[];
+  years: ProjectWorkshopsYear[];
+};

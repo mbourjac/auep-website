@@ -1,5 +1,6 @@
 import {
   DissertationsYear,
+  GraduationProjectsYear,
   ProjectWorkshopsSemester,
   SeminarsSemester,
 } from './works.types';
@@ -2139,6 +2140,690 @@ export const PROJECT_WORKSHOPS_SEMESTERS: ProjectWorkshopsSemester[] = [
             pictures: [],
           },
         ],
+      },
+    ],
+  },
+];
+
+export const GRADUATION_PROJECTS_YEARS: GraduationProjectsYear[] = [
+  {
+    id: '2024-2025',
+    label: '2024-2025',
+    mentoring: [
+      'Charles Ambrosino',
+      'Renaud Bécot',
+      'Marie-Julie Bernard',
+      'Hélène Caune',
+      'Edith Chezel',
+      'Laure Favier',
+      'Federica Gatta',
+      'Florian Golay',
+      'Théa Manola (resp.)',
+      'Simeon Naydenov',
+      'Yvan Okotnikoff (resp.)',
+      'Charles Rives',
+    ],
+    graduationProjects: [
+      {
+        students: ['Nolwenn Biger'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Céline Bodin'],
+        title:
+          "Penser la Qualité de vie dans les Zones d'Aménagement Concerté (ZAC). Une réflexion sur les pratiques architecturales et urbaines dans le contexte français contemporain",
+        supervisedBy: null,
+        description: (
+          <>
+            Ce travail permet de répondre à la problématique&nbsp;:
+            «&nbsp;Comment concevoir des espaces mettant en œuvre le plus de
+            critères de «&nbsp;Qualité de vie&nbsp;» possibles, à l’échelle
+            architecturale et urbaine, dans le cadre français des Zonesa
+            d’Aménagement Concerté (ZAC) et de ses prescriptions
+            opposables&nbsp;?&nbsp;». Tout d’abord, nous définissons des besoins
+            à satisfaire grâce au travail de la notion de Qualité de vie.
+            Ensuite, nous observons grâce à un test de conception, qu’il est
+            possible de proposer des conceptions répondant à plus de besoins de
+            la Qualité de vie que pratiqué actuellement. Sur le site d’étude,
+            cela s’exprime principalement par un travail sur des enjeux de
+            confort climatique, de confort sonore, du prendre soin de
+            l’environnement, de la pratique d’activité physique, de la pollution
+            de l’air. Ce travail relève différentes pistes de réflexions pour
+            une amélioration des pratiques et du cadre des Zones d’Aménagements
+            Concertées pour permettre une meilleure Qualité de vie possible, sur
+            différents sujets tels que l’organisation du rôle des acteurs en
+            fonction des phases, le recrutement des acteurs, les moments et la
+            manière pour travailler les sujets de conception, la manière de
+            réaliser les prescriptions, la représentation et l’évaluation des
+            projets, la gestion des questions financières, l’entretien et la
+            gestion des constructions, le découpage foncier des lots, le rôle
+            possible de l’outil ZAC dans l’aménagement urbain français, la
+            formation des collectivités, et le cadre réglementaire des ZAC.
+          </>
+        ),
+      },
+      {
+        students: ['Anna Boitel', 'Sianna Minasyan'],
+        title:
+          'Fabrique d’une ville accueillante. (Re)penser la ville ordinaire sous le prisme de l’accueil des personnes en situation d’exil',
+        supervisedBy: 'Hélène Caune',
+        description: (
+          <>
+            Le droit au logement semble être un droit humain fondamental.
+            Pourtant inscrit tardivement dans la loi française (en 1990 par la
+            Loi Besson puis rappelé en 2007 par la loi DALO), il reste pour une
+            grande partie de la population un droit purement théorique.
+            <br />
+            Ce travail vise à analyser les conditions et le système d’accueil
+            des personnes en situation d’exil aujourd’hui sur le territoire
+            grenoblois, en s’appuyant particulièrement sur leur parcours
+            résidentiel. De l’hébergement au logement, la discontinuité et la
+            conditionnalité du parcours contrastent avec les principes
+            fondamentaux de l’habitat digne et accessible.
+            <br />
+            Afin de penser une ville accueillante et inclusive, allant au-delà
+            de la fabrique ordinaire de la ville, nous définirons une stratégie,
+            composée de plusieurs principes et outils. Celle-ci s’adresse aux
+            collectivités, architectes et urbanistes afin de penser la ville
+            accueillante de demain.
+            <br />
+            Une application opérationnelle est proposée à l’échelle du quartier
+            Berriat St-Bruno, découpée en quatre îlots de travail en adoptant
+            une posture de maîtrise d’ouvrage. Celle-ci est complétée par un
+            guide de la ville accueillante permettant d’apporter des leviers et
+            exemples concrets (assistance à maîtrise d’ouvrage). Enfin, c’est
+            une proposition de réhabilitation d’ancien patrimoine tertiaire,
+            aujourd’hui délaissé, qui apporte une réponse architecturale, sous
+            un prisme écologique et social, portant les besoins d’aujourd’hui
+            dans le patrimoine d’hier. En s’insérant aux croisement de la ville
+            scientifique, créative, et populaire, différentes ambiances dont est
+            marqué le quartier, nous tentons de répondre aux enjeux de ses
+            habitant·es face à l’urgence. C’est alors un programme mixte et
+            complémentaire qui est proposé, permettant surtout, une mise à
+            l’abri pérenne de toustes.
+          </>
+        ),
+      },
+      {
+        students: ['Agathe Bruyère', 'Eglantine Maucuit'],
+        title: (
+          <>
+            Ménager et révéler le diffus&nbsp;? Le territoire de Vif&nbsp;:
+            entre impératif de construction de logements sociaux et
+            stabilisation de l’enveloppe urbaine existante
+          </>
+        ),
+        supervisedBy: 'Simeon Naydenov',
+        description: (
+          <>
+            Le constat d’une série de crises (environnementale, sociale et
+            politique) qui posent la question de l’aménagement des territoires
+            diffus est le point de départ de ce projet de fin d’études. C’est
+            par une relecture du territoire d’étude, la commune de Vif, au
+            prisme des enseignements de l’école territorialiste que nous
+            proposons d’écrire un projet de territoire.
+            <br />
+            Un projet qui ménage les lignes fortes de grandes politiques
+            publiques et révèle les particularités du territoire. Nous dévoilons
+            trois sites possibles d’atterrissage de projet, trois sites qui à
+            leur manière évoquent différents enjeux que rencontrent la commune
+            de Vif&nbsp;: l’enjeu de la mémoire autour des anciens emplacements
+            des usines Vicat, l’enjeu de la porosité autour de l’Avenue Rivalta
+            di Torino et l’enjeu de l’habitat autour du site de Tête-de-Bourg.
+            Le projet, dans sa conception architecturale, approfondit ce dernier
+            site. Tête-de-Bourg est aujourd’hui une zone à urbaniser de 5
+            hectares dans le périmètre du centre-bourg. Ancien parcellaire
+            agricole, encadré par le Mont Uriol à l’ouest et le Mont Brion à
+            l’est, nous y imaginons une fabrication participative du diffus, une
+            architecture de cohabitation entre le vivant humain et non humain.
+          </>
+        ),
+      },
+      {
+        students: ['Maëlys Christin', 'Luce Renaud'],
+        title:
+          'Ville ordinaire, ville hospitalière. Revendiquer l’accès au logement par la diversification de l’habitat social en territoire dévitalisé',
+        supervisedBy: 'Edith Chezel et Federica Gatta',
+        description: (
+          <>
+            La crise du logement abordable maintient des milliers de ménages
+            précaires dans des logements souvent dégradés, voire insalubres et
+            inadaptés à leurs besoins. Le contexte économique et politique rend
+            d’autant plus difficile l’accès au logement, confrontant les
+            personnes les plus vulnérables à des situations très précaires,
+            voire de rue. Si les politiques publiques de logement œuvrent pour
+            la rénovation et le renouvellement de l’habitat dégradé en milieu
+            urbain dense, certains territoires périurbains demeurent exclus des
+            politiques territoriales. A Vizille, territoire en déprise, ces
+            enjeux d’accès au logement décent, abordable et adapté dans une
+            commune de la métropole grenobloise sont d’autant plus prégnants.
+            <br />
+            Ce projet de fin d’étude envisage sa redynamisation depuis la
+            diversification des offres d’habitat social et le déploiement d’une
+            action publique visant à fluidifier le parcours résidentiel des
+            ménages précaires. Une posture de maîtrise d’ouvrage est d’abord
+            adoptée autour d’opérations de logements adaptés et abordables, de
+            mutualisation par les communs, de soutien aux services solidaires ou
+            encore de l’aménagement d’espaces publics hospitaliers. La
+            réactivation d’un site industriel par la mobilisation du patrimoine
+            public vacant est finalement abordée sous le prisme d’une maîtrise
+            d’œuvre architecturale et urbaine. C’est toute l’attractivité de
+            cette ville ordinaire qui est remise en perspective par notre
+            proposition&nbsp;: revendiquer l’hospitalité des logements et des
+            espaces attenants, non seulement pour fluidifier les parcours
+            résidentiels, mais aussi compléter la revitalisation du centre
+            ancien et ainsi rayonner dans toute la ville.
+          </>
+        ),
+      },
+      {
+        students: ['Gasdelton Elisha'],
+        title: null,
+        supervisedBy: null,
+        description: (
+          <>
+            Ce travail s’inscrit autour d’un enjeu contemporain majeur&nbsp;:
+            l’adaptation du bâti face au risque inondation, à travers le prisme
+            des contraintes réglementaires du Plan de Prévention des Risques
+            Inondation (PPRI). Il prend pour terrain d’étude la ville de
+            Fontaine, et interroge les leviers d’une transformation urbaine
+            résiliente dans des zones soumises à des aléas hydrauliques
+            importants. Une partie propose une lecture critique des doctrines
+            actuelles de prévention des risques, celles portées par les PPRI.
+            Ces documents normatifs, souvent conçus selon une logique de
+            protection et d’interdiction, apparaissent parfois en décalage avec
+            les réalités territoriales. Une seconde partie s’appuie sur une
+            analyse morphologique et réglementaire de trois échantillons
+            urbains. À travers ces cas, il est mis en évidence les tensions
+            entre la réglementation et les besoins du territoire. Enfin, la
+            troisième partie développe une proposition spatiale concrète. Elle
+            explore des pistes de projet conciliant exigences de sécurité et
+            qualité architecturale. En valorisant une approche multiéchelle et
+            transversale, le projet intègre des typologies adaptatives. Ce
+            projet de fin d’études défend l’idée que la résilience face au
+            risque inondation ne se décrète pas uniquement par la
+            réglementation, mais se construit aussi dans la capacité collective
+            à imaginer et expérimenter d’autres manières de faire la ville
+          </>
+        ),
+      },
+      {
+        students: ['Clara Errecade'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Badreddine Hamaich', 'Claire Kolodziej'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Adrien Leclercq'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Etienne Masselot'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Maxime Montaye', 'Aglaé Thébaud'],
+        title: (
+          <>
+            Quels futurs pour l’avenue Gabriel Péri&nbsp;? Du pas de côté à la
+            bifurcation écologique
+          </>
+        ),
+        supervisedBy: 'Edith Chezel et Renaud Bécot',
+        description: (
+          <>
+            Ce projet s’inscrit dans un contexte d’urgence écologique
+            directement causée par l’activité humaine et, plus particulièrement,
+            par un mode de production industrielle mondialisée. À l’échelle
+            locale, ce mode de production se concrétise par des espaces aménagés
+            pour l’activité commerciale et industrielle, les Zone d’Activité
+            Économique (ZAE) qu’il faut donc réinterroger. Notre travail s’ancre
+            alors dans un contexte de mutation attendue de ces espaces
+            fragilisés par le développement du e-commerce et par le cadre
+            réglementaire du ZAN (Zéro Artificialisation Nette). Ces évolutions
+            font émerger une nouvelle lecture de ces territoires&nbsp;: des
+            opportunités foncières à reconsidérer.
+            <br />
+            Par un travail prospectif entre recherche et projet, nous testons
+            deux scénarios de transformation d’une avenue de l’agglomération
+            grenobloise, et défendons finalement la nécessité d’une véritable
+            bifurcation écologique locale. Celle-ci doit partir d’objectifs
+            écologiques comme fondement du projet, et non comme simple
+            ajustement aux modes de faire existants. Cela implique aussi de
+            reposer la question de ce qui compte vraiment -&nbsp;nos
+            attachements&nbsp;- et de ce dont nous dépendons pour vivre. Une
+            enquête sensible menée sur le territoire de projet a permis
+            d’identifier les attachements à préserver ou à révéler, ainsi que
+            des initiatives locales, souvent isolées, pouvant servir de socle à
+            un projet de bifurcation.
+          </>
+        ),
+      },
+      {
+        students: ['Sidonie Rigal'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Julien Thomas'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+    ],
+  },
+  {
+    id: '2023-2024',
+    label: '2023-2024',
+    mentoring: [
+      'Marine Bourgeois',
+      'Laure Brayer',
+      'Arnaud Buchs',
+      'Giulia Buffoli',
+      'Edith Chezel',
+      'Alain Faure',
+      'Laure Favier',
+      'Simon Godard',
+      'Federica Gatta',
+      'Florian Golay (resp.)',
+      'Théa Manola',
+      'Yvan Okotnikoff (resp.)',
+      'Mathias Rollot',
+    ],
+    graduationProjects: [
+      {
+        students: ['Thomas Armanet'],
+        title:
+          'Envisager l’effondrement en milieu urbain dense. Le bailleur social, acteur clé de la résilience',
+        supervisedBy: 'Théa Manola',
+        description: null,
+      },
+      {
+        students: ['Adrien Barbier'],
+        title:
+          'Les zones d’activités économiques à l’heure du ZAN. Stratégie différenciée de requalification des ZAE de l’agglomération grenobloise pour concilier développement économique et transition foncière',
+        supervisedBy: 'Arnaud Buchs',
+        description: null,
+      },
+      {
+        students: ['Edgar Boisset'],
+        title: <>(In)visibles&nbsp;: Les livreurs à vélo à Grenoble</>,
+        supervisedBy: 'Arnaud Buchs',
+        description: null,
+      },
+      {
+        students: ['Clara Errecade Cattalorda'],
+        title:
+          'Réhabilitation de l’ancien institut de géographie alpine à Grenoble. Une occupation transitoire avec les usagers',
+        supervisedBy: 'Théa Manola',
+        description: null,
+      },
+      {
+        students: ['Victoria Excoffon'],
+        title:
+          'Réhabilitation de l’ancien institut de géographie alpine à Grenoble. Une occupation transitoire avec les usagers',
+        supervisedBy: 'Théa Manola',
+        description: null,
+      },
+      {
+        students: ['Chloé Graziano'],
+        title:
+          'Devant le mur les bobos, derrière le mur les boloss. Étude du processus d’ancrage d’un tiers-lieu dans son quartier et de ses effets socio-spatiaux',
+        supervisedBy: 'Marine Bourgeois',
+        description: (
+          <>
+            Ce mémoire est centré sur le Minimistan, un tiers-lieu issu d’un
+            appel à projet de la Ville et situé dans un quartier prioritaire de
+            la politique de la ville de l’hypercentre de Grenoble. Développé par
+            deux entrepreneurs grenoblois, il accueille une diversité de
+            fonctions&nbsp;: espace de coworking, bar, café, restaurant,
+            activités culturelles, résidences d’artistes, etc. Le mémoire
+            analyse la manière dont le tiers-lieu s’ouvre et s’ancre dans son
+            quartier d’implantation. Ses résultats montrent que les objectifs
+            d’ouverture et de mixité associés à la catégorie
+            «&nbsp;tiers-lieu&nbsp;» et énoncés par les acteurs institutionnels
+            sont flous et opaques. Ils sont ainsi aisément re-traductibles par
+            les porteurs de projet dans la programmation du tiers-lieu. Le
+            mémoire relève plusieurs types d’entraves à l’ancrage dans le
+            quartier&nbsp;: l’origine sociale et professionnelle des
+            fondateurs&nbsp;; le flou engendré par la multifonctionnalité du
+            lieu&nbsp;; les dynamiques sociales au sein du tiers-lieu&nbsp;; les
+            esthétiques et les ambiances du lieu.
+          </>
+        ),
+      },
+      {
+        students: ['Alizé Hanson'],
+        title:
+          'Coopération d’acteurs pour une polyfonctionnalité des cours d’écoles. Repenser le système actuel de l’organisation des cours d’écoles du premier degré',
+        supervisedBy: 'Federica Gatta',
+        description: null,
+      },
+      {
+        students: ['Emma Léger'],
+        title:
+          'Vieillissement et petites villes de demain. Un projet d’habitat inclusif dans le centre-bourg de Saint-Marcellin',
+        supervisedBy: 'Edith Chezel et Florian Golay',
+        description: null,
+      },
+      {
+        students: ['Kawtar Morchadi'],
+        title: 'La démolition en contexte urbain. Trouver des consensus',
+        supervisedBy: 'Florian Golay',
+        description: null,
+      },
+      {
+        students: ['Emmanuelle Pilon'],
+        title:
+          'De la fabrique des lieux de vie à des lieux de vie comme fabrique nourricière',
+        supervisedBy: 'Laure Brayer',
+        description: (
+          <>
+            Ce projet propose une relecture croisée des principaux enjeux de
+            logements en Cœur de Chartreuse (mentionnés dans les documents
+            d’urbanisme de la Communauté de communes) avec les principaux enjeux
+            de production alimentaire du territoire (mentionnés dans les
+            documents du PNR de Chartreuse). En partant du croisement de ces
+            enjeux ainsi que d’entretiens menés dans le cadre de la mention
+            recherche, le projet propose une relecture possible de la stratégie
+            d’action territoriale dans les différents pôles du territoire ainsi
+            qu’un exemple d’atterrissage architectural en coeur de bourg pour un
+            projet de logements sociaux en lien avec des espaces de production
+            alimentaire.
+          </>
+        ),
+      },
+      {
+        students: ['Robinson Rossi'],
+        title:
+          'Ré-habiter le Rabot. Une régénération négociée entre un site exceptionnel et un projet d’hospitalité',
+        supervisedBy: 'Théa Manola',
+        description: (
+          <>
+            Le Rabot est une résidence étudiante atypique par ses fortes
+            dynamiques communautaires, sa position de vigie sur la ville et sa
+            grande surface habitable de 17600 m² dans un parc de 8 ha. Pourtant,
+            son avenir est incertain. Pour succéder au Crous, un projet
+            d’architectes issu d’un concours international se distingue, plaçant
+            le Rabot en emblème du récit territorial de la municipalité de
+            Grenoble et de la Métropole. Cette orientation demeure fragile et ne
+            s’oppose pas à la privatisation de cet habitat social. Parce qu’il
+            s’agit d’un lieu qualitatif et désirable, ce Projet de Fin d’Études
+            (PFE) propose d’ouvrir de nouvelles voies pour régénérer le Rabot en
+            un Quartier des Hospitalités.
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    id: '2022-2023',
+    label: '2022-2023',
+    mentoring: [
+      'Marine Bourgeois',
+      'Giulia Buffoli',
+      'Simon Godard',
+      'Federica Gatta',
+      'Florian Golay (resp.)',
+      'Théa Manola',
+      'Yvan Okotnikoff (resp.)',
+      'Mathias Rollot',
+    ],
+    graduationProjects: [
+      {
+        students: ['Matteo Beguiristain', 'Elisa Naudin'],
+        title: null,
+        supervisedBy: 'Marine Bourgeois et Simon Godard',
+        description: null,
+      },
+      {
+        students: ['Raphaël Boujon'],
+        title: 'Transition alimentaire en région grenobloise',
+        supervisedBy: 'Giulia Buffoli et Mathias Rollot',
+        description: (
+          <>
+            Ce PFE s’empare d’une problématique croissante au sein des
+            collectivités territoriales, la transition alimentaire. En effet,
+            nombre de collectivités estiment que l’alimentation, par l’étendue
+            de ses domaines d’applications, est un levier essentiel de la
+            transition écologique à mener. C’est pourquoi ce travail s’attache à
+            la question de l’alimentation d’un territoire, celui de la région
+            grenobloise. Il s’agit de rendre compte de la politique alimentaire
+            menée à travers les outils et projets à disposition des
+            collectivités, puis de proposer deux pistes pour poursuivre la
+            transition alimentaire dans laquelle est engagée le territoire
+            d’étude. A travers ce travail je tente de montrer l’intérêt pour un
+            exercice en urbanisme de considérer l’alimentation comme un objet
+            d’étude, en particulier d’un point de vue actoriel et spatial.
+          </>
+        ),
+      },
+      {
+        students: ['Guillaume Cachoulet'],
+        title:
+          'Le quartier de la gare comme futur lieu de vie à Pont de Beauvoisin',
+        supervisedBy: null,
+        description: (
+          <>
+            Pont de Beauvoisin est une ville structurante dans un territoire de
+            campagne, dans la région naturelle des Terres Froides. Actuellement
+            carencée en équipement culturel, ce Projet de Fin d’Études met en
+            avant une stratégie: Profiter des nouvelles potentialités qu’offrent
+            l’évolution du quartier de la gare pour faire émerger un équipement
+            culturel pour la diffusion et les pratiques locales. Un équipement
+            d’utilité local, mais aussi au rayonnement interterritorial. Par la
+            proposition d’un nouvel équipement, d’un espace public au paysage
+            souligné et aux nouveaux usages, ce PFE propose de construire un
+            nouvel imaginaire qui permettra de renforcer le nouveau rôle de la
+            gare, de la rendre agréable, confortable et vivante en montrant que
+            la Métropole ne détient pas le monopole de l’attractivité et des
+            activités culturelles. Ces territoires intermédiaires ont de
+            nombreux atouts capables de compléter ou proposer des alternatives
+            aux offres métropolitaines. Ce projet a pour objectif de permettre
+            aux jeunes d’accéder à la grande ville mais aussi de revenir vers
+            leur territoire, d’y rester. Un territoire aux besoins culturels
+            importants, avec un quartier à fort enjeux, organisé autour d’une
+            stratégie&nbsp;: rendre le quartier de gare accessible en donnant
+            une place aux pratiques culturelles locales , et rendre les
+            pratiques culturelles et leur diffusion accessible par un quartier
+            de gare comme nouvelle centralité.
+          </>
+        ),
+      },
+      {
+        students: ['Mathilde Cazeaux'],
+        title:
+          'Roanne au prisme de la qualité du cadre de vie pour sa jeunesse',
+        supervisedBy: null,
+        description: (
+          <>
+            Roanne est une ville moyenne de la région Rhône-Alpes, qui comme
+            beaucoup d’autres villes au passé industriel peine à se réinventer
+            et connaît une situation de déclin démographique. Pour pallier ces
+            départs, la commune a mis en place une politique axée sur la quête
+            d’attractivité, en ciblant spécifiquement les catégories
+            socio-professionnelles supérieures. A rebours de cette stratégie,
+            notre travail propose de contribuer à l’amélioration du cadre de vie
+            des habitant-es toujours là. Nous nous intéressons, plus
+            particulièrement, aux publics adolescents, particulièrement
+            concernés par les difficultés d’accès à la ville et la répartition
+            géographique de leurs lieux de sociabilisation, cette population
+            constituera notre public cible venant spécifier notre problématique.
+            Cette dernière sera traitée à travers un jeu de casquettes
+            professionnelles entre Assistance à la Maîtrise d’Ouvrage, Maîtrise
+            d’Ouvrage et Maîtrise d’Oeuvre permettant d’identifier les besoins
+            de la population cible, de mettre en place un programme d’action
+            adéquat, et de le réaliser à travers un concours public de Maîtrise
+            d’Oeuvre visant à la construction d’un équipement recevant du public
+            se voulant lieu de sociabilisation de la jeunesse.
+          </>
+        ),
+      },
+      {
+        students: ['Max Chapuis'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Adrien Cherencq'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Lucie Crespin'],
+        title: null,
+        supervisedBy: null,
+        description: null,
+      },
+      {
+        students: ['Nathan Delmas'],
+        title: null,
+        supervisedBy: null,
+        description: (
+          <>
+            Cette notice présente le Projet de Fin d’Études que j’ai mené de
+            janvier à juin 2023. Ce travail porte sur une réflexion prospective
+            de l’habitat métropolitain face aux pics de chaleur. Ma proposition
+            a pour objectif d’initier, dans un premier temps, un dialogue entre
+            les territoires de la métropole de Grenoble et la Communauté de
+            Communes de la Matheysine sur les questions de mobilité, de logement
+            et de santé. Dans un deuxième temps, il s’agit d’illustrer ce
+            dialogue par la proposition d’une résidence seniors et d’un
+            «&nbsp;refuge métropolitain&nbsp;» dans le centre-bourg de la
+            commune de Saint-Jean-de-Vaulx. La notion de refuge est aujourd’hui
+            de plus en plus mobilisée par la littérature en urbanisme avec
+            différentes significations à la fois économiques et sociales en
+            relation à l’interaction entre dynamiques métropolitaines et rurales
+            (Marchal et Stébé, 2017&nbsp;; Detraz, 2010) et au rôle des
+            métropoles dans l’accueil des migrations internationales (Gatelier,
+            Del Biaggio, Noûs, 2021). Dans ce travail j’ai fait le choix de m’en
+            emparer pour l’appliquer au contexte du changement climatique. Nous
+            entendrons ici le refuge comme un lieu d’accueil de populations
+            fragiles résultant de la collaboration entre deux territoires en
+            danger&nbsp;: la Matheysine pour le risque d’isolement social des
+            seniors et de la métropole Grenobloise pour la menace létale que
+            représentent les pics de chaleur pour certaines populations
+            vulnérables. La problématique de ce travail peut être énoncée comme
+            telle&nbsp;: dans quelle mesure un projet de refuge climatique peut
+            être un levier pour consolider la cohésion territoriale&nbsp;?
+          </>
+        ),
+      },
+      {
+        students: ['Juliette Garcia'],
+        title: 'De la petite enfance au pôle de gare',
+        supervisedBy: null,
+        description: (
+          <>
+            Les campagnes urbaines sont des territoires à fortes dynamiques,
+            entre étalement urbain, densification et pression foncière. Les
+            enfants y jouent un rôle central, ces territoires ruraux étant
+            considérés par les parents comme des espaces de
+            «&nbsp;liberté&nbsp;» et de «&nbsp;confort&nbsp;», motivant les
+            déplacements des familles de la «&nbsp;ville&nbsp;» à la
+            «&nbsp;campagne&nbsp;». Interroger ces territoires par le prisme de
+            l’enfance, et plus particulièrement du jeune public, permet de
+            questionner les déplacements qu’ils engendrent. Ce Projet de Fin
+            d’Étude s’est concentré sur les campagnes urbaines du Nord-Isère en
+            analysant la synergie existante entre petite enfance et mobilité. En
+            réponse à ce phénomène, et afin de repenser les déplacements
+            quotidiens dans ce territoire rural, les zones de gares ont été
+            identifiées comme des espaces stratégiques où mobilités et services
+            pourraient s’articuler facilement. Ce projet propose une réponse
+            architecturale pour un nouveau pôle de gare à destination principale
+            du jeune public.
+          </>
+        ),
+      },
+      {
+        students: ['Clair Gauffenic'],
+        title: 'Grenoble sous le prisme queer',
+        supervisedBy: 'Marine Bourgeois et Giulia Buffoli',
+        description: (
+          <>
+            Ce travail propose de porter un regard queer sur l’aménagement
+            grenoblois. Il a été réalisé en deux phases. La première a consisté
+            en une enquête de terrain auprès de personnes LGBTQIA+ habitant
+            et/ou fréquentant la ville de Grenoble, dans le but d’identifier des
+            lieux d’ancrage pour les populations queers grenobloises et des
+            lieux plus difficiles à traverser. L’analyse de l’enquête couplée à
+            une analyse morphologique des sites identifiés a fait ressortir des
+            éléments qui permettent de rendre un espace plus accueillant pour
+            les personnes queers, et au-delà pour la population grenobloise en
+            général. Dans une seconde phase de travail, l’étude a conduit à la
+            formulation de quatre propositions d’actions pour la prise en compte
+            et l’amélioration des vécus queers dans la ville de Grenoble. Ces
+            quatres actions sont les suivantes&nbsp;: la mise en place de
+            marches sensibles guidées autour de l’histoire et de l’actualité
+            LGBTQIA+, féministe et militante des lieux grenoblois, l’accueil en
+            extérieur d’événements et d’installations artistiques autour des
+            cultures LGBTQIA+, le réaménagement de deux sites identifiés, et la
+            constitution d’un réseau de travail métropolitain autour des
+            questions de genre et d’espace public. Les deux sites dont le
+            réaménagement a été travaillé dans ce travail sont l’anneau de
+            vitesse du parc Paul Mistral, et la place St-Bruno. Ainsi, ce
+            travail propose d’analyser les vécus queers à Grenoble, de déployer
+            des actions à destination directe des personnes queers aux côtés
+            d’actions à destination du grand public, et de mener un travail
+            réflexif sur la manière dont les questions queers viennent
+            questionner l’aménagement urbain.
+          </>
+        ),
+      },
+      {
+        students: ['Simeon Naydenov'],
+        title: 'De nouvelles coopérations territoriales',
+        supervisedBy: 'Mathias Rollot',
+        description: (
+          <>
+            Dans un contexte d’une grande diversité des dynamiques sectorielles
+            et locales, le territoire du Trièves envisage un futur incertain,
+            face aux crises sociales et écologiques, avec cependant un vrai
+            vecteur de qualité&nbsp;: la forte présence locale des dynamiques
+            citoyennes. Le projet propose une réponse aux enjeux identifiés, par
+            un renforcement de la coopération locale, qui peut générer des
+            transformations spatiales de grande qualité. Le projet identifie une
+            série de stratégies de réponse aux enjeux présents dans trois
+            secteurs de l’aménagement et l’urbanisme -&nbsp;le logement, la
+            mobilité et la sociabilité. Certaines de ces stratégies ont été
+            spatialisées à travers plusieurs échantillons de projet sur une
+            série de villages et hameaux du Trièves. Cela permet de comprendre
+            la complexité de ce type d’opérations et le manque de capacité chez
+            les acteurs publics locaux de porter une vision de territoire de
+            cette échelle et de cette ampleur. Le projet identifie donc un
+            nouvel acteur intermédiaire qui amplifie, pérennise et consolide les
+            coopérations locales afin de mettre en action les stratégies
+            sectorielles. Afin de tester la pertinence du projet et les
+            stratégies identifiées à l’échelle urbaine et architecturale, j’ai
+            formulé une proposition spatiale pour le site de la gare de
+            Clelles-Mens. Cette expérience a permis de voir les atouts de cette
+            démarche -&nbsp;une augmentation significative de la qualité d’usage
+            de l’espace à travers des interventions peu coûteuses et une
+            possibilité d’ajustement des interventions par rapport à l’évolution
+            des besoins.
+          </>
+        ),
+      },
+      {
+        students: ['Alouna Nicolas'],
+        title: null,
+        supervisedBy: null,
+        description: null,
       },
     ],
   },

@@ -49,3 +49,17 @@ export type ProjectWorkshopsSemester = {
   areas: string[];
   years: ProjectWorkshopsYear[];
 };
+
+export type GraduationProjectsYear = {
+  id: string;
+  label: string;
+  mentoring: string[];
+  graduationProjects: GraduationProject[];
+};
+
+export type GraduationProject = {
+  students: string[];
+  title: ReactNode | null;
+  supervisedBy: string | null;
+  description: ReactNode | null;
+};

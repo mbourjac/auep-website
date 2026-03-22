@@ -7,10 +7,12 @@ import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
 import {
   DISSERTATIONS_YEARS,
+  GRADUATION_PROJECTS_YEARS,
   PROJECT_WORKSHOPS_SEMESTERS,
   SEMINARS_SEMESTERS,
 } from '../works.constants';
 import { Dissertations } from './dissertations';
+import { GraduationProjects } from './graduation-projects';
 import { ProjectWorkshops } from './project-workshops';
 import { Seminars } from './seminars';
 
@@ -18,6 +20,7 @@ export const Works = () => {
   const seminarsSectionRef = useRef<HTMLDivElement | null>(null);
   const dissertationsSectionRef = useRef<HTMLDivElement | null>(null);
   const projectWorkshopsSectionRef = useRef<HTMLDivElement | null>(null);
+  const graduationProjectsSectionRef = useRef<HTMLDivElement | null>(null);
 
   const seminarsSemesterRefs = useMemo(
     () => SEMINARS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
@@ -30,6 +33,11 @@ export const Works = () => {
   const projectWorkshopsSemesterRefs = useMemo(
     () =>
       PROJECT_WORKSHOPS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+    []
+  );
+  const graduationProjectsYearRefs = useMemo(
+    () =>
+      GRADUATION_PROJECTS_YEARS.map(() => createRef<HTMLDivElement | null>()),
     []
   );
 
@@ -53,6 +61,10 @@ export const Works = () => {
     projectWorkshopsSectionRef,
     inViewOptions
   );
+  const isGraduationProjectsSectionInView = useInView(
+    graduationProjectsSectionRef,
+    inViewOptions
+  );
 
   const seminarsSemesterInViewArray = useInViewArray(
     seminarsSemesterRefs,
@@ -64,6 +76,10 @@ export const Works = () => {
   );
   const projectWorkshopsSemesterInViewArray = useInViewArray(
     projectWorkshopsSemesterRefs,
+    inViewArrayOptions
+  );
+  const graduationProjectsYearInViewArray = useInViewArray(
+    graduationProjectsYearRefs,
     inViewArrayOptions
   );
 
@@ -152,6 +168,30 @@ export const Works = () => {
                   ))}
                 </ul>
               </li>
+              <li>
+                <SectionLink
+                  sectionRef={graduationProjectsSectionRef}
+                  isCurrent={isGraduationProjectsSectionInView}
+                >
+                  projets de fin d’études
+                </SectionLink>
+                <ul>
+                  {GRADUATION_PROJECTS_YEARS.map((year, index) => (
+                    <li
+                      key={year.id}
+                      className="flex items-center gap-1.5 pl-4 text-lg"
+                    >
+                      <ElbowArrowIcon />
+                      <SectionLink
+                        sectionRef={graduationProjectsYearRefs[index]}
+                        isCurrent={graduationProjectsYearInViewArray[index]}
+                      >
+                        {year.label.toLowerCase()}
+                      </SectionLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
           </nav>
           <div className="flex w-full flex-col gap-32">
@@ -169,6 +209,11 @@ export const Works = () => {
               semesters={PROJECT_WORKSHOPS_SEMESTERS}
               sectionRef={projectWorkshopsSectionRef}
               semesterRefs={projectWorkshopsSemesterRefs}
+            />
+            <GraduationProjects
+              years={GRADUATION_PROJECTS_YEARS}
+              sectionRef={graduationProjectsSectionRef}
+              yearRefs={graduationProjectsYearRefs}
             />
           </div>
         </div>

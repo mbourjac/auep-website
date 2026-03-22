@@ -1,22 +1,21 @@
 import { RefObject } from 'react';
-import type { SeminarsSemester as SeminarsSemesterType } from '../works.types';
+import { SEMINARS_SECTION } from '../works.constants';
 import { SeminarsSemester } from './seminars-semester';
 import { WorksSection } from './works-section';
 
 type SeminarsProps = {
-  semesters: SeminarsSemesterType[];
   sectionRef: RefObject<HTMLDivElement | null>;
   semesterRefs: RefObject<HTMLDivElement | null>[];
 };
 
-export const Seminars = ({
-  semesters,
-  sectionRef,
-  semesterRefs,
-}: SeminarsProps) => {
+export const Seminars = ({ sectionRef, semesterRefs }: SeminarsProps) => {
   return (
-    <WorksSection title="séminaires" sectionRef={sectionRef}>
-      {semesters.map((semester, index) => (
+    <WorksSection
+      title={SEMINARS_SECTION.label}
+      picture={SEMINARS_SECTION.picture}
+      sectionRef={sectionRef}
+    >
+      {SEMINARS_SECTION.semesters.map((semester, index) => (
         <SeminarsSemester
           key={semester.id}
           {...semester}

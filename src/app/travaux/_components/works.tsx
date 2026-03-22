@@ -6,10 +6,10 @@ import { ElbowArrowIcon } from '../../../components/icons/elbow-arrow-icon';
 import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
 import {
-  DISSERTATIONS_YEARS,
-  GRADUATION_PROJECTS_YEARS,
-  PROJECT_WORKSHOPS_SEMESTERS,
-  SEMINARS_SEMESTERS,
+  DISSERTATIONS_SECTION,
+  GRADUATION_PROJECTS_SECTION,
+  PROJECT_WORKSHOPS_SECTION,
+  SEMINARS_SECTION,
 } from '../works.constants';
 import { Dissertations } from './dissertations';
 import { GraduationProjects } from './graduation-projects';
@@ -23,21 +23,27 @@ export const Works = () => {
   const graduationProjectsSectionRef = useRef<HTMLDivElement | null>(null);
 
   const seminarsSemesterRefs = useMemo(
-    () => SEMINARS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+    () =>
+      SEMINARS_SECTION.semesters.map(() => createRef<HTMLDivElement | null>()),
     []
   );
   const dissertationsYearRefs = useMemo(
-    () => DISSERTATIONS_YEARS.map(() => createRef<HTMLDivElement | null>()),
+    () =>
+      DISSERTATIONS_SECTION.years.map(() => createRef<HTMLDivElement | null>()),
     []
   );
   const projectWorkshopsSemesterRefs = useMemo(
     () =>
-      PROJECT_WORKSHOPS_SEMESTERS.map(() => createRef<HTMLDivElement | null>()),
+      PROJECT_WORKSHOPS_SECTION.semesters.map(() =>
+        createRef<HTMLDivElement | null>()
+      ),
     []
   );
   const graduationProjectsYearRefs = useMemo(
     () =>
-      GRADUATION_PROJECTS_YEARS.map(() => createRef<HTMLDivElement | null>()),
+      GRADUATION_PROJECTS_SECTION.years.map(() =>
+        createRef<HTMLDivElement | null>()
+      ),
     []
   );
 
@@ -101,10 +107,10 @@ export const Works = () => {
                   sectionRef={seminarsSectionRef}
                   isCurrent={isSeminarsSectionInView}
                 >
-                  séminaires
+                  {SEMINARS_SECTION.label}
                 </SectionLink>
                 <ul>
-                  {SEMINARS_SEMESTERS.map((semester, index) => (
+                  {SEMINARS_SECTION.semesters.map((semester, index) => (
                     <li
                       key={semester.id}
                       className="flex items-center gap-1.5 pl-4 text-lg"
@@ -125,10 +131,10 @@ export const Works = () => {
                   sectionRef={dissertationsSectionRef}
                   isCurrent={isDissertationsSectionInView}
                 >
-                  mémoires
+                  {DISSERTATIONS_SECTION.label}
                 </SectionLink>
                 <ul>
-                  {DISSERTATIONS_YEARS.map((year, index) => (
+                  {DISSERTATIONS_SECTION.years.map((year, index) => (
                     <li
                       key={year.id}
                       className="flex items-center gap-1.5 pl-4 text-lg"
@@ -149,23 +155,25 @@ export const Works = () => {
                   sectionRef={projectWorkshopsSectionRef}
                   isCurrent={isProjectWorkshopsSectionInView}
                 >
-                  ateliers de projets
+                  {PROJECT_WORKSHOPS_SECTION.label}
                 </SectionLink>
                 <ul>
-                  {PROJECT_WORKSHOPS_SEMESTERS.map((semester, index) => (
-                    <li
-                      key={semester.id}
-                      className="flex items-center gap-1.5 pl-4 text-lg"
-                    >
-                      <ElbowArrowIcon />
-                      <SectionLink
-                        sectionRef={projectWorkshopsSemesterRefs[index]}
-                        isCurrent={projectWorkshopsSemesterInViewArray[index]}
+                  {PROJECT_WORKSHOPS_SECTION.semesters.map(
+                    (semester, index) => (
+                      <li
+                        key={semester.id}
+                        className="flex items-center gap-1.5 pl-4 text-lg"
                       >
-                        {semester.label.toLowerCase()}
-                      </SectionLink>
-                    </li>
-                  ))}
+                        <ElbowArrowIcon />
+                        <SectionLink
+                          sectionRef={projectWorkshopsSemesterRefs[index]}
+                          isCurrent={projectWorkshopsSemesterInViewArray[index]}
+                        >
+                          {semester.label.toLowerCase()}
+                        </SectionLink>
+                      </li>
+                    )
+                  )}
                 </ul>
               </li>
               <li>
@@ -173,10 +181,10 @@ export const Works = () => {
                   sectionRef={graduationProjectsSectionRef}
                   isCurrent={isGraduationProjectsSectionInView}
                 >
-                  projets de fin d’études
+                  {GRADUATION_PROJECTS_SECTION.label}
                 </SectionLink>
                 <ul>
-                  {GRADUATION_PROJECTS_YEARS.map((year, index) => (
+                  {GRADUATION_PROJECTS_SECTION.years.map((year, index) => (
                     <li
                       key={year.id}
                       className="flex items-center gap-1.5 pl-4 text-lg"
@@ -196,22 +204,18 @@ export const Works = () => {
           </nav>
           <div className="flex w-full flex-col gap-32">
             <Seminars
-              semesters={SEMINARS_SEMESTERS}
               sectionRef={seminarsSectionRef}
               semesterRefs={seminarsSemesterRefs}
             />
             <Dissertations
-              years={DISSERTATIONS_YEARS}
               sectionRef={dissertationsSectionRef}
               yearRefs={dissertationsYearRefs}
             />
             <ProjectWorkshops
-              semesters={PROJECT_WORKSHOPS_SEMESTERS}
               sectionRef={projectWorkshopsSectionRef}
               semesterRefs={projectWorkshopsSemesterRefs}
             />
             <GraduationProjects
-              years={GRADUATION_PROJECTS_YEARS}
               sectionRef={graduationProjectsSectionRef}
               yearRefs={graduationProjectsYearRefs}
             />

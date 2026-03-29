@@ -11,9 +11,9 @@ import { PeopleSection } from './people-section';
 
 export const People = () => {
   return (
-    <div className="px-6 xl:px-12">
+    <div className="px-4 sm:px-6 xl:px-12">
       <div className="flex min-h-[calc(100dvh-64px)] flex-col gap-32 border-b-2 pb-32">
-        <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[7.5vw] leading-none font-extrabold">
+        <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[clamp(2rem,7.5vw,8.75rem)] leading-none font-extrabold">
           équipes
         </h1>
         <div className="flex w-full flex-col gap-32">
@@ -107,7 +107,7 @@ export const People = () => {
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-primary px-2 py-0.5 text-2xl leading-none font-bold whitespace-nowrap text-white"
+                        className="bg-primary px-2 py-0.5 text-2xl leading-none font-bold text-white"
                       >
                         {name}
                       </a>

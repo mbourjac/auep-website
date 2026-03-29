@@ -6,6 +6,8 @@ import { useLenis } from 'lenis/react';
 import { DitherCanvas } from '@/components/dither-canvas';
 import { SquareWithDiagonals } from '@/components/square-with-diagonals';
 import { padNumber } from '@/utils/numbers';
+import { useMediaQuery } from '../../../../hooks/use-media-query';
+import { BREAKPOINTS } from '../../../constants';
 import { NewsModal } from './news-modal';
 
 export type NewsItemProps = {
@@ -28,6 +30,7 @@ export const NewsItem = ({
   description,
 }: NewsItemProps) => {
   const lenis = useLenis();
+  const isLargeImage = useMediaQuery(BREAKPOINTS.md);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -51,19 +54,19 @@ export const NewsItem = ({
   return (
     <Dialog.Root open={isModalOpen} onOpenChange={handleModalOpen}>
       <Dialog.Trigger asChild>
-        <button className="flex w-full cursor-pointer gap-16 border-t py-1 text-left">
-          <div className="relative top-[0.475rem] min-w-31 [font-family:var(--font-azeret-mono)]">
+        <button className="flex w-full cursor-pointer gap-8 border-t py-1 text-left md:gap-16">
+          <div className="relative top-[0.475rem] min-w-16 [font-family:var(--font-azeret-mono)] md:min-w-31">
             <time dateTime={isoDate} className="sr-only">
               {accessibleDate}
             </time>
             <div aria-hidden="true">
-              <span className="text-[3rem] font-bold">
+              <span className="text-[1.5rem] font-bold md:text-[3rem]">
                 {padNumber(date.day)}
               </span>
-              <span className="[font-family:var(--default-font-family)] text-[5rem] leading-0">
+              <span className="[font-family:var(--default-font-family)] text-[2.5rem] leading-0 md:text-[5rem]">
                 .
               </span>
-              <span className="text-[2rem] font-bold">
+              <span className="text-[1rem] font-bold md:text-[2rem]">
                 {padNumber(date.month)}
               </span>
               <br />
@@ -72,24 +75,24 @@ export const NewsItem = ({
               </span>
             </div>
           </div>
-          <div className="min-w-[20vw] grow py-4 lg:max-w-[20vw]">
+          <div className="min-w-[20vw] grow py-1 md:py-4 lg:max-w-[20vw]">
             <p className="line-clamp-1 font-bold">{title}</p>
             {subtitle && <p className="line-clamp-2 italic">{subtitle}</p>}
           </div>
           <div className="hidden grow py-4 lg:block">
             <p className="line-clamp-3">{description}</p>
           </div>
-          <div className="h-[104px] min-w-[200px]">
+          <div className="h-[81px] min-w-[100px] md:h-[104px] md:min-w-[200px]">
             {image ? (
               <DitherCanvas
                 src={image}
-                height={104}
-                width={200}
+                height={isLargeImage ? 104 : 81}
+                width={isLargeImage ? 200 : 100}
                 method="floyd-steinberg"
                 fitMode="cover"
               />
             ) : (
-              <SquareWithDiagonals className="h-[104px] min-w-[200px]" />
+              <SquareWithDiagonals className="h-[81px] min-w-[100px] md:h-[104px] md:min-w-[200px]" />
             )}
           </div>
         </button>

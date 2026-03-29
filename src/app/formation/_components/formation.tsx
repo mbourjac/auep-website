@@ -64,16 +64,16 @@ export const Formation = () => {
   }, []);
 
   return (
-    <div className="px-6 xl:px-12">
+    <div className="px-4 sm:px-6 xl:px-12">
       <div className="flex min-h-[calc(100dvh-64px)] flex-col gap-32 border-b-2 pb-32">
-        <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[7.5vw] leading-none font-extrabold">
+        <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[clamp(2rem,7.5vw,8.75rem)] leading-none font-extrabold">
           formation
         </h1>
         <div className="flex gap-16">
           <nav
             role="navigation"
             aria-label="Navigation - formation"
-            className="sticky top-22.5 hidden shrink-0 self-start pt-4 text-xl font-bold xl:block"
+            className="sticky top-22.5 hidden w-[280px] shrink-0 self-start pt-4 text-xl font-bold xl:block"
           >
             <ul>
               <li>

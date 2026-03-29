@@ -15,6 +15,7 @@ type DitherCanvasProps = {
   hidpi?: boolean;
   fitMode?: FitMode;
   className?: string;
+  ariaLabel?: string;
 };
 
 export const DitherCanvas = ({
@@ -27,6 +28,7 @@ export const DitherCanvas = ({
   hidpi = true,
   fitMode = 'cover',
   className = '',
+  ariaLabel,
 }: DitherCanvasProps) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -142,8 +144,12 @@ export const DitherCanvas = ({
 
     if (!canvas || !container || !image) return;
 
-    let targetWidth = width ?? containerDimensions?.width;
-    let targetHeight = height ?? containerDimensions?.height;
+    const measuredWidth = container.clientWidth || containerDimensions?.width;
+    const measuredHeight =
+      container.clientHeight || containerDimensions?.height;
+
+    let targetWidth = width ?? measuredWidth;
+    let targetHeight = height ?? measuredHeight;
 
     if (targetWidth && !targetHeight && naturalImageDimensions)
       targetHeight = Math.round(
@@ -167,7 +173,9 @@ export const DitherCanvas = ({
 
     canvas.width = Math.round(targetWidth * ratio);
     canvas.height = Math.round(targetHeight * ratio);
-    canvas.style.width = `${targetWidth}px`;
+    // Make the canvas responsive in layout — let CSS control visual width,
+    // but keep the backing buffer sized for HIDPI rendering.
+    canvas.style.width = '100%';
     canvas.style.height = `${targetHeight}px`;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
 
@@ -439,8 +447,16 @@ export const DitherCanvas = ({
   ]);
 
   return (
-    <div ref={containerRef} className={className}>
-      <canvas ref={canvasRef} className="block h-full w-full" />
+    <div
+      ref={containerRef}
+      className={`${className} box-border overflow-hidden`}
+    >
+      <canvas
+        ref={canvasRef}
+        className="box-border block w-full max-w-full"
+        role="img"
+        {...(ariaLabel ? { 'aria-label': ariaLabel } : {})}
+      />
     </div>
   );
 };

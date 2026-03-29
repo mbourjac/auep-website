@@ -13,7 +13,7 @@ export const People = () => {
   return (
     <div className="px-4 sm:px-6 xl:px-12">
       <div className="flex min-h-[calc(100dvh-64px)] flex-col gap-32 border-b-2 pb-32">
-        <h1 className="mt-[-1.2vw] cursor-default border-b-36 pb-[2vw] text-[clamp(2rem,7.5vw,8.75rem)] leading-none font-extrabold">
+        <h1 className="mt-[-1.2vw] cursor-default border-b-20 pb-[2vw] text-[clamp(2rem,7.5vw,8.75rem)] leading-none font-extrabold md:border-b-28 lg:border-b-36">
           équipes
         </h1>
         <div className="flex w-full flex-col gap-32">
@@ -31,7 +31,7 @@ export const People = () => {
               {FORMER_STAFF.map((people, index) => (
                 <li
                   key={index}
-                  className="text-3xl leading-none font-bold whitespace-nowrap"
+                  className="text-xl leading-none font-bold whitespace-nowrap sm:text-2xl"
                 >
                   {people}
                   {index < FORMER_STAFF.length - 1 ? ', ' : ''}
@@ -51,14 +51,14 @@ export const People = () => {
                 {GRADUATING_CLASSES.map(
                   ({ graduates, yearStart, yearEnd }, index) => (
                     <div key={index}>
-                      <h3 className="border-b-2 pb-1 text-3xl font-medium">
+                      <h3 className="border-b-2 pb-1 text-2xl font-medium">
                         {yearStart} — {yearEnd}
                       </h3>
                       <ul className="flex flex-wrap gap-2.5 pt-2">
                         {graduates.map((graduate, index) => (
                           <li
                             key={index}
-                            className="text-3xl leading-none font-bold whitespace-nowrap"
+                            className="text-xl leading-none font-bold whitespace-nowrap sm:text-2xl"
                           >
                             {graduate}
                             {index < graduates.length - 1 ? ', ' : ''}
@@ -74,13 +74,13 @@ export const People = () => {
           <PeopleSection heading="que deviennent les diplômé.es auep ?">
             <div className="flex flex-col gap-12 border-l-2 pt-8 pl-4">
               <div className="flex flex-col gap-4">
-                <p className="text-xl">
+                <p className="sm:text-xl">
                   Ils-elles ont fondé{' '}
                   <a
                     href="https://otopo.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-primary px-2 py-0.5 text-2xl leading-none font-bold text-white"
+                    className="bg-primary px-2 py-0.5 text-xl leading-none font-bold text-white sm:text-2xl"
                   >
                     Otopo
                   </a>{' '}
@@ -96,18 +96,18 @@ export const People = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-xl">
+                <p className="sm:text-xl">
                   Ils-elles exercent dans des domaines et des organisations
                   variés, partout en France :
                 </p>
-                <ul className="flex flex-wrap gap-4">
+                <ul className="flex flex-wrap gap-2 sm:gap-4">
                   {GRADUATE_EMPLOYERS.map(({ name, url }, index) => (
                     <li key={index}>
                       <a
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-primary px-2 py-0.5 text-2xl leading-none font-bold text-white"
+                        className="bg-primary px-2 py-0.5 text-xl font-bold text-white sm:text-2xl"
                       >
                         {name}
                       </a>

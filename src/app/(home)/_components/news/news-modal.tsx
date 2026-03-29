@@ -7,6 +7,8 @@ import { XMarkIcon } from '@/components/icons/x-mark-icon';
 import { SquareWithDiagonals } from '@/components/square-with-diagonals';
 import { useWindowDimensions } from '@/hooks/use-window-dimensions';
 import { padNumber } from '@/utils/numbers';
+import { useMediaQuery } from '../../../../hooks/use-media-query';
+import { BREAKPOINTS } from '../../../constants';
 import { NewsItemProps } from './news-item';
 
 type NewsModalProps = NewsItemProps & {
@@ -24,6 +26,7 @@ export const NewsModal = ({
   accessibleDate,
 }: NewsModalProps) => {
   const lenis = useLenis();
+  const hasImage = useMediaQuery(BREAKPOINTS.md);
 
   const [descriptionRef, { height: descriptionHeight }] = useMeasure();
   const [titleRef, { height: titleHeight }] = useMeasure();
@@ -60,7 +63,7 @@ export const NewsModal = ({
         onMouseLeave={() => {
           setIsHovered(false);
         }}
-        className="border-primary fixed top-4 left-8 z-50 w-5xl max-w-[min(64rem,calc(100vw-64px))] transform border-4 bg-white"
+        className="border-primary fixed top-4 left-4 z-50 w-5xl max-w-[min(64rem,calc(100vw-32px))] transform border-4 bg-white md:left-8 md:max-w-[min(64rem,calc(100vw-64px))]"
       >
         <div className="border-primary flex justify-between border-b-4">
           <div>
@@ -99,23 +102,25 @@ export const NewsModal = ({
           className="flex"
           style={{ maxHeight: windowHeight - headerHeight - padding }}
         >
-          <div>
-            {image ? (
-              <DitherCanvas
-                src={image}
-                fitMode="cover"
-                height={imageHeight}
-                className="w-[20vw]"
-              />
-            ) : (
-              <SquareWithDiagonals
-                className="h-full w-[200px] border-none"
-                strokeWidth={4}
-              />
-            )}
-          </div>
+          {hasImage && (
+            <div>
+              {image ? (
+                <DitherCanvas
+                  src={image}
+                  fitMode="cover"
+                  height={imageHeight}
+                  className="w-[20vw]"
+                />
+              ) : (
+                <SquareWithDiagonals
+                  className="h-full w-[200px] border-none"
+                  strokeWidth={4}
+                />
+              )}
+            </div>
+          )}
           <div
-            className="border-primary flex flex-col border-l-4"
+            className="border-primary flex flex-col md:border-l-4"
             data-lenis-prevent
           >
             <div className="border-primary border-b-4 p-4" ref={titleRef}>

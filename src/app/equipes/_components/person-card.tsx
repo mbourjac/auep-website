@@ -29,20 +29,19 @@ export const PersonCard = (props: PersonCardProps) => {
   return (
     <Dialog.Root open={isModalOpen} onOpenChange={handleModalOpen}>
       <Dialog.Trigger asChild>
-        <button className="relative cursor-pointer text-left text-3xl leading-none font-bold text-white">
+        <button className="relative block w-full cursor-pointer text-left leading-none text-white">
           <div>
             <DitherCanvas
               src={`/images/people/staff/${image}`}
-              height={360}
+              height={320}
               fitMode="cover"
               className="w-full"
             />
           </div>
-          <p className="bg-primary/60 absolute right-0 bottom-0 left-0">
-            <span className="block border-t-4 border-white px-1 py-0.5">
-              {firstName}
-            </span>
-            <span className="block border-t-4 border-white px-1 py-0.5">
+          <p className="bg-primary/90 absolute right-0 bottom-0 left-0 px-2 py-1.5">
+            <span className="text-xl leading-none font-bold">{firstName}</span>
+            <br />
+            <span className="text-2xl leading-none font-extrabold tracking-wide">
               {lastName}
             </span>
           </p>

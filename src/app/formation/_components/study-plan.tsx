@@ -22,22 +22,22 @@ export const StudyPlan = ({
   return (
     <section className="text-lg">
       <div ref={studyPlanRef} className="scroll-mt-24">
-        <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-4xl font-bold">
+        <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold sm:text-3xl">
           schéma des études
         </h2>
         <div className="flex gap-4 border-l-2 pt-8 pb-8 pl-4">
           <div className="text-primary grid w-full grid-cols-[auto_1fr_1fr] gap-2 font-semibold">
             <div className="border-primary col-span-3 grid grid-cols-subgrid border-b-16 border-dashed pb-2">
               <div className="bg-primary"></div>
-              <div className="col-start-2 text-center">
-                <p className="border-primary bg-primary border px-4 py-2 text-white">
+              <div className="border-primary bg-primary col-start-2 border px-4 py-2 text-center text-white">
+                <p>
                   Concours
                   <br />
                   Sciences Po Grenoble
                 </p>
               </div>
-              <div className="text-center">
-                <p className="border-primary bg-primary border px-4 py-2 text-white">
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-center text-white">
+                <p>
                   Sélection
                   <br />
                   ENSAG
@@ -45,19 +45,19 @@ export const StudyPlan = ({
               </div>
             </div>
             <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 1
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 1</p>
               </div>
-              <div className="border-primary border px-4 py-2 text-center">
-                Licence 1 Sciences Po Grenoble
+              <div className="border-primary flex items-center justify-center border px-4 py-2 text-center">
+                <p>Licence 1 Sciences Po Grenoble</p>
               </div>
-              <div className="border-primary border px-4 py-2 text-center">
-                Licence 1 ENSAG
+              <div className="border-primary flex items-center justify-center border px-4 py-2 text-center">
+                <p>Licence 1 ENSAG</p>
               </div>
             </div>
             <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="col-span-2 col-start-2 flex justify-center text-center">
-                <p className="border-primary border px-4 py-2">
+              <div className="border-primary col-span-2 col-start-2 flex justify-center border px-4 py-2 text-center">
+                <p>
                   Admission en AUEP
                   <br />
                   Dossier et entretien
@@ -65,48 +65,52 @@ export const StudyPlan = ({
               </div>
             </div>
             <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 2
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 2</p>
               </div>
-              <div className="border-primary border px-4 py-2 text-center">
-                Licence 1 ENSAG
+              <div className="border-primary flex items-center justify-center border px-4 py-2 text-center">
+                <p>Licence 1 ENSAG</p>
               </div>
-              <div className="border-primary border px-4 py-2 text-center">
-                Licence 1 Sciences Po Grenoble
+              <div className="border-primary flex items-center justify-center border px-4 py-2 text-center">
+                <p>Licence 1 Sciences Po Grenoble</p>
               </div>
             </div>
             <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 3
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 3</p>
               </div>
-              <div className="border-primary col-span-2 border px-4 py-2 text-center">
-                Licence 2 ENSAG + Licence 3 Sciences Po Grenoble
+              <div className="border-primary col-span-2 flex items-center justify-center border px-4 py-2 text-center">
+                <p>Licence 2 ENSAG + Licence 3 Sciences Po Grenoble</p>
               </div>
             </div>
             <div className="border-primary col-span-3 grid grid-cols-subgrid border-b-16 border-dashed pb-2">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 4
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 4</p>
               </div>
-              <div className="border-primary col-span-2 border px-4 py-2 text-center">
-                Mobilité internationale
-              </div>
-            </div>
-            <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 5
-              </div>
-              <div className="border-primary col-span-2 border px-4 py-2 text-center">
-                Enseignements théoriques et professionnalisants en architecture,
-                urbanisme, aménagement, sciences politiques
+              <div className="border-primary col-span-2 flex items-center justify-center border px-4 py-2 text-center">
+                <p>Mobilité internationale</p>
               </div>
             </div>
             <div className="col-span-3 grid grid-cols-subgrid">
-              <div className="border-primary bg-primary border px-4 py-2 text-white">
-                année 6
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 5</p>
               </div>
-              <div className="border-primary col-span-2 border px-4 py-2 text-center">
-                Enseignements du projet (ateliers & séminaires) + Mémoire et
-                projet de fin d&apos;études
+              <div className="border-primary col-span-2 flex items-center justify-center border px-4 py-2 text-center">
+                <p>
+                  Enseignements théoriques et professionnalisants en
+                  architecture, urbanisme, aménagement, sciences politiques
+                </p>
+              </div>
+            </div>
+            <div className="col-span-3 grid grid-cols-subgrid">
+              <div className="border-primary bg-primary flex items-center justify-center border px-4 py-2 text-white">
+                <p>année 6</p>
+              </div>
+              <div className="border-primary col-span-2 flex items-center justify-center border px-4 py-2 text-center">
+                <p>
+                  Enseignements du projet (ateliers & séminaires) + Mémoire et
+                  projet de fin d&apos;études
+                </p>
               </div>
             </div>
           </div>

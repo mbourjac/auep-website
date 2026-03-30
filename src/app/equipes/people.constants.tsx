@@ -139,7 +139,7 @@ export const TEACHING_STAFF = [
         2015 au sein de l&apos;axe participation citoyenne de la Mission
         stratégie et innovation publique de la Métropole de Grenoble. Il
         conçoit, organise et anime des démarches de concertation à destination
-        des habitant.es et des acteur.rices du territoire.
+        des habitant·es et des acteur·ices du territoire.
       </>
     ),
     image: 'dalmasso-bastien.jpg',

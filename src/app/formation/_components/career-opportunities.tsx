@@ -51,7 +51,7 @@ export const CareerOpportunities = ({
               <li>
                 <Dot />
                 <span>
-                  Dans un large éventail de domaines&nbsp;: é́laboration et mise
+                  Dans un large éventail de domaines&nbsp;: élaboration et mise
                   en œuvre des politiques publiques, maîtrises d&apos;œuvre et
                   maîtrises d’ouvrage (en architecture, aménagement,
                   planification et d’urbanisme), etc.
@@ -60,7 +60,7 @@ export const CareerOpportunities = ({
               <li>
                 <Dot />
                 <span>
-                  La formation AUEP est également très adaptée aux étudiant·e.s
+                  La formation AUEP est également très adaptée aux étudiant·es
                   souhaitant s’engager dans la recherche.
                 </span>
               </li>

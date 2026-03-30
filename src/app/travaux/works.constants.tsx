@@ -472,7 +472,7 @@ export const DISSERTATIONS_SECTION = {
               maire. En effet, le maire est un maillon important, tant
               symboliquement que par son pouvoir décisionnaire au sein de sa
               commune, étant un lien essentiel entre l’état et ses
-              concitoyen.ne.s. Ce mémoire interroge cinq maires ayant été formés
+              concitoyen·nes. Ce mémoire interroge cinq maires ayant été formés
               à la conception, sur leurs rapports à la politique, leurs études
               ainsi que les liens et intérêts qu’ils trouvent entre ces deux
               aspects d’engagement et de leur vie.
@@ -712,7 +712,7 @@ export const DISSERTATIONS_SECTION = {
             <>
               Depuis «&nbsp;Réinventer Paris&nbsp;», le recours croissant aux
               appels à projets urbains innovants (APUI) par les villes signerait
-              une nouvelle tendance dans la production urbaine.S’ils attirent
+              une nouvelle tendance dans la production urbaine. S’ils attirent
               principalement de grands groupements comme des promoteurs
               immobiliers, l’APUI Gren’de Projets, lancé en 2017 par la ville de
               Grenoble, privilégie une ouverture à d’autres acteurs. Deux
@@ -1403,7 +1403,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   Ce projet propose un programme de revitalisation de Clamecy,
                   petite ville de la Nièvre. L’objectif était de réhabiliter des
                   logements anciens vacants pour adapter les logements aux
-                  besoins d’habitant.es d’aujourd’hui. Les étudiant·es ont
+                  besoins d’habitant·es d’aujourd’hui. Les étudiant·es ont
                   travaillé sur l’ancien bâtiment pour adresser plusieurs
                   enjeux&nbsp;: écologiques (limiter l’étalement urbain,
                   privilégier le réemploi des matériaux), sociaux (adapter
@@ -1918,7 +1918,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Aglaé Thébaud',
               ],
               title:
-                "La ville à hauteur d’ados. (Re)donner de la place et de l'espace aux adolescent.e.s",
+                "La ville à hauteur d’ados. (Re)donner de la place et de l'espace aux adolescent·es",
               description: (
                 <>
                   Suite à une enquête réalisée aux abords des établissements
@@ -2166,7 +2166,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               description: (
                 <>
                   C’est une proposition de transformation spatiale du quartier
-                  de la gare de Moirans, avec l’implication des acteur.ices
+                  de la gare de Moirans, avec l’implication des acteur·ices
                   divers et l’activation progressive de son parvis à travers la
                   mise en place d’interventions légères. Le site de projet
                   composé de trois pôles s’inscrit donc dans un contexte

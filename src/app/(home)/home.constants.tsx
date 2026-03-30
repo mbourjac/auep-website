@@ -567,7 +567,7 @@ export const NEWS = [
     description: (
       <>
         Trois étudiant·es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
-        allé.es à Paris pour représenter l’Institut d’urbanisme et de géographie
+        allé·es à Paris pour représenter l’Institut d’urbanisme et de géographie
         alpine face à 9 autres équipes francophones. Cette année la commande
         avait pour question&nbsp;: «&nbsp;s’il vous plaît le quartier de la gare
         ?&nbsp;» en référence au chantier de la future gare du grand Paris

@@ -20,6 +20,7 @@ export const Header = () => {
       <div className="flex items-center justify-between gap-10 border-b-2">
         <Link
           href="/"
+          scroll={true}
           onClick={() => setIsMenuOpen(false)}
           className="z-50 text-4xl font-bold"
         >
@@ -45,19 +46,29 @@ export const Header = () => {
         >
           <ul className="flex gap-10 py-0.5 text-lg font-semibold">
             <li>
-              <Link href="/formation">formation</Link>
+              <Link href="/formation" scroll={true}>
+                formation
+              </Link>
             </li>
             <li>
-              <Link href="/equipes">équipes</Link>
+              <Link href="/equipes" scroll={true}>
+                équipes
+              </Link>
             </li>
             <li>
-              <Link href="/travaux">travaux</Link>
+              <Link href="/travaux" scroll={true}>
+                travaux
+              </Link>
             </li>
             <li>
-              <Link href="/actualites">actualités</Link>
+              <Link href="/actualites" scroll={true}>
+                actualités
+              </Link>
             </li>
             <li>
-              <Link href="/contact">contact</Link>
+              <Link href="/contact" scroll={true}>
+                contact
+              </Link>
             </li>
           </ul>
         </nav>
@@ -110,27 +121,47 @@ export const Header = () => {
           <nav role="navigation" aria-label="Navigation principale">
             <ul className="flex flex-col gap-2 px-4 pb-4 text-6xl font-extrabold text-white sm:px-6 xl:px-12">
               <li className="w-full border-b border-white">
-                <Link href="/formation" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/formation"
+                  scroll={true}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   formation
                 </Link>
               </li>
               <li className="w-full border-b border-white">
-                <Link href="/equipes" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/equipes"
+                  scroll={true}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   équipes
                 </Link>
               </li>
               <li className="w-full border-b border-white">
-                <Link href="/travaux" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/travaux"
+                  scroll={true}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   travaux
                 </Link>
               </li>
               <li className="w-full border-b border-white">
-                <Link href="/actualites" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/actualites"
+                  scroll={true}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   actualités
                 </Link>
               </li>
               <li className="w-full border-b border-white">
-                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                <Link
+                  href="/contact"
+                  scroll={true}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   contact
                 </Link>
               </li>

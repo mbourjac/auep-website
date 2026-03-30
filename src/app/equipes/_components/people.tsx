@@ -12,7 +12,7 @@ import { PeopleSection } from './people-section';
 export const People = () => {
   return (
     <div className="px-4 sm:px-6 xl:px-12">
-      <div className="flex min-h-[calc(100dvh-64px)] flex-col gap-32 border-b-2 pb-32">
+      <div className="flex min-h-[calc(100dvh-64px)] flex-col gap-24 border-b-2 pb-32">
         <h1 className="mt-[-1.2vw] cursor-default border-b-20 pb-[2vw] text-[clamp(2rem,7.5vw,8.75rem)] leading-none font-extrabold md:border-b-28 lg:border-b-36">
           équipes
         </h1>
@@ -39,7 +39,7 @@ export const People = () => {
               ))}
             </ul>
           </PeopleSection>
-          <PeopleSection heading="diplômé.es auep">
+          <PeopleSection heading="diplômé·es auep">
             <div className="flex flex-col gap-4 border-l-2 pt-8 pl-4">
               <DitherCanvas
                 src="/images/people/graduates.png"
@@ -71,7 +71,7 @@ export const People = () => {
               </div>
             </div>
           </PeopleSection>
-          <PeopleSection heading="que deviennent les diplômé.es auep ?">
+          <PeopleSection heading="que deviennent les diplômé·es auep ?">
             <div className="flex flex-col gap-12 border-l-2 pt-8 pl-4">
               <div className="flex flex-col gap-4">
                 <p className="sm:text-xl">

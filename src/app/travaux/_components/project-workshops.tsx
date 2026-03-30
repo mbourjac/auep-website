@@ -23,6 +23,7 @@ export const ProjectWorkshops = ({
           key={semester.id}
           {...semester}
           semesterRef={semesterRefs[index]}
+          isFirst={index === 0}
         />
       ))}
     </WorksSection>

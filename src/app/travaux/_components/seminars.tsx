@@ -20,6 +20,8 @@ export const Seminars = ({ sectionRef, semesterRefs }: SeminarsProps) => {
           key={semester.id}
           {...semester}
           semesterRef={semesterRefs[index]}
+          isFirst={index === 0}
+          isLast={index === SEMINARS_SECTION.semesters.length - 1}
         />
       ))}
     </WorksSection>

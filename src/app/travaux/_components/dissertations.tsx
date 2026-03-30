@@ -15,14 +15,13 @@ export const Dissertations = ({ sectionRef, yearRefs }: DissertationsProps) => {
       picture={DISSERTATIONS_SECTION.picture}
       sectionRef={sectionRef}
     >
-      <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
-        <p>{DISSERTATIONS_SECTION.description}</p>
-      </div>
+      <p className="py-4"> {DISSERTATIONS_SECTION.description}</p>
       {DISSERTATIONS_SECTION.years.map((year, index) => (
         <DissertationsYear
           key={year.id}
           {...year}
           sectionRef={yearRefs[index]}
+          isLast={index === DISSERTATIONS_SECTION.years.length - 1}
         />
       ))}
     </WorksSection>

@@ -4,6 +4,8 @@ import type { SeminarsSemester as SeminarsSemesterType } from '../works.types';
 
 type SeminarsSemesterProps = Omit<SeminarsSemesterType, 'id'> & {
   semesterRef: RefObject<HTMLDivElement | null>;
+  isLast: boolean;
+  isFirst: boolean;
 };
 
 export const SeminarsSemester = ({
@@ -12,10 +14,17 @@ export const SeminarsSemester = ({
   description,
   seminars,
   semesterRef,
+  isLast,
+  isFirst,
 }: SeminarsSemesterProps) => {
   return (
-    <div ref={semesterRef} className="scroll-mt-24">
-      <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
+    <div ref={semesterRef} className={cn('scroll-mt-24', !isLast && 'pb-4')}>
+      <div
+        className={cn(
+          'flex flex-col gap-2.5 pt-4 pb-2.5',
+          !isFirst && 'border-t-2'
+        )}
+      >
         <h3 className="text-md font-medium">
           {label} - {title}
         </h3>
@@ -23,7 +32,7 @@ export const SeminarsSemester = ({
       </div>
       <table className="w-full table-fixed border-t border-t-black/40">
         <colgroup>
-          <col className="w-[140px]" />
+          <col className="w-[110px] md:w-[140px]" />
           <col className="w-[50%]" />
           <col className="w-[50%]" />
         </colgroup>
@@ -43,11 +52,28 @@ export const SeminarsSemester = ({
                 index !== seminars.length - 1 && 'border-b border-b-black/40'
               )}
             >
-              <td className="py-1 pr-6">{seminar.year}</td>
-              <td className="truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap">
+              <td
+                className={cn(
+                  'py-1 pr-6',
+                  index === seminars.length - 1 && 'pb-0'
+                )}
+              >
+                {seminar.year}
+              </td>
+              <td
+                className={cn(
+                  'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
+                  index === seminars.length - 1 && 'pb-0'
+                )}
+              >
                 {seminar.mentoring.join(' - ')}
               </td>
-              <td className="truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap">
+              <td
+                className={cn(
+                  'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
+                  index === seminars.length - 1 && 'pb-0'
+                )}
+              >
                 {seminar.guests.join(' - ')}
               </td>
             </tr>

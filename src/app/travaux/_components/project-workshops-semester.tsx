@@ -7,6 +7,7 @@ type ProjectWorkshopsSemesterProps = Omit<
   'id'
 > & {
   semesterRef: RefObject<HTMLDivElement | null>;
+  isFirst: boolean;
 };
 
 export const ProjectWorkshopsSemester = ({
@@ -16,10 +17,13 @@ export const ProjectWorkshopsSemester = ({
   areas,
   years,
   semesterRef,
+  isFirst,
 }: ProjectWorkshopsSemesterProps) => {
   return (
-    <div ref={semesterRef} className="scroll-mt-24">
-      <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
+    <div ref={semesterRef} className={cn('scroll-mt-24', !isFirst && 'pt-4')}>
+      <div
+        className={cn('flex flex-col gap-2.5 py-4', !isFirst && 'border-t-2')}
+      >
         <h3 className="text-md font-medium">
           {label} - {title}
         </h3>
@@ -28,19 +32,23 @@ export const ProjectWorkshopsSemester = ({
       </div>
       {years.map((year, index) => (
         <Fragment key={index}>
-          <div className="scroll-mt-24">
-            <div className="flex flex-col gap-2.5 border-t-2 py-2.5">
+          <div
+            className={cn('scroll-mt-24', index !== years.length - 1 && 'pb-4')}
+          >
+            <div className="flex flex-col gap-2.5 border-t-2 pt-4 pb-2.5">
               <h3 className="text-md font-medium">{year.label}</h3>
               <p>Encadrement : {year.mentoring.join(', ')}</p>
             </div>
             <table className="w-full table-fixed border-t border-t-black/40">
               <colgroup>
-                <col className="w-[460px]" />
+                <col className="w-full lg:w-[460px]" />
                 <col className="w-full" />
               </colgroup>
               <thead>
                 <tr className="border-b border-b-black/40">
-                  <th className="py-1 pr-6 text-left font-normal">Étudiants</th>
+                  <th className="py-1 pr-6 text-left font-normal">
+                    Étudiant·es
+                  </th>
                   <th className="px-6 py-1 text-left font-normal">Titre</th>
                 </tr>
               </thead>
@@ -54,10 +62,20 @@ export const ProjectWorkshopsSemester = ({
                         'border-b border-b-black/40'
                     )}
                   >
-                    <td className="truncate overflow-hidden py-1 pr-6 text-ellipsis whitespace-nowrap">
+                    <td
+                      className={cn(
+                        'truncate overflow-hidden py-1 pr-6 text-ellipsis whitespace-nowrap',
+                        index === year.projectWorkshops.length - 1 && 'pb-0'
+                      )}
+                    >
                       {projectWorkshop.students.join(' - ')}
                     </td>
-                    <td className="truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap">
+                    <td
+                      className={cn(
+                        'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
+                        index === year.projectWorkshops.length - 1 && 'pb-0'
+                      )}
+                    >
                       {projectWorkshop.title}
                     </td>
                   </tr>

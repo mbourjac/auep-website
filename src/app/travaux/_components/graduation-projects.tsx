@@ -23,6 +23,8 @@ export const GraduationProjects = ({
           key={year.id}
           {...year}
           sectionRef={yearRefs[index]}
+          isFirst={index === 0}
+          isLast={index === GRADUATION_PROJECTS_SECTION.years.length - 1}
         />
       ))}
     </WorksSection>

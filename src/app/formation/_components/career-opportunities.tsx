@@ -41,7 +41,7 @@ export const CareerOpportunities = ({
               <li>
                 <Dot />
                 <span>
-                  Au sein d’organisations diverses&nsbp;: collectivités locales
+                  Au sein d’organisations diverses&nbsp;: collectivités locales
                   et services de l’État, bureaux d’études, cabinets de
                   consultants, établissements d’aménagement, sociétés de
                   développement immobilier, agences d’urbanisme, bailleurs
@@ -51,7 +51,7 @@ export const CareerOpportunities = ({
               <li>
                 <Dot />
                 <span>
-                  Dans un large éventail de domaines&nsbp;: é́laboration et mise
+                  Dans un large éventail de domaines&nbsp;: é́laboration et mise
                   en œuvre des politiques publiques, maîtrises d&apos;œuvre et
                   maîtrises d’ouvrage (en architecture, aménagement,
                   planification et d’urbanisme), etc.
@@ -60,7 +60,7 @@ export const CareerOpportunities = ({
               <li>
                 <Dot />
                 <span>
-                  La formation AUEP est également très adaptée aux étudiant.e.s
+                  La formation AUEP est également très adaptée aux étudiant·e.s
                   souhaitant s’engager dans la recherche.
                 </span>
               </li>

@@ -335,7 +335,6 @@ export const FORMER_STAFF = [
   'Renaud Bécot',
   'Margot Bergerand',
   'Marie-Julie Bernard',
-  'Julie Bernard',
   'Jeanne Bouyat',
   'Laure Brayer',
   'Arnaud Buchs',
@@ -447,7 +446,6 @@ export const GRADUATE_EMPLOYERS = [
   },
   {
     name: 'Syndicat mixte pour l’aménagement et le développement des Combrailles',
-
     url: 'https://www.combrailles.com/',
   },
   {

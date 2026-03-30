@@ -44,6 +44,28 @@ export const NEWS = [
   },
   {
     date: {
+      day: 13,
+      month: 5,
+      year: 2025,
+    },
+    title: <>Exposition «&nbsp;Héritage(s) Métropolitain(s)&nbsp;»</>,
+    description: (
+      <>
+        Au cœur du nouvel éco-quartier Flaubert, dissimulé dans la végétation du
+        «&nbsp;sourire vert&nbsp;» grenoblois, le bâtiment de l’ancienne Chambre
+        de l’Agriculture de Grenoble s’inscrit le long de l’avenue Marcelin
+        Berthelot non loin de l’arrêt de Tram MC2. La Ville de Grenoble
+        s’interroge sur le devenir de ce bâtiment de plus 3000m² construit en
+        1982 et vide depuis 2018. À travers quatre projets les étudiant·es du
+        master AUEP ont imaginé les futurs possibles du quartier&nbsp;! Leurs
+        projets ont été exposés dans le cadre de la Biennale des Villes en
+        Transition au Palais des Sports de Grenoble.
+      </>
+    ),
+    image: 'images/news/news-17.jpg',
+  },
+  {
+    date: {
       day: 31,
       month: 3,
       year: 2025,
@@ -209,48 +231,11 @@ export const NEWS = [
     description: (
       <>
         Un événement organisé par Mathias Rollot (architecte ENSAG, CRESSON) et
-        Marin Schaffner (auteur et traducteur) avec l’appui des étudiant.es
+        Marin Schaffner (auteur et traducteur) avec l’appui des étudiant·es
         AUEP. Réalisation d’un podcast.
       </>
     ),
     image: 'images/news/news-18.png',
-  },
-  {
-    date: {
-      day: 13,
-      month: 5,
-      year: 2025,
-    },
-    title: <>Exposition «&nbsp;Héritage(s) Métropolitain(s)&nbsp;»</>,
-    description: (
-      <>
-        Au cœur du nouvel éco-quartier Flaubert, dissimulé dans la végétation du
-        «&nbsp;sourire vert&nbsp;» grenoblois, le bâtiment de l’ancienne Chambre
-        de l’Agriculture de Grenoble s’inscrit le long de l’avenue Marcelin
-        Berthelot non loin de l’arrêt de Tram MC2. La Ville de Grenoble
-        s’interroge sur le devenir de ce bâtiment de plus 3000m² construit en
-        1982 et vide depuis 2018. À travers quatre projets les étudiant.es du
-        master AUEP ont imaginé les futurs possibles du quartier&nbsp;! Leurs
-        projets ont été exposés dans le cadre de la Biennale des Villes en
-        Transition au Palais des Sports de Grenoble.
-      </>
-    ),
-    image: 'images/news/news-17.jpg',
-  },
-  {
-    date: {
-      day: 11,
-      month: 4,
-      year: 2025,
-    },
-    title: 'Journée de rencontres des Alumni AUEP',
-    description: (
-      <>
-        Au programme, des temps d’échanges et une conférence de Laurent Matthey
-        (Université de Genève).
-      </>
-    ),
-    image: 'images/news/news-16.png',
   },
   {
     date: {
@@ -312,6 +297,21 @@ export const NEWS = [
         Lab&apos;URBA, Université Paris-Est.
       </>
     ),
+  },
+  {
+    date: {
+      day: 11,
+      month: 4,
+      year: 2024,
+    },
+    title: 'Journée de rencontres des Alumni AUEP',
+    description: (
+      <>
+        Au programme, des temps d’échanges et une conférence de Laurent Matthey
+        (Université de Genève).
+      </>
+    ),
+    image: 'images/news/news-16.png',
   },
   {
     date: {
@@ -512,7 +512,7 @@ export const NEWS = [
       'Devenirs des métiers de la fabrique des territoires habités. Émergences. Trans’formations. Hybridations. Floutages',
     description: (
       <>
-        Un événement organisé avec l’appui des étudiant.es de Master 2 AUEP,
+        Un événement organisé avec l’appui des étudiant·es de Master 2 AUEP,
         sous la direction de Théa Manola et Roberta Ghelli.
       </>
     ),
@@ -566,7 +566,7 @@ export const NEWS = [
     title: 'Participation au challenge APERAU',
     description: (
       <>
-        Trois étudiant.es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
+        Trois étudiant·es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
         allé.es à Paris pour représenter l’Institut d’urbanisme et de géographie
         alpine face à 9 autres équipes francophones. Cette année la commande
         avait pour question&nbsp;: «&nbsp;s’il vous plaît le quartier de la gare

@@ -239,7 +239,7 @@ export const DISSERTATIONS_SECTION = {
   label: 'mémoires',
   description: (
     <>
-      Pour la réalisation de leur mémoire, les étudiant.es AUEP bénéficient d’un
+      Pour la réalisation de leur mémoire, les étudiant·es AUEP bénéficient d’un
       double accompagnement&nbsp;: un suivi collectif dans le cadre d’un cours «
       &nbsp;Initiation à la recherche&nbsp;» et un suivi individuel. A travers
       ces enseignements, il s’agit de&nbsp;: s’initier aux logiques et à la
@@ -436,17 +436,6 @@ export const DISSERTATIONS_SECTION = {
           ),
           description: null,
           supervisedBy: 'Adrien Mollaret',
-        },
-        {
-          student: 'Kémarine Stroobant',
-          title: (
-            <>
-              Occuper l’école pour sortir de la rue. Alternatives d’hébergement
-              sur le territoire grenoblois
-            </>
-          ),
-          description: null,
-          supervisedBy: 'Jeanne Bouyat',
         },
         {
           student: 'Kémarine Stroobant',
@@ -1414,7 +1403,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   Ce projet propose un programme de revitalisation de Clamecy,
                   petite ville de la Nièvre. L’objectif était de réhabiliter des
                   logements anciens vacants pour adapter les logements aux
-                  besoins d’habitant.es d’aujourd’hui. Les étudiant.es ont
+                  besoins d’habitant.es d’aujourd’hui. Les étudiant·es ont
                   travaillé sur l’ancien bâtiment pour adresser plusieurs
                   enjeux&nbsp;: écologiques (limiter l’étalement urbain,
                   privilégier le réemploi des matériaux), sociaux (adapter

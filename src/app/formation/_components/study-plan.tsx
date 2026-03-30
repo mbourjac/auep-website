@@ -235,7 +235,7 @@ export const StudyPlan = ({
           <p>
             Les étudiantes et étudiants ayant suivi le parcours AUEP en Licence
             seront admises de droit dans le parcours AUEP en Master. Les
-            étudiant.es qui n’ont pas suivi le parcours AUEP en Licence peuvent
+            étudiant·es qui n’ont pas suivi le parcours AUEP en Licence peuvent
             s’inscrire au parcours AUEP en Master, dans la limite des places
             disponibles, et suite à l’examen de leur dossier. Le parcours compte
             20 places en Master.
@@ -295,7 +295,9 @@ export const StudyPlan = ({
               </td>
             </tr>
             <tr>
-              <td className="border-primary border px-4 py-2">URBA ou autre</td>
+              <td className="border-primary border px-4 py-2">
+                URBA ou autres
+              </td>
               <td className="border-primary border px-4 py-2">Master URBA</td>
             </tr>
           </tbody>
@@ -338,8 +340,8 @@ export const StudyPlan = ({
           politiques publiques. Nous accompagnons les étudiants depuis leur
           arrivé en master jusqu’à leur insertion dans la vie active. Cette
           thématique de Graduate School est ouverte à tous les étudiants des
-          parcours de master en architecture, urbanisme, design et sciences
-          politiques.
+          parcours de master en architecture, urbanisme, design et science
+          politique.
         </p>
       </FormationSubSection>
     </section>

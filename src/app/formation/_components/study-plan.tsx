@@ -205,7 +205,7 @@ export const StudyPlan = ({
               <Dot />
               <span>
                 la réalisation d’un mémoire en Master 1 accompagnée d’une
-                initiation à la recherche
+                initiation à la recherche&nbsp;;
               </span>
             </li>
             <li>
@@ -234,11 +234,8 @@ export const StudyPlan = ({
           <h4 className="py-1 underline underline-offset-4">Admission</h4>
           <p>
             Les étudiantes et étudiants ayant suivi le parcours AUEP en Licence
-            seront admises de droit dans le parcours AUEP en Master. Les
-            étudiant·es qui n’ont pas suivi le parcours AUEP en Licence peuvent
-            s’inscrire au parcours AUEP en Master, dans la limite des places
-            disponibles, et suite à l’examen de leur dossier. Le parcours compte
-            20 places en Master.
+            seront admis de droit dans le parcours AUEP en Master. Le parcours
+            compte 20 places en Master.
           </p>
         </div>
         <div className="flex flex-col gap-2">
@@ -313,35 +310,37 @@ export const StudyPlan = ({
       >
         <p>La formation AUEP est associée au programme MetroFabLab.</p>
         <p>
-          Ce programme vise à former les étudiants par (et pour) la recherche
+          Ce programme vise à former les étudiant·es par (et pour) la recherche
           aux nouvelles conditions de la fabrique métropolitaine, dans un
           contexte de changement rapide, de transitions et de transformation de
-          la société. Interdisciplinaire et multi-scalaire, notre projet repose
-          sur les savoirs et les pratiques de l’architecture, de l’urbanisme et
-          de l’aménagement de l’espace, du design, des sciences politiques, de
-          la géographie et des sciences économiques. L’objectif du programme
-          MetroFabLab est de former les étudiants par et pour la recherche aux
+          la société. Interdisciplinaire et multi-scalaire, il repose sur les
+          savoirs et les pratiques de l’architecture, de l’urbanisme et de
+          l’aménagement de l’espace, du design, des sciences politiques, de la
+          géographie et des sciences économiques. L’objectif du programme
+          MetroFabLab est de former les étudiant·es par et pour la recherche aux
           nouvelles conditions de la fabrique métropolitaine dans un contexte de
           changement rapide, de transitions et de transformation de la société.
           Face aux enjeux et impératifs écologiques, mais également sociaux,
-          économiques et politiques, nous avons besoin de renouveler les cadres
+          économiques et politiques, il est nécessaire de renouveler les cadres
           d’analyse, les approches conceptuelles et méthodologiques pour tenter
           de mieux comprendre les dynamiques en cours, éclairer voire objectiver
           les débats et mieux accompagner l’action dans ces mutations profondes.
-          Interdisciplinaire et multi-scalaire, notre projet repose sur les
-          savoirs et les pratiques de l’architecture, de l’urbanisme et de
-          l’aménagement de l’espace, du design, des sciences politiques, de la
-          géographie et des sciences économiques. Ce programme thématique
-          bénéficie de l’excellence scientifique des laboratoires du site
-          Grenoblois. Il s’appuie sur les programmes de recherche en cours et se
-          construit en dialogue sur les acteurs du territoire. Son ambition est
-          de former des chercheurs et des cadres sensibles aux défis futurs en
-          matière d’architecture, d’urbanisme, de design et de conception des
-          politiques publiques. Nous accompagnons les étudiants depuis leur
-          arrivé en master jusqu’à leur insertion dans la vie active. Cette
-          thématique de Graduate School est ouverte à tous les étudiants des
-          parcours de master en architecture, urbanisme, design et science
-          politique.
+          Ce programme thématique bénéficie de l’excellence scientifique des
+          laboratoires du site Grenoblois. Il s’appuie sur les programmes de
+          recherche en cours et se construit en dialogue sur les acteurs du
+          territoire. Son ambition est de former des chercheur·es et des cadres
+          sensibles aux défis futurs en matière d’architecture, d’urbanisme, de
+          design et de conception des politiques publiques. Cette thématique de{' '}
+          <a
+            href="https://www.univ-grenoble-alpes.fr/formation/graduate-school/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            Graduate School
+          </a>{' '}
+          est ouverte à tous les étudiant·es des parcours de master en
+          architecture, urbanisme, design et science politique.
         </p>
       </FormationSubSection>
     </section>

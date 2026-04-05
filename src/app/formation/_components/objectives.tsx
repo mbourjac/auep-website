@@ -44,7 +44,7 @@ export const Objectives = ({
               architecture, en urbanisme et en sciences sociales, conduisant à
               une triple diplomation de niveau master (pour les étudiantes et
               étudiants ayant suivi l’ensemble de la formation AUEP en Licence
-              et en Master)&nbsp;: diplôme d’Etat d’architecte, master en
+              et en Master)&nbsp;: diplôme d’État d’architecte, master en
               urbanisme et aménagement, et diplôme de Sciences Po Grenoble-UGA.
             </p>
             <div>
@@ -168,7 +168,7 @@ export const Objectives = ({
               </li>
               <li>
                 <Dot />
-                semestre 3&nbsp;: cœurs métropolitains et de leurs équipements.
+                semestre 3&nbsp;: cœurs métropolitains.
               </li>
             </ul>
           </li>

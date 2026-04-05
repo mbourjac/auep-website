@@ -18,12 +18,12 @@ export const GraduationProjects = ({
       picture={GRADUATION_PROJECTS_SECTION.picture}
       sectionRef={sectionRef}
     >
+      <p className="py-4"> {GRADUATION_PROJECTS_SECTION.description}</p>
       {GRADUATION_PROJECTS_SECTION.years.map((year, index) => (
         <GraduationProjectsYear
           key={year.id}
           {...year}
           sectionRef={yearRefs[index]}
-          isFirst={index === 0}
           isLast={index === GRADUATION_PROJECTS_SECTION.years.length - 1}
         />
       ))}

@@ -40,7 +40,7 @@ export const SeminarsSemester = ({
           <tr className="border-b border-b-black/40">
             <th className="py-1 pr-6 text-left font-normal">Année</th>
             <th className="px-6 py-1 text-left font-normal">Encadrement</th>
-            <th className="px-6 py-1 text-left font-normal">Invités</th>
+            <th className="px-6 py-1 text-left font-normal">Invité·es</th>
           </tr>
         </thead>
         <tbody>

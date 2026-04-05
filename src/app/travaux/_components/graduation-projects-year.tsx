@@ -6,7 +6,6 @@ import { GraduationProjectsYear as GraduationProjectsYearType } from '../works.t
 
 type GraduationProjectsYearProps = Omit<GraduationProjectsYearType, 'id'> & {
   sectionRef: RefObject<HTMLDivElement | null>;
-  isFirst: boolean;
   isLast: boolean;
 };
 
@@ -14,20 +13,16 @@ export const GraduationProjectsYear = ({
   sectionRef,
   label,
   graduationProjects,
-  isFirst,
   isLast,
+  mentoring,
 }: GraduationProjectsYearProps) => {
   const hasSupervisors = useMediaQuery(BREAKPOINTS.md);
 
   return (
     <div ref={sectionRef} className={cn('scroll-mt-24', !isLast && 'pb-4')}>
-      <div
-        className={cn(
-          'flex flex-col gap-2.5 pt-4 pb-2.5',
-          !isFirst && 'border-t-2'
-        )}
-      >
+      <div className="flex flex-col gap-2.5 border-t-2 pt-4 pb-2.5">
         <h3 className="text-md font-medium">{label}</h3>
+        <p>Equipe encadrante de suivi : {mentoring.join(', ')}</p>
       </div>
       <table className="w-full table-fixed border-t border-t-black/40">
         <colgroup>

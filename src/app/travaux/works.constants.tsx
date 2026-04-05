@@ -6,7 +6,21 @@ export const SEMINARS_SECTION = {
       id: 'semester-7',
       label: 'Semestre 7',
       title: 'Sciences humaines et sociales du et pour le projet',
-      description: null,
+      description: (
+        <>
+          Ce séminaire propose d’examiner, à travers des cours, des lectures et
+          des débats, la manière dont les sciences humaines —&nbsp;en
+          particulier l’anthropologie et la sociologie&nbsp;— se sont saisies
+          des questions spatiales. Il s’agit d’analyser leur contribution non
+          seulement à la compréhension des territoires, mais également à
+          l’accompagnement de leurs transformations. L’un des objectifs du
+          séminaire est également de favoriser une acculturation à l’histoire,
+          au vocabulaire et aux enjeux de l’ethnographie, envisagée comme une
+          méthode apte à dialoguer avec les processus de projet. Ce séminaire
+          est mutualisé avec le parcours de master «&nbsp;Géographie, pouvoir,
+          espaces, justice, environnements&nbsp;» de l’IUGA.
+        </>
+      ),
       seminars: [
         {
           year: '2025-2026',
@@ -137,6 +151,22 @@ export const SEMINARS_SECTION = {
           territoires habités &nbsp;; construire des bases en termes d’outils
           conceptuels pour penser et accompagner ces évolutions de manière
           critique&nbsp;; commencer à construire une projection personnelle.
+          <br />
+          Le répertoire des métiers de la fabrique des territoires et de la
+          ville est l’aboutissement du travail effectué dans le cadre de ce
+          séminaire. Ce travail a mobilisé trois promotions de Master 2 AUEP
+          (2023-2024, 2024-2025 et 2025-2026). Il a pour but de donner à voir
+          les débouchés possibles après un master en architecture et/ou
+          urbanisme, plus spécifiquement les débouchés possibles après un master
+          AUEP. Pour consulter le répertoire&nbsp;:{' '}
+          <a
+            href="https://archi-urba-metiers.odoo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            https://archi-urba-metiers.odoo.com/
+          </a>
         </>
       ),
       seminars: [
@@ -240,17 +270,19 @@ export const DISSERTATIONS_SECTION = {
   description: (
     <>
       Pour la réalisation de leur mémoire, les étudiant·es AUEP bénéficient d’un
-      double accompagnement&nbsp;: un suivi collectif dans le cadre d’un cours «
-      &nbsp;Initiation à la recherche&nbsp;» et un suivi individuel. A travers
-      ces enseignements, il s’agit de&nbsp;: s’initier aux logiques et à la
-      pratique d’une démarche de recherche&nbsp;; apprendre à poser des
-      questions pertinentes et à problématiser un sujet&nbsp;; maîtriser les
-      concepts associés&nbsp;; construire et défendre une idée sur la base
-      d’arguments scientifiques&nbsp;; proposer une démarche méthodologique et
-      la mettre en oeuvre pour répondre à une série de questionnements&nbsp;;
-      développer son esprit critique en prenant appui sur des éléments
-      théoriques et en développant une posture réflexive propre&nbsp;; produire
-      un document écrit qui respecte les règles académiques.
+      double accompagnement&nbsp;: un suivi collectif réalisé dans le cadre du
+      cours d’« &nbsp;Initiation à la recherche&nbsp;» coordonné par Théa Manola
+      (2021-2025) et Inès Ramirez-Cobo (depuis 2025-2026), ainsi qu’un suivi
+      individuel. A travers ces enseignements, il s’agit de&nbsp;: s’initier aux
+      logiques et à la pratique d’une démarche de recherche&nbsp;; apprendre à
+      poser des questions pertinentes et à problématiser un sujet&nbsp;;
+      maîtriser les concepts associés&nbsp;; construire et défendre une idée sur
+      la base d’arguments scientifiques&nbsp;; proposer une démarche
+      méthodologique et la mettre en oeuvre pour répondre à une série de
+      questionnements&nbsp;; développer son esprit critique en prenant appui sur
+      des éléments théoriques et en développant une posture réflexive
+      propre&nbsp;; produire un document écrit qui respecte les règles
+      académiques.
     </>
   ),
   picture: '/images/works/dissertations/dissertations-1.png',
@@ -695,7 +727,12 @@ export const DISSERTATIONS_SECTION = {
         },
         {
           student: 'Victoria Excoffon',
-          title: <></>,
+          title: (
+            <>
+              Les dispositifs architecturaux liés au pigeon à Grenoble quels
+              enjeux pour l’animal en ville&nbsp;?
+            </>
+          ),
           description: null,
           supervisedBy: 'Mathias Rollot',
         },
@@ -917,7 +954,13 @@ export const DISSERTATIONS_SECTION = {
         },
         {
           student: 'Simeon Naydenov',
-          title: <></>,
+          title: (
+            <>
+              Sensibiliser les paysages controversés. Comment les réalités
+              post-socialistes s’incarnent dans les idéologies spatiales de la
+              deuxième moitié du 20ème siècle
+            </>
+          ),
           description: null,
           supervisedBy: '',
         },
@@ -980,7 +1023,7 @@ export const DISSERTATIONS_SECTION = {
 
 export const PROJECT_WORKSHOPS_SECTION = {
   label: 'ateliers de projet',
-  picture: '/images/works/project-workshops/project-workshops-1.jpg',
+  picture: '/images/works/project-workshops/project-workshops-1.png',
   semesters: [
     {
       id: 'semester-7',
@@ -988,28 +1031,147 @@ export const PROJECT_WORKSHOPS_SECTION = {
       title: 'Revitaliser une petite ville en territoire rural',
       description: (
         <>
-          L’atelier de projet du premier semestre de master s’intéresse aux
-          territoires ruraux et aux enjeux associés. L’exercice consiste à se
-          saisir de manière critique de problématiques contemporaines (stratégie
-          de revitalisation, développement urbain versus densification, aménités
+          L’atelier de projet du premier semestre s’intéresse aux territoires
+          ruraux et aux enjeux associés. L’exercice consiste à se saisir de
+          manière critique de problématiques contemporaines (stratégie de
+          revitalisation, développement urbain versus densification, aménités
           rurales, circuits courts et économie locale, patrimoines et mémoires,
           qualité des espaces publics, etc.) à partir de situations de projets
           spécifiques en lien avec les préoccupations politiques locales et
           nationales, notamment au sujet des transitions énergétiques et
           écologiques. L’hypothèse de l’enseignement, fondée sur celle du
-          parcours intégré AUEP, est que la mise au travail synchrone, à la fois
-          du projet urbain et des conditions du projet urbain, est l’occasion
+          parcours AUEP, est que la mise au travail synchrone, à la fois du
+          projet urbain et des conditions du projet urbain, est l’occasion
           d’éclairer sous un jour nouveau les manières de penser et d’agir sur
           notre environnement ordinaire.
         </>
       ),
       areas: [
-        'Clamecy (Nièvre, 2021, 2022)',
+        'Clamecy (Nièvre,  2021/22, 2022/23)',
         'Pierrefort (Cantal, 2023/24)',
         'Le Cheylard (Ardèche, 2024/25)',
         'Villeneuve-de-Berg (Ardèche, 2025/26)',
       ],
       years: [
+        {
+          label: '2025-2026',
+          mentoring: [
+            'Edith Chezel',
+            'Simon Godard',
+            'Gaëtan Haist (resp.)',
+            'Théa Manola',
+            'Ivan Mazel',
+            'Simeon Naydenov',
+            'Martin Rollin',
+          ],
+          projectWorkshops: [
+            {
+              students: ['Martin Chaize'],
+              title: 'Réaménagement de la friche de l’hôpital ',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Barthélémy Cuilleret'],
+              title:
+                'Soustraction positive : révéler la bastide et habiter le patrimoine',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Ambre Delib'],
+              title:
+                'Penser l’entrée de ville comme espace d’hospitalité : projet de réhabilitation de l’Ardéchoise',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Rose Desmartin'],
+              title: 'Repenser les usages et les intensités de la ZAE',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Gwennaëlle Leconte–Omer'],
+              title:
+                'Habiter le parc urbain : vers une forme soutenable de l’habiter à Villeneuve-de-Berg',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Alice Molin'],
+              title: 'Un circuit court de la fourche à la fourchette',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Adrien Chaussende'],
+              title:
+                'Révéler les devenirs possibles d’un territoire rural à partir de l’existant entre réorganisation des limites, intensification et densification',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Léon Gentil'],
+              title: 'Vers un éco-hameau résilient à Villeneuve-de-Berg',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Laïss El Khaledi'],
+              title:
+                "Patrimoine et vacance du bourg. Un espace pour la recherche et l'associatif à Villeneuve Berg",
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Clément Freyssenet'],
+              title: 'Usages domestiques de l’eau pluviale',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Lou Heffer'],
+              title: 'Un parc agricole paysager au bord de l’Ibie',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Sarah Desreumaux'],
+              title:
+                'L’eau comme commun : valoriser l’héritage, ouvrir les usages',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Jihane Slimani'],
+              title:
+                'Le chemin des savoirs : une promenade culturelle au coeur des espaces publics',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Jihane Slimani'],
+              title:
+                'Le chemin des savoirs : une promenade culturelle au coeur des espaces publics',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Emma Bokhobza'],
+              title: 'L’eau comme commun : densifier, sensibiliser, relier',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Siham Karzeb'],
+              title:
+                'Vivre et accueillir au coeur ancien de Villeneuve-de-Berg : revitalisation du centre-bourg par l’organisation des espaces bâtis, des usages et des parcours',
+              description: null,
+              pictures: [],
+            },
+          ],
+        },
         {
           label: '2024-2025',
           mentoring: [
@@ -1023,13 +1185,13 @@ export const PROJECT_WORKSHOPS_SECTION = {
           ],
           projectWorkshops: [
             {
-              students: ['Léa KLEIN', 'Cyrille VANPEENE'],
+              students: ['Léa Klein', 'Cyrille Vanpeene'],
               title: 'Localité Accueillante et Apaisée Misant sur ses Aînés',
               description: null,
               pictures: [],
             },
             {
-              students: ['Marisa MARQUES', 'Mattéo LESEIGNEUR'],
+              students: ['Marisa Marques', 'Mattéo Leseigneur'],
               title:
                 'Réinvestir l’espace public et intensifier les liens avec l’environnant',
               description: (
@@ -1088,7 +1250,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Léa CASADO', 'Nathan SALIGNAT'],
+              students: ['Léa Casado', 'Nathan Salignat'],
               title:
                 'Territoire technique, révéler le rapport à l’eau pour une nouvelle dynamique locale',
               description: (
@@ -1110,7 +1272,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Fanny DAMOND', 'Anaël PETERS'],
+              students: ['Fanny Damond', 'Anaël Peters'],
               title:
                 'Les Terrasses agricoles au cœur du renouvellement de la zone d’activité de La Palisse',
               description: (
@@ -1134,6 +1296,38 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   territoire.
                 </>
               ),
+              pictures: [],
+            },
+            {
+              students: ['Enzo Falco', 'Lyssandre Coulon–Decorzens'],
+              title:
+                'Quartier de la Gare : saisir la complexité du site par l’approche des mobilités',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Charlotte Farys', 'Nina Marrel'],
+              title:
+                'Noirols, porte d’entrée vers le Cheylard et son territoire',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Jade Huser', 'Feriel Reffaf'],
+              title: 'La Palisse au fil de l’eau',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Raphaël Corsino', 'Kémarine Stroobant'],
+              title: 'Les germes de la Riaille',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Mélanie Alric', 'Thomas Férand'],
+              title: 'Cultiver les communaux en terrasse. Secteur de Jabrezac',
+              description: null,
               pictures: [],
             },
           ],
@@ -1248,6 +1442,33 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   sociaux, agricoles et paysagers du territoire.
                 </>
               ),
+              pictures: [],
+            },
+            {
+              students: ['Mathias Dunyach', 'Claire Kolodziej'],
+              title:
+                'Adapter l’offre de logements par la réhabilitation du centre-bourg',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Maëlys Christin', 'Badreddine Hamaich'],
+              title:
+                'Proposer du logement neuf aux seniors de Pierrefort : le renouvellement urbain comme levier de la diversification de l’offre de logement',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Gasdelton Elisha'],
+              title:
+                'La maison individuelle groupée pour accueillir de nouveaux habitants',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Eglantine Maucuit', 'Sidonie Rigal '],
+              title: null,
+              description: null,
               pictures: [],
             },
           ],
@@ -1458,9 +1679,9 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: [
-                'Fanny DAMOND',
-                'Kémarine STROOBANT',
-                'Cyrille VANPEENE',
+                'Fanny Damond',
+                'Kémarine Stroobant',
+                'Cyrille Vanpeene',
               ],
               title: (
                 <>
@@ -1495,7 +1716,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Léa CASADO', 'Marisa MARQUES SANTOS'],
+              students: ['Léa Casado', 'Marisa Marques Santos'],
               title:
                 'Expérimenter pour répondre aux schémas familiaux nouveaux',
               description: (
@@ -1518,7 +1739,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Jade HUSER', 'Mattéo LESEIGNEUR'],
+              students: ['Jade Huser', 'Mattéo Leseigneur'],
               title: 'Faire Lieu, Faire Liens',
               description: (
                 <>
@@ -1543,7 +1764,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Nathan SALIGNAT', 'Charlotte FARYS'],
+              students: ['Nathan Salignat', 'Charlotte Farys'],
               title: null,
               description: (
                 <>
@@ -1572,6 +1793,26 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   générations.
                 </>
               ),
+              pictures: [],
+            },
+            {
+              students: ['Charlotte Farys', 'Nathan Salignat'],
+              title:
+                'Habitat et renouvellement urbain dans une ville moyenne: le secteur Jean Jaurès',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Lyssandre Coulon', 'Léa Klein'],
+              title:
+                'Cheradame : Réactiver un site pour relier le quartier Requalification d’un secteur en mutation par la mixité et la revalorisation des espaces publics',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: ['Mélanie Alric', 'Enzo Falco', 'Anaël Peters'],
+              title: 'La place Paul Bert',
+              description: null,
               pictures: [],
             },
           ],
@@ -1662,6 +1903,13 @@ export const PROJECT_WORKSHOPS_SECTION = {
                   (presque) les mêmes qualité qu’une maison individuelle.
                 </>
               ),
+              pictures: [],
+            },
+            {
+              students: ['Lola Guijarro', 'Camille Pagiras', 'Sidonie Rigal'],
+              title:
+                'Habitat rural. Enjeux et projets potentiels de requalification d’anciens bâtiments agricoles',
+              description: null,
               pictures: [],
             },
           ],
@@ -1901,6 +2149,55 @@ export const PROJECT_WORKSHOPS_SECTION = {
       areas: ['Métropole de Grenoble (Isère, 2022-2025)'],
       years: [
         {
+          label: '2025-2026',
+          mentoring: [
+            'Laure Favier',
+            'Federica Gatta (resp.)',
+            'Anaïs Vigneron (resp.)',
+          ],
+          projectWorkshops: [
+            {
+              students: ['Charlotte Berg', 'Léa Klein', 'Nathan Salignat'],
+              title:
+                'Ressources. La valorisation d’un héritage bâti, de ressources matérielles et de savoir-faire',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: [
+                'Lyssandre Coulon–Decorzens',
+                'Enzo Falco',
+                'Solène Rascle',
+              ],
+              title:
+                'Vers la ville-parc : un espace public fédérateur pour une ville en transition',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: [
+                'Fanny Damond',
+                'Tahoe Salkind-Henry',
+                'Kémarine Stroobant',
+              ],
+              title: 'Faire place à l’alimentation',
+              description: null,
+              pictures: [],
+            },
+            {
+              students: [
+                'Léa Klein',
+                'Marisa Marques Santos',
+                'Cyrille Vanpeene',
+              ],
+              title:
+                'S’émanciper par le savoir. L’îlot Marie Reynoard révélateur de savoirs chauds',
+              description: null,
+              pictures: [],
+            },
+          ],
+        },
+        {
           label: '2024-2025',
           mentoring: [
             'Laure Brayer',
@@ -2121,6 +2418,18 @@ export const PROJECT_WORKSHOPS_SECTION = {
               ),
               pictures: [],
             },
+            {
+              students: [
+                'Agathe Bruyère',
+                'Camille Pagiras',
+                'Julien Thomas',
+                'Naïan Baron',
+              ],
+              title:
+                'La ville arborée à l’horizon Grenoble 2040 : chemins de résilience à la chaleur urbaine',
+              description: null,
+              pictures: [],
+            },
           ],
         },
         {
@@ -2208,24 +2517,37 @@ export const PROJECT_WORKSHOPS_SECTION = {
 
 export const GRADUATION_PROJECTS_SECTION = {
   label: 'projets de fin d’études',
+  description: (
+    <>
+      Pour la réalisation de leur projet de fin d’études, les étudiant·es AUEP
+      bénéficient d’un double accompagnement&nbsp;: un suivi collectif, sous la
+      responsabilité d’Yvan Okotnikoff (2022-2023, 2023-2024, 2024-2025,
+      2025-2026) et de Théa Manola (2024-2025, 2025-2026)&nbsp;; un suivi
+      individuel pour l’accompagnement de la notice et de la mention recherche
+      lorsqu’elle existe.
+      <br />
+      Le PFE vise à vérifier la capacité à mobiliser compétences et convictions
+      au service d’un engagement conscient en direction du territoire et de son
+      actualité. La spécificité AUEP est d’interroger les pratiques à la
+      rencontre des trois disciplines associées, pour adresser des enjeux de
+      transition territoriale et/ou d’adaptation des tissu urbains et ruraux,
+      pour mieux prendre en compte de nouvelles solidarités (avec des groupes
+      identifiés, entre territoires, entre acteur·ices), pour questionner
+      l’opérationnalisation des transformations de l’espace et/ou des démarches
+      prospectives.
+    </>
+  ),
   picture: '/images/works/graduation-projects/graduation-projects-1.png',
   years: [
     {
       id: '2024-2025',
       label: '2024-2025',
       mentoring: [
-        'Charles Ambrosino',
-        'Renaud Bécot',
-        'Marie-Julie Bernard',
-        'Hélène Caune',
-        'Edith Chezel',
-        'Laure Favier',
-        'Federica Gatta',
-        'Florian Golay',
-        'Théa Manola (resp.)',
-        'Simeon Naydenov',
         'Yvan Okotnikoff (resp.)',
-        'Charles Rives',
+        'Théa Manola (resp.)',
+        'Florian Golay',
+        'Charles Ambrosino',
+        'Laure Favier',
       ],
       graduationProjects: [
         {
@@ -2493,25 +2815,84 @@ export const GRADUATION_PROJECTS_SECTION = {
           supervisedBy: null,
           description: null,
         },
+        {
+          students: ['Céline Bodin'],
+          title: null,
+          supervisedBy: 'Yvan Okotnikoff',
+          description: null,
+        },
+        {
+          students: ['Eglantine Maucuit', 'Agathe Bruyère'],
+          title: null,
+          supervisedBy: 'Théa Manola et Simeon Naydenov',
+          description: null,
+        },
+        {
+          students: ['Nolwenn Biger', 'Sidonie Rigal'],
+          title:
+            'Habiter la solidarité. Des espaces de soin, de vie et de solidarités adaptés aux femmes en situation de précarité en milieu urbain dense',
+          supervisedBy: 'Marie-Julie Bernard',
+          description: null,
+        },
+        {
+          students: ['Gasdelton Elisha'],
+          title:
+            'Adaptation du bâti aux risques d’inondation au-delà des contraintes et limites du PPRI Drac dans la ville de Fontaine',
+          supervisedBy: 'Florian Golay',
+          description: null,
+        },
+        {
+          students: ['Clara Errecade Cattalorda'],
+          title:
+            'Révéler la vacance pour mieux habiter. Le cas des Marolles à Bruxelles',
+          supervisedBy: 'Théa Manola',
+          description: null,
+        },
+        {
+          students: ['Badreddine Hamaich', 'Claire Kolodziej'],
+          title:
+            "De l’événement à l’ordinaire. JO d'hiver 2030 : un village olympique en archipel comme réponse territoriale à la crise du logement à Briançon",
+          supervisedBy: 'Edith Chezel et Marie-Julie Bernard',
+          description: null,
+        },
+        {
+          students: ['Adrien Leclercq'],
+          title:
+            'De la ville inondable à la ville inondée. La transition des villes inondables à l’heure du dérèglement climatique et des crues intenses à partir du cas de Vizille en Isère',
+          supervisedBy: 'Théa Manola et Simeon Naydenov',
+          description: null,
+        },
+        {
+          students: ['Etienne Masselot'],
+          title:
+            'Transhumance de fraîcheur urbaine. Pour une politique saisonnière',
+          supervisedBy: 'Federica Gatta',
+          description: null,
+        },
+        {
+          students: ['Julien Thomas'],
+          title:
+            'Fabriquer la ville de demain dans la ville d’hier. Le recyclage des friches industrielles du XIXe au XXIe siècle',
+          supervisedBy: 'Yvan Okotnikoff',
+          description: null,
+        },
+        {
+          students: ['Naïan Barron'],
+          title: null,
+          supervisedBy: 'Federica Gatta',
+          description: null,
+        },
       ],
     },
     {
       id: '2023-2024',
       label: '2023-2024',
       mentoring: [
-        'Marine Bourgeois',
-        'Laure Brayer',
-        'Arnaud Buchs',
-        'Giulia Buffoli',
-        'Edith Chezel',
-        'Alain Faure',
-        'Laure Favier',
-        'Simon Godard',
-        'Federica Gatta',
-        'Florian Golay (resp.)',
-        'Théa Manola',
         'Yvan Okotnikoff (resp.)',
-        'Mathias Rollot',
+        'Théa Manola',
+        'Florian Golay',
+        'Federica Gatta',
+        'Giulia Buffoli',
       ],
       graduationProjects: [
         {
@@ -2643,20 +3024,12 @@ export const GRADUATION_PROJECTS_SECTION = {
     {
       id: '2022-2023',
       label: '2022-2023',
-      mentoring: [
-        'Marine Bourgeois',
-        'Giulia Buffoli',
-        'Simon Godard',
-        'Federica Gatta',
-        'Florian Golay (resp.)',
-        'Théa Manola',
-        'Yvan Okotnikoff (resp.)',
-        'Mathias Rollot',
-      ],
+      mentoring: ['Yvan Okotnikoff (resp.)', 'Florian Golay'],
       graduationProjects: [
         {
           students: ['Matteo Beguiristain', 'Elisa Naudin'],
-          title: null,
+          title:
+            'S’adapter dans un contexte de changement climatique. Le cas des stations de ski de moyenne montagne',
           supervisedBy: 'Marine Bourgeois et Simon Godard',
           description: null,
         },
@@ -2686,8 +3059,8 @@ export const GRADUATION_PROJECTS_SECTION = {
         {
           students: ['Guillaume Cachoulet'],
           title:
-            'Le quartier de la gare comme futur lieu de vie à Pont de Beauvoisin',
-          supervisedBy: null,
+            'Un quartier de gare à Pont de Beauvoisin. Une future centralité au service des besoins culturels du bassin pontois',
+          supervisedBy: 'Théa Manola',
           description: (
             <>
               Pont de Beauvoisin est une ville structurante dans un territoire
@@ -2720,7 +3093,7 @@ export const GRADUATION_PROJECTS_SECTION = {
           students: ['Mathilde Cazeaux'],
           title:
             'Roanne au prisme de la qualité du cadre de vie pour sa jeunesse',
-          supervisedBy: null,
+          supervisedBy: 'Théa Manola',
           description: (
             <>
               Roanne est une ville moyenne de la région Rhône-Alpes, qui comme
@@ -2748,26 +3121,29 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Max Chapuis'],
-          title: null,
-          supervisedBy: null,
+          title:
+            'Vitaliser la filière bois des Bauges. Participer à la résilience des Savoie en contexte de crises',
+          supervisedBy: 'Giulia Buffoli',
           description: null,
         },
         {
           students: ['Adrien Cherencq'],
-          title: null,
-          supervisedBy: null,
+          title:
+            'Accélérer le développement local au Pays-Basque : une stratégie de transition territoriale',
+          supervisedBy: 'Giulia Buffoli',
           description: null,
         },
         {
           students: ['Lucie Crespin'],
-          title: null,
-          supervisedBy: null,
+          title: 'Le quartier de gare de Dinan, une mosaïque à reconnecter',
+          supervisedBy: 'Mathias Rollot',
           description: null,
         },
         {
           students: ['Nathan Delmas'],
-          title: null,
-          supervisedBy: null,
+          title:
+            'Le refuge climatique, un levier pour fabriquer de la cohésion territoriale. Renforcer la résilience territoriale face aux pics de chaleur dans la région grenobloise',
+          supervisedBy: 'Théa Manola',
           description: (
             <>
               Cette notice présente le Projet de Fin d’Études que j’ai mené de
@@ -2802,8 +3178,9 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Juliette Garcia'],
-          title: 'De la petite enfance au pôle de gare',
-          supervisedBy: null,
+          title:
+            'De la petite enfance au pôle de gare. Repenser l’articulation entre mobilités et services',
+          supervisedBy: 'Théa Manola',
           description: (
             <>
               Les campagnes urbaines sont des territoires à fortes dynamiques,
@@ -2828,7 +3205,8 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Clair Gauffenic'],
-          title: 'Grenoble sous le prisme queer',
+          title:
+            'Grenoble sous le prisme queer. plan-guide pour la prise en compte des vécus queers dans l’aménagement grenoblois',
           supervisedBy: 'Marine Bourgeois et Giulia Buffoli',
           description: (
             <>
@@ -2864,8 +3242,9 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Simeon Naydenov'],
-          title: 'De nouvelles coopérations territoriales',
-          supervisedBy: 'Mathias Rollot',
+          title:
+            'Nouvelles coopérations territoriales dans le Trièves de 2030 (logements, mobilités, sociabilités)',
+          supervisedBy: 'Charles Ambrosino, Théa Manola et Mathias Rollot',
           description: (
             <>
               Dans un contexte d’une grande diversité des dynamiques
@@ -2899,8 +3278,8 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Alouna Nicolas'],
-          title: null,
-          supervisedBy: null,
+          title: 'Fabriquer le commun du Trièves',
+          supervisedBy: 'Federica Gatta et Nicolas Tixier',
           description: null,
         },
       ],

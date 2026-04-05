@@ -40,8 +40,9 @@ export const ACADEMIC_COORDINATION = [
         Supérieure d’Architecture de Grenoble, chercheuse et directrice de
         l’Unité de recherche CRESSON, directrice adjointe de l’UMR
         AAU-Ambiances, Architectures, Urbanités. Ses travaux portent sur les
-        rapports entre sensible et politique dans les transformations des
-        territoires habités.
+        rapports entre sensible, écologie et politique dans les transformations
+        des territoires habités. Par le passé, elle a été maîtresse d&apos;œuvre
+        et assistance à la maîtrise d&apos;ouvrage en participation.
       </>
     ),
     image: 'manola-thea.jpg',
@@ -308,8 +309,8 @@ export const TEACHING_STAFF = [
         champ TPCAU et chercheur au CRESSON, il mène parallèlement une activité
         de projet au sein du collectif BazarUrbain. Il a été président de la
         Cinémathèque de Grenoble, directeur du CRESSON et directeur adjoint de
-        l’UMR AAU-Ambiances, Architectures, Urbanités. Ses travaux portent sur
-        le transect urbain comme pratique de terrain, technique de
+        l’UMR AAU-Ambiances, Architectures, Urbanités (2028-2024). Ses travaux
+        portent sur le transect urbain comme pratique de terrain, technique de
         représentation et posture de projet. Entre héritage et fiction, il
         interroge les territoires et leur fabrique par les ambiances.
       </>

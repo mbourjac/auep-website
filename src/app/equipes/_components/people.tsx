@@ -18,26 +18,36 @@ export const People = () => {
         </h1>
         <div className="flex w-full flex-col gap-32">
           <PeopleSection heading="coordination pédagogique">
-            <PeopleGrid
-              people={ACADEMIC_COORDINATION}
-              section="Coordination pédagogique"
-            />
+            <div className="flex flex-col gap-12 border-l-2 pt-8 pl-4">
+              <PeopleGrid
+                people={ACADEMIC_COORDINATION}
+                section="Coordination pédagogique"
+              />
+            </div>
           </PeopleSection>
           <PeopleSection heading="équipe enseignante">
-            <PeopleGrid people={TEACHING_STAFF} section="Équipe enseignante" />
-          </PeopleSection>
-          <PeopleSection heading="mais aussi">
-            <ul className="flex flex-wrap gap-2.5 border-l-2 pt-8 pl-4">
-              {FORMER_STAFF.map((people, index) => (
-                <li
-                  key={index}
-                  className="text-xl leading-none font-bold whitespace-nowrap sm:text-2xl"
-                >
-                  {people}
-                  {index < FORMER_STAFF.length - 1 ? ', ' : ''}
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-col gap-12 border-l-2 pt-8 pl-4">
+              <PeopleGrid
+                people={TEACHING_STAFF}
+                section="Équipe enseignante"
+              />
+              <div>
+                <h3 className="border-b-2 pb-1 text-2xl font-medium">
+                  et par le passé
+                </h3>
+                <ul className="flex flex-wrap gap-2.5 pt-2">
+                  {FORMER_STAFF.map((people, index) => (
+                    <li
+                      key={index}
+                      className="text-xl leading-none font-bold whitespace-nowrap sm:text-2xl"
+                    >
+                      {people}
+                      {index < FORMER_STAFF.length - 1 ? ', ' : ''}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </PeopleSection>
           <PeopleSection heading="diplômé·es auep">
             <div className="flex flex-col gap-4 border-l-2 pt-8 pl-4">

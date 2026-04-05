@@ -1,6 +1,100 @@
 export const NEWS = [
   {
     date: {
+      day: 27,
+      month: 3,
+      year: 2026,
+    },
+    title: 'Le Challenge APERAU est remporté par Grenoble !',
+    subtitle: null,
+    description: (
+      <>
+        1er prix du jury et 1er prix du public au Challenge APERAU pour
+        l&apos;Institut d’Urbanisme et de Géographie Alpine, avec une délégation
+        intégralement issue du Master AUEP.
+        <br />
+        Bravo à l’équipe lauréate&nbsp;!
+        <br />- Léa Casado (étudiante en urbanisme AUEP)
+        <br />- Fanny Damond (étudiante en urbanisme AUEP)
+        <br />- Jade Huser (étudiante en architecture et urbanisme AUEP)
+        <br />- Marisa Marques Santos (étudiante en architecture et urbanisme
+        AUEP)
+      </>
+    ),
+    image: 'images/news/news-26.png',
+  },
+  {
+    date: {
+      day: 18,
+      month: 3,
+      year: 2026,
+    },
+    title: 'Une émission radiophonique organisée par les M1 AUEP !',
+    subtitle: (
+      <>
+        Luttes environnementales et contestations des projets urbains Comprendre
+        les mobilisations citoyennes face aux grands projets urbains
+      </>
+    ),
+    description: (
+      <>
+        Avec Stéphane Tonnelat, ethnographe, enseignant à l’EHESS, chargé de
+        recherche au CNRS. Auteur de Sauver les terres agricoles (2026),
+        éditions Seuil.
+        <br />
+        Une rencontre organisée dans le cadre du séminaire «&nbsp;Les
+        controverses de la ville néolibérale&nbsp;», encadré par Marine
+        Bourgeois (Sciences Po Grenoble, Pacte) et Grégory Busquet (IUGA,
+        Pacte).
+      </>
+    ),
+    image: 'images/news/news-25.png',
+  },
+  {
+    date: {
+      day: 26,
+      month: 11,
+      year: 2025,
+    },
+    title: 'Conférence MétroFabLab #16',
+    subtitle: (
+      <>
+        Yvan Okotnikoff —&nbsp;Urbanisme de bifurcation&nbsp;? Retours de
+        terrains opérationnels
+      </>
+    ),
+    description: (
+      <>
+        Certains, parmi les plus fins observateurs du projet urbain contemporain
+        (F. Fromonot, A. Lortie…), partagent le même constat&nbsp;: la ville
+        semble aujourd’hui davantage conditionnée par les outils disponibles
+        (économiques, politiques, juridiques, fonciers…) que par la volonté des
+        acteurs qui les manipulent.
+        <br />
+        Cette hypothèse est particulièrement inquiétante à un moment où les
+        rapports scientifiques (GIEC, UICN…) indiquent que nous sommes désormais
+        entrés dans une nouvelle ère où l’incertitude est la seule certitude. À
+        partir de quelques retours de terrains opérationnels récents, nous
+        proposons d’esquisser quelques pistes pour plonger dans la zone de
+        turbulence avec l’ambition de garder –&nbsp;ou reprendre&nbsp;– le
+        contrôle de l’appareil.
+        <br />
+        Georges est une agence d’urbanisme, de paysage et d’architecture, qui
+        accompagne les acteurs publics et privés de la stratégie urbaine à la
+        maîtrise d&apos;œuvre. Primé à l’occasion du concours EUROPAN (sessions
+        11, 12 et 13), lauréat du Palmarès des Jeunes Urbanistes (2014),
+        l’atelier cultive la polyvalence plutôt que la spécialisation, et
+        exerce, depuis cette position transversale, un travail de veille
+        critique en direction des enjeux, pratiques et idées qui font
+        l’actualité des métiers de la transformation du territoire. L’atelier
+        sera représenté par Yvan Okotnikoff, associé co-fondateur,
+        architecte-urbaniste, et maître de conférences à l’ENSA de Grenoble.
+      </>
+    ),
+    image: 'images/news/news-24.png',
+  },
+  {
+    date: {
       day: 24,
       month: 11,
       year: 2025,

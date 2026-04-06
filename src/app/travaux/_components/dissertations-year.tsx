@@ -1,4 +1,5 @@
 import { RefObject, useState } from 'react';
+import * as Dialog from '@radix-ui/react-dialog';
 import { useMediaQuery } from '../../../hooks/use-media-query';
 import { cn } from '../../../lib/tailwind';
 import { BREAKPOINTS } from '../../constants';
@@ -7,6 +8,7 @@ import { DissertationsYear as DissertationsYearType } from '../works.types';
 type DissertationsYearProps = Omit<DissertationsYearType, 'id'> & {
   sectionRef: RefObject<HTMLDivElement | null>;
   isLast: boolean;
+  setSelectedDissertationId: (id: string) => void;
 };
 
 export const DissertationsYear = ({
@@ -14,6 +16,7 @@ export const DissertationsYear = ({
   label,
   dissertations,
   isLast,
+  setSelectedDissertationId,
 }: DissertationsYearProps) => {
   const hasSupervisors = useMediaQuery(BREAKPOINTS.md);
 
@@ -51,34 +54,37 @@ export const DissertationsYear = ({
         </thead>
         <tbody>
           {dissertations.map((dissertation, index) => (
-            <tr
-              key={index}
-              className={cn(
-                'text-primary cursor-pointer align-top transition-opacity',
-                index !== dissertations.length - 1 && 'border-primary border-b',
-                hoveredRow !== null && hoveredRow !== index && 'opacity-60'
-              )}
-              onMouseEnter={() => setHoveredRow(index)}
-              onMouseLeave={() => setHoveredRow(null)}
-            >
-              <td className="pr-6">
-                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                  {dissertation.student}
-                </span>
-              </td>
-              <td className={cn(hasSupervisors && 'pr-6')}>
-                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                  {dissertation.title}
-                </span>
-              </td>
-              {hasSupervisors && (
-                <td>
+            <Dialog.Trigger key={index} asChild>
+              <tr
+                className={cn(
+                  'text-primary cursor-pointer align-top transition-opacity',
+                  index !== dissertations.length - 1 &&
+                    'border-primary border-b',
+                  hoveredRow !== null && hoveredRow !== index && 'opacity-60'
+                )}
+                onMouseEnter={() => setHoveredRow(index)}
+                onMouseLeave={() => setHoveredRow(null)}
+                onClick={() => setSelectedDissertationId(dissertation.id)}
+              >
+                <td className="pr-6">
                   <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                    {dissertation.supervisedBy}
+                    {dissertation.student}
                   </span>
                 </td>
-              )}
-            </tr>
+                <td className={cn(hasSupervisors && 'pr-6')}>
+                  <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                    {dissertation.title}
+                  </span>
+                </td>
+                {hasSupervisors && (
+                  <td>
+                    <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                      {dissertation.supervisedBy}
+                    </span>
+                  </td>
+                )}
+              </tr>
+            </Dialog.Trigger>
           ))}
         </tbody>
       </table>

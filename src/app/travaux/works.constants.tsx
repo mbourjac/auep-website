@@ -1,3 +1,5 @@
+import { GraduationProjectsSection } from './works.types';
+
 export const SEMINARS_SECTION = {
   label: 'séminaires',
   picture: '/images/works/seminars/seminars-1.jpg',
@@ -23,6 +25,7 @@ export const SEMINARS_SECTION = {
       ),
       seminars: [
         {
+          id: '59a4651f',
           year: '2025-2026',
           mentoring: [
             'Federica Gatta',
@@ -34,6 +37,7 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: '40eaa529',
           year: '2024-2025',
           mentoring: [
             'Federica Gatta',
@@ -45,12 +49,14 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: 'ed4eb0ee',
           year: '2023-2024',
           mentoring: ['Federica Gatta', 'Cécile Léonardi', 'Théa Manola'],
           guests: [],
           pictures: [],
         },
         {
+          id: '7c474f70',
           year: '2022-2023',
           mentoring: [
             'Federica Gatta',
@@ -67,6 +73,7 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: 'e25cf7a5',
           year: '2021-2022',
           mentoring: [
             'Marine Bourgeois',
@@ -106,30 +113,35 @@ export const SEMINARS_SECTION = {
       ),
       seminars: [
         {
+          id: '2cc3ac2e',
           year: '2025-2026',
           mentoring: ['Marine Bourgeois', 'Grégory Busquet'],
           guests: ['Clément Barbier et Stéphane Tonnelat'],
           pictures: [],
         },
         {
+          id: '0cc07a3e',
           year: '2024-2025',
           mentoring: ['Grégory Busquet', 'Marion Lang'],
           guests: ['Victor Collet', 'Thibault Jouannic'],
           pictures: [],
         },
         {
+          id: 'b81d9626',
           year: '2023-2024',
           mentoring: ['Marine Bourgeois', 'Marc Higgin', 'Théa Manola'],
           guests: ['Johanna Berthoux', 'Grégory Busquet'],
           pictures: [],
         },
         {
+          id: '4b6eb9c3',
           year: '2022-2023',
           mentoring: ['Marine Bourgeois', 'Federica Gatta', 'Théa Manola'],
           guests: ['Matthieu Adam et Emeline Comby', 'Max Rousseau'],
           pictures: [],
         },
         {
+          id: 'f08752fe',
           year: '2021-2022',
           mentoring: ['Marine Bourgeois', 'Federica Gatta', 'Théa Manola'],
           guests: ['Gilles Pinson', 'Guillaume Faburel', 'Véronique Biau'],
@@ -171,6 +183,7 @@ export const SEMINARS_SECTION = {
       ),
       seminars: [
         {
+          id: 'b767db5a',
           year: '2025-2026',
           mentoring: [
             'Théa Manola (resp.)',
@@ -192,6 +205,7 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: '006d5960',
           year: '2024-2025',
           mentoring: [
             'Théa Manola (resp.)',
@@ -213,6 +227,7 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: 'd7533b74',
           year: '2023-2024',
           mentoring: [
             'Théa Manola (resp.)',
@@ -236,12 +251,14 @@ export const SEMINARS_SECTION = {
           pictures: [],
         },
         {
+          id: '74229867',
           year: '2022-2023',
           mentoring: ['Théa Manola (resp.)'],
           guests: ['Matthieu Adam et Emeline Comby', 'Max Rousseau'],
           pictures: [],
         },
         {
+          id: '4da94db1',
           year: '2021-2022',
           mentoring: ['Marine Bourgeois', 'Federica Gatta', 'Théa Manola'],
           guests: [
@@ -292,6 +309,7 @@ export const DISSERTATIONS_SECTION = {
       label: '2024-2025',
       dissertations: [
         {
+          id: '4223061c',
           student: 'Léa Casado',
           title: (
             <>
@@ -328,6 +346,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Eliott Ducharme',
         },
         {
+          id: 'a475fcbd',
           student: 'Lyssandre Coulon-Decorzens',
           title: (
             <>
@@ -339,6 +358,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Adriana Diaconu',
         },
         {
+          id: '2e32626d',
           student: 'Fanny Damond',
           title: (
             <>
@@ -374,6 +394,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Céline Bonicco-Donato',
         },
         {
+          id: 'c9a69afa',
           student: 'Enzo Falco',
           title: (
             <>
@@ -385,6 +406,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Karine Basset',
         },
         {
+          id: 'de919e73',
           student: 'Jade Huser',
           title: (
             <>
@@ -397,6 +419,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Inès Ramirez-Cobo',
         },
         {
+          id: 'fef86d32',
           student: 'Léa Klein',
           title: (
             <>
@@ -408,6 +431,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta',
         },
         {
+          id: '26206215',
           student: 'Marisa Marques Santos',
           title: (
             <>
@@ -447,6 +471,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Suzel Balez',
         },
         {
+          id: '4b5eb27c',
           student: 'Mattéo Leseigneur',
           title: (
             <>
@@ -459,6 +484,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Théa Manola',
         },
         {
+          id: 'fa1de78f',
           student: 'Nathan Salignat',
           title: (
             <>
@@ -470,6 +496,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Adrien Mollaret',
         },
         {
+          id: '0db19ef7',
           student: 'Kémarine Stroobant',
           title: (
             <>
@@ -481,6 +508,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Jeanne Bouyat',
         },
         {
+          id: '54b698b3',
           student: 'Cyrille Vanpeene',
           title: (
             <>
@@ -519,6 +547,7 @@ export const DISSERTATIONS_SECTION = {
       label: '2023-2024',
       dissertations: [
         {
+          id: 'd7479994',
           student: 'Naïan Baron',
           title: (
             <>Récits d’espace. Étude du caractère spatial du récit de vie</>
@@ -527,6 +556,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta',
         },
         {
+          id: '61950e39',
           student: 'Anna Boitel',
           title: (
             <>
@@ -538,6 +568,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Ophélie Menault',
         },
         {
+          id: '21bf86db',
           student: 'Maëlys Christin',
           title: (
             <>
@@ -550,6 +581,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Ivan Mazel',
         },
         {
+          id: '5a2981cd',
           student: 'Mathias Dunyach',
           title: (
             <>
@@ -561,6 +593,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Ophélie Menault',
         },
         {
+          id: 'cd9ff4e4',
           student: 'Gasdelton Elisha',
           title: (
             <>Aménagements et accessibilités des berges du Drac à Grenoble</>
@@ -569,6 +602,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Marc Higgin',
         },
         {
+          id: '8e8958f4',
           student: 'Badreddine Hamaich',
           title: (
             <>
@@ -580,6 +614,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Eliott Ducharme et Charles Ambrosino',
         },
         {
+          id: '724c4c82',
           student: 'Claire Kolodziej',
           title: (
             <>
@@ -591,6 +626,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta et Axelle Pavero',
         },
         {
+          id: '0d4a9d86',
           student: 'Eglantine Maucuit',
           title: (
             <>
@@ -626,6 +662,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Marc Higgin',
         },
         {
+          id: '1b9913a2',
           student: 'Maxime Montaye',
           title: (
             <>
@@ -638,6 +675,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Eliott Ducharme',
         },
         {
+          id: 'fd4e5725',
           student: 'Camille Pagiras',
           title: (
             <>
@@ -650,6 +688,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Théa Manola et Ivan Mazel',
         },
         {
+          id: '6c08b062',
           student: 'Sidonie Rigal',
           title: (
             <>
@@ -662,6 +701,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Eliott Ducharme',
         },
         {
+          id: 'acfbc2ac',
           student: 'Aglaé Thébaud',
           title: (
             <>
@@ -673,6 +713,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Axelle Pavero et Charles Ambrosino',
         },
         {
+          id: '9159797e',
           student: 'Julien Thomas',
           title: (
             <>
@@ -690,6 +731,7 @@ export const DISSERTATIONS_SECTION = {
       label: '2022-2023',
       dissertations: [
         {
+          id: 'bd74e888',
           student: 'Adrien Barbier',
           title: (
             <>
@@ -703,6 +745,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Adriana Diaconu',
         },
         {
+          id: '545cb093',
           student: 'Edgar Boisset',
           title: (
             <>
@@ -715,6 +758,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Marine Bourgeois',
         },
         {
+          id: '6d5b9416',
           student: 'Clara Errecade',
           title: (
             <>
@@ -726,6 +770,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Giulia Buffoli',
         },
         {
+          id: '360c4327',
           student: 'Victoria Excoffon',
           title: (
             <>
@@ -737,6 +782,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Mathias Rollot',
         },
         {
+          id: '617a4252',
           student: 'Chloé Graziano',
           title: (
             <>
@@ -771,6 +817,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta',
         },
         {
+          id: 'f87cd79c',
           student: 'Alizé Hanson',
           title: (
             <>
@@ -782,6 +829,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Théa Manola',
         },
         {
+          id: 'f635d16b',
           student: 'Adrien Leclercq',
           title: (
             <>
@@ -793,6 +841,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Marine Bourgeois',
         },
         {
+          id: '794f0a77',
           student: 'Emma Léger',
           title: (
             <>
@@ -804,6 +853,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Fanny Vuaillat',
         },
         {
+          id: 'ea09a54d',
           student: 'Etienne Masselot',
           title: (
             <>
@@ -839,6 +889,7 @@ export const DISSERTATIONS_SECTION = {
       label: '2021-2022',
       dissertations: [
         {
+          id: '70c0e9a3',
           student: 'Matteo Beguiristain',
           title: (
             <>
@@ -850,6 +901,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Nicolas Tixier',
         },
         {
+          id: '950922df',
           student: 'Raphaël Boujon',
           title: (
             <>
@@ -861,6 +913,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Théa Manola',
         },
         {
+          id: 'c917364d',
           student: 'Guillaume Cachoulet',
           title: (
             <>
@@ -873,6 +926,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Karine Basset',
         },
         {
+          id: '753ce040',
           student: 'Adrien Cherencq',
           title: (
             <>
@@ -885,6 +939,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta',
         },
         {
+          id: '75e9c18f',
           student: 'Lucie Crespin',
           title: (
             <>
@@ -896,6 +951,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Yvan Okotnikoff',
         },
         {
+          id: 'f9187a5f',
           student: 'Nathan Delmas',
           title: (
             <>
@@ -909,6 +965,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Federica Gatta',
         },
         {
+          id: '4e353cd7',
           student: 'Juliette Garcia',
           title: (
             <>
@@ -920,6 +977,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Nathalie Audas et Noah Schumacher',
         },
         {
+          id: '86543054',
           student: 'Clair Gauffenic',
           title: (
             <>
@@ -931,6 +989,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Florian Golay',
         },
         {
+          id: '7bada23f',
           student: 'Kawtar Morchadi',
           title: (
             <>
@@ -942,6 +1001,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Céline Bonicco-Donato et Noah Schumacher',
         },
         {
+          id: '8ff2e067',
           student: 'Elisa Naudin',
           title: (
             <>
@@ -953,6 +1013,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Karine Basset et Florian Golay',
         },
         {
+          id: '8d30be6c',
           student: 'Simeon Naydenov',
           title: (
             <>
@@ -965,6 +1026,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: '',
         },
         {
+          id: 'e80f8a54',
           student: 'Alouna Nicolas',
           title: (
             <>
@@ -977,6 +1039,7 @@ export const DISSERTATIONS_SECTION = {
           supervisedBy: 'Nathalie Audas',
         },
         {
+          id: '8555f1ea',
           student: 'Robinson Rossi',
           title: (
             <>
@@ -1066,12 +1129,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
           ],
           projectWorkshops: [
             {
+              id: '6c6a920b',
               students: ['Martin Chaize'],
               title: 'Réaménagement de la friche de l’hôpital ',
               description: null,
               pictures: [],
             },
             {
+              id: 'e297e1ea',
               students: ['Barthélémy Cuilleret'],
               title:
                 'Soustraction positive : révéler la bastide et habiter le patrimoine',
@@ -1079,6 +1144,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
+              id: '57c96ecc',
               students: ['Ambre Delib'],
               title:
                 'Penser l’entrée de ville comme espace d’hospitalité : projet de réhabilitation de l’Ardéchoise',
@@ -1086,12 +1152,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
+              id: '603f2b0e',
               students: ['Rose Desmartin'],
               title: 'Repenser les usages et les intensités de la ZAE',
               description: null,
               pictures: [],
             },
             {
+              id: '4c11ea74',
               students: ['Gwennaëlle Leconte–Omer'],
               title:
                 'Habiter le parc urbain : vers une forme soutenable de l’habiter à Villeneuve-de-Berg',
@@ -1099,12 +1167,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
+              id: 'd5d78533',
               students: ['Alice Molin'],
               title: 'Un circuit court de la fourche à la fourchette',
               description: null,
               pictures: [],
             },
             {
+              id: '1f83ba3a',
               students: ['Adrien Chaussende'],
               title:
                 'Révéler les devenirs possibles d’un territoire rural à partir de l’existant entre réorganisation des limites, intensification et densification',
@@ -1112,12 +1182,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
+              id: 'f1106a78',
               students: ['Léon Gentil'],
               title: 'Vers un éco-hameau résilient à Villeneuve-de-Berg',
               description: null,
               pictures: [],
             },
             {
+              id: '59ebc433',
               students: ['Laïss El Khaledi'],
               title:
                 "Patrimoine et vacance du bourg. Un espace pour la recherche et l'associatif à Villeneuve Berg",
@@ -1125,6 +1197,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
+              id: 'a0eafdfa',
               students: ['Clément Freyssenet'],
               title: 'Usages domestiques de l’eau pluviale',
               description: null,
@@ -1132,12 +1205,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Lou Heffer'],
+              id: 'bdbb070b',
               title: 'Un parc agricole paysager au bord de l’Ibie',
               description: null,
               pictures: [],
             },
             {
               students: ['Sarah Desreumaux'],
+              id: '8db91627',
               title:
                 'L’eau comme commun : valoriser l’héritage, ouvrir les usages',
               description: null,
@@ -1145,6 +1220,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Jihane Slimani'],
+              id: '01d38897',
               title:
                 'Le chemin des savoirs : une promenade culturelle au coeur des espaces publics',
               description: null,
@@ -1152,6 +1228,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Jihane Slimani'],
+              id: '3d627952',
               title:
                 'Le chemin des savoirs : une promenade culturelle au coeur des espaces publics',
               description: null,
@@ -1159,12 +1236,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Emma Bokhobza'],
+              id: 'a7557651',
               title: 'L’eau comme commun : densifier, sensibiliser, relier',
               description: null,
               pictures: [],
             },
             {
               students: ['Siham Karzeb'],
+              id: '2c08188b',
               title:
                 'Vivre et accueillir au coeur ancien de Villeneuve-de-Berg : revitalisation du centre-bourg par l’organisation des espaces bâtis, des usages et des parcours',
               description: null,
@@ -1186,12 +1265,14 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Léa Klein', 'Cyrille Vanpeene'],
+              id: '6d37c8f2',
               title: 'Localité Accueillante et Apaisée Misant sur ses Aînés',
               description: null,
               pictures: [],
             },
             {
               students: ['Marisa Marques', 'Mattéo Leseigneur'],
+              id: '9808e82e',
               title:
                 'Réinvestir l’espace public et intensifier les liens avec l’environnant',
               description: (
@@ -1251,6 +1332,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Léa Casado', 'Nathan Salignat'],
+              id: 'fa17539e',
               title:
                 'Territoire technique, révéler le rapport à l’eau pour une nouvelle dynamique locale',
               description: (
@@ -1273,6 +1355,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Fanny Damond', 'Anaël Peters'],
+              id: 'a2b59eed',
               title:
                 'Les Terrasses agricoles au cœur du renouvellement de la zone d’activité de La Palisse',
               description: (
@@ -1300,6 +1383,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Enzo Falco', 'Lyssandre Coulon–Decorzens'],
+              id: 'c7402c72',
               title:
                 'Quartier de la Gare : saisir la complexité du site par l’approche des mobilités',
               description: null,
@@ -1307,6 +1391,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Charlotte Farys', 'Nina Marrel'],
+              id: '305455ec',
               title:
                 'Noirols, porte d’entrée vers le Cheylard et son territoire',
               description: null,
@@ -1314,18 +1399,21 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Jade Huser', 'Feriel Reffaf'],
+              id: '7c9d8e05',
               title: 'La Palisse au fil de l’eau',
               description: null,
               pictures: [],
             },
             {
               students: ['Raphaël Corsino', 'Kémarine Stroobant'],
+              id: '6df83ab1',
               title: 'Les germes de la Riaille',
               description: null,
               pictures: [],
             },
             {
               students: ['Mélanie Alric', 'Thomas Férand'],
+              id: 'dd68bff9',
               title: 'Cultiver les communaux en terrasse. Secteur de Jabrezac',
               description: null,
               pictures: [],
@@ -1344,6 +1432,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Maxime Montaye', 'Camille Pagiras'],
+              id: '804c7f79',
               title:
                 'L’agriculture comme levier pour retravailler les espaces publics de la commune',
               description: (
@@ -1367,6 +1456,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Anna Boitel', 'Aglaé Thébaud'],
+              id: 'bd67712a',
               title:
                 'Ancrage territorial des rez-de-chaussée vacants à Pierrefort',
               description: null,
@@ -1387,6 +1477,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Adrien Barbier', 'Clara Errecade', 'Adrien Leclercq'],
+              id: '7ce292c6',
               title:
                 'Parc d’activité paysager Rhodia. Redynamiser Clamecy et son territoire par la revitalisation d’un faubourg',
               description: null,
@@ -1394,6 +1485,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Edgar Boisset', 'Etienne Masselot', 'Julien Thomas'],
+              id: 'ef870dd7',
               title:
                 'Bethléem, un quartier entre ville et campagne. La revitalisation d’un quartier par le recours à la soustraction positive',
               description: null,
@@ -1401,6 +1493,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Céline Bodin', 'Nouhaila Boukhare'],
+              id: '173e66ce',
               title:
                 'Projet d’habitat inclusif partagé autogéré à loyer modéré en location pour personnes âgées',
               description: (
@@ -1425,6 +1518,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Chloé Graziano', 'Lola Guijarro', 'Alizé Hanson'],
+              id: '33be685d',
               title:
                 'Clamecy petite ville de demain. La ville productive créatrice de liens et d’attractivité',
               description: (
@@ -1446,6 +1540,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Mathias Dunyach', 'Claire Kolodziej'],
+              id: 'bbbcb42f',
               title:
                 'Adapter l’offre de logements par la réhabilitation du centre-bourg',
               description: null,
@@ -1453,6 +1548,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Maëlys Christin', 'Badreddine Hamaich'],
+              id: 'b2f26e26',
               title:
                 'Proposer du logement neuf aux seniors de Pierrefort : le renouvellement urbain comme levier de la diversification de l’offre de logement',
               description: null,
@@ -1460,6 +1556,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Gasdelton Elisha'],
+              id: '7382c97e',
               title:
                 'La maison individuelle groupée pour accueillir de nouveaux habitants',
               description: null,
@@ -1467,6 +1564,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Eglantine Maucuit', 'Sidonie Rigal '],
+              id: '4d6841b0',
               title: null,
               description: null,
               pictures: [],
@@ -1486,6 +1584,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Raphaël Boujon', 'Simeon Naydenov', 'Alouna Nicolas'],
+              id: 'ebd776ac',
               title: 'Un jardin qui déborde',
               description: (
                 <>
@@ -1516,6 +1615,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Adrien Cherencq',
                 'Robinson Rossi',
               ],
+              id: '4f9726ea',
               title:
                 'L’autonomie maraîchère et arboricole du territoire du Haut Nivernais Val d’Yonne',
               description: (
@@ -1544,6 +1644,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Guillaume Cachoulet',
                 'Valentine Larue',
               ],
+              id: '2b1bf93d',
               title: 'Intensifier les connexions territoriales ',
               description: (
                 <>
@@ -1564,6 +1665,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Nathan Delmas', 'Morchadi Kawtar'],
+              id: '832871fe',
               title: null,
               description: (
                 <>
@@ -1592,6 +1694,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Clair Gauffenic', 'Ana Lucia Caetano'],
+              id: 'b295a815',
               title: 'Mobilités douces',
               description: (
                 <>
@@ -1617,6 +1720,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Elisa Naudin', 'Patrick Hervé-Yapo', 'Lucie Crespin'],
+              id: 'ae2e1d97',
               title:
                 'Le patrimoine de logements anciens et le renouvellement par recyclage urbain',
               description: (
@@ -1683,6 +1787,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Kémarine Stroobant',
                 'Cyrille Vanpeene',
               ],
+              id: 'ae1266fd',
               title: (
                 <>
                   Réinscrire l’habitat social dans les centralités&nbsp;: quand
@@ -1717,6 +1822,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Léa Casado', 'Marisa Marques Santos'],
+              id: '6b958c13',
               title:
                 'Expérimenter pour répondre aux schémas familiaux nouveaux',
               description: (
@@ -1740,6 +1846,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Jade Huser', 'Mattéo Leseigneur'],
+              id: '39ebf102',
               title: 'Faire Lieu, Faire Liens',
               description: (
                 <>
@@ -1765,6 +1872,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Nathan Salignat', 'Charlotte Farys'],
+              id: 'e1fe1e77',
               title: null,
               description: (
                 <>
@@ -1797,6 +1905,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Charlotte Farys', 'Nathan Salignat'],
+              id: '9c874dcb',
               title:
                 'Habitat et renouvellement urbain dans une ville moyenne: le secteur Jean Jaurès',
               description: null,
@@ -1804,6 +1913,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Lyssandre Coulon', 'Léa Klein'],
+              id: '492f9a57',
               title:
                 'Cheradame : Réactiver un site pour relier le quartier Requalification d’un secteur en mutation par la mixité et la revalorisation des espaces publics',
               description: null,
@@ -1811,6 +1921,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Mélanie Alric', 'Enzo Falco', 'Anaël Peters'],
+              id: 'aa0f5051',
               title: 'La place Paul Bert',
               description: null,
               pictures: [],
@@ -1833,6 +1944,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Églantine Maucuit',
                 'Maxime Montaye',
               ],
+              id: '53ffd629',
               title:
                 'Produire du logement abordable et de qualité dans le centre ancien de Bourg-de-Péage Une stratégie à l’échelle d’un îlot démonstrateur: l’ îlot Mazagran',
               description: (
@@ -1865,6 +1977,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Claire Kolodziej',
                 'Aglaé Thébaud',
               ],
+              id: '02ba6ca1',
               title:
                 'Revalorisation et réhabilitation du quartier d’habitat social de la Parisière à Bourg-de-Péage',
               description: (
@@ -1887,6 +2000,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Mathias Dunyach', 'Gasdelton Elisha', 'Anna Boitel'],
+              id: 'e3c73834',
               title:
                 'Revisiter les formes pavillonnaires en diversifiant le type d’habitat. Du pavillon au logement de forme intermédiaire',
               description: (
@@ -1907,6 +2021,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Lola Guijarro', 'Camille Pagiras', 'Sidonie Rigal'],
+              id: '04b85c94',
               title:
                 'Habitat rural. Enjeux et projets potentiels de requalification d’anciens bâtiments agricoles',
               description: null,
@@ -1928,6 +2043,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Naïan Baron', 'Victoria Excoffon', 'Emma Léger'],
+              id: '1616c519',
               title: 'Habiter les lisières',
               description: (
                 <>
@@ -1939,6 +2055,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Adrien Barbier', 'Adrien Leclercq', 'Julien Thomas'],
+              id: '390dd535',
               title:
                 'De la zone d’activité économique au parc d’activité dense',
               description: null,
@@ -1946,6 +2063,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Céline Bodin', 'Nouhaila Boukhare'],
+              id: '183b2ad0',
               title:
                 'Favoriser le développement de la pratique piétonne et cyclable dans le quotidien de l’agglomération pontoise',
               description: (
@@ -1968,6 +2086,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Edgar Boisset', 'Chloé Graziano'],
+              id: '6250fc48',
               title:
                 'Un agriparc social habité. Densifier pour renouer avec la vocation agricole du territoire',
               description: (
@@ -1992,6 +2111,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Clara Errecade', 'Alizé Hanson', 'Etienne Masselot'],
+              id: 'a9b702c1',
               title: 'Reconnexion et centralité',
               description: null,
               pictures: [],
@@ -2014,6 +2134,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Valentine Larue',
                 'Simeon Naydenov',
               ],
+              id: '04339a90',
               title:
                 'Réinventer la ruralité dans une réalité territoriale sous influence métropolitaine',
               description: (
@@ -2032,6 +2153,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Raphaël Boujon', 'Juliette Garcia', 'Alouna Nicolas'],
+              id: '160804de',
               title: (
                 <>
                   Des grandes maisons aux petits logements collectifs&nbsp;:
@@ -2066,6 +2188,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Guillaume Cachoulet',
                 'Patrick Yapo',
               ],
+              id: '099c7ffe',
               title: (
                 <>
                   Un quartier de gare social à Tignieu Jameyzieu&nbsp;:
@@ -2099,6 +2222,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Matteo Beguiristain',
                 'Robinson Rossi',
               ],
+              id: '80aee86c',
               title: 'Relier et habiter les creux de la ville pavillonnaire',
               description: (
                 <>
@@ -2158,6 +2282,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Charlotte Berg', 'Léa Klein', 'Nathan Salignat'],
+              id: '073e170e',
               title:
                 'Ressources. La valorisation d’un héritage bâti, de ressources matérielles et de savoir-faire',
               description: null,
@@ -2169,6 +2294,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Enzo Falco',
                 'Solène Rascle',
               ],
+              id: 'f1f5aad4',
               title:
                 'Vers la ville-parc : un espace public fédérateur pour une ville en transition',
               description: null,
@@ -2180,6 +2306,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Tahoe Salkind-Henry',
                 'Kémarine Stroobant',
               ],
+              id: 'b0d92088',
               title: 'Faire place à l’alimentation',
               description: null,
               pictures: [],
@@ -2190,6 +2317,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Marisa Marques Santos',
                 'Cyrille Vanpeene',
               ],
+              id: '5d0ce320',
               title:
                 'S’émanciper par le savoir. L’îlot Marie Reynoard révélateur de savoirs chauds',
               description: null,
@@ -2214,6 +2342,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Sidonie Rigal',
                 'Aglaé Thébaud',
               ],
+              id: 'b7bc19f7',
               title:
                 "La ville à hauteur d’ados. (Re)donner de la place et de l'espace aux adolescent·es",
               description: (
@@ -2242,6 +2371,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Adrien Leclercq',
                 'Maxime Montaye',
               ],
+              id: 'c764274a',
               title: 'La ville nourricière',
               description: (
                 <>
@@ -2267,6 +2397,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Claire Kolodziej',
                 'Gasdelton Elisha',
               ],
+              id: '5fc42521',
               title: 'La Maison des Jeunes ',
               description: (
                 <>
@@ -2305,6 +2436,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Adrien Barbier',
                 'Victoria Excoffon',
               ],
+              id: 'ded0cca1',
               title: (
                 <>
                   Le carrefour des frugalités&nbsp;: transformer les ruines de
@@ -2332,6 +2464,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Etienne Masselot',
                 'Emmanuelle Pilon',
               ],
+              id: 'fab47263',
               title: 'Au carrefour des transitions',
               description: (
                 <>
@@ -2354,6 +2487,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Céline Bodin', 'Edgar Boisset', 'Emma Léger'],
+              id: 'cc9d177d',
               title: 'Un refuge en métropole',
               description: (
                 <>
@@ -2372,6 +2506,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Clara Errecade', 'Robinson Rossi'],
+              id: 'aee5edfa',
               title:
                 'Escale réparatrice. Récits métropolitains pour l’Anthropocène',
               description: (
@@ -2398,6 +2533,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: ['Chloé Graziano', 'Alizé Hanson', 'Kawtar Morchadi'],
+              id: '56438403',
               title:
                 'Un centre agricole pédagogique. Expérimentations, connexions et hybridations',
               description: (
@@ -2425,6 +2561,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Julien Thomas',
                 'Naïan Baron',
               ],
+              id: '29587a9a',
               title:
                 'La ville arborée à l’horizon Grenoble 2040 : chemins de résilience à la chaleur urbaine',
               description: null,
@@ -2443,6 +2580,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
           projectWorkshops: [
             {
               students: ['Mathilde Cazeaux', 'Elisa Naudin', 'Raphaël Boujon'],
+              id: '57e8f086',
               title: "L'atelier de gare",
               description: (
                 <>
@@ -2470,6 +2608,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
                 'Simeon Naydenov',
                 'Alouna Nicolas',
               ],
+              id: 'e80448df',
               title:
                 'Brancher Moirans, une vision pour la gare de Moirans dans le cadre du projet de RER métropolitain de Grenoble',
               description: (
@@ -2515,7 +2654,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
   ],
 };
 
-export const GRADUATION_PROJECTS_SECTION = {
+export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
   label: 'projets de fin d’études',
   description: (
     <>
@@ -2552,12 +2691,14 @@ export const GRADUATION_PROJECTS_SECTION = {
       graduationProjects: [
         {
           students: ['Nolwenn Biger'],
+          id: '0bc3ecc1',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Céline Bodin'],
+          id: 'ece99e01',
           title:
             "Penser la Qualité de vie dans les Zones d'Aménagement Concerté (ZAC). Une réflexion sur les pratiques architecturales et urbaines dans le contexte français contemporain",
           supervisedBy: null,
@@ -2593,6 +2734,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Anna Boitel', 'Sianna Minasyan'],
+          id: 'e31ffdf6',
           title:
             'Fabrique d’une ville accueillante. (Re)penser la ville ordinaire sous le prisme de l’accueil des personnes en situation d’exil',
           supervisedBy: 'Hélène Caune',
@@ -2635,6 +2777,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Agathe Bruyère', 'Eglantine Maucuit'],
+          id: '0ba41ac0',
           title: (
             <>
               Ménager et révéler le diffus&nbsp;? Le territoire de Vif&nbsp;:
@@ -2671,6 +2814,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Maëlys Christin', 'Luce Renaud'],
+          id: 'feee4d33',
           title:
             'Ville ordinaire, ville hospitalière. Revendiquer l’accès au logement par la diversification de l’habitat social en territoire dévitalisé',
           supervisedBy: 'Edith Chezel et Federica Gatta',
@@ -2710,6 +2854,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Gasdelton Elisha'],
+          id: '67e216ff',
           title: null,
           supervisedBy: null,
           description: (
@@ -2742,34 +2887,39 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Clara Errecade'],
+          id: '187fb0c5',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Badreddine Hamaich', 'Claire Kolodziej'],
+          id: '9830f916',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Adrien Leclercq'],
+          id: '7f0bdaf5',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Etienne Masselot'],
+          id: '6c25c989',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Maxime Montaye', 'Aglaé Thébaud'],
+          id: 'ce92b7d2',
           title: (
             <>
-              Quels futurs pour l’avenue Gabriel Péri&nbsp;? Du pas de côté à la
-              bifurcation écologique
+              Quels futurs pour l’avenue Gabriel Péri&nbsp;? Du pas de côté à la
+              bifurcation écologique
             </>
           ),
           supervisedBy: 'Edith Chezel et Renaud Bécot',
@@ -2805,30 +2955,35 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Sidonie Rigal'],
+          id: 'b7b9fb2f',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Julien Thomas'],
+          id: '1f8d55e3',
           title: null,
           supervisedBy: null,
           description: null,
         },
         {
           students: ['Céline Bodin'],
+          id: 'a41bf94a',
           title: null,
           supervisedBy: 'Yvan Okotnikoff',
           description: null,
         },
         {
           students: ['Eglantine Maucuit', 'Agathe Bruyère'],
+          id: '452193c8',
           title: null,
           supervisedBy: 'Théa Manola et Simeon Naydenov',
           description: null,
         },
         {
           students: ['Nolwenn Biger', 'Sidonie Rigal'],
+          id: 'd966bd56',
           title:
             'Habiter la solidarité. Des espaces de soin, de vie et de solidarités adaptés aux femmes en situation de précarité en milieu urbain dense',
           supervisedBy: 'Marie-Julie Bernard',
@@ -2836,6 +2991,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Gasdelton Elisha'],
+          id: '6f6d1480',
           title:
             'Adaptation du bâti aux risques d’inondation au-delà des contraintes et limites du PPRI Drac dans la ville de Fontaine',
           supervisedBy: 'Florian Golay',
@@ -2843,6 +2999,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Clara Errecade Cattalorda'],
+          id: 'eb001535',
           title:
             'Révéler la vacance pour mieux habiter. Le cas des Marolles à Bruxelles',
           supervisedBy: 'Théa Manola',
@@ -2850,6 +3007,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Badreddine Hamaich', 'Claire Kolodziej'],
+          id: 'b2cd0d96',
           title:
             "De l’événement à l’ordinaire. JO d'hiver 2030 : un village olympique en archipel comme réponse territoriale à la crise du logement à Briançon",
           supervisedBy: 'Edith Chezel et Marie-Julie Bernard',
@@ -2857,6 +3015,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Adrien Leclercq'],
+          id: '484f18b6',
           title:
             'De la ville inondable à la ville inondée. La transition des villes inondables à l’heure du dérèglement climatique et des crues intenses à partir du cas de Vizille en Isère',
           supervisedBy: 'Théa Manola et Simeon Naydenov',
@@ -2864,6 +3023,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Etienne Masselot'],
+          id: '5b3a6954',
           title:
             'Transhumance de fraîcheur urbaine. Pour une politique saisonnière',
           supervisedBy: 'Federica Gatta',
@@ -2871,6 +3031,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Julien Thomas'],
+          id: 'c3dbf2da',
           title:
             'Fabriquer la ville de demain dans la ville d’hier. Le recyclage des friches industrielles du XIXe au XXIe siècle',
           supervisedBy: 'Yvan Okotnikoff',
@@ -2878,6 +3039,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Naïan Barron'],
+          id: '7ddfb310',
           title: null,
           supervisedBy: 'Federica Gatta',
           description: null,
@@ -2897,6 +3059,7 @@ export const GRADUATION_PROJECTS_SECTION = {
       graduationProjects: [
         {
           students: ['Thomas Armanet'],
+          id: '772ba638',
           title:
             'Envisager l’effondrement en milieu urbain dense. Le bailleur social, acteur clé de la résilience',
           supervisedBy: 'Théa Manola',
@@ -2904,6 +3067,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Adrien Barbier'],
+          id: '2d758b34',
           title:
             'Les zones d’activités économiques à l’heure du ZAN. Stratégie différenciée de requalification des ZAE de l’agglomération grenobloise pour concilier développement économique et transition foncière',
           supervisedBy: 'Arnaud Buchs',
@@ -2911,12 +3075,14 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Edgar Boisset'],
+          id: 'c6d75036',
           title: <>(In)visibles&nbsp;: Les livreurs à vélo à Grenoble</>,
           supervisedBy: 'Arnaud Buchs',
           description: null,
         },
         {
           students: ['Clara Errecade Cattalorda'],
+          id: '8879edb7',
           title:
             'Réhabilitation de l’ancien institut de géographie alpine à Grenoble. Une occupation transitoire avec les usagers',
           supervisedBy: 'Théa Manola',
@@ -2924,6 +3090,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Victoria Excoffon'],
+          id: 'c462c320',
           title:
             'Réhabilitation de l’ancien institut de géographie alpine à Grenoble. Une occupation transitoire avec les usagers',
           supervisedBy: 'Théa Manola',
@@ -2931,6 +3098,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Chloé Graziano'],
+          id: '3ec7ed57',
           title:
             'Devant le mur les bobos, derrière le mur les boloss. Étude du processus d’ancrage d’un tiers-lieu dans son quartier et de ses effets socio-spatiaux',
           supervisedBy: 'Marine Bourgeois',
@@ -2958,6 +3126,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Alizé Hanson'],
+          id: '81d12d4d',
           title:
             'Coopération d’acteurs pour une polyfonctionnalité des cours d’écoles. Repenser le système actuel de l’organisation des cours d’écoles du premier degré',
           supervisedBy: 'Federica Gatta',
@@ -2965,6 +3134,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Emma Léger'],
+          id: '739b67ab',
           title:
             'Vieillissement et petites villes de demain. Un projet d’habitat inclusif dans le centre-bourg de Saint-Marcellin',
           supervisedBy: 'Edith Chezel et Florian Golay',
@@ -2972,12 +3142,14 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Kawtar Morchadi'],
+          id: '228a37fd',
           title: 'La démolition en contexte urbain. Trouver des consensus',
           supervisedBy: 'Florian Golay',
           description: null,
         },
         {
           students: ['Emmanuelle Pilon'],
+          id: 'db3ac868',
           title:
             'De la fabrique des lieux de vie à des lieux de vie comme fabrique nourricière',
           supervisedBy: 'Laure Brayer',
@@ -2999,6 +3171,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Robinson Rossi'],
+          id: '00654249',
           title:
             'Ré-habiter le Rabot. Une régénération négociée entre un site exceptionnel et un projet d’hospitalité',
           supervisedBy: 'Théa Manola',
@@ -3028,6 +3201,7 @@ export const GRADUATION_PROJECTS_SECTION = {
       graduationProjects: [
         {
           students: ['Matteo Beguiristain', 'Elisa Naudin'],
+          id: '27b28ee5',
           title:
             'S’adapter dans un contexte de changement climatique. Le cas des stations de ski de moyenne montagne',
           supervisedBy: 'Marine Bourgeois et Simon Godard',
@@ -3035,6 +3209,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Raphaël Boujon'],
+          id: 'b5a5118c',
           title: 'Transition alimentaire en région grenobloise',
           supervisedBy: 'Giulia Buffoli et Mathias Rollot',
           description: (
@@ -3058,6 +3233,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Guillaume Cachoulet'],
+          id: '1e0b0571',
           title:
             'Un quartier de gare à Pont de Beauvoisin. Une future centralité au service des besoins culturels du bassin pontois',
           supervisedBy: 'Théa Manola',
@@ -3091,6 +3267,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Mathilde Cazeaux'],
+          id: '45007fcb',
           title:
             'Roanne au prisme de la qualité du cadre de vie pour sa jeunesse',
           supervisedBy: 'Théa Manola',
@@ -3121,6 +3298,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Max Chapuis'],
+          id: '7cdb8191',
           title:
             'Vitaliser la filière bois des Bauges. Participer à la résilience des Savoie en contexte de crises',
           supervisedBy: 'Giulia Buffoli',
@@ -3128,6 +3306,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Adrien Cherencq'],
+          id: 'd25fff91',
           title:
             'Accélérer le développement local au Pays-Basque : une stratégie de transition territoriale',
           supervisedBy: 'Giulia Buffoli',
@@ -3135,12 +3314,14 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Lucie Crespin'],
+          id: '46c29211',
           title: 'Le quartier de gare de Dinan, une mosaïque à reconnecter',
           supervisedBy: 'Mathias Rollot',
           description: null,
         },
         {
           students: ['Nathan Delmas'],
+          id: '8af23b4d',
           title:
             'Le refuge climatique, un levier pour fabriquer de la cohésion territoriale. Renforcer la résilience territoriale face aux pics de chaleur dans la région grenobloise',
           supervisedBy: 'Théa Manola',
@@ -3178,6 +3359,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Juliette Garcia'],
+          id: 'cc4b586a',
           title:
             'De la petite enfance au pôle de gare. Repenser l’articulation entre mobilités et services',
           supervisedBy: 'Théa Manola',
@@ -3205,6 +3387,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Clair Gauffenic'],
+          id: '26df79af',
           title:
             'Grenoble sous le prisme queer. plan-guide pour la prise en compte des vécus queers dans l’aménagement grenoblois',
           supervisedBy: 'Marine Bourgeois et Giulia Buffoli',
@@ -3242,6 +3425,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Simeon Naydenov'],
+          id: 'e71344d7',
           title:
             'Nouvelles coopérations territoriales dans le Trièves de 2030 (logements, mobilités, sociabilités)',
           supervisedBy: 'Charles Ambrosino, Théa Manola et Mathias Rollot',
@@ -3278,6 +3462,7 @@ export const GRADUATION_PROJECTS_SECTION = {
         },
         {
           students: ['Alouna Nicolas'],
+          id: 'e873a160',
           title: 'Fabriquer le commun du Trièves',
           supervisedBy: 'Federica Gatta et Nicolas Tixier',
           description: null,

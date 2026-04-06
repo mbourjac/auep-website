@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 export type Seminar = {
+  id: string;
   year: string;
   mentoring: string[];
   guests: string[];
@@ -16,6 +17,7 @@ export type SeminarsSemester = {
 };
 
 export type Dissertation = {
+  id: string;
   student: string;
   title: ReactNode;
   description: ReactNode | null;
@@ -29,6 +31,7 @@ export type DissertationsYear = {
 };
 
 export type ProjectWorkshop = {
+  id: string;
   students: string[];
   title: ReactNode | null;
   description: ReactNode | null;
@@ -50,6 +53,13 @@ export type ProjectWorkshopsSemester = {
   years: ProjectWorkshopsYear[];
 };
 
+export type GraduationProjectsSection = {
+  label: string;
+  description: ReactNode;
+  picture: string;
+  years: GraduationProjectsYear[];
+};
+
 export type GraduationProjectsYear = {
   id: string;
   label: string;
@@ -58,6 +68,7 @@ export type GraduationProjectsYear = {
 };
 
 export type GraduationProject = {
+  id: string;
   students: string[];
   title: ReactNode | null;
   supervisedBy: string | null;

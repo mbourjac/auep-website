@@ -1,14 +1,18 @@
 import { useState } from 'react';
+import * as Dialog from '@radix-ui/react-dialog';
 import { cn } from '../../../lib/tailwind';
 import { ProjectWorkshopsYear } from '../works.types';
 
 type ProjectWorkshopsTableProps = Pick<
   ProjectWorkshopsYear,
   'projectWorkshops'
->;
+> & {
+  setSelectedProjectWorkshopId: (id: string | null) => void;
+};
 
 export const ProjectWorkshopsTable = ({
   projectWorkshops,
+  setSelectedProjectWorkshopId,
 }: ProjectWorkshopsTableProps) => {
   const [hoveredRow, setHoveredRow] = useState<number | null>(null);
 
@@ -30,28 +34,30 @@ export const ProjectWorkshopsTable = ({
       </thead>
       <tbody>
         {projectWorkshops.map((projectWorkshop, index) => (
-          <tr
-            key={index}
-            className={cn(
-              'text-primary cursor-pointer align-top transition-opacity',
-              index !== projectWorkshops.length - 1 &&
-                'border-primary border-b',
-              hoveredRow !== null && hoveredRow !== index && 'opacity-60'
-            )}
-            onMouseEnter={() => setHoveredRow(index)}
-            onMouseLeave={() => setHoveredRow(null)}
-          >
-            <td className="pr-6">
-              <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                {projectWorkshop.students.join(' - ')}
-              </span>
-            </td>
-            <td>
-              <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                {projectWorkshop.title}
-              </span>
-            </td>
-          </tr>
+          <Dialog.Trigger key={index} asChild>
+            <tr
+              className={cn(
+                'text-primary cursor-pointer align-top transition-opacity',
+                index !== projectWorkshops.length - 1 &&
+                  'border-primary border-b',
+                hoveredRow !== null && hoveredRow !== index && 'opacity-60'
+              )}
+              onMouseEnter={() => setHoveredRow(index)}
+              onMouseLeave={() => setHoveredRow(null)}
+              onClick={() => setSelectedProjectWorkshopId(projectWorkshop.id)}
+            >
+              <td className="pr-6">
+                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                  {projectWorkshop.students.join(' - ')}
+                </span>
+              </td>
+              <td>
+                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                  {projectWorkshop.title}
+                </span>
+              </td>
+            </tr>
+          </Dialog.Trigger>
         ))}
       </tbody>
     </table>

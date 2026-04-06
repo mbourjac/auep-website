@@ -1,4 +1,5 @@
 import { RefObject, useState } from 'react';
+import * as Dialog from '@radix-ui/react-dialog';
 import { cn } from '../../../lib/tailwind';
 import type { SeminarsSemester as SeminarsSemesterType } from '../works.types';
 
@@ -6,6 +7,7 @@ type SeminarsSemesterProps = Omit<SeminarsSemesterType, 'id'> & {
   semesterRef: RefObject<HTMLDivElement | null>;
   isLast: boolean;
   isFirst: boolean;
+  setSelectedSeminarId: (id: string | null) => void;
 };
 
 export const SeminarsSemester = ({
@@ -16,6 +18,7 @@ export const SeminarsSemester = ({
   semesterRef,
   isLast,
   isFirst,
+  setSelectedSeminarId,
 }: SeminarsSemesterProps) => {
   const [hoveredRow, setHoveredRow] = useState<number | null>(null);
 
@@ -53,30 +56,32 @@ export const SeminarsSemester = ({
         </thead>
         <tbody>
           {seminars.map((seminar, index) => (
-            <tr
-              key={index}
-              className={cn(
-                'text-primary cursor-pointer align-top transition-opacity',
-                index !== seminars.length - 1 && 'border-b-primary border-b',
-                hoveredRow !== null && hoveredRow !== index && 'opacity-60'
-              )}
-              onMouseEnter={() => setHoveredRow(index)}
-              onMouseLeave={() => setHoveredRow(null)}
-            >
-              <td className="pr-6">
-                <span className="block px-2 py-1">{seminar.year}</span>
-              </td>
-              <td className="pr-6">
-                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                  {seminar.mentoring.join(' - ')}
-                </span>
-              </td>
-              <td>
-                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
-                  {seminar.guests.join(' - ')}
-                </span>
-              </td>
-            </tr>
+            <Dialog.Trigger key={index} asChild>
+              <tr
+                className={cn(
+                  'text-primary cursor-pointer align-top transition-opacity',
+                  index !== seminars.length - 1 && 'border-b-primary border-b',
+                  hoveredRow !== null && hoveredRow !== index && 'opacity-60'
+                )}
+                onMouseEnter={() => setHoveredRow(index)}
+                onMouseLeave={() => setHoveredRow(null)}
+                onClick={() => setSelectedSeminarId(seminar.id)}
+              >
+                <td className="pr-6">
+                  <span className="block px-2 py-1">{seminar.year}</span>
+                </td>
+                <td className="pr-6">
+                  <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                    {seminar.mentoring.join(' - ')}
+                  </span>
+                </td>
+                <td>
+                  <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                    {seminar.guests.join(' - ')}
+                  </span>
+                </td>
+              </tr>
+            </Dialog.Trigger>
           ))}
         </tbody>
       </table>

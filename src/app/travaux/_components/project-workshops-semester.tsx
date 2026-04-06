@@ -9,6 +9,7 @@ type ProjectWorkshopsSemesterProps = Omit<
 > & {
   semesterRef: RefObject<HTMLDivElement | null>;
   isFirst: boolean;
+  setSelectedProjectWorkshopId: (id: string | null) => void;
 };
 
 export const ProjectWorkshopsSemester = ({
@@ -19,6 +20,7 @@ export const ProjectWorkshopsSemester = ({
   years,
   semesterRef,
   isFirst,
+  setSelectedProjectWorkshopId,
 }: ProjectWorkshopsSemesterProps) => {
   return (
     <div ref={semesterRef} className={cn('scroll-mt-24', !isFirst && 'pt-4')}>
@@ -40,7 +42,10 @@ export const ProjectWorkshopsSemester = ({
               <h3 className="text-md font-medium">{year.label}</h3>
               <p>Encadrement : {year.mentoring.join(', ')}</p>
             </div>
-            <ProjectWorkshopsTable projectWorkshops={year.projectWorkshops} />
+            <ProjectWorkshopsTable
+              projectWorkshops={year.projectWorkshops}
+              setSelectedProjectWorkshopId={setSelectedProjectWorkshopId}
+            />
           </div>
         </Fragment>
       ))}

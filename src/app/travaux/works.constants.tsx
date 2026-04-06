@@ -285,7 +285,7 @@ export const DISSERTATIONS_SECTION = {
       académiques.
     </>
   ),
-  picture: '/images/works/dissertations/dissertations-1.png',
+  picture: '/images/works/dissertations/dissertations-1.jpg',
   years: [
     {
       id: '2024-2025',

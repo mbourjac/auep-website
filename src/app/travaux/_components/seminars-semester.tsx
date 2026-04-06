@@ -25,12 +25,9 @@ export const SeminarsSemester = ({
   return (
     <div ref={semesterRef} className={cn('scroll-mt-24', !isLast && 'pb-4')}>
       <div
-        className={cn(
-          'flex flex-col gap-2.5 pt-4 pb-2.5',
-          !isFirst && 'border-t-2'
-        )}
+        className={cn('flex flex-col gap-2.5 py-4', !isFirst && 'border-t-2')}
       >
-        <h3 className="text-md font-medium">
+        <h3 className="text-lg font-bold">
           {label} - {title}
         </h3>
         {description && <p>{description}</p>}

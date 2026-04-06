@@ -27,7 +27,7 @@ export const ProjectWorkshopsSemester = ({
       <div
         className={cn('flex flex-col gap-2.5 py-4', !isFirst && 'border-t-2')}
       >
-        <h3 className="text-md font-medium">
+        <h3 className="text-lg font-bold">
           {label} - {title}
         </h3>
         {description && <p>{description}</p>}
@@ -38,8 +38,8 @@ export const ProjectWorkshopsSemester = ({
           <div
             className={cn('scroll-mt-24', index !== years.length - 1 && 'pb-4')}
           >
-            <div className="flex flex-col gap-2.5 border-t-2 pt-4 pb-2.5">
-              <h3 className="text-md font-medium">{year.label}</h3>
+            <div className="flex flex-col gap-2.5 border-t-2 py-4">
+              <h3 className="text-lg font-bold">{year.label}</h3>
               <p>Encadrement : {year.mentoring.join(', ')}</p>
             </div>
             <ProjectWorkshopsTable

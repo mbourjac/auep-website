@@ -24,8 +24,8 @@ export const DissertationsYear = ({
 
   return (
     <div ref={sectionRef} className={cn('scroll-mt-24', !isLast && 'pb-4')}>
-      <div className="flex flex-col gap-2.5 border-t-2 pt-4 pb-2.5">
-        <h3 className="text-md font-medium">{label}</h3>
+      <div className="flex flex-col gap-2.5 border-t-2 py-4">
+        <h3 className="text-lg font-bold">{label}</h3>
       </div>
       <table className="w-full table-fixed">
         <colgroup>

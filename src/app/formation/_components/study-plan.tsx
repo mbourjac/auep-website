@@ -176,7 +176,7 @@ export const StudyPlan = ({
         id="master-auep"
         heading="master AUEP"
         headingAlignment="left"
-        image="/images/formation/formation-4.jpg"
+        image="/images/formation/formation-4.jpeg"
       >
         <div>
           <p>

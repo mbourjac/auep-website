@@ -1,6 +1,7 @@
 import { Fragment, RefObject } from 'react';
 import { cn } from '../../../lib/tailwind';
 import type { ProjectWorkshopsSemester as ProjectWorkshopsSemesterType } from '../works.types';
+import { ProjectWorkshopsTable } from './project-workshops-table';
 
 type ProjectWorkshopsSemesterProps = Omit<
   ProjectWorkshopsSemesterType,
@@ -39,49 +40,7 @@ export const ProjectWorkshopsSemester = ({
               <h3 className="text-md font-medium">{year.label}</h3>
               <p>Encadrement : {year.mentoring.join(', ')}</p>
             </div>
-            <table className="w-full table-fixed border-t border-t-black/40">
-              <colgroup>
-                <col className="w-full lg:w-[460px]" />
-                <col className="w-full" />
-              </colgroup>
-              <thead>
-                <tr className="border-b border-b-black/40">
-                  <th className="py-1 pr-6 text-left font-normal">
-                    Étudiant·es
-                  </th>
-                  <th className="px-6 py-1 text-left font-normal">Titre</th>
-                </tr>
-              </thead>
-              <tbody>
-                {year.projectWorkshops.map((projectWorkshop, index) => (
-                  <tr
-                    key={index}
-                    className={cn(
-                      'align-top',
-                      index !== year.projectWorkshops.length - 1 &&
-                        'border-b border-b-black/40'
-                    )}
-                  >
-                    <td
-                      className={cn(
-                        'truncate overflow-hidden py-1 pr-6 text-ellipsis whitespace-nowrap',
-                        index === year.projectWorkshops.length - 1 && 'pb-0'
-                      )}
-                    >
-                      {projectWorkshop.students.join(' - ')}
-                    </td>
-                    <td
-                      className={cn(
-                        'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
-                        index === year.projectWorkshops.length - 1 && 'pb-0'
-                      )}
-                    >
-                      {projectWorkshop.title}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <ProjectWorkshopsTable projectWorkshops={year.projectWorkshops} />
           </div>
         </Fragment>
       ))}

@@ -1,4 +1,4 @@
-import { RefObject } from 'react';
+import { RefObject, useState } from 'react';
 import { cn } from '../../../lib/tailwind';
 import type { SeminarsSemester as SeminarsSemesterType } from '../works.types';
 
@@ -17,6 +17,8 @@ export const SeminarsSemester = ({
   isLast,
   isFirst,
 }: SeminarsSemesterProps) => {
+  const [hoveredRow, setHoveredRow] = useState<number | null>(null);
+
   return (
     <div ref={semesterRef} className={cn('scroll-mt-24', !isLast && 'pb-4')}>
       <div
@@ -30,17 +32,23 @@ export const SeminarsSemester = ({
         </h3>
         {description && <p>{description}</p>}
       </div>
-      <table className="w-full table-fixed border-t border-t-black/40">
+      <table className="w-full table-fixed">
         <colgroup>
           <col className="w-[110px] md:w-[140px]" />
           <col className="w-[50%]" />
           <col className="w-[50%]" />
         </colgroup>
         <thead>
-          <tr className="border-b border-b-black/40">
-            <th className="py-1 pr-6 text-left font-normal">Année</th>
-            <th className="px-6 py-1 text-left font-normal">Encadrement</th>
-            <th className="px-6 py-1 text-left font-normal">Invité·es</th>
+          <tr className="text-white">
+            <th className="pr-6 text-left font-normal">
+              <span className="bg-primary block px-2 py-1">Année</span>
+            </th>
+            <th className="pr-6 text-left font-normal">
+              <span className="bg-primary block px-2 py-1">Encadrement</span>
+            </th>
+            <th className="text-left font-normal">
+              <span className="bg-primary block px-2 py-1">Invité·es</span>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -48,33 +56,25 @@ export const SeminarsSemester = ({
             <tr
               key={index}
               className={cn(
-                'align-top',
-                index !== seminars.length - 1 && 'border-b border-b-black/40'
+                'text-primary cursor-pointer align-top transition-opacity',
+                index !== seminars.length - 1 && 'border-b-primary border-b',
+                hoveredRow !== null && hoveredRow !== index && 'opacity-60'
               )}
+              onMouseEnter={() => setHoveredRow(index)}
+              onMouseLeave={() => setHoveredRow(null)}
             >
-              <td
-                className={cn(
-                  'py-1 pr-6',
-                  index === seminars.length - 1 && 'pb-0'
-                )}
-              >
-                {seminar.year}
+              <td className="pr-6">
+                <span className="block px-2 py-1">{seminar.year}</span>
               </td>
-              <td
-                className={cn(
-                  'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
-                  index === seminars.length - 1 && 'pb-0'
-                )}
-              >
-                {seminar.mentoring.join(' - ')}
+              <td className="pr-6">
+                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                  {seminar.mentoring.join(' - ')}
+                </span>
               </td>
-              <td
-                className={cn(
-                  'truncate overflow-hidden px-6 py-1 text-ellipsis whitespace-nowrap',
-                  index === seminars.length - 1 && 'pb-0'
-                )}
-              >
-                {seminar.guests.join(' - ')}
+              <td>
+                <span className="block h-8 truncate overflow-hidden px-2 py-1 text-ellipsis whitespace-nowrap">
+                  {seminar.guests.join(' - ')}
+                </span>
               </td>
             </tr>
           ))}

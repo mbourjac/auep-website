@@ -1871,39 +1871,6 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Nathan Salignat', 'Charlotte Farys'],
-              id: 'e1fe1e77',
-              title: null,
-              description: (
-                <>
-                  Le projet consiste à requalifier un îlot en entrée de ville à
-                  Bourg-de-Péage, aujourd’hui marqué par une forte vacance
-                  commerciale et résidentielle, un vieillissement du parc de
-                  logements et un manque d’espaces de sociabilité. L’objectif
-                  est de reconnecter l’îlot à son contexte urbain en réactivant
-                  les rez-de-chaussée, en créant des logements adaptés et en
-                  favorisant la mixité intergénérationnelle. Les quatre cellules
-                  commerciales de la rue Jean-Jaurès sont réunies pour
-                  accueillir un commerce alimentaire combinant boucherie,
-                  fromagerie et libre-service, avec une organisation optimisée
-                  et des interventions limitées sur les façades. À l’est,
-                  l’ancien garage face à l’église est transformé en café de
-                  quartier avec deux terrasses et un salon à l’étage, conçu
-                  comme un nouveau lieu de sociabilité. En parallèle, cinq
-                  logements T4 en colocation intergénérationnelle (personnes
-                  âgées et jeunes actifs) sont aménagés dans les étages,
-                  traversants ou bi-orientés, avec une grande salle commune
-                  ouverte sur un cœur d’îlot végétalisé. Le projet limite les
-                  transformations structurelles tout en valorisant les qualités
-                  existantes, et propose plusieurs scénarios de portage allant
-                  d’un gestionnaire unique (résidence Paul Brunat) à une
-                  copropriété favorisant l’entraide et la cohabitation entre
-                  générations.
-                </>
-              ),
-              pictures: [],
-            },
-            {
               students: ['Charlotte Farys', 'Nathan Salignat'],
               id: '9c874dcb',
               title:
@@ -2690,18 +2657,11 @@ export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
       ],
       graduationProjects: [
         {
-          students: ['Nolwenn Biger'],
-          id: '0bc3ecc1',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
           students: ['Céline Bodin'],
           id: 'ece99e01',
           title:
             "Penser la Qualité de vie dans les Zones d'Aménagement Concerté (ZAC). Une réflexion sur les pratiques architecturales et urbaines dans le contexte français contemporain",
-          supervisedBy: null,
+          supervisedBy: 'Yvan Okotnikoff',
           description: (
             <>
               Ce travail permet de répondre à la problématique&nbsp;:
@@ -2785,7 +2745,7 @@ export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
               stabilisation de l’enveloppe urbaine existante
             </>
           ),
-          supervisedBy: 'Simeon Naydenov',
+          supervisedBy: 'Simeon Naydenov et Théa Manola',
           description: (
             <>
               Le constat d’une série de crises (environnementale, sociale et
@@ -2853,67 +2813,6 @@ export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
           ),
         },
         {
-          students: ['Gasdelton Elisha'],
-          id: '67e216ff',
-          title: null,
-          supervisedBy: null,
-          description: (
-            <>
-              Ce travail s’inscrit autour d’un enjeu contemporain majeur&nbsp;:
-              l’adaptation du bâti face au risque inondation, à travers le
-              prisme des contraintes réglementaires du Plan de Prévention des
-              Risques Inondation (PPRI). Il prend pour terrain d’étude la ville
-              de Fontaine, et interroge les leviers d’une transformation urbaine
-              résiliente dans des zones soumises à des aléas hydrauliques
-              importants. Une partie propose une lecture critique des doctrines
-              actuelles de prévention des risques, celles portées par les PPRI.
-              Ces documents normatifs, souvent conçus selon une logique de
-              protection et d’interdiction, apparaissent parfois en décalage
-              avec les réalités territoriales. Une seconde partie s’appuie sur
-              une analyse morphologique et réglementaire de trois échantillons
-              urbains. À travers ces cas, il est mis en évidence les tensions
-              entre la réglementation et les besoins du territoire. Enfin, la
-              troisième partie développe une proposition spatiale concrète. Elle
-              explore des pistes de projet conciliant exigences de sécurité et
-              qualité architecturale. En valorisant une approche multiéchelle et
-              transversale, le projet intègre des typologies adaptatives. Ce
-              projet de fin d’études défend l’idée que la résilience face au
-              risque inondation ne se décrète pas uniquement par la
-              réglementation, mais se construit aussi dans la capacité
-              collective à imaginer et expérimenter d’autres manières de faire
-              la ville
-            </>
-          ),
-        },
-        {
-          students: ['Clara Errecade'],
-          id: '187fb0c5',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
-          students: ['Badreddine Hamaich', 'Claire Kolodziej'],
-          id: '9830f916',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
-          students: ['Adrien Leclercq'],
-          id: '7f0bdaf5',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
-          students: ['Etienne Masselot'],
-          id: '6c25c989',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
           students: ['Maxime Montaye', 'Aglaé Thébaud'],
           id: 'ce92b7d2',
           title: (
@@ -2952,34 +2851,6 @@ export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
               à un projet de bifurcation.
             </>
           ),
-        },
-        {
-          students: ['Sidonie Rigal'],
-          id: 'b7b9fb2f',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
-          students: ['Julien Thomas'],
-          id: '1f8d55e3',
-          title: null,
-          supervisedBy: null,
-          description: null,
-        },
-        {
-          students: ['Céline Bodin'],
-          id: 'a41bf94a',
-          title: null,
-          supervisedBy: 'Yvan Okotnikoff',
-          description: null,
-        },
-        {
-          students: ['Eglantine Maucuit', 'Agathe Bruyère'],
-          id: '452193c8',
-          title: null,
-          supervisedBy: 'Théa Manola et Simeon Naydenov',
-          description: null,
         },
         {
           students: ['Nolwenn Biger', 'Sidonie Rigal'],
@@ -3035,13 +2906,6 @@ export const GRADUATION_PROJECTS_SECTION: GraduationProjectsSection = {
           title:
             'Fabriquer la ville de demain dans la ville d’hier. Le recyclage des friches industrielles du XIXe au XXIe siècle',
           supervisedBy: 'Yvan Okotnikoff',
-          description: null,
-        },
-        {
-          students: ['Naïan Barron'],
-          id: '7ddfb310',
-          title: null,
-          supervisedBy: 'Federica Gatta',
           description: null,
         },
       ],

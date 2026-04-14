@@ -18,6 +18,7 @@ export type NewsItemProps = {
   };
   title: ReactNode;
   subtitle?: ReactNode;
+  summary?: ReactNode;
   description: ReactNode;
   image?: string;
 };
@@ -27,6 +28,7 @@ export const NewsItem = ({
   title,
   subtitle,
   image,
+  summary,
   description,
 }: NewsItemProps) => {
   const lenis = useLenis();
@@ -80,7 +82,7 @@ export const NewsItem = ({
             {subtitle && <p className="line-clamp-2 italic">{subtitle}</p>}
           </div>
           <div className="hidden grow py-4 lg:block">
-            <p className="line-clamp-3">{description}</p>
+            <p className="line-clamp-3">{summary}</p>
           </div>
           <div className="h-[81px] min-w-[100px] md:h-[104px] md:min-w-[200px]">
             {image ? (

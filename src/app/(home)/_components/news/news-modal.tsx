@@ -128,6 +128,7 @@ export const NewsModal = ({
               {subtitle && <p className="italic">{subtitle}</p>}
             </div>
             <Dialog.Description
+              asChild
               className="max-h-full overflow-y-scroll p-4"
               ref={descriptionRef}
             >

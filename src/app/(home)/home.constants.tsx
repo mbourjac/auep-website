@@ -7,19 +7,79 @@ export const NEWS = [
     },
     title: 'Le Challenge APERAU est remporté par Grenoble !',
     subtitle: null,
-    description: (
+    summary: (
       <>
         1er prix du jury et 1er prix du public au Challenge APERAU pour
         l&apos;Institut d’Urbanisme et de Géographie Alpine, avec une délégation
-        intégralement issue du Master AUEP.
-        <br />
-        Bravo à l’équipe lauréate&nbsp;!
-        <br />- Léa Casado (étudiante en urbanisme AUEP)
-        <br />- Fanny Damond (étudiante en urbanisme AUEP)
-        <br />- Jade Huser (étudiante en architecture et urbanisme AUEP)
-        <br />- Marisa Marques Santos (étudiante en architecture et urbanisme
-        AUEP)
+        intégralement issue du Master AUEP. Bravo à l’équipe lauréate&nbsp;!
       </>
+    ),
+    description: (
+      <div className="flex flex-col gap-2">
+        <p>
+          1er prix du jury et 1er prix du public au Challenge APERAU pour
+          l&apos;Institut d’Urbanisme et de Géographie Alpine, avec une
+          délégation intégralement issue du Master AUEP.
+          <br />
+          Bravo à l’équipe lauréate&nbsp;!
+          <br />- Léa Casado (étudiante en urbanisme AUEP)
+          <br />- Fanny Damond (étudiante en urbanisme AUEP)
+          <br />- Jade Huser (étudiante en architecture et urbanisme AUEP)
+          <br />- Marisa Marques Santos (étudiante en architecture et urbanisme
+          AUEP)
+        </p>
+        <p>
+          L’équipe s’est penchée sur la revitalisation du centre-ville de la
+          commune d’Esbly (Seine-et-Marne) autour de la problématique suivante :
+          comment faire du quartier de gare une véritable centralité, capable de
+          structurer la commune, de créer du lien, et de s’intégrer pleinement
+          dans les dynamiques locales&nbsp;? Dans le cadre de leur projet,
+          l’équipe a envisagé la loi Solidarité et renouvellement urbain (SRU)
+          comme une opportunité plutôt qu’une contrainte permettant de
+          renouveler et diversifier l’offre de logement dans un contexte
+          d’évolution démographique, lié notamment au vieillissement de la
+          population. Le projet présenté vise à améliorer le cadre de vie et
+          rééquilibrer la structure démographique sans accroître la pression sur
+          la commune en initiant une transformation progressive, au service des
+          habitants et du territoire.{' '}
+          <span className="font-bold">
+            Le diaporama de leur projet «&nbsp;Faire quartier de gare&nbsp;» est
+            consultable{' '}
+            <a
+              href="https://www.grenoble.archi.fr/wp-content/uploads/2026/04/APERAU_GRENOBLE_DIAPORAMA.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline underline-offset-2"
+            >
+              ici
+            </a>
+            .
+          </span>
+        </p>
+        <p>
+          Le Challenge interuniversitaire des formations en aménagement et
+          urbanisme est proposé chaque année par l’
+          <a
+            href="https://www.aperau.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            APERAU
+          </a>{' '}
+          (Association pour la Promotion de l’Enseignement et de la Recherche en
+          Aménagement et Urbanisme) aux étudiants.{' '}
+          <span className="font-bold">
+            Dans le cadre du Challenge, des équipes de 4 étudiant·es sont
+            amenées à se pencher sur une problématique d’urbanisme concrète.
+          </span>{' '}
+          Les rencontres avec les élu·es, les administrateurs locaux et d’autres
+          acteurs impliqués sur le territoire accompagnent le travail d’analyse
+          mené par les équipes. Les projets étudiants sont ensuite présentés
+          devant un jury composé généralement d’universitaires, professionnels
+          de l’urbanisme et d’élus.
+        </p>
+      </div>
     ),
     image: 'images/news/news-26.png',
   },
@@ -36,8 +96,9 @@ export const NEWS = [
         les mobilisations citoyennes face aux grands projets urbains
       </>
     ),
-    description: (
+    summary: (
       <>
+        {' '}
         Avec Stéphane Tonnelat, ethnographe, enseignant à l’EHESS, chargé de
         recherche au CNRS. Auteur de Sauver les terres agricoles (2026),
         éditions Seuil.
@@ -47,6 +108,18 @@ export const NEWS = [
         Bourgeois (Sciences Po Grenoble, Pacte) et Grégory Busquet (IUGA,
         Pacte).
       </>
+    ),
+    description: (
+      <p>
+        Avec Stéphane Tonnelat, ethnographe, enseignant à l’EHESS, chargé de
+        recherche au CNRS. Auteur de Sauver les terres agricoles (2026),
+        éditions Seuil.
+        <br />
+        Une rencontre organisée dans le cadre du séminaire «&nbsp;Les
+        controverses de la ville néolibérale&nbsp;», encadré par Marine
+        Bourgeois (Sciences Po Grenoble, Pacte) et Grégory Busquet (IUGA,
+        Pacte).
+      </p>
     ),
     image: 'images/news/news-25.png',
   },
@@ -63,8 +136,25 @@ export const NEWS = [
         terrains opérationnels
       </>
     ),
-    description: (
+    summary: (
       <>
+        Certains, parmi les plus fins observateurs du projet urbain contemporain
+        (F. Fromonot, A. Lortie…), partagent le même constat&nbsp;: la ville
+        semble aujourd’hui davantage conditionnée par les outils disponibles
+        (économiques, politiques, juridiques, fonciers…) que par la volonté des
+        acteurs qui les manipulent.
+        <br />
+        Cette hypothèse est particulièrement inquiétante à un moment où les
+        rapports scientifiques (GIEC, UICN…) indiquent que nous sommes désormais
+        entrés dans une nouvelle ère où l’incertitude est la seule certitude. À
+        partir de quelques retours de terrains opérationnels récents, nous
+        proposons d’esquisser quelques pistes pour plonger dans la zone de
+        turbulence avec l’ambition de garder –&nbsp;ou reprendre&nbsp;– le
+        contrôle de l’appareil.
+      </>
+    ),
+    description: (
+      <p>
         Certains, parmi les plus fins observateurs du projet urbain contemporain
         (F. Fromonot, A. Lortie…), partagent le même constat&nbsp;: la ville
         semble aujourd’hui davantage conditionnée par les outils disponibles
@@ -89,7 +179,7 @@ export const NEWS = [
         l’actualité des métiers de la transformation du territoire. L’atelier
         sera représenté par Yvan Okotnikoff, associé co-fondateur,
         architecte-urbaniste, et maître de conférences à l’ENSA de Grenoble.
-      </>
+      </p>
     ),
     image: 'images/news/news-24.png',
   },
@@ -106,8 +196,25 @@ export const NEWS = [
         tradition territorialiste
       </>
     ),
-    description: (
+    summary: (
       <>
+        C’est souvent dans les moments de crise que se sèment les graines de la
+        renaissance, nous rappelle Patrick Geddes à la fin du 19ème siècle. À
+        partir de cette phrase, la présentation propose de retracer la
+        généalogie qui a vu naître la tradition «&nbsp;territorialiste&nbsp;».
+        Au fil du temps et à travers les continents, cette tradition s’est
+        ramifiée, révélant à la fois ses promesses et ses limites. Elle a
+        néanmoins toujours porté une «&nbsp;Eutopie&nbsp;» —&nbsp;le «&nbsp;bon
+        lieu&nbsp;» fondé sur la coopération entre les êtres vivants et leur
+        milieu de vie&nbsp;— non pas une utopie irréalisable, mais un horizon de
+        pensée ancré dans les spécificités locales. Une démarche qui retrouve
+        aujourd’hui toute son actualité face aux crises multidimensionnelles
+        auxquelles nous sommes confrontés, une graine à partir de laquelle
+        envisager le projet de territoire et repenser son enseignement.
+      </>
+    ),
+    description: (
+      <p>
         C’est souvent dans les moments de crise que se sèment les graines de la
         renaissance, nous rappelle Patrick Geddes à la fin du 19ème siècle. À
         partir de cette phrase, la présentation propose de retracer la
@@ -132,7 +239,7 @@ export const NEWS = [
         Depuis septembre 2024 il co-anime la Chaire Nouvelles ruralités
         —&nbsp;Architecture et milieux vivants, de l’ENSA Nancy, l’ENSAIA et
         AgroParisTech.
-      </>
+      </p>
     ),
     image: 'images/news/news-23.png',
   },
@@ -143,7 +250,7 @@ export const NEWS = [
       year: 2025,
     },
     title: <>Exposition «&nbsp;Héritage(s) Métropolitain(s)&nbsp;»</>,
-    description: (
+    summary: (
       <>
         Au cœur du nouvel éco-quartier Flaubert, dissimulé dans la végétation du
         «&nbsp;sourire vert&nbsp;» grenoblois, le bâtiment de l’ancienne Chambre
@@ -155,6 +262,19 @@ export const NEWS = [
         projets ont été exposés dans le cadre de la Biennale des Villes en
         Transition au Palais des Sports de Grenoble.
       </>
+    ),
+    description: (
+      <p>
+        Au cœur du nouvel éco-quartier Flaubert, dissimulé dans la végétation du
+        «&nbsp;sourire vert&nbsp;» grenoblois, le bâtiment de l’ancienne Chambre
+        de l’Agriculture de Grenoble s’inscrit le long de l’avenue Marcelin
+        Berthelot non loin de l’arrêt de Tram MC2. La Ville de Grenoble
+        s’interroge sur le devenir de ce bâtiment de plus 3000m² construit en
+        1982 et vide depuis 2018. À travers quatre projets les étudiant·es du
+        master AUEP ont imaginé les futurs possibles du quartier&nbsp;! Leurs
+        projets ont été exposés dans le cadre de la Biennale des Villes en
+        Transition au Palais des Sports de Grenoble.
+      </p>
     ),
     image: 'images/news/news-22.jpg',
   },
@@ -171,8 +291,25 @@ export const NEWS = [
         transitions
       </>
     ),
-    description: (
+    summary: (
       <>
+        Cette intervention explore la manière dont les territoires de l’eau se
+        recomposent face aux multiples transitions en cours, qu’elles soient
+        d’ordre climatique, écologique, social, économique ou politique. À
+        partir d’exemples concrets issus de recherches menées en Méditerranée et
+        dans des contextes littoraux, elle interrogera les tensions entre les
+        injonctions à la gestion intégrée ou encore l’adaptation et la pluralité
+        de l’action publique, et la diversité des usages locaux des ressources
+        en eau. En mobilisant une approche géographique, la conférence vise à
+        alimenter les réflexions sur les modalités d’articulation entre
+        aménagements, «&nbsp;design territorial&nbsp;» et politiques de l’eau
+        dans un contexte de vulnérabilité et d’incertitude croissantes et
+        d’innovations nécessaires. Méditerranée, en France, au Maroc et au Liban
+        en particulier.
+      </>
+    ),
+    description: (
+      <p>
         Cette intervention explore la manière dont les territoires de l’eau se
         recomposent face aux multiples transitions en cours, qu’elles soient
         d’ordre climatique, écologique, social, économique ou politique. À
@@ -200,7 +337,7 @@ export const NEWS = [
         encore les zones humides. Ses terrains d’étude sont essentiellement
         localisés en Méditerranée, en France, au Maroc et au Liban en
         particulier.
-      </>
+      </p>
     ),
     image: 'images/news/news-21.png',
   },
@@ -217,8 +354,20 @@ export const NEWS = [
         dans le projet urbain
       </>
     ),
-    description: (
+    summary: (
       <>
+        Cette enquête sur la fabrique graphique de l’arbre dans le projet urbain
+        (création, standardisation, bifurcation) s’intéresse au dessin comme
+        outil de cognition pour repenser la relation au vivant végétal.
+        Proposant d’explorer de manière transdisciplinaire la façon dont les
+        concepts écologiques peuvent guider le geste de dessin pour ouvrir des
+        possibles, l’objectif de cette recherche est de déplacer les savoirs
+        scientifiques&nbsp;; des marges de la fabrication de l’image au centre
+        de la table à dessin.
+      </>
+    ),
+    description: (
+      <p>
         Cette enquête sur la fabrique graphique de l’arbre dans le projet urbain
         (création, standardisation, bifurcation) s’intéresse au dessin comme
         outil de cognition pour repenser la relation au vivant végétal.
@@ -240,7 +389,7 @@ export const NEWS = [
         la cartographie, le jeu et la narration comme méthode de conception et
         de recherche dans le champ du design d’espace, du design critique et du
         projet de paysage.
-      </>
+      </p>
     ),
     image: 'images/news/news-20.png',
   },
@@ -257,8 +406,19 @@ export const NEWS = [
         électrique
       </>
     ),
-    description: (
+    summary: (
       <>
+        Cette conférence propose d’interroger les imaginaires spatiaux du génie
+        électrique et de souligner le caractère idéologique et politique de la
+        distribution électrique. En questionnant les figures de
+        l&apos;architecture réseau et en proposant la notion de
+        techno-régionalisme, nous tenterons de mettre en perspective d’autres
+        imaginaires réticulaires pour une transition infrastructurelle et
+        énergétique territoriale.
+      </>
+    ),
+    description: (
+      <p>
         Cette conférence propose d’interroger les imaginaires spatiaux du génie
         électrique et de souligner le caractère idéologique et politique de la
         distribution électrique. En questionnant les figures de
@@ -276,7 +436,7 @@ export const NEWS = [
         de flux (Divergences, 2022), Le feu numérique&nbsp;: spatialité et
         énergie des data centers (Métis Presses). En 2023, elle co-crée le
         festival La machine dans le jardin à Mellionnec.
-      </>
+      </p>
     ),
     image: 'images/news/news-19.png',
   },
@@ -293,8 +453,18 @@ export const NEWS = [
         urbanisme à la mesure des territoires
       </>
     ),
-    description: (
+    summary: (
       <>
+        L’approche par les sols apparaît comme une démarche opératoire et
+        complémentaire au cadre normatif du Zéro Artificialisation Nette (ZAN).
+        Elle invite à territorialiser les objectifs de sobriété foncière, rend
+        sensibles, concrets et probablement plus appropriables ces objectifs
+        pour les territoires en proposant de nouveaux modèles ajustés aux
+        spécificités locales.
+      </>
+    ),
+    description: (
+      <p>
         L’approche par les sols apparaît comme une démarche opératoire et
         complémentaire au cadre normatif du Zéro Artificialisation Nette (ZAN).
         Elle invite à territorialiser les objectifs de sobriété foncière, rend
@@ -310,7 +480,7 @@ export const NEWS = [
         structure, pratiques urbaines, de façon à redéfinir les conditions du
         projet à l&apos;aune des enjeux socio écologiques auxquels nous devons
         faire face.
-      </>
+      </p>
     ),
     image: 'images/news/news-18.png',
   },
@@ -322,12 +492,19 @@ export const NEWS = [
     },
     title: 'Colloque de Cerisy',
     subtitle: "Vers des politiques des cycles de l'eau",
-    description: (
+    summary: (
       <>
         Un événement organisé par Mathias Rollot (architecte ENSAG, CRESSON) et
         Marin Schaffner (auteur et traducteur) avec l’appui des étudiant·es
         AUEP. Réalisation d’un podcast.
       </>
+    ),
+    description: (
+      <p>
+        Un événement organisé par Mathias Rollot (architecte ENSAG, CRESSON) et
+        Marin Schaffner (auteur et traducteur) avec l’appui des étudiant·es
+        AUEP. Réalisation d’un podcast.
+      </p>
     ),
     image: 'images/news/news-17.png',
   },
@@ -345,8 +522,26 @@ export const NEWS = [
         résidentielles
       </>
     ),
-    description: (
+    summary: (
       <>
+        Depuis le milieu des années 2010, de nombreuses villes moyennes
+        françaises ont élaboré des projets de revitalisation pour leurs
+        centres-villes, notamment sous l’impulsion de l’État. Dans ces
+        quartiers, la propriété et le secteur locatif privés sont prédominants.
+        En même temps, les villes moyennes bénéficient de moins de moyens,
+        d’outils et d’opérateurs d’aménagement et de production immobilière que
+        des villes plus peuplées. En dépit de ces difficultés et malgré le peu
+        de prise qu’ils ont sur les évolutions de l’occupation sociale dans les
+        quartiers centraux, les acteurs publics locaux des villes moyennes
+        cherchent à mettre en place des politiques de peuplement dans les
+        centres-villes. Pour comprendre ce paradoxe, a été mis en œuvre un
+        protocole associant une analyse statistique à celle de données
+        qualitatives, recueillies au travers d’une analyse documentaire, d’une
+        campagne d’entretiens et d’une observation participante.
+      </>
+    ),
+    description: (
+      <p>
         Depuis le milieu des années 2010, de nombreuses villes moyennes
         françaises ont élaboré des projets de revitalisation pour leurs
         centres-villes, notamment sous l’impulsion de l’État. Dans ces
@@ -389,7 +584,7 @@ export const NEWS = [
         <br />
         Mikaël Dupuy Le Bourdellès est docteur en urbanisme et aménagement au
         Lab&apos;URBA, Université Paris-Est.
-      </>
+      </p>
     ),
     image: 'images/news/news-16.jpg',
   },
@@ -400,11 +595,17 @@ export const NEWS = [
       year: 2024,
     },
     title: 'Journée de rencontres des Alumni AUEP',
-    description: (
+    summary: (
       <>
         Au programme, des temps d’échanges et une conférence de Laurent Matthey
         (Université de Genève).
       </>
+    ),
+    description: (
+      <p>
+        Au programme, des temps d’échanges et une conférence de Laurent Matthey
+        (Université de Genève).
+      </p>
     ),
     image: 'images/news/news-15.png',
   },
@@ -421,8 +622,26 @@ export const NEWS = [
         marché locatif résidentiel
       </>
     ),
-    description: (
+    summary: (
       <>
+        Le problème des loyers élevés est le plus souvent analysé par le biais
+        des locataires et les conséquences sur ces derniers&nbsp;: suroccupation
+        des logements, expulsions, impacts sur les budgets des ménages,
+        conséquences sur la santé etc. L’analyse par la théorie de la rente
+        invite à changer de point de vue et étudier non plus uniquement les
+        locataires qui sont contraints de payer ces loyers mais également les
+        propriétaires qui reçoivent cette rente. De plus, la théorie de la rente
+        fournit des éléments de compréhension utiles sur le fonctionnement du
+        marché locatif résidentiel. Je propose de présenter une synthèse de la
+        théorie de la rente foncière et de montrer en quoi elle peut être
+        pertinente pour analyser le marché locatif résidentiel en m’appuyant sur
+        des données de propriété et de loyers portant sur le cas de Bruxelles,
+        ainsi que de résultats issus de la littérature portant entre autre sur
+        la cas français.
+      </>
+    ),
+    description: (
+      <p>
         Le problème des loyers élevés est le plus souvent analysé par le biais
         des locataires et les conséquences sur ces derniers&nbsp;: suroccupation
         des logements, expulsions, impacts sur les budgets des ménages,
@@ -445,7 +664,7 @@ export const NEWS = [
         logements mis en location, la reconversion de logements en hébergements
         touristiques sur les plateformes du type Airbnb et la régulation des
         loyers.
-      </>
+      </p>
     ),
     image: 'images/news/news-14.jpg',
   },
@@ -462,8 +681,23 @@ export const NEWS = [
         contrôle de l’étalement urbain depuis les périphéries métropolitaines
       </>
     ),
-    description: (
+    summary: (
       <>
+        La présentation propose de discuter les injonctions qui s&apos;imposent
+        aux territoires périurbains depuis le tournant des années 2000 sous la
+        bannière du contrôle de l&apos;étalement urbain. En mobilisant
+        l&apos;entrée de l&apos;urbanisme et du logement, nous explorerons les
+        enjeux de densification, de production de logements sociaux, de contrôle
+        de l&apos;ouverture de terrains à l&apos;urbanisation pour analyser la
+        manière dont les acteurs politiques locaux font valoir leurs intérêts.
+        Au croisement de l&apos;impératif réglementaire et de la construction de
+        politiques publiques locales, la présentation à vocation à analyser la
+        diversité des espaces périurbains et à mettre en exergue une lecture
+        véritablement politique du contrôle de l&apos;étalement urbain.
+      </>
+    ),
+    description: (
+      <p>
         La présentation propose de discuter les injonctions qui s&apos;imposent
         aux territoires périurbains depuis le tournant des années 2000 sous la
         bannière du contrôle de l&apos;étalement urbain. En mobilisant
@@ -487,7 +721,7 @@ export const NEWS = [
         l&apos;angle des enjeux sociaux et spatiaux, de la métropolisation, de
         la production de logements, de la ségrégation et de l&apos;accès aux
         services publics.
-      </>
+      </p>
     ),
     image: 'images/news/news-13.jpg',
   },
@@ -499,8 +733,23 @@ export const NEWS = [
     },
     title: 'Conférence MétroFabLab #10',
     subtitle: <>Michel Favre —&nbsp;Dessine-moi une rivière</>,
-    description: (
+    summary: (
       <>
+        S’écoulant à Genève depuis la France voisine, la rivière l’Aire est le
+        théâtre d’un vaste projet de restauration pour la libérer de 100 ans de
+        canalisation, pollution et dégradations. Le processus de renaturation
+        accompagne une profonde réflexion sur le paysage et le rôle de l’Homme
+        dans la Nature. Tourné durant plus de 3 ans, le film «&nbsp;Dessine-moi
+        une rivière&nbsp;» suit les ouvriers dans leurs travaux de restauration
+        de la rivière et des milieux naturels adjacents. Guidé par les dessins
+        de l’architecte Georges Descombes et du groupement Superpositions, le
+        film méandre entre les saisons et les étapes de constructions, au fil
+        d’une douce musique intérieure qui dévoile les enjeux planétaires de ce
+        petit morceau de territoire. Un film fleuve pour une petite rivière.
+      </>
+    ),
+    description: (
+      <p>
         S’écoulant à Genève depuis la France voisine, la rivière l’Aire est le
         théâtre d’un vaste projet de restauration pour la libérer de 100 ans de
         canalisation, pollution et dégradations. Le processus de renaturation
@@ -523,7 +772,7 @@ export const NEWS = [
         Romande en tant que réalisateur de reportage et a également enseigné le
         cinéma à la Haute Ecole d’Art et de Design (HEAD GE) de Genève de 2006 à
         2014.
-      </>
+      </p>
     ),
     image: 'images/news/news-12.png',
   },
@@ -537,8 +786,23 @@ export const NEWS = [
     subtitle: (
       <>Nadia Arab —&nbsp;L’agir métropolitain comme objet de recherche</>
     ),
-    description: (
+    summary: (
       <>
+        Au cours de cette conférence, Nadia Arab reviendra sur une recherche
+        consacrée à l’action publique dans la fabrique métropolitaine. L’accent
+        sera mis sur le processus de recherche. Nous verrons ainsi la
+        trajectoire d’un travail qui, parti d’une recherche action visant à
+        accompagner le renouvellement de l’action publique dans une ville en
+        décroissance examine, de façon rétrospective, politiques et projets
+        urbains métropolitains pour comprendre la situation actuelle et mettre à
+        jour des phénomènes structurants, invisibilisés au cours des 30
+        dernières années autant par les recherches sur les métropoles que par
+        les pratiques en faveur des métropoles. écosystèmes d’innovation pour la
+        ville durable et inclusive
+      </>
+    ),
+    description: (
+      <p>
         Au cours de cette conférence, Nadia Arab reviendra sur une recherche
         consacrée à l’action publique dans la fabrique métropolitaine. L’accent
         sera mis sur le processus de recherche. Nous verrons ainsi la
@@ -562,7 +826,7 @@ export const NEWS = [
         circularité&nbsp;; la fabrique de la ville productive et sa place dans
         la transition écologique&nbsp;; l’ingénierie publique dans les
         écosystèmes d’innovation pour la ville durable et inclusive
-      </>
+      </p>
     ),
     image: 'images/news/news-11.png',
   },
@@ -576,8 +840,20 @@ export const NEWS = [
     subtitle: (
       <>Hélène Noizet —&nbsp;Principes temporels de la morphologie urbaine</>
     ),
-    description: (
+    summary: (
       <>
+        De quelle manière le rapport au temps structure la morphologie urbaine ?
+        En explorant l’articulation temporelle entre projets et processus. Car
+        la fabrique urbaine est un processus qui comporte une série de projets,
+        en général disjoints (ce ne sont pas les mêmes acteurs au même moment,
+        et ils ont à chaque fois une finalité propre), mais réactivant ou
+        modifiant des structures spatiales héritées. Pour produire un espace
+        urbain qui fait sens, on gagne à suivre, dans la longue durée, la
+        transmission des formes urbaines par leur transformation d’usage.
+      </>
+    ),
+    description: (
+      <p>
         De quelle manière le rapport au temps structure la morphologie urbaine ?
         En explorant l’articulation temporelle entre projets et processus. Car
         la fabrique urbaine est un processus qui comporte une série de projets,
@@ -594,7 +870,7 @@ export const NEWS = [
         pratiques des acteurs. Après avoir travaillé sur la ville de Tours, elle
         explore la fabrication des formes urbaines à Paris, notamment à travers
         le projet Alpage, projet qu’elle coordonne depuis 2006
-      </>
+      </p>
     ),
     image: 'images/news/news-10.png',
   },
@@ -607,11 +883,17 @@ export const NEWS = [
     title: 'Colloque',
     subtitle:
       'Devenirs des métiers de la fabrique des territoires habités. Émergences. Trans’formations. Hybridations. Floutages',
-    description: (
+    summary: (
       <>
         Un événement organisé avec l’appui des étudiant·es de Master 2 AUEP,
         sous la direction de Théa Manola et Roberta Ghelli.
       </>
+    ),
+    description: (
+      <p>
+        Un événement organisé avec l’appui des étudiant·es de Master 2 AUEP,
+        sous la direction de Théa Manola et Roberta Ghelli.
+      </p>
     ),
     image: 'images/news/news-9.png',
   },
@@ -628,8 +910,27 @@ export const NEWS = [
         et participation
       </>
     ),
-    description: (
+    summary: (
       <>
+        Des chercheurs se sont intéressés aux imaginaires que l’urbanisme
+        mobilise. D’autres ont réfléchi aux histoires que des habitants
+        racontent quand ils sont impliqués dans des projets d’aménagement.
+        D’autres encore ont montré comment la puissance narrative des projets de
+        planification facilite leur réalisation, en persuadant un public de leur
+        intérêt. Au début des années 2000, la proximité du storytelling avec la
+        communication politique a conduit à un renouvellement des approches
+        critiques. Des lectures plus foucaldiennes ont fait du récit instrument
+        de gouvernementalité. Ces approches s’inscrivent souvent dans un modèle
+        linéaire de l’usage du récit en urbanisme. J’aimerais proposer, en
+        puisant dans les media studies, un modèle plus sensible à la diversité
+        de médias et supports mobilisés pour narrer les politiques d’aménagement
+        ainsi que les artefacts (documents, projets…) qui en découlent. Un
+        modèle de surcroît plus apte à décrire l’hybridation croissante de la
+        communication et de la participation dans la fabrique métropolitaine.
+      </>
+    ),
+    description: (
+      <p>
         Des chercheurs se sont intéressés aux imaginaires que l’urbanisme
         mobilise. D’autres ont réfléchi aux histoires que des habitants
         racontent quand ils sont impliqués dans des projets d’aménagement.
@@ -650,7 +951,7 @@ export const NEWS = [
         s’intéressent, au croisement de l’ethnographie et des études
         littéraires, aux enjeux de la mise en récit de la fabrication de la
         ville.
-      </>
+      </p>
     ),
     image: 'images/news/news-8.png',
   },
@@ -661,7 +962,7 @@ export const NEWS = [
       year: 2023,
     },
     title: 'Participation au challenge APERAU',
-    description: (
+    summary: (
       <>
         Trois étudiant·es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
         allé·es à Paris pour représenter l’Institut d’urbanisme et de géographie
@@ -675,6 +976,21 @@ export const NEWS = [
         de fraîcheur, ce qui leur a permis d’arriver sur la troisième place du
         podium.
       </>
+    ),
+    description: (
+      <p>
+        Trois étudiant·es du M2 AUEP et une étudiante du M1 UPU de l’IUGA sont
+        allé·es à Paris pour représenter l’Institut d’urbanisme et de géographie
+        alpine face à 9 autres équipes francophones. Cette année la commande
+        avait pour question&nbsp;: «&nbsp;s’il vous plaît le quartier de la gare
+        ?&nbsp;» en référence au chantier de la future gare du grand Paris
+        express de Noisy Champs (à l’est de Paris). L’équipe grenobloise a
+        proposé un projet intitulé «&nbsp;Quartiers vivants quartiers
+        mouvants&nbsp;» autour d’une méthodologie originale s’appuyant sur de
+        l’acupuncture urbaine et une réflexion sur la biodiversité et les îlots
+        de fraîcheur, ce qui leur a permis d’arriver sur la troisième place du
+        podium.
+      </p>
     ),
     image: 'images/news/news-7.png',
   },
@@ -691,8 +1007,23 @@ export const NEWS = [
         dépasser le «&nbsp;projet urbain&nbsp;»&nbsp;?&nbsp;(2)
       </>
     ),
-    description: (
+    summary: (
       <>
+        L&apos;histoire récente de l&apos;urbanisme peut être décrite comme une
+        séquence de trois périodes dont la superposition est peut-être
+        génératrice du climat d&apos;incertitude dans lequel se déploient les
+        modes de production de la ville contemporaine. La première est celle de
+        «&nbsp;l&apos;urbanisme programmatique&nbsp;», la seconde est celle
+        d&apos;un « urbanisme de projet&nbsp;», la troisième, encore naissante,
+        pourrait mériter le nom d&apos;«&nbsp;urbanisme de
+        l&apos;incertitude&nbsp;». Cette troisième période, encore balbutiante,
+        cherche ses marques et ses concepts pour relever les défis de
+        l&apos;anthropocène. Nous en proposerons et discuterons trois&nbsp;: les
+        confins du territoire, le récit du lieu et l&apos;utopie opératoire.
+      </>
+    ),
+    description: (
+      <p>
         L&apos;histoire récente de l&apos;urbanisme peut être décrite comme une
         séquence de trois périodes dont la superposition est peut-être
         génératrice du climat d&apos;incertitude dans lequel se déploient les
@@ -710,7 +1041,7 @@ export const NEWS = [
         d&apos;études CONTREPOINT Projets urbains à Lausanne, il poursuit
         aujourd&apos;hui une activité indépendante de pratique, conseil et
         conception sur “la transition écologique par le projet”.
-      </>
+      </p>
     ),
     image: 'images/news/news-6.png',
   },
@@ -727,8 +1058,27 @@ export const NEWS = [
         «&nbsp;projet urbain&nbsp;»&nbsp;?
       </>
     ),
-    description: (
+    summary: (
       <>
+        La ville d’aujourd’hui n’a plus grand-chose à voir avec celle du siècle
+        passé&nbsp;: urbanisation diffuse, centres commerciaux et grands
+        équipements isolés, lotissements sécurisés… Les territoires sont parfois
+        difficiles à nommer et cette dispersion accentue les fractures sociales.
+        Face à ce constat, les avis divergent&nbsp;: faut-il exclusivement
+        défendre les métropoles au nom d’un ruissellement économique qui
+        profiterait à tous, ou se ranger du côté des territoires berceaux de
+        l’authenticité&nbsp;? Les propositions de Philippe Panerai plaident pour
+        une complémentarité des centres et des périphéries, pour une diversité
+        des manières d’habiter et de vivre, et propose des pistes pour y
+        parvenir. Il traite des dispositions et des formes de la ville de demain
+        en privilégiant le respect des équilibres environnementaux, car le
+        travail des urbanistes et les décisions qu’il implique ne peuvent plus
+        ignorer aujourd’hui la fragilité de notre monde et l’urgence d’y
+        remédier.
+      </>
+    ),
+    description: (
+      <p>
         La ville d’aujourd’hui n’a plus grand-chose à voir avec celle du siècle
         passé&nbsp;: urbanisation diffuse, centres commerciaux et grands
         équipements isolés, lotissements sécurisés… Les territoires sont parfois
@@ -750,7 +1100,7 @@ export const NEWS = [
         associé au LAA, Laboratoire Architecture et Anthropologie (CNRS), ses
         recherches sur les formes urbaines et son activité d’urbaniste lui ont
         valu le Grand Prix d’Urbanisme en 1999.
-      </>
+      </p>
     ),
     image: 'images/news/news-5.png',
   },
@@ -767,8 +1117,27 @@ export const NEWS = [
         Law Olmsted
       </>
     ),
-    description: (
+    summary: (
       <>
+        La crise sanitaire nous a récemment rappelé l’importance de l’arbre pour
+        les habitants des villes, non seulement comme «&nbsp;poumon&nbsp;»
+        permettant de dépolluer l’air ou comme «&nbsp;climatiseur&nbsp;»
+        régulant les températures estivales, mais aussi comme pacificateur des
+        esprits éprouvés par le stress de la vie quotidienne. Le paysagiste
+        Frederick Law Olmsted (1822-1903), conscient de ces différents bienfaits
+        procurés par la nature, œuvra à l’invention d’un nouveau projet
+        métropolitain dont l’armature – verte – était constituée de parcs,
+        parkways, park systems, suburbs. Chacun de ces éléments du
+        «&nbsp;système&nbsp;» était conçu de manière à offrir à la population
+        américaine des conditions de vie plus saines et des espaces publics
+        accessibles à tous. A l’heure où les métropoles sont invitées à
+        contribuer à la lutte contre le réchauffement climatique et à proposer
+        des espaces urbains plus apaisés, les propositions d’Olmsted conservent
+        toute leur actualité et pertinence.
+      </>
+    ),
+    description: (
+      <p>
         La crise sanitaire nous a récemment rappelé l’importance de l’arbre pour
         les habitants des villes, non seulement comme «&nbsp;poumon&nbsp;»
         permettant de dépolluer l’air ou comme «&nbsp;climatiseur&nbsp;»
@@ -796,7 +1165,7 @@ export const NEWS = [
         mythe de la ville-nature américaine (2008), Frank Lloyd Wright,
         Broadacre City&nbsp;: la nouvelle frontière (2015) et Frederick Law
         Olmsted, architecte du paysage (2021).
-      </>
+      </p>
     ),
     image: 'images/news/news-4.png',
   },
@@ -810,8 +1179,27 @@ export const NEWS = [
     subtitle: (
       <>André Lortie —&nbsp;De quoi l’urbanisme est-il le projet&nbsp;?</>
     ),
-    description: (
+    summary: (
       <>
+        Alors que les questions environnementales s’imposent de manière
+        pressante aux acteurs de la production et de la gestion des territoires,
+        force est de constater que les réponses qu’ils y apportent continuent
+        d’être majoritairement standardisées. Quelles sont ces forces qui
+        imposent ces solutions urbaines et architecturales, alors que notre
+        intelligence des lieux et des situations sait si bien mettre en évidence
+        ce qui les caractérise et les singularise&nbsp;? Et si l’urbanisme,
+        comme champ d’action rassemblant un ensemble de dispositifs qui
+        contribue au contrôle de la société industrielle et de l’activité de ses
+        membres, répondait à un projet d’intensification de ses fonctions de
+        production et de consommation, qui le surplomberait et le
+        surdéterminerait&nbsp;? Quelles pistes esquisser alors pour en
+        (re)prendre le contrôle&nbsp;? Mieux comprendre la généalogie de
+        l’urbanisme s’avère utile pour en faire une critique et s’interroger sur
+        ce dont il devrait être le projet.
+      </>
+    ),
+    description: (
+      <p>
         Alors que les questions environnementales s’imposent de manière
         pressante aux acteurs de la production et de la gestion des territoires,
         force est de constater que les réponses qu’ils y apportent continuent
@@ -839,7 +1227,7 @@ export const NEWS = [
         Pavillon de l’Arsenal (Paris) et ont été publiés dans divers ouvrages,
         dont Des Fortifs au périf (1991, 2021), Les Années 60, Montréal voit
         grand (2004).
-      </>
+      </p>
     ),
     image: 'images/news/news-3.png',
   },
@@ -857,8 +1245,23 @@ export const NEWS = [
         transitions et transformations territoriales
       </>
     ),
-    description: (
+    summary: (
       <>
+        Le contexte de changement rapide, de multiples transitions et de
+        transformation de nos territoires et de nos sociétés interroge les
+        conditions contemporaines des fabriques métropolitaines. Face aux enjeux
+        et impératifs écologiques, mais également sociaux, économiques et
+        politiques, nous avons besoin de renouveler les cadres d’analyse et les
+        approches conceptuelles. Nous explorerons alors l’évolution récente des
+        typologies des conditions et finalités de l’action publique territoriale
+        (en suivant le champ théorique de la planification urbaine) afin de
+        discuter d’une possible &quot;boussole&quot; des fabriques
+        métropolitaines qui permettrait d’objectiver les débats et de mieux
+        accompagner l’action dans ces mutations profondes.
+      </>
+    ),
+    description: (
+      <p>
         Le contexte de changement rapide, de multiples transitions et de
         transformation de nos territoires et de nos sociétés interroge les
         conditions contemporaines des fabriques métropolitaines. Face aux enjeux
@@ -883,7 +1286,7 @@ export const NEWS = [
         de coopération universitaire pour le Midwest et directeur adjoint de la
         Villa Albertine à Chicago où il a, notamment, la responsabilité du
         programme City&nbsp;/&nbsp;Cité.
-      </>
+      </p>
     ),
     image: 'images/news/news-2.png',
   },
@@ -900,8 +1303,20 @@ export const NEWS = [
         métropolitaine&nbsp;?
       </>
     ),
-    description: (
+    summary: (
       <>
+        Alors qu’un nouveau partage idéologique semble à l’œuvre, opposant des
+        métrophiles à des métrophobes, nous proposons de revenir plutôt aux
+        enjeux d’un urbanisme descriptif&nbsp;: avec quels trucs et ficelles
+        pour observer les transformations urbaines et professionnelles ? Dans
+        quel état d’esprit et pour quels observables ? La critique revient alors
+        à montrer ce qu’un regard hors des bonnes pratiques, attentif à
+        l’ordinaire des activités comme aux déroutes de projet, permet de
+        penser.
+      </>
+    ),
+    description: (
+      <p>
         Alors qu’un nouveau partage idéologique semble à l’œuvre, opposant des
         métrophiles à des métrophobes, nous proposons de revenir plutôt aux
         enjeux d’un urbanisme descriptif&nbsp;: avec quels trucs et ficelles
@@ -923,7 +1338,7 @@ export const NEWS = [
         (Environnement urbain, 2018), &quot;projets en échec&nbsp;: déroutes et
         déréalisations&quot; (Cahiers de la recherche architecturale, urbaine et
         paysagère, 2021).
-      </>
+      </p>
     ),
     image: 'images/news/news-1.png',
   },

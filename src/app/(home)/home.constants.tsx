@@ -156,7 +156,7 @@ export const NEWS = [
         Transition au Palais des Sports de Grenoble.
       </>
     ),
-    image: 'images/news/news-17.jpg',
+    image: 'images/news/news-22.jpg',
   },
   {
     date: {
@@ -202,7 +202,7 @@ export const NEWS = [
         particulier.
       </>
     ),
-    image: 'images/news/news-22.png',
+    image: 'images/news/news-21.png',
   },
   {
     date: {
@@ -242,7 +242,7 @@ export const NEWS = [
         projet de paysage.
       </>
     ),
-    image: 'images/news/news-21.png',
+    image: 'images/news/news-20.png',
   },
   {
     date: {
@@ -278,7 +278,7 @@ export const NEWS = [
         festival La machine dans le jardin à Mellionnec.
       </>
     ),
-    image: 'images/news/news-20.png',
+    image: 'images/news/news-19.png',
   },
   {
     date: {
@@ -312,7 +312,7 @@ export const NEWS = [
         faire face.
       </>
     ),
-    image: 'images/news/news-19.png',
+    image: 'images/news/news-18.png',
   },
   {
     date: {
@@ -329,7 +329,7 @@ export const NEWS = [
         AUEP. Réalisation d’un podcast.
       </>
     ),
-    image: 'images/news/news-18.png',
+    image: 'images/news/news-17.png',
   },
   {
     date: {
@@ -391,6 +391,7 @@ export const NEWS = [
         Lab&apos;URBA, Université Paris-Est.
       </>
     ),
+    image: 'images/news/news-16.jpg',
   },
   {
     date: {
@@ -405,7 +406,7 @@ export const NEWS = [
         (Université de Genève).
       </>
     ),
-    image: 'images/news/news-16.png',
+    image: 'images/news/news-15.png',
   },
   {
     date: {
@@ -446,6 +447,7 @@ export const NEWS = [
         loyers.
       </>
     ),
+    image: 'images/news/news-14.jpg',
   },
   {
     date: {
@@ -487,6 +489,7 @@ export const NEWS = [
         services publics.
       </>
     ),
+    image: 'images/news/news-13.jpg',
   },
   {
     date: {

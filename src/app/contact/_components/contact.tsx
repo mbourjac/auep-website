@@ -30,18 +30,21 @@ export const Contact = () => {
       address: '60 Av. de Constantine CS 12636',
       city: '38036 Grenoble Cedex 2',
       picture: 'images/contact/ensag.jpg',
+      link: 'https://www.grenoble.archi.fr/',
     },
     {
       name: 'Institut d’Urbanisme et de Géographie Alpine',
       address: '14 et 14 Bis Avenue Marie Reynoard',
       city: '38100 Grenoble',
       picture: 'images/contact/iuga.jpg',
+      link: 'https://iuga.univ-grenoble-alpes.fr/institut-d-urbanisme-et-de-geographie-alpine/accueil-iuga-975218.kjsp',
     },
     {
       name: 'Sciences Po Grenoble',
       address: '1030 Av. Centrale',
       city: "38400 Saint-Martin-d'Hères",
       picture: 'images/contact/siences-po.jpg',
+      link: 'https://www.sciencespo-grenoble.fr/',
     },
   ];
 
@@ -92,28 +95,30 @@ export const Contact = () => {
                 ))}
               </ul>
               <ul className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                {INSTITUTIONS.map(({ name, address, city, picture }) => (
+                {INSTITUTIONS.map(({ name, address, city, picture, link }) => (
                   <li key={name} className="relative flex-col">
-                    <p className="absolute px-2 py-1">
-                      <span className="bg-primary box-decoration-clone px-2 text-xl font-bold text-white sm:text-2xl">
-                        {name}
-                      </span>
-                    </p>
-                    <DitherCanvas
-                      src={picture}
-                      height={240}
-                      fitMode="cover"
-                      className="w-full"
-                    />
-                    <address className="absolute bottom-0 px-2 py-1">
-                      <span className="bg-primary px-2 text-xl font-bold text-white">
-                        {address}
-                      </span>
-                      <br />
-                      <span className="bg-primary px-2 text-xl font-bold text-white">
-                        {city}
-                      </span>
-                    </address>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      <p className="absolute px-2 py-1">
+                        <span className="bg-primary box-decoration-clone px-2 text-xl font-bold text-white sm:text-2xl">
+                          {name}
+                        </span>
+                      </p>
+                      <DitherCanvas
+                        src={picture}
+                        height={240}
+                        fitMode="cover"
+                        className="w-full"
+                      />
+                      <address className="absolute bottom-0 px-2 py-1">
+                        <span className="bg-primary px-2 text-xl font-bold text-white">
+                          {address}
+                        </span>
+                        <br />
+                        <span className="bg-primary px-2 text-xl font-bold text-white">
+                          {city}
+                        </span>
+                      </address>
+                    </a>
                   </li>
                 ))}
               </ul>

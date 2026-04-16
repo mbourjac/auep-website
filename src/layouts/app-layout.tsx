@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useRef } from 'react';
 import ReactLenis, { LenisRef } from 'lenis/react';
 import { frame, cancelFrame } from 'motion';
-import { Footer } from '../components/layout/footer';
+import { Footer } from '../components/layout/footer/footer';
 import { Header } from '../components/layout/header';
 
 type AppLayoutProps = {

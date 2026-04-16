@@ -118,7 +118,16 @@ export const NEWS = [
         Une rencontre organisée dans le cadre du séminaire «&nbsp;Les
         controverses de la ville néolibérale&nbsp;», encadré par Marine
         Bourgeois (Sciences Po Grenoble, Pacte) et Grégory Busquet (IUGA,
-        Pacte).
+        Pacte). Le podcast est à réécouter sur le site du{' '}
+        <a
+          href="https://aau.archi.fr/cresson/cressound-2025/cressound-radios/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline underline-offset-2"
+        >
+          CRESSON
+        </a>
+        .
       </p>
     ),
     image: 'images/news/news-25.png',

@@ -45,6 +45,7 @@ export const NewsModal = ({
   const imageHeight = isOverflow
     ? windowHeight - headerHeight - padding * 2 - border * 2
     : contentHeight;
+  const maxContentHeight = windowHeight - headerHeight - padding - border * 2;
 
   useEffect(() => {
     if (isHovered) {
@@ -100,7 +101,9 @@ export const NewsModal = ({
         </div>
         <div
           className="flex"
-          style={{ maxHeight: windowHeight - headerHeight - padding }}
+          style={{
+            maxHeight: maxContentHeight,
+          }}
         >
           {hasImage && (
             <div>
@@ -108,7 +111,7 @@ export const NewsModal = ({
                 <DitherCanvas
                   src={image}
                   fitMode="cover"
-                  height={imageHeight}
+                  height={isOverflow ? maxContentHeight : imageHeight}
                   className="w-[20vw]"
                 />
               ) : (
@@ -129,7 +132,7 @@ export const NewsModal = ({
             </div>
             <Dialog.Description
               asChild
-              className="max-h-full overflow-y-scroll p-4"
+              className="max-h-full overflow-y-auto p-4"
               ref={descriptionRef}
             >
               {description}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Heading } from './heading';
 import { Institutions } from './institutions';
 import { LegalNotices } from './legal-notices';
@@ -16,7 +16,19 @@ export const Footer = () => {
 
     if (!wrapper) return;
 
-    setWrapperHeight(wrapper.getBoundingClientRect().height);
+    const updateHeight = () => {
+      setWrapperHeight(wrapper.getBoundingClientRect().height);
+    };
+
+    updateHeight();
+
+    const observer = new ResizeObserver(() => {
+      updateHeight();
+    });
+
+    observer.observe(wrapper);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -30,7 +42,6 @@ export const Footer = () => {
       <div
         ref={wrapperRef}
         className="fixed bottom-0 flex w-full flex-col gap-12 px-4 py-6 sm:px-6 sm:py-8 xl:px-12"
-        style={{ height: wrapperHeight ? `${wrapperHeight}px` : undefined }}
       >
         <Heading />
         <div className="flex items-center justify-between gap-12 lg:grid lg:grid-cols-2 2xl:hidden">

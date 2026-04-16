@@ -8,7 +8,7 @@ type LogosProps = {
 export const Logos = ({ className }: LogosProps) => {
   return (
     <div className={cn('w-[80vw] md:w-[60vw] lg:w-[40vw]', className)}>
-      <Image src="/logos.png" width={3026} height={464} alt="" />
+      <Image src="/images/logos.webp" width={3026} height={464} alt="" />
     </div>
   );
 };

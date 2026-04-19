@@ -21,8 +21,9 @@ const azeretMono = Azeret_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'AUEP',
-  description: 'AUEP',
+  title: 'AUEP - Architecture, Urbanisme et Études Politiques',
+  description:
+    'Architecture, Urbanisme et Études Politiques est une formation tri-diplômante portée conjointement par trois établissements composantes de l’Université Grenoble Alpes',
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {

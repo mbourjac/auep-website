@@ -1760,8 +1760,59 @@ export const PROJECT_WORKSHOPS_SECTION = {
       areas: [
         'Tignieu-Jameyzieu (Isère, 2022, 2023)',
         'Romans-sur-Isère et Bourg-de-Péage (Drôme, 2024, 2025)',
+        'le grand parc des boucles de l’Isère (2026)',
       ],
       years: [
+        {
+          label: '2025-2026',
+          mentoring: [
+            'Marine Beuerle',
+            'Marine Bourgeois',
+            'Edith Chezel',
+            'Vincent Rigassi',
+            'Nicolas Tixier (resp.)',
+          ],
+          projectWorkshops: [
+            {
+              students: [
+                'Adrien Chaussende',
+                'Barthélémy Cuilleret',
+                'Clément Freyssenet',
+                'Lou Heffner',
+                'Alice Molin',
+              ],
+              id: '4a47dee6',
+              title: null,
+              description: null,
+              pictures: [],
+            },
+            {
+              students: [
+                'Emma Bokhobza',
+                'Sarah Desreumaux',
+                'Léon Gentil',
+                'Gwennaëlle Leconte–Omer',
+              ],
+              id: '289a6586',
+              title: null,
+              description: null,
+              pictures: [],
+            },
+            {
+              students: [
+                'Martin Chaize',
+                'Rose Desmartin',
+                'Laïss El Khaledi',
+                'Siham Karzeb',
+                'Jihane Slimani',
+              ],
+              id: '81354192',
+              title: null,
+              description: null,
+              pictures: [],
+            },
+          ],
+        },
         {
           label: '2024-2025',
           mentoring: [

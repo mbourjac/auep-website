@@ -3,6 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { useLenis } from 'lenis/react';
 import { XMarkIcon } from '@/components/icons/x-mark-icon';
 import { SquareWithDiagonals } from '../../../components/square-with-diagonals';
+import { cn } from '../../../lib/tailwind';
 import { ProjectWorkshop, ProjectWorkshopsSemester } from '../works.types';
 
 type ProjectWorkshopModalProps = ProjectWorkshop & {
@@ -67,7 +68,11 @@ export const ProjectWorkshopModal = ({
             <Dialog.Description asChild>
               <div className="flex flex-col gap-4 overflow-y-auto p-4">
                 <div>
-                  <p className="border-b font-semibold">
+                  <p
+                    className={cn(
+                      (title || description) && 'border-b font-semibold'
+                    )}
+                  >
                     {students.join(' - ')}
                   </p>
                   <p>{title}</p>

@@ -1,6 +1,77 @@
 export const NEWS = [
   {
     date: {
+      day: 20,
+      month: 4,
+      year: 2026,
+    },
+    title: 'Conférence MétroFabLab #18',
+    subtitle: (
+      <>
+        Paul Landauer —&nbsp;Post-démolition. L’architecture face aux nouvelles
+        ruines
+      </>
+    ),
+    summary: (
+      <>
+        Nous sommes aujourd’hui confrontés à un paradoxe majeur&nbsp;: il
+        faudrait construire un monde nouveau, mais nous n’avons plus les moyens
+        de le faire. Les vastes enjeux du climat et des limites planétaires
+        doivent donc s’envisager à l’intérieur des situations déjà construites.
+        Mais comment convertir des sols et des bâtiments dégradés —&nbsp;ruines
+        potentielles ou avérées&nbsp;— en substrats d’un monde durable&nbsp;? La
+        plupart des artefacts au sein desquels nous évoluons ont en effet été
+        construits au cours du dernier siècle&nbsp;; à ce titre, ils sont très
+        largement responsables des dérèglements écologiques que nous subissons
+        aujourd’hui. Les main¬tenir ne peut s’envisager sans reconsidérer la
+        capacité de ces mêmes arte¬facts à compenser des perturbations dont ils
+        sont eux-mêmes la cause. Il ne suffit donc pas de substituer la
+        transformation à la construction&nbsp;; il nous revient également
+        d’aborder les questions techniques et théoriques que pose aujourd’hui la
+        réparation d’un héritage chargé –&nbsp;en quantité comme en
+        désordre&nbsp;– avec lequel nous sommes désormais contraints de nous
+        arranger.
+      </>
+    ),
+    description: (
+      <p>
+        Nous sommes aujourd’hui confrontés à un paradoxe majeur&nbsp;: il
+        faudrait construire un monde nouveau, mais nous n’avons plus les moyens
+        de le faire. Les vastes enjeux du climat et des limites planétaires
+        doivent donc s’envisager à l’intérieur des situations déjà construites.
+        Mais comment convertir des sols et des bâtiments dégradés —&nbsp;ruines
+        potentielles ou avérées&nbsp;— en substrats d’un monde durable&nbsp;? La
+        plupart des artefacts au sein desquels nous évoluons ont en effet été
+        construits au cours du dernier siècle&nbsp;; à ce titre, ils sont très
+        largement responsables des dérèglements écologiques que nous subissons
+        aujourd’hui. Les main¬tenir ne peut s’envisager sans reconsidérer la
+        capacité de ces mêmes arte¬facts à compenser des perturbations dont ils
+        sont eux-mêmes la cause. Il ne suffit donc pas de substituer la
+        transformation à la construction&nbsp;; il nous revient également
+        d’aborder les questions techniques et théoriques que pose aujourd’hui la
+        réparation d’un héritage chargé –&nbsp;en quantité comme en
+        désordre&nbsp;– avec lequel nous sommes désormais contraints de nous
+        arranger.
+        <br />
+        <br />
+        Paul Landauer est architecte, docteur en architecture, HDR et professeur
+        à l&apos;ENSA Paris-Est où il dirige la filière de master
+        «&nbsp;Transformation&nbsp;».
+        <br />
+        Il est membre permanent de l’OCS (ENSA Paris-Est) et architecte
+        praticien au sein de l’atelier Füzesséry Landauer (AFL). Il a publié
+        plusieurs livres et de nombreux articles. Son dernier ouvrage, paru aux
+        éditions Building Books en 2025 a pour titre Post-Démolition. Il prépare
+        une exposition sur les architectures du stock pour le Pavillon de
+        l’Arsenal à Paris. Depuis septembre 2024, il co-anime le réseau
+        international «&nbsp;Architecture et transformation&nbsp;» du ministère
+        de la Culture.
+      </p>
+    ),
+    image: 'images/news/26-04-20-conference-metrofablab-18.png',
+  },
+  {
+    date: {
       day: 27,
       month: 3,
       year: 2026,
@@ -81,7 +152,58 @@ export const NEWS = [
         </p>
       </div>
     ),
-    image: 'images/news/news-26.png',
+    image: 'images/news/26-03-27-challenge-aperau.png',
+  },
+  {
+    date: {
+      day: 19,
+      month: 3,
+      year: 2026,
+    },
+    title: 'Conférence MétroFabLab #17',
+    subtitle: (
+      <>
+        Emmanuelle Bonneau —&nbsp;Recherche-action-formation&nbsp;: un projet
+        territorialiste
+      </>
+    ),
+    summary: (
+      <>
+        Transformer les pratiques de l’urbanisme implique d’envisager
+        conjointement le changement des politiques publiques qui gouvernent
+        l’action technique et l’enseignement qui conduit à ces pratiques. Le
+        parcours d’Alberto Magnaghi (1941-2023), fondateur de l’école
+        territorialiste italienne, est manifeste de cette articulation entre une
+        recherche qui passe par l’implication dans l’action et conduit à une
+        révolution de la formation pour répondre aux défis
+        socio-environnementaux de notre temps.
+      </>
+    ),
+    description: (
+      <p>
+        Transformer les pratiques de l’urbanisme implique d’envisager
+        conjointement le changement des politiques publiques qui gouvernent
+        l’action technique et l’enseignement qui conduit à ces pratiques. Le
+        parcours d’Alberto Magnaghi (1941-2023), fondateur de l’école
+        territorialiste italienne, est manifeste de cette articulation entre une
+        recherche qui passe par l’implication dans l’action et conduit à une
+        révolution de la formation pour répondre aux défis
+        socio-environnementaux de notre temps.
+        <br />
+        <br />
+        Emmanuelle Bonneau est urbaniste et paysagiste, enseignante-chercheuse à
+        l’institut d’Aménagement, de Tourisme et d’Urbanisme (IATU, Université
+        Bordeaux Montaigne) et à l’UMR Passages.
+        <br />
+        Ses travaux portent sur l’organisation des rapports ville-nature et
+        ville-campagne dans les projets d’urbanisme.
+        <br />
+        Elle a dirigé la publication de L’urbanisme en transition&nbsp;:
+        écologisation et coopération (2024), Le projet territorialiste. Une
+        anthologie (2025).
+      </p>
+    ),
+    image: 'images/news/26-03-19-conference-metrofablab-17.png',
   },
   {
     date: {
@@ -130,7 +252,7 @@ export const NEWS = [
         .
       </p>
     ),
-    image: 'images/news/news-25.png',
+    image: 'images/news/26-03-18-emission-radiophonique-m1.png',
   },
   {
     date: {
@@ -190,7 +312,7 @@ export const NEWS = [
         architecte-urbaniste, et maître de conférences à l’ENSA de Grenoble.
       </p>
     ),
-    image: 'images/news/news-24.png',
+    image: 'images/news/25-11-26-conference-metrofablab-16.png',
   },
   {
     date: {
@@ -250,7 +372,7 @@ export const NEWS = [
         AgroParisTech.
       </p>
     ),
-    image: 'images/news/news-23.png',
+    image: 'images/news/25-11-24-conference-metrofablab-15.png',
   },
   {
     date: {
@@ -285,7 +407,7 @@ export const NEWS = [
         Transition au Palais des Sports de Grenoble.
       </p>
     ),
-    image: 'images/news/news-22.jpg',
+    image: 'images/news/25-05-13-exposition-heritage-metropolitain.jpg',
   },
   {
     date: {
@@ -348,7 +470,7 @@ export const NEWS = [
         particulier.
       </p>
     ),
-    image: 'images/news/news-21.png',
+    image: 'images/news/25-03-31-conference-metrofablab-14.png',
   },
   {
     date: {
@@ -400,7 +522,7 @@ export const NEWS = [
         projet de paysage.
       </p>
     ),
-    image: 'images/news/news-20.png',
+    image: 'images/news/25-03-10-conference-metrofablab-13.png',
   },
   {
     date: {
@@ -447,7 +569,7 @@ export const NEWS = [
         festival La machine dans le jardin à Mellionnec.
       </p>
     ),
-    image: 'images/news/news-19.png',
+    image: 'images/news/24-12-16-conference-metrofablab-12.png',
   },
   {
     date: {
@@ -491,7 +613,7 @@ export const NEWS = [
         faire face.
       </p>
     ),
-    image: 'images/news/news-18.png',
+    image: 'images/news/24-11-04-conference-metrofablab-11.png',
   },
   {
     date: {
@@ -515,7 +637,7 @@ export const NEWS = [
         AUEP. Réalisation d’un podcast.
       </p>
     ),
-    image: 'images/news/news-17.png',
+    image: 'images/news/24-05-16-colloque-de-cerisy.png',
   },
   {
     date: {
@@ -595,7 +717,7 @@ export const NEWS = [
         Lab&apos;URBA, Université Paris-Est.
       </p>
     ),
-    image: 'images/news/news-16.jpg',
+    image: 'images/news/24-05-02-seminaire-de-recherche.jpg',
   },
   {
     date: {
@@ -616,7 +738,7 @@ export const NEWS = [
         (Université de Genève).
       </p>
     ),
-    image: 'images/news/news-15.png',
+    image: 'images/news/24-04-11-journee-rencontres-alumni.png',
   },
   {
     date: {
@@ -675,7 +797,7 @@ export const NEWS = [
         loyers.
       </p>
     ),
-    image: 'images/news/news-14.jpg',
+    image: 'images/news/24-03-07-seminaire-de-recherche.jpg',
   },
   {
     date: {
@@ -732,7 +854,7 @@ export const NEWS = [
         services publics.
       </p>
     ),
-    image: 'images/news/news-13.jpg',
+    image: 'images/news/24-02-08-seminaire-de-recherche.jpg',
   },
   {
     date: {
@@ -783,7 +905,7 @@ export const NEWS = [
         2014.
       </p>
     ),
-    image: 'images/news/news-12.png',
+    image: 'images/news/24-02-05-conference-metrofablab-10.png',
   },
   {
     date: {
@@ -837,7 +959,7 @@ export const NEWS = [
         écosystèmes d’innovation pour la ville durable et inclusive
       </p>
     ),
-    image: 'images/news/news-11.png',
+    image: 'images/news/23-12-04-conference-metrofablab-9.png',
   },
   {
     date: {
@@ -881,7 +1003,7 @@ export const NEWS = [
         le projet Alpage, projet qu’elle coordonne depuis 2006
       </p>
     ),
-    image: 'images/news/news-10.png',
+    image: 'images/news/23-11-27-conference-metrofablab-8.png',
   },
   {
     date: {
@@ -904,7 +1026,7 @@ export const NEWS = [
         sous la direction de Théa Manola et Roberta Ghelli.
       </p>
     ),
-    image: 'images/news/news-9.png',
+    image: 'images/news/23-05-15-colloque.png',
   },
   {
     date: {
@@ -962,7 +1084,7 @@ export const NEWS = [
         ville.
       </p>
     ),
-    image: 'images/news/news-8.png',
+    image: 'images/news/23-04-24-conference-metrofablab-7.png',
   },
   {
     date: {
@@ -1001,7 +1123,7 @@ export const NEWS = [
         podium.
       </p>
     ),
-    image: 'images/news/news-7.png',
+    image: 'images/news/23-03-26-paticipation-challenge-aperau.png',
   },
   {
     date: {
@@ -1052,7 +1174,7 @@ export const NEWS = [
         conception sur “la transition écologique par le projet”.
       </p>
     ),
-    image: 'images/news/news-6.png',
+    image: 'images/news/22-11-21-conference-metrofablab-6.png',
   },
   {
     date: {
@@ -1111,7 +1233,7 @@ export const NEWS = [
         valu le Grand Prix d’Urbanisme en 1999.
       </p>
     ),
-    image: 'images/news/news-5.png',
+    image: 'images/news/22-10-24-conference-metrofablab-5.png',
   },
   {
     date: {
@@ -1176,7 +1298,7 @@ export const NEWS = [
         Olmsted, architecte du paysage (2021).
       </p>
     ),
-    image: 'images/news/news-4.png',
+    image: 'images/news/22-04-25-conference-metrofablab-4.png',
   },
   {
     date: {
@@ -1238,7 +1360,7 @@ export const NEWS = [
         grand (2004).
       </p>
     ),
-    image: 'images/news/news-3.png',
+    image: 'images/news/22-03-21-conference-metrofablab-3.png',
   },
   {
     date: {
@@ -1297,7 +1419,7 @@ export const NEWS = [
         programme City&nbsp;/&nbsp;Cité.
       </p>
     ),
-    image: 'images/news/news-2.png',
+    image: 'images/news/21-12-13-conference-metrofablab-2.png',
   },
   {
     date: {
@@ -1349,6 +1471,6 @@ export const NEWS = [
         paysagère, 2021).
       </p>
     ),
-    image: 'images/news/news-1.png',
+    image: 'images/news/21-11-29-conference-metrofablab-1.png',
   },
 ];

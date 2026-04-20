@@ -1227,14 +1227,6 @@ export const PROJECT_WORKSHOPS_SECTION = {
               pictures: [],
             },
             {
-              students: ['Jihane Slimani'],
-              id: '3d627952',
-              title:
-                'Le chemin des savoirs : une promenade culturelle au coeur des espaces publics',
-              description: null,
-              pictures: [],
-            },
-            {
               students: ['Emma Bokhobza'],
               id: 'a7557651',
               title: 'L’eau comme commun : densifier, sensibiliser, relier',
@@ -2280,7 +2272,7 @@ export const PROJECT_WORKSHOPS_SECTION = {
             },
             {
               students: [
-                'Léa Klein',
+                'Léa Casado',
                 'Marisa Marques Santos',
                 'Cyrille Vanpeene',
               ],

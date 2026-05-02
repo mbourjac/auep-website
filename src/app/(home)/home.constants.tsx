@@ -72,6 +72,55 @@ export const NEWS = [
   },
   {
     date: {
+      day: 15,
+      month: 4,
+      year: 2026,
+    },
+    title: 'Une deuxième émission radiophonique organisée par les M1 AUEP !',
+    subtitle: (
+      <>
+        Grands projets urbains et quête d’attractivité&nbsp;: du projet lillois
+        de l’Union à l’IBA Hambourg. Comprendre et questionner l’ambition
+        d’attractivité métropolitaine
+      </>
+    ),
+    summary: (
+      <>
+        Avec Clément Barbier, maître de conférences en science politique à
+        l’Université Polytechnique Hauts-de-France. Auteur de En quête
+        d’attractivité. Le renouvellement urbain par grand projet dans les
+        métropoles de Lille et Hambourg, publié en 2025 aux Presses
+        universitaires de Rennes.
+      </>
+    ),
+    description: (
+      <p>
+        Avec Clément Barbier, maître de conférences en science politique à
+        l’Université Polytechnique Hauts-de-France. Auteur de En quête
+        d’attractivité. Le renouvellement urbain par grand projet dans les
+        métropoles de Lille et Hambourg, publié en 2025 aux Presses
+        universitaires de Rennes.
+        <br />
+        <br />
+        Une rencontre organisée dans le cadre du séminaire «&nbsp;Les
+        controverses de la ville néolibérale&nbsp;», encadré par Marine
+        Bourgeois (Sciences Po Grenoble, Pacte) et Grégory Busquet (IUGA,
+        Pacte). Le podcast est à réécouter sur le site du{' '}
+        <a
+          href="https://aau.archi.fr/cresson/cressound-2025/cressound-radios/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline underline-offset-2"
+        >
+          CRESSON
+        </a>
+        .
+      </p>
+    ),
+    image: 'images/news/15-04-20-deuxieme-emission-radiophonique-m1.png',
+  },
+  {
+    date: {
       day: 27,
       month: 3,
       year: 2026,

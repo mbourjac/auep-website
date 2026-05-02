@@ -1,4 +1,5 @@
 import { Fragment, RefObject } from 'react';
+import { DitherCanvas } from '../../../components/dither-canvas';
 import { cn } from '../../../lib/tailwind';
 import type { ProjectWorkshopsSemester as ProjectWorkshopsSemesterType } from '../works.types';
 import { ProjectWorkshopsTable } from './project-workshops-table';
@@ -33,22 +34,42 @@ export const ProjectWorkshopsSemester = ({
         {description && <p>{description}</p>}
         {areas && <p>Territoires de projet : {areas.join(', ')}</p>}
       </div>
-      {years.map((year, index) => (
-        <Fragment key={index}>
-          <div
-            className={cn('scroll-mt-24', index !== years.length - 1 && 'pb-4')}
-          >
-            <div className="flex flex-col gap-2.5 border-t-2 py-4">
-              <h3 className="text-lg font-bold">{year.label}</h3>
-              <p>Encadrement : {year.mentoring.join(', ')}</p>
+      {years.map(
+        (
+          { label, description, mentoring, picture, projectWorkshops },
+          index
+        ) => (
+          <Fragment key={index}>
+            <div
+              className={cn(
+                'scroll-mt-24',
+                index !== years.length - 1 && 'pb-4'
+              )}
+            >
+              <div className="flex flex-col gap-2.5 border-t-2 py-4">
+                <h3 className="text-lg font-bold">{label}</h3>
+                {picture && (
+                  <div
+                    style={{ aspectRatio: picture.ratio }}
+                    className="relative overflow-hidden"
+                  >
+                    <DitherCanvas
+                      src={picture.src}
+                      className="absolute inset-0"
+                    />
+                  </div>
+                )}
+                {description && <p>{description}</p>}
+                <p>Encadrement : {mentoring.join(', ')}</p>
+              </div>
+              <ProjectWorkshopsTable
+                projectWorkshops={projectWorkshops}
+                setSelectedProjectWorkshopId={setSelectedProjectWorkshopId}
+              />
             </div>
-            <ProjectWorkshopsTable
-              projectWorkshops={year.projectWorkshops}
-              setSelectedProjectWorkshopId={setSelectedProjectWorkshopId}
-            />
-          </div>
-        </Fragment>
-      ))}
+          </Fragment>
+        )
+      )}
     </div>
   );
 };

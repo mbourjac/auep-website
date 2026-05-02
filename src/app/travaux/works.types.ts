@@ -1,5 +1,11 @@
 import { ReactNode } from 'react';
 
+export type SeminarsSection = {
+  label: string;
+  picture: string;
+  semesters: SeminarsSemester[];
+};
+
 export type Seminar = {
   id: string;
   year: string;
@@ -16,6 +22,13 @@ export type SeminarsSemester = {
   seminars: Seminar[];
 };
 
+export type DissertationsSection = {
+  label: string;
+  description: ReactNode;
+  picture: string;
+  years: DissertationsYear[];
+};
+
 export type Dissertation = {
   id: string;
   student: string;
@@ -30,6 +43,12 @@ export type DissertationsYear = {
   dissertations: Dissertation[];
 };
 
+export type ProjectWorkshopSection = {
+  label: string;
+  picture: string;
+  semesters: ProjectWorkshopsSemester[];
+};
+
 export type ProjectWorkshop = {
   id: string;
   students: string[];
@@ -40,6 +59,11 @@ export type ProjectWorkshop = {
 
 export type ProjectWorkshopsYear = {
   label: string;
+  description: ReactNode | null;
+  picture: {
+    src: string;
+    ratio: string;
+  } | null;
   mentoring: string[];
   projectWorkshops: ProjectWorkshop[];
 };

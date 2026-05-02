@@ -1,6 +1,11 @@
-import { GraduationProjectsSection } from './works.types';
+import {
+  DissertationsSection,
+  GraduationProjectsSection,
+  ProjectWorkshopSection,
+  SeminarsSection,
+} from './works.types';
 
-export const SEMINARS_SECTION = {
+export const SEMINARS_SECTION: SeminarsSection = {
   label: 'séminaires',
   picture: '/images/works/seminars/seminars-1.jpg',
   semesters: [
@@ -282,7 +287,7 @@ export const SEMINARS_SECTION = {
   ],
 };
 
-export const DISSERTATIONS_SECTION = {
+export const DISSERTATIONS_SECTION: DissertationsSection = {
   label: 'mémoires',
   description: (
     <>
@@ -1084,7 +1089,7 @@ export const DISSERTATIONS_SECTION = {
   ],
 };
 
-export const PROJECT_WORKSHOPS_SECTION = {
+export const PROJECT_WORKSHOPS_SECTION: ProjectWorkshopSection = {
   label: 'ateliers de projet',
   picture: '/images/works/project-workshops/project-workshops-1.png',
   semesters: [
@@ -1118,6 +1123,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
       years: [
         {
           label: '2025-2026',
+          description: null,
+          picture: null,
           mentoring: [
             'Edith Chezel',
             'Simon Godard',
@@ -1245,6 +1252,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2024-2025',
+          description: null,
+          picture: null,
           mentoring: [
             'Gaëtan Haist',
             'Théa Manola',
@@ -1414,6 +1423,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2023-2024',
+          description: null,
+          picture: null,
           mentoring: [
             'Giulia Buffoli',
             'Didier Chesneau',
@@ -1458,6 +1469,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2022-2023',
+          description: null,
+          picture: null,
           mentoring: [
             'Marie-Julie Bernard',
             'Didier Chesneau',
@@ -1565,6 +1578,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2021-2022',
+          description: null,
+          picture: null,
           mentoring: [
             'Marie-Julie Bernard',
             'Florian Golay',
@@ -1765,6 +1780,41 @@ export const PROJECT_WORKSHOPS_SECTION = {
       years: [
         {
           label: '2025-2026',
+          description: (
+            <>
+              Au sein de la vallée du Grésivaudan se profile un grand parc,
+              tracé siècle après siècle par le lit de l’Isère, et ses
+              fluctuations, et les tentatives des humains pour l&apos;aménager,
+              le cultiver, le traverser, l&apos;habiter. Dénommé depuis peu le
+              Grand parc des boucles de l’Isère, il se présente comme un projet
+              central pour le développement métropolitain de la polarité
+              Nord-Est de Grenoble. Pour interroger l’habitabilité autour de et
+              avec ce grand parc, plutôt que de le regarder longitudinalement à
+              la vallée et faire de Grenoble un point de départ ou
+              d&apos;arrivée, nous proposons de le considérer transversalement,
+              c’est-à-dire de coteau à coteau, et de réaliser pour cela une
+              coupe sur la vallée allant de la commune de Revel située sur les
+              premiers plateaux balcons de Belledonne, à la commune de Biviers
+              sous les falaises de la Chartreuse. Ce tracé, parcouru à pied
+              selon différents chemins et routes, dessine un véritable transect
+              permettant de saisir la variété des urbanités qui composent la
+              vallée. En partant de la nécessité de travailler avec le déjà là,
+              les étudiant·es du master AUEP ont traversé ce territoire afin
+              d&apos;en choisir trois situations pour penser l’évolution de
+              l’habiter. Ces situations sont à la fois paradigmatiques des
+              urbanités de la vallée et à la fois singulières, car relevant
+              chacune de fait d’un contexte différent. Il s’agit d&apos;un
+              hameau presque à l’abandon en contrebas de Revel, d’un ensemble de
+              bureaux à reconvertir pour partie en logements dans une zone
+              d’entreprises à Montbonnot, et d’un centre ancien à Biviers avec
+              l’accueil de nouveaux logements et une redéfinition d’un espace
+              public.
+            </>
+          ),
+          picture: {
+            src: '/images/works/project-workshops/2025-2026/project-workshops-2025-2026.png',
+            ratio: '2322/916',
+          },
           mentoring: [
             'Marine Beuerle',
             'Marine Bourgeois',
@@ -1815,6 +1865,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2024-2025',
+          description: null,
+          picture: null,
           mentoring: [
             'Grégory Busquet',
             'Cécile Léonardi',
@@ -1940,6 +1992,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2023-2024',
+          description: null,
+          picture: null,
           mentoring: [
             'Margot Bergerand',
             'Marine Bourgeois',
@@ -2041,6 +2095,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2022-2023',
+          description: null,
+          picture: null,
           mentoring: [
             'Margot Bergerand',
             'Marine Bourgeois',
@@ -2130,6 +2186,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2021-2022',
+          description: null,
+          picture: null,
           mentoring: [
             'Marine Bourgeois',
             'Adriana Diaconu',
@@ -2284,6 +2342,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
       years: [
         {
           label: '2025-2026',
+          description: null,
+          picture: null,
           mentoring: [
             'Laure Favier',
             'Federica Gatta (resp.)',
@@ -2337,6 +2397,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2024-2025',
+          description: null,
+          picture: null,
           mentoring: [
             'Laure Brayer',
             'Eliott Ducharme',
@@ -2431,6 +2493,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2023-2024',
+          description: null,
+          picture: null,
           mentoring: [
             'Laure Brayer',
             'Edith Chezel',
@@ -2581,6 +2645,8 @@ export const PROJECT_WORKSHOPS_SECTION = {
         },
         {
           label: '2022-2023',
+          description: null,
+          picture: null,
           mentoring: [
             'Federica Gatta (resp.)',
             'Cécile Léonardi',

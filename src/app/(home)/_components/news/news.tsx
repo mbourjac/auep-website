@@ -1,7 +1,6 @@
-import Link from 'next/link';
-import { PlusIcon } from '@/components/icons/plus-icon';
 import { NEWS } from '../../home.constants';
 import { NewsItem } from './news-item';
+import { SeeMore } from './see-more';
 
 export const News = () => {
   return (
@@ -14,10 +13,7 @@ export const News = () => {
           ))}
           <div className="flex justify-end border-t py-1">
             <div className="flex w-[100px] justify-center text-4xl font-bold md:w-[200px]">
-              <Link href="/actualites" className="w-12 md:w-16">
-                <span className="sr-only">Voir plus d&apos;actualités</span>
-                <PlusIcon aria-hidden="true" />
-              </Link>
+              <SeeMore />
             </div>
           </div>
         </div>

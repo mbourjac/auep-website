@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { useLenis } from 'lenis/react';
-import { XMarkIcon } from '@/components/icons/x-mark-icon';
+import { CloseButton } from '../../../components/close-button';
 import { SquareWithDiagonals } from '../../../components/square-with-diagonals';
 import { cn } from '../../../lib/tailwind';
 import { ProjectWorkshop, ProjectWorkshopsSemester } from '../works.types';
@@ -39,10 +39,7 @@ export const ProjectWorkshopModal = ({
         <div className="border-primary flex items-center justify-between border-b-4">
           <p className="px-4 text-2xl font-bold">Atelier de projet</p>
           <Dialog.Close asChild>
-            <button className="border-primary block cursor-pointer border-l-4">
-              <span className="sr-only">Fermer la fenêtre</span>
-              <XMarkIcon aria-hidden="true" className="size-16" />
-            </button>
+            <CloseButton />
           </Dialog.Close>
         </div>
         <div className="flex overflow-hidden">

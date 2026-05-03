@@ -3,10 +3,10 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { useLenis } from 'lenis/react';
 import useMeasure from 'react-use-measure';
 import { DitherCanvas } from '@/components/dither-canvas';
-import { XMarkIcon } from '@/components/icons/x-mark-icon';
 import { SquareWithDiagonals } from '@/components/square-with-diagonals';
 import { useWindowDimensions } from '@/hooks/use-window-dimensions';
 import { padNumber } from '@/utils/numbers';
+import { CloseButton } from '../../../../components/close-button';
 import { useMediaQuery } from '../../../../hooks/use-media-query';
 import { BREAKPOINTS } from '../../../constants';
 import { NewsItemProps } from './news-item';
@@ -93,10 +93,7 @@ export const NewsModal = ({
             </div>
           </div>
           <Dialog.Close asChild>
-            <button className="border-primary block cursor-pointer border-l-4">
-              <span className="sr-only">Fermer la fenêtre</span>
-              <XMarkIcon aria-hidden="true" className="size-16" />
-            </button>
+            <CloseButton />
           </Dialog.Close>
         </div>
         <div

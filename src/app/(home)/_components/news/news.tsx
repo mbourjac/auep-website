@@ -9,7 +9,7 @@ export const News = () => {
         <p className="text-3xl font-semibold sm:text-4xl">actualités</p>
         <div>
           {NEWS.slice(0, 5).map((item, index) => (
-            <NewsItem key={index} {...item} />
+            <NewsItem key={index} index={index + 1} {...item} />
           ))}
           <div className="flex justify-end border-t py-1">
             <div className="flex w-[100px] justify-center text-4xl font-bold md:w-[200px]">

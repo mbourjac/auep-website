@@ -10,7 +10,7 @@ export const News = () => {
         </h1>
         <section>
           {NEWS.map((item, index) => (
-            <NewsItem key={index} {...item} />
+            <NewsItem key={index} index={index + 1} {...item} />
           ))}
         </section>
       </div>

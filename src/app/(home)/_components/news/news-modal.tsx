@@ -11,7 +11,7 @@ import { useMediaQuery } from '../../../../hooks/use-media-query';
 import { BREAKPOINTS } from '../../../constants';
 import { NewsItemProps } from './news-item';
 
-type NewsModalProps = NewsItemProps & {
+type NewsModalProps = Omit<NewsItemProps, 'index'> & {
   isoDate: string;
   accessibleDate: string;
 };

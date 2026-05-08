@@ -1,4 +1,5 @@
 import { DitherCanvas } from '../../../components/dither-canvas';
+import { SectionHeading } from '../../../components/section-heading';
 
 export const Contact = () => {
   const CONTACTS = [
@@ -56,9 +57,7 @@ export const Contact = () => {
         </h1>
         <div className="flex w-full flex-col gap-32">
           <section>
-            <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold sm:text-3xl">
-              nous contacter
-            </h2>
+            <SectionHeading>nous contacter</SectionHeading>
             <div className="flex flex-col gap-32 border-l-2 pt-8 pl-4">
               <ul className="flex flex-col gap-8">
                 {CONTACTS.map(({ name, institutions, email }) => (

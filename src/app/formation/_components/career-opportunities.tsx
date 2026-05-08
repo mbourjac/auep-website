@@ -1,6 +1,7 @@
 import { RefObject } from 'react';
 import { DitherCanvas } from '@/components/dither-canvas';
 import { Dot } from '@/components/dot';
+import { SectionHeading } from '../../../components/section-heading';
 
 type CareerOpportunitiesProps = {
   careerRef: RefObject<HTMLDivElement | null>;
@@ -16,9 +17,7 @@ export const CareerOpportunities = ({
         id="debouches-professionnels"
         className="scroll-mt-24"
       >
-        <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold sm:text-3xl">
-          débouchés professionnels
-        </h2>
+        <SectionHeading>débouchés professionnels</SectionHeading>
         <div className="flex flex-col gap-4 border-l-2 pt-8 pl-4">
           <DitherCanvas
             src="/images/formation/formation-7.jpg"

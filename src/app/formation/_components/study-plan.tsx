@@ -2,6 +2,7 @@
 
 import { RefObject } from 'react';
 import { Dot } from '@/components/dot';
+import { SectionHeading } from '../../../components/section-heading';
 import { FormationSubSection } from './formation-sub-section';
 
 type StudyPlanProps = {
@@ -22,9 +23,7 @@ export const StudyPlan = ({
   return (
     <section className="text-lg">
       <div ref={studyPlanRef} className="scroll-mt-24">
-        <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold sm:text-3xl">
-          schéma des études
-        </h2>
+        <SectionHeading>schéma des études</SectionHeading>
         <div className="flex gap-4 border-l-2 pt-8 pb-8 pl-4">
           <div className="text-primary grid w-full grid-cols-[auto_1fr_1fr] gap-2 font-semibold">
             <div className="border-primary col-span-3 grid grid-cols-subgrid border-b-16 border-dashed pb-2">

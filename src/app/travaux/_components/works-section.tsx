@@ -1,5 +1,6 @@
 import { ReactNode, RefObject } from 'react';
 import { DitherCanvas } from '../../../components/dither-canvas';
+import { SectionHeading } from '../../../components/section-heading';
 
 type WorksSectionProps = {
   title: string;
@@ -16,9 +17,7 @@ export const WorksSection = ({
 }: WorksSectionProps) => {
   return (
     <section ref={sectionRef} className="scroll-mt-24">
-      <h2 className="w-fit border-x-2 border-t-2 px-4 pt-1 text-2xl font-bold sm:text-3xl">
-        {title}
-      </h2>
+      <SectionHeading>{title}</SectionHeading>
       <div className="flex flex-col border-l-2 pt-8 pl-4">
         <DitherCanvas
           src={picture}

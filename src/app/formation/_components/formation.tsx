@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from 'react';
 import { useInView, UseInViewOptions } from 'motion/react';
-import { ElbowArrowIcon } from '@/components/icons/elbow-arrow-icon';
 import { CareerOpportunities } from './career-opportunities';
 import { Objectives } from './objectives';
 import { SectionLink } from './section-link';
@@ -73,7 +72,7 @@ export const Formation = () => {
           <nav
             role="navigation"
             aria-label="Navigation - formation"
-            className="sticky top-22.5 hidden w-[280px] shrink-0 self-start pt-4 text-xl font-bold xl:block"
+            className="sticky top-22.5 hidden w-[280px] shrink-0 self-start pt-4 xl:block"
           >
             <ul>
               <li>
@@ -83,12 +82,12 @@ export const Formation = () => {
                 >
                   objectifs et compétences
                 </SectionLink>
-                <ul>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
+                <ul className="flex flex-col gap-1 py-1">
+                  <li className="flex items-center gap-1.5">
                     <SectionLink
                       sectionRef={principlesRef}
                       isCurrent={isPrinciplesInView}
+                      isSubSection
                     >
                       cinq grands principes
                     </SectionLink>
@@ -102,41 +101,41 @@ export const Formation = () => {
                 >
                   schéma des études
                 </SectionLink>
-                <ul>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
+                <ul className="flex flex-col gap-1 py-1">
+                  <li className="flex items-center gap-1.5">
                     <SectionLink
                       sectionRef={bachelorRef}
                       isCurrent={isBachelorInView}
+                      isSubSection
                     >
                       licence AUEP
                     </SectionLink>
                   </li>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
+                  <li className="flex items-center gap-1.5">
                     <SectionLink
                       sectionRef={masterRef}
                       isCurrent={isMasterInView}
+                      isSubSection
                     >
                       master AUEP
                     </SectionLink>
                   </li>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
+                  <li className="flex items-center gap-1.5">
                     <SectionLink
                       sectionRef={graduationsRef}
                       isCurrent={isGraduationsInView}
+                      isSubSection
                     >
                       diplômations
                     </SectionLink>
                   </li>
-                  <li className="flex items-center gap-1.5 pl-4 text-lg">
-                    <ElbowArrowIcon />
+                  <li className="flex items-center gap-1.5">
                     <SectionLink
                       sectionRef={metrofablabRef}
                       isCurrent={isMetrofablabInView}
+                      isSubSection
                     >
-                      le programme MetroFabLab
+                      MetroFabLab
                     </SectionLink>
                   </li>
                 </ul>

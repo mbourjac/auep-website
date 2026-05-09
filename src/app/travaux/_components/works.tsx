@@ -2,7 +2,6 @@
 
 import { createRef, useMemo, useRef } from 'react';
 import { useInView, UseInViewOptions } from 'motion/react';
-import { ElbowArrowIcon } from '../../../components/icons/elbow-arrow-icon';
 import { useInViewArray } from '../../../hooks/use-in-view-array';
 import { SectionLink } from '../../formation/_components/section-link';
 import {
@@ -99,7 +98,7 @@ export const Works = () => {
           <nav
             role="navigation"
             aria-label="Navigation - formation"
-            className="sticky top-22.5 hidden w-[280px] shrink-0 self-start pt-4 text-xl font-bold xl:block"
+            className="sticky top-22.5 hidden w-[280px] shrink-0 self-start pt-4 xl:block"
           >
             <ul>
               <li>
@@ -109,16 +108,13 @@ export const Works = () => {
                 >
                   {SEMINARS_SECTION.label}
                 </SectionLink>
-                <ul>
+                <ul className="flex flex-col gap-1 py-1">
                   {SEMINARS_SECTION.semesters.map((semester, index) => (
-                    <li
-                      key={semester.id}
-                      className="flex items-center gap-1.5 pl-4 text-lg"
-                    >
-                      <ElbowArrowIcon />
+                    <li key={semester.id} className="flex items-center gap-1.5">
                       <SectionLink
                         sectionRef={seminarsSemesterRefs[index]}
                         isCurrent={seminarsSemesterInViewArray[index]}
+                        isSubSection
                       >
                         {semester.label.toLowerCase()}
                       </SectionLink>
@@ -133,16 +129,13 @@ export const Works = () => {
                 >
                   {DISSERTATIONS_SECTION.label}
                 </SectionLink>
-                <ul>
+                <ul className="flex flex-col gap-1 py-1">
                   {DISSERTATIONS_SECTION.years.map((year, index) => (
-                    <li
-                      key={year.id}
-                      className="flex items-center gap-1.5 pl-4 text-lg"
-                    >
-                      <ElbowArrowIcon />
+                    <li key={year.id} className="flex items-center gap-1.5">
                       <SectionLink
                         sectionRef={dissertationsYearRefs[index]}
                         isCurrent={dissertationsYearInViewArray[index]}
+                        isSubSection
                       >
                         {year.label.toLowerCase()}
                       </SectionLink>
@@ -157,17 +150,17 @@ export const Works = () => {
                 >
                   {PROJECT_WORKSHOPS_SECTION.label}
                 </SectionLink>
-                <ul>
+                <ul className="flex flex-col gap-1 py-1">
                   {PROJECT_WORKSHOPS_SECTION.semesters.map(
                     (semester, index) => (
                       <li
                         key={semester.id}
-                        className="flex items-center gap-1.5 pl-4 text-lg"
+                        className="flex items-center gap-1.5"
                       >
-                        <ElbowArrowIcon />
                         <SectionLink
                           sectionRef={projectWorkshopsSemesterRefs[index]}
                           isCurrent={projectWorkshopsSemesterInViewArray[index]}
+                          isSubSection
                         >
                           {semester.label.toLowerCase()}
                         </SectionLink>
@@ -183,16 +176,13 @@ export const Works = () => {
                 >
                   {GRADUATION_PROJECTS_SECTION.label}
                 </SectionLink>
-                <ul>
+                <ul className="flex flex-col gap-1 py-1">
                   {GRADUATION_PROJECTS_SECTION.years.map((year, index) => (
-                    <li
-                      key={year.id}
-                      className="flex items-center gap-1.5 pl-4 text-lg"
-                    >
-                      <ElbowArrowIcon />
+                    <li key={year.id} className="flex items-center gap-1.5">
                       <SectionLink
                         sectionRef={graduationProjectsYearRefs[index]}
                         isCurrent={graduationProjectsYearInViewArray[index]}
+                        isSubSection
                       >
                         {year.label.toLowerCase()}
                       </SectionLink>

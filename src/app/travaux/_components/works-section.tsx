@@ -16,17 +16,19 @@ export const WorksSection = ({
   sectionRef,
 }: WorksSectionProps) => {
   return (
-    <section ref={sectionRef} className="scroll-mt-24">
-      <SectionHeading>{title}</SectionHeading>
-      <div className="flex flex-col border-l-2 pt-8 pl-4">
-        <DitherCanvas
-          src={picture}
-          height={360}
-          fitMode="cover"
-          className="w-full"
-        />
-        {children}
+    <section className="scroll-mt-24">
+      <div ref={sectionRef}>
+        <SectionHeading>{title}</SectionHeading>
+        <div className="border-l-2 pt-8 pl-4">
+          <DitherCanvas
+            src={picture}
+            height={360}
+            fitMode="cover"
+            className="w-full"
+          />
+        </div>
       </div>
+      <div className="border-l-2 pl-4">{children}</div>
     </section>
   );
 };
